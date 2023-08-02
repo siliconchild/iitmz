@@ -7,7 +7,7 @@ const socials = [
   {
     title: "Facebook",
     icon: "facebook",
-    link: "https://www.facebook.com/IITMZanzibar",
+    link: "https://www.dddfacebook.com/IITMZanzibar",
   },
   {
     title: "Instagram",
