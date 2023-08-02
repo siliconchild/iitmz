@@ -864,7 +864,7 @@ const faculty = [
       },
       {
         title: "B.Tech",
-        year: "1990",
+        year: "1992",
         course: "Civil Engineering",
         place: "M.G.University Kottayam",
       },
