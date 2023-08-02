@@ -24,6 +24,11 @@ const socials = [
     icon: "youtube",
     link: "https://www.youtube.com/@IITMZanzibar",
   },
+  {
+    title: "Youtube",
+    icon: "youtube",
+    link: "https://www.youtube.com/@IITMZanzibar",
+  },
 ];
 
 export default socials;
