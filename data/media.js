@@ -3,7 +3,7 @@ const media = {
     {
       title:
         "More countries inviting India to set up IIT campus abroad: PM Modi",
-      id: "Vyf7tIhrJaE",
+      id: "Ehy0UO7AwCo",
     },
     {
       title: "Zanzibar and India sign agreement to open IIT campus in Zanzibar",
