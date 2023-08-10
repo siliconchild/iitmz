@@ -2,7 +2,7 @@ import "@/styles/globals.css";
 import { Suspense } from "react";
 import { Lato, Raleway } from "next/font/google";
 import Header from "@/components/header";
-// import Footer from "@/components/footer";
+import Footer from "@/components/footer";
 import AdmissionWidget from "@/components/admission-widget";
 import Analytics from "@/components/analytics";
 
@@ -24,8 +24,9 @@ export async function generateMetadata({
 
   return {
     metadataBase: new URL("https://zanzibar.iitm.ac.in"),
-    title: "IIT Madras Zanzibar Campus",
-    description: "IIT Madras Zanzibar Campus",
+    title: "IIT Madras Zanzibar Campus | Empower Your Future with IIT",
+    description:
+      "Discover the Latest from IIT Madras Zanzibar Campus. Exciting Programs and Global Opportunities Await. Learn More!",
     applicationName: "IITM Zanzibar",
     themeColor: "#d50032",
     alternates: {
@@ -48,7 +49,7 @@ export default function RootLayout({
       <body className={`${lato.className}${raleway.className}`}>
         <Header />
         {children}
-        {/* <Footer /> */}
+        <Footer />
         <AdmissionWidget />
         <Suspense>
           <Analytics />

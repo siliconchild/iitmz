@@ -32,7 +32,7 @@ export default function SocialMedia({ kind }: SocialMediaProps) {
     <div
       className={`${styles.section} ${kind === "MINIMAL" && styles.minimal}`}
     >
-      <div className="container">
+      <div className={kind === "FULL" ? `container` : ``}>
         <h2>
           Follow us <br /> on Social Media
         </h2>

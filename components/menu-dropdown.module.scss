@@ -29,8 +29,19 @@
   top: -7px;
 }
 
+.menu_dropdown.footer {
+  top: -85%;
+  border-top: none;
+}
+
 @media (max-width: 768px) {
   .menu_dropdown {
     border-top: none;
+  }
+  .menu_dropdown {
+    left: -50%;
+  }
+  .menu_dropdown.footer {
+    top: 100%;
   }
 }

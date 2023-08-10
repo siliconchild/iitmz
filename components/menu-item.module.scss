@@ -7,7 +7,7 @@
     cursor: pointer;
     font-size: 1.7rem;
     font-weight: 500;
-    margin: 1.5rem 1.75rem;
+    margin: 1.5rem 1rem;
     font-family: "Raleway", sans-serif;
     background: none;
     outline: none;
@@ -52,10 +52,48 @@
   transform: rotate(180deg);
 }
 
-@media (max-width: 480px) {
+.footer {
+  flex: 0 0 33.33%;
+  a,
+  button {
+    font-size: 1.6rem;
+    color: #dedede;
+  }
+  .caret {
+    transform: rotate(180deg);
+  }
+}
+
+.footer.arrow_open {
+  .caret {
+    transform: rotate(180deg);
+  }
+}
+
+.footer.nested {
+  a,
+  button {
+    color: #333;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    .caret {
+      transform: rotate(0deg);
+    }
+  }
+
+  .footer.arrow_open {
+    .caret {
+      transform: rotate(180deg);
+    }
+  }
   .menu_item {
-    a {
-      font-size: 1.6rem;
+    flex: 0 0 50%;
+    a,
+    button {
+      font-size: 1.5rem;
       padding: 1.4rem;
       margin: 0;
     }

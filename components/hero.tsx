@@ -19,8 +19,7 @@ export default function Hero() {
             <h4>IITM Zanzibar Campus</h4>
             <h3>Welcome To</h3>
             <h1>
-              IIT Madras
-              <span>Zanzibar</span>
+              IIT Madras <span>Zanzibar</span>
             </h1>
             {/* <ApplyDropdown /> */}
           </div>

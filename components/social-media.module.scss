@@ -1,6 +1,6 @@
 .section {
   padding: 5rem 0;
-  background: #c32939;
+  background: #d50032;
   & > div {
     display: flex;
     align-items: center;
@@ -33,7 +33,6 @@
 .section.minimal {
   background: none;
   padding: 0;
-  flex: 0 0 40%;
   margin-left: auto;
   & > div {
     justify-content: flex-end;
@@ -47,7 +46,8 @@
     margin-bottom: 0;
   }
   a {
-    width: 10rem;
+    flex: auto;
+    width: 7rem;
   }
   .social {
     p {

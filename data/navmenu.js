@@ -32,6 +32,8 @@ const navMenu = [
   { title: "Campus Life", link: "/campus-life/" },
   { title: "Financial Aid", link: "/financial-aid/" },
   { title: "Admissions", link: "/admission/" },
+  { title: "Privacy Policy", link: "/privacy-policy", type: "FOOTER_ONLY" },
+  { title: "Terms of Use", link: "/terms-of-use", type: "FOOTER_ONLY" },
 ];
 
 export default navMenu;

@@ -7,7 +7,7 @@ export default function TestimonialsPage() {
     <div className={styles.page}>
       <div className="container">
         <h1 className="section-title center line">
-          What Students <br /> Think About IIT Madras
+          What students <br /> Think about IIT Madras
         </h1>
         <Testimonials
           type="SECONDARY"

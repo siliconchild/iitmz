@@ -157,9 +157,18 @@
 }
 
 @media (max-width: 480px) {
+  .section {
+    padding-bottom: 3.5rem;
+  }
   .body {
     margin-top: -100px;
     padding: 3rem 1rem;
+    & > div {
+      margin-bottom: 2.5rem;
+      &:last-child {
+        margin-bottom: 1rem;
+      }
+    }
     h1 {
       margin-bottom: 2rem;
       padding: 0 1rem;
