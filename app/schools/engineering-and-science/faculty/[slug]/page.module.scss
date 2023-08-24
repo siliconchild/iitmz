@@ -1,5 +1,5 @@
 .section {
-  padding: 2rem 0;
+  padding: 3rem 0 3.5rem;
   & > div {
     background: #fff;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
@@ -61,6 +61,7 @@
 .qualification {
   margin: 2rem 0 0;
   & > div {
+    padding: 0 0 1.5rem;
     &:not(:last-child) {
       margin-bottom: 1rem;
     }
@@ -231,7 +232,7 @@
 
 @media (max-width: 768px) {
   .section {
-    padding: 0;
+    padding: 2rem 0 3rem;
     & > div {
       flex-direction: column;
     }
@@ -259,7 +260,7 @@
   }
   .main {
     width: 100%;
-    padding: 1rem;
+    padding: 1rem 1rem 1.5rem;
   }
   .authors {
     row-gap: 5px;

@@ -1,11 +1,20 @@
 .nav {
   & > ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
   }
 }
 
-@media (max-width: 480px) {
+.nav.footer {
+  flex: 0 0 60%;
+  & > ul {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
   .nav {
     display: none;
     opacity: 0;
@@ -15,12 +24,17 @@
     padding: 1rem;
     transition: all 0.5s;
     ul {
-      flex-direction: column;
+      flex-direction: row;
+      flex-wrap: wrap;
     }
   }
   .nav_show {
     display: flex;
     opacity: 1;
     height: auto;
+  }
+  .nav.footer {
+    flex: auto;
+    max-width: 95vw;
   }
 }

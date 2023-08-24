@@ -10,7 +10,8 @@ const announcements: AnnouncementsArray = [
       "Sample question papers for BS & MTech in DS & AI are available for Download in the Admissions 2023 Sidebar Widget",
   },
   {
-    title: "Applications are closing {{DAYS_LEFT,2023-08-05}}. Apply Now!",
+    title:
+      "Applications deadline is extended till 12th August. Hurry! Applications are closing in {{DAYS_LEFT,2023-08-12}}. Apply Now!",
   },
   {
     title:

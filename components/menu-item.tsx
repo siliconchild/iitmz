@@ -1,3 +1,5 @@
+"use client";
+
 import { useState, useRef, useEffect } from "react";
 import styles from "./menu-item.module.scss";
 import Dropdown from "./menu-dropdown";
@@ -14,9 +16,10 @@ export type MenuItemType = {
 type MenuItemProps = {
   item: MenuItemType;
   depthLevel: number;
+  kind: "HEADER" | "FOOTER";
 };
 
-export default function MenuItem({ item, depthLevel }: MenuItemProps) {
+export default function MenuItem({ item, depthLevel, kind }: MenuItemProps) {
   const [dropdown, setDropdown] = useState(false);
   let ref = useRef<HTMLLIElement>(null);
   const router = useRouter();
@@ -53,7 +56,10 @@ export default function MenuItem({ item, depthLevel }: MenuItemProps) {
       ref={ref}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
-      className={`${styles.menu_item} ${depthLevel > 0 && styles.nested}`}
+      className={`
+        ${styles.menu_item} 
+        ${depthLevel > 0 && styles.nested} 
+        ${kind === "FOOTER" && styles.footer} `}
     >
       {item.submenus ? (
         <>
@@ -74,10 +80,13 @@ export default function MenuItem({ item, depthLevel }: MenuItemProps) {
             {depthLevel > 0 ? (
               <AiOutlineArrowRight />
             ) : (
-              <BiCaretDown className={dropdown ? styles.arrow_open : ``} />
+              <BiCaretDown
+                className={`${styles.caret} ${dropdown && styles.arrow_open}`}
+              />
             )}
           </button>
           <Dropdown
+            kind={kind}
             submenus={item.submenus}
             show={dropdown}
             depthLevel={depthLevel}
