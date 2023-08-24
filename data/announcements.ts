@@ -14,7 +14,7 @@ const announcements: AnnouncementsArray = [
   },
   {
     title:
-      "Contest Winners Announced: Shirllie Praise Apiyo, Irfan Khan, Alekhya Purkait, Aashish Charles, Arua mercy Orieoma",
+      "Interviews for M.Tech DS & AI 27 August 2023",
   },
 ];
 
