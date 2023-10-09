@@ -23,7 +23,6 @@ export default function Home() {
       <News />
       <Courses />
       <Counter />
-
       <Leadership />
       <AdvisoryCouncil />
       <section className={styles.events_testimonials_section}>
