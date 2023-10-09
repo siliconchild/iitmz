@@ -8,7 +8,12 @@ export default function GoogleForm() {
       <center>
         <iframe
           src="https://docs.google.com/forms/d/e/1FAIpQLScEjJBhTLHZCDUQzyF6bJQPr6cNxswlzuXorbXHMcih2kFLeQ/viewform?embedded=true"
-          style={{ width: 1080, height: 1240, border: 0, marginBottom: "7rem" }}
+          style={{
+            width: "100%",
+            height: 1240,
+            border: 0,
+            marginBottom: "7rem",
+          }}
         >
           Loading…
         </iframe>
