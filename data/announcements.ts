@@ -15,7 +15,7 @@ const announcements: AnnouncementsArray = [
   // },
   {
     title:
-      "Interviews for M.Tech DS & AI - 27 August 2023",
+      "For MTech applications - Last date for exam registrations to the mandatory NPTEL courses is on 10/10/2023",
   },
 ];
 
