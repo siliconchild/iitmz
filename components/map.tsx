@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Map, { NavigationControl, Marker } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
-import { MdLocationOn } from "react-icons/Md";
+import { MdLocationOn } from "react-icons/md";
 
 export default function Maps() {
   const [isMounted, setIsMounted] = useState(false);
