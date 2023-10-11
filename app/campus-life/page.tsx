@@ -1,6 +1,7 @@
 import styles from "./page.module.scss";
 import Img from "@/components/image";
 import Link from "next/link";
+import Maps from "@/components/map";
 
 export const metadata = {
   title: "Discover Our Campus",
@@ -87,6 +88,14 @@ export default function CampusLife() {
           height={300}
           alt="Image of IITM Zanzibar Campus"
         />
+      </div>
+      <div className="container">
+        <div className={styles.map}>
+          <h3>Campus Location</h3>
+          <div className={styles.mapcontainer}>
+            <Maps />
+          </div>
+        </div>
       </div>
     </>
   );
