@@ -97,8 +97,7 @@ export default function CourseDetail({ params }: { params: { slug: string } }) {
             <Eligilibity type="SINGLE" courseSlug={params.slug} />
           </div>
           <div className={styles.curriculum}>
-            <h4>Curriculum</h4>
-            <Accordion>
+            <Accordion title="Curriculum">
               {course?.curriculum.semesters.map((semester, index) => (
                 <AccordionItem
                   key={semester.title}
