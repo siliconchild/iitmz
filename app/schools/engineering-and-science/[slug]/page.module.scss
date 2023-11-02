@@ -124,7 +124,7 @@
   text-align: left;
   th,
   td {
-    padding: 8px;
+    padding: 10px;
     &:first-of-type {
       width: 55%;
     }
@@ -133,7 +133,6 @@
     }
   }
   th {
-    background-color: #f6f8ff;
     cursor: default;
     &:nth-child(2) {
       position: relative;
@@ -149,6 +148,9 @@
   tbody {
     tr {
       font-size: 1.5rem;
+      &:nth-child(even){
+        background-color: #f6f8ff;
+      }
     }
   }
 }
