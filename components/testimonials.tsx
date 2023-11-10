@@ -11,6 +11,10 @@ type TestimonialsProps = Omit<SliderProps, "children"> & {
 export default function Testimonials({ ...props }: TestimonialsProps) {
   return (
     <section className={props.type === "PRIMARY" ? `` : styles.secondary}>
+      <GoogleForm
+        id="1FAIpQLScEjJBhTLHZCDUQzyF6bJQPr6cNxswlzuXorbXHMcih2kFLeQ"
+        pathname="/testimonials"
+      />
       <Slider {...props}>
         <div className={styles.item}>
           <div className={styles.quote}>
