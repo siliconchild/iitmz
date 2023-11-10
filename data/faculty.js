@@ -1040,15 +1040,15 @@ const faculty = [
     seo: {
       desc: "",
     },
-    name: "Prof. Manoj Kumar",
+    name: "Dr. Manoj Kumar",
     img: "/k-manoj.jpeg",
-    title: "Professor Department of Mathematics",
+    title: "Assistant Professor, Department of Mathematics",
     desc: "",
     interests:
       "My Research interests lie in the field of age and size-structured population models, with a specific focus on their applications in epidemiology and criminology. My primary research interests revolve around investigating the influence of structural variables on diverse ecological populations and the dynamics of infectious diseases. To study these models, we employ a multidisciplinary approach that encompasses deterministic and stochastic Partial Differential Equations (PDEs), Bayesian statistics, and control theory.",
     contact: {
       email: "manoj@iitmz.ac.in",
-      website: "",
+      website: "https://sites.google.com/view/hansat/home",
     },
     qualification: [
       {
