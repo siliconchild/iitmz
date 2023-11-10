@@ -2,7 +2,7 @@ const media = {
   yt: [
     {
       title: "IIT Madras Goes Global, Opens International Campus At Zanzibar",
-      id: "https://www.youtube.com/watch?v=mAV7_7TKGqE&pp=ygUZaWl0bSB6YW56aWJhciBpbmFndXJhdGlvbg%3D%3D",
+      id: "mAV7_7TKGqE",
     },
     {
       title: "Zanzibar and India sign agreement to open IIT campus in Zanzibar",
