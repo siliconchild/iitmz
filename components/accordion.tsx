@@ -1,30 +1,63 @@
 "use client";
 import styles from "./accordion.module.scss";
 import {
-  Accordion as ReactAccordion,
+  ControlledAccordion, // if you wish to use the Controlled version
   AccordionItem as ReactAccordionItem,
+  useAccordionProvider,
 } from "@szhsin/react-accordion";
-import { ReactElement, ReactNode } from "react";
+import { ReactElement, ReactNode, useState } from "react";
 import { FiChevronDown } from "react-icons/fi";
+import { TbLayoutNavbarExpand, TbLayoutBottombarExpand } from "react-icons/tb";
+
+type AccordionProps = {
+  children: ReactNode,
+  title: string
+}
 
 type AccordionItemProps = {
   children: ReactElement[];
   initialEntered?: boolean;
 };
 
-const Accordion = ({ children }: { children: ReactNode }) => {
+const Accordion = ({ children, title }: AccordionProps) => {
+  const providerValue = useAccordionProvider({
+    allowMultiple: true,
+    transition: true,
+    transitionTimeout: 250,
+  });
+  const { toggleAll } = providerValue;
+  const [isExpanded, setIsExpanded] = useState(false);
+
   return (
-    <ReactAccordion
-      transition
-      transitionTimeout={250}
-      onStateChange={({ key: item, current: { status } }) => {
-        if (status === "entered")
-          (item as any).scrollIntoView({ behavior: "smooth" });
-      }}
-      className={styles.accordion}
-    >
-      {children}
-    </ReactAccordion>
+    <>
+      <div className={styles.titleheader}>
+        <h4>{title}</h4>
+        <button
+          onClick={() => {
+            toggleAll(!isExpanded);
+            setIsExpanded((prevState) => !prevState);
+          }}
+        >
+          {isExpanded ? (
+            <>
+              <TbLayoutBottombarExpand />
+              Collapse All
+            </>
+          ) : (
+            <>
+              <TbLayoutNavbarExpand />
+              Expand All
+            </>
+          )}
+        </button>
+      </div>
+      <ControlledAccordion
+        providerValue={providerValue}
+        className={styles.accordion}
+      >
+        {children}
+      </ControlledAccordion>
+    </>
   );
 };
 

@@ -16,20 +16,6 @@ export default function Courses({ layout = "HORIZONTAL" }: CoursesProps) {
         layout === "VERTICAL" && styles.vertical
       }`}
     >
-      <Image
-        className={styles.shape2}
-        src="/img/shape/acadenic-shape-2.png"
-        alt="shape"
-        width={380}
-        height={470}
-      />
-      <Image
-        className={styles.shape1}
-        src="/img/shape/acadenic-shape-1.png"
-        alt=""
-        width={175}
-        height={190}
-      />
       <div className="container">
         <h2 className="section-title center line">Academic Programs</h2>
         <div className={styles.grid}>

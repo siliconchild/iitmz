@@ -6,6 +6,15 @@ import Button from "@/components/button";
 import Link from "next/link";
 import faculty from "@/data/faculty";
 
+export const metadata = {
+  title: "School Of Engineering & Science",
+  description:
+    "Learn More About The Academic Programs, Advisory Board, and Faculty at the School Of Engineering and Science, IIT Madras Zanzibar Campus. ",
+  alternates: {
+    canonical: `schools/engineering-and-science`,
+  },
+};
+
 export default function AcademicsPage() {
   return (
     <div className={styles.page}>

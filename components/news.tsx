@@ -18,45 +18,31 @@ export default function News() {
             </Link>
           </div>
           <NewsCard
-            link="https://www.thecitizen.co.tz/tanzania/oped/iit-takes-on-tanzania-introducing-the-zanzibar-campus-4222024"
+            link="https://www.indiatoday.in/education-today/news/story/iit-madras-set-to-create-history-by-establishing-an-international-campus-in-zanzibar-tanzania-2404437-2023-07-10"
             image={{
-              url: "/news4.jpg",
+              url: "/slot1.webp",
+              alt: "Logo of IIT Madras",
+            }}
+            title=" IIT Madras set to create history by establishing an international campus in Zanzibar-Tanzania"
+            desc="The Indian Institute of Technology Madras (IIT Madras), the top-ranked Educational Institute in the country, has become the first IIT in the country to launch an international campus, which is coming up in Zanzibar-Tanzania."
+          />
+          <NewsCard
+            link="https://www.cnbctv18.com/education/meet-preeti-aghalayam-the-first-woman-director-of-an-iit-zanzibar-campus-17195151.htm"
+            image={{
+              url: "/slot2.webp",
+              alt: "Image of Preeti Aghalayam",
+            }}
+            title="Meet Preeti Aghalayam — the first ever woman director of an IIT"
+            desc="Preeti Aghalayam, an alumna of IIT Madras, has been appointed as the director-in-charge of the upcoming Zanzibar campus of IIT Madras "
+          />
+          <NewsCard
+            link="https://indianexpress.com/article/opinion/columns/director-in-charge-iit-madras-zanzibar-writes-taking-the-indian-campus-to-the-world-8892772/"
+            image={{
+              url: "/slot3.webp",
               alt: "Image of IITM Zanzibar campus building",
             }}
-            title="IIT Madras takes on Tanzania"
-            desc="IIT Zanzibar will open its doors in October 2023 with a batch of
-                50 undergraduate students and 20 master&rsquo;s students. For
-                the first year, the institution will offer data science and
-                artificial intelligence courses. Zanzibar will be one of three
-                campuses outside of India, with the others located in Abu Dhabi
-                and Kuala Lumpur."
-          />
-          <NewsCard
-            link="https://hcindiatz.gov.in/tz-glr-08-02-2023-6.php"
-            image={{
-              url: "/news5.jpg",
-              alt: "Image of Delegates from India and Tanzania",
-            }}
-            title="Delegation from IIT Madras visits Tanzania"
-            desc="A team of 5 Professors from Indian Institute of Technology
-                Madras visited Tanzania to discuss setting up of IIT campus. The
-                delegation met President of Zanzibar H.E. Dr. Hussein Ali
-                Mwinyi, Minister of Vocational Training Zanzibar H.E. Lela
-                Muhamed Mussa and Minister of Education, Science and Technology
-                of Tanzania H.E. Adolf Mkenda."
-          />
-          <NewsCard
-            link="https://www.thehindu.com/news/international/first-iit-in-tanzania-to-open-in-october-2023/article66915115.ece"
-            image={{
-              url: "/news5.jpeg",
-              alt: "Logo of IITM Zanzibar",
-            }}
-            title="First IIT in Tanzania To Open in Oct 2023"
-            desc="The establishment of IIT in Tanzania marks a significant step in
-                strengthening the ties between India and Africa. It reflects
-                India&rsquo;s growing interest in the African continent and its
-                commitment to promoting education and human resource development
-                in Africa."
+            title="Head of IIT Madras Zanzibar writes: Taking the Indian campus to the world "
+            desc="Scientific research today has to be interdisciplinary, multifaceted and should bring together a diversity of views."
           />
         </div>
       </div>

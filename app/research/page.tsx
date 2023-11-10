@@ -1,13 +1,22 @@
 import styles from "./page.module.scss";
 import Button from "@/components/button";
 
+export const metadata = {
+  title: "Innovative Research",
+  description:
+    "Explore Cutting-edge Research at IIT Madras Zanzibar. Join Our Vibrant Ecosystem. Learn More.",
+  alternates: {
+    canonical: `research`,
+  },
+};
+
 export default function ResearchPage() {
   return (
     <div className={styles.page}>
       <div className="container">
         <div className={styles.research}>
           <div className={styles.content}>
-            <h1>Research at IITM</h1>
+            <h1>Research at IIT Madras</h1>
             <p>
               At IITM Zanzibar, research is central to our mission of driving
               innovation and making a significant impact in technology. Our

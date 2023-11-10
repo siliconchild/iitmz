@@ -1,5 +1,14 @@
 import styles from "./page.module.scss";
 
+export const metadata = {
+  title: "Financial Aid",
+  description:
+    "Explore Financial Aid Options at IIT Madras Zanzibar. We're Committed to Making Quality Education Accessible With Scholarships, Alumni Support & More",
+  alternates: {
+    canonical: `financial-aid`,
+  },
+};
+
 export default function FinancialAidPage() {
   return (
     <section className={styles.section}>
@@ -539,7 +548,7 @@ export default function FinancialAidPage() {
                 our education. They are excited by the opportunities at the
                 first international campus of IITM. They are coming together
                 this year to fund 50% of the tuition fees for Year 1
-                (2023-&rsquo;24), for up to 5 deserving students. We will write
+                (2023-&rsquo;24), for up to 8 deserving students. We will write
                 to all eligible students after applications close, ask you to
                 apply separately to the award and review the information for
                 making our decision. These will be announced in late September,

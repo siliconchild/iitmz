@@ -11,6 +11,22 @@ import {
 import { BiBuilding } from "react-icons/bi";
 import { GoGlobe } from "react-icons/go";
 
+export async function generateMetadata({
+  params: { slug },
+}: {
+  params: { slug: string };
+}) {
+  const course = Object.values(courses).find((course) => course.slug === slug);
+
+  return {
+    title: `${course?.title} | Apply Now`,
+    description: course?.seo?.desc,
+    alternates: {
+      canonical: `schools/engineering-and-science/${slug}`,
+    },
+  };
+}
+
 const dynamicParams = false;
 export { dynamicParams };
 
@@ -37,7 +53,7 @@ export default function CourseDetail({ params }: { params: { slug: string } }) {
       </div>
       <div className="container">
         <section className={styles.body}>
-          <h2>{course?.title}</h2>
+          <h1>{course?.title}</h1>
           <div className={styles.meta}>
             <div className={styles.item}>
               <AiOutlineCalendar />
@@ -81,8 +97,7 @@ export default function CourseDetail({ params }: { params: { slug: string } }) {
             <Eligilibity type="SINGLE" courseSlug={params.slug} />
           </div>
           <div className={styles.curriculum}>
-            <h4>Curriculum</h4>
-            <Accordion>
+            <Accordion title="Curriculum">
               {course?.curriculum.semesters.map((semester, index) => (
                 <AccordionItem
                   key={semester.title}

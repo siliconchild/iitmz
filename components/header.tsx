@@ -2700,7 +2700,7 @@ export default function Header() {
             </svg>
           </button>
         </div>
-        <Navbar navToggle={navToggle} />
+        <Navbar navToggle={navToggle} kind="HEADER" />
       </div>
       <Ticker />
     </header>

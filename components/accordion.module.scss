@@ -2,6 +2,30 @@
   box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
 }
 
+.titleheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding: 0 .5rem;;
+  button {
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+    padding: .7rem 2rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    svg {
+      margin-right: .5rem;
+      height: 16px;
+      width: 16px;
+      margin-top: -0.15rem;
+    }
+  }
+}
+
 .item {
   background-color: #fff;
   border: 0;

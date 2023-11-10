@@ -1,6 +1,9 @@
 const faculty = [
   {
     slug: "prof-ramkrishna-pasumarthy",
+    seo: {
+      desc: "Prof. Ramkrishna Pasumarthy is the Program Chair of BS in Data Science & AI at IIT Madras Zanzibar. Learn More. ",
+    },
     name: "Prof. Ramkrishna Pasumarthy",
     img: "/ramkrishna.png",
     title: "Program Chair, BS DS & AI",
@@ -117,6 +120,9 @@ const faculty = [
   },
   {
     slug: "dr-nirav-bhatt",
+    seo: {
+      desc: "Dr. Nirav Bhatt is the Program Chair of Mtech in Data Science & AI at IIT Madras Zanzibar. Learn More.",
+    },
     name: "Dr. Nirav Bhatt",
     img: "/nirav-1.jpg",
     title: "Program Chair, MTech DS & AI",
@@ -266,6 +272,9 @@ const faculty = [
   },
   {
     slug: "prof-raghunathan-rengaswamy",
+    seo: {
+      desc: "Prof. Raghunathan Rengaswamy is the Marti Mannariah Gurunath Chair of the Department of Chemical Engineering at IIT Madras Zanzibar. Learn More.",
+    },
     name: "Prof. Raghunathan Rengaswamy",
     img: "/prof-raghu.jpg",
     title:
@@ -425,7 +434,10 @@ const faculty = [
   },
   {
     slug: "prof-preeti-aghalayam",
-    name: "Prof Preeti Aghalayam",
+    seo: {
+      desc: "Prof. Preeti Aghalayam is the Dean And Director in Charge at IIT Madras Zanzibar Campus. Learn More.",
+    },
+    name: "Prof. Preeti Aghalayam",
     img: "/preeti-a.jpg",
     title: "Dean",
     titlesec: "Director-in-charge",
@@ -555,7 +567,10 @@ const faculty = [
   },
   {
     slug: "prof-suresh-govindarajan",
-    name: "Prof Suresh Govindarajan",
+    seo: {
+      desc: "Prof. Suresh Govindarajan Works in The Department of Physics at IIT Madras Zanzibar. Learn More.",
+    },
+    name: "Prof. Suresh Govindarajan",
     img: "/suresh.png",
     title: "Professor, Dept of Physics",
     desc: "",
@@ -610,7 +625,6 @@ const faculty = [
         from: "National Council for Educational Research and Training, New Delhi",
       },
     ],
-    courses: [],
     papers: [
       {
         title:
@@ -715,7 +729,10 @@ const faculty = [
   },
   {
     slug: "prof-narayanan-n",
-    name: "Prof Narayanan N",
+    seo: {
+      desc: "Prof. Narayanan N Works in The Department of Mathematics at IIT Madras Zanzibar. Learn More.",
+    },
+    name: "Prof. Narayanan N",
     img: "/narayanan.png",
     title: "Professor, Dept of Mathematics",
     desc: "",
@@ -838,8 +855,116 @@ const faculty = [
     ],
   },
   {
+    slug: "prof-umasankar-patra",
+    seo: {
+      desc: "Prof. Umasankar Patra Works in The Department of Humanities And Social Sciences at IIT Madras Zanzibar. Learn More.",
+    },
+    name: "Prof. Umasankar Patra",
+    img: "/umasankar-alt.jpeg",
+    title: "Professor, Dept of Humanities And Social Sciences",
+    desc: "",
+    interests:
+      "My research interests are Anglo-American Modernism, Life Writing, Queer Studies, Modernity in India, and Translation.",
+    contact: {
+      email: "umasankar@iitm.ac.in",
+      website: "https://hss.iitm.ac.in/team-members/umasankar/",
+    },
+    qualification: [
+      {
+        title: "Ph.D.",
+        year: "2019",
+        course: "",
+        place: "University of Delhi",
+      },
+      {
+        title: "MPhil",
+        year: "2012",
+        course: "",
+        place: "English and Foreign Languages University, Hyderabad",
+      },
+      {
+        title: "MA",
+        year: "2011",
+        course: "English",
+        place: "University of Hyderabad",
+      },
+      {
+        title: "BA",
+        year: "2009",
+        course: "English",
+        place: "Fakir Mohan University, Odisha",
+      },
+    ],
+    awards: [
+      {
+        title: "Best Performer Award for Teaching and Research, 2022",
+        from: "NIT, Tiruchirappalli",
+      },
+      {
+        title: "Bursary Grant from the Institute of English Studies, 2017",
+        from: "University of London",
+      },
+      {
+        title: "Christopher Isherwood Foundation Fellowship, 2015",
+        from: "The Huntington Library, San Marino, USA",
+      },
+      {
+        title: "UGC Junior Research Fellowship, 2003",
+        from: "",
+      },
+    ],
+    papers: [
+      {
+        title:
+          "Inspectors of the Raj: A Pedagogy of Critical Conservatism in Odisha",
+        authors: ["Patra, Umasankar"],
+        publisher: "South Asia, 46, no. 3, pp. 318-335",
+        year: 2023,
+      },
+      {
+        title:
+          "Queer Camera: Christopher Isherwood’s Goodbye to Berlin and Prater Violet",
+        authors: ["Patra, Umasankar"],
+        publisher: "Journal of Homosexuality, vol. 69, No.3, pp. 565-585",
+        year: 2022,
+      },
+      {
+        title:
+          "Fakir Mohan Senapati’s Atmacharita: Episodic Autobiography, History, and Interiority",
+        authors: ["Patra, Umasankar"],
+        publisher: "Biography, 44 no. 4, pp. 541-560",
+        year: 2021,
+      },
+      {
+        title:
+          "Telling Stories in ‘Queer Hell’: Christopher Isherwood’s Down There on a Visit",
+        authors: ["Patra, Umasankar"],
+        publisher: "The Explicator, 75, no.1, pp. 37-39",
+        year: 2017,
+      },
+      {
+        title: "Translating an Indian Way of Thinking",
+        authors: ["Patra, Umasankar"],
+        publisher: "Indian Literature, vol LX, no. 299, pp. 62-70",
+        year: 2017,
+      },
+    ],
+    contributions: [
+      {
+        title: "Reviewer, Oxford Bibliographies",
+      },
+      {
+        title:
+          "Reviewer, Sāhitya, Journal of the Comparative Literature Association of India",
+      },
+    ],
+  },
+  {
     slug: "prof-ligy-philip",
-    name: "Prof Ligy Philip",
+    seo: {
+      desc: "Prof. Ligy Philip is The Professor in Charge of Infrastructure at IIT Madras Zanzibar. Learn More.",
+    },
+    name: "Prof. Ligy Philip",
     img: "/ligy-1.png",
     title: "Professor-in-charge (Infrastructure)",
     desc: "",
@@ -869,7 +994,6 @@ const faculty = [
         place: "M.G.University Kottayam",
       },
     ],
-    courses: [],
     papers: [
       {
         title:

@@ -24,6 +24,22 @@ export default function AdvisoryCouncil() {
         </div>
         <div className={styles.card}>
           <Img
+            src="/prof-leonard.jpg"
+            alt="Picture of Prof Leonard Wantchekon"
+            width={200}
+            height={200}
+            style={{ objectFit: "cover" }}
+          />
+          <div className={styles.body}>
+            <h2>Prof. Leonard Wantchekon</h2>
+            <h4>Founder and President</h4>
+            <p>African School of Economics</p>
+            <h4>Professor of Politics and International Affairs</h4>
+            <p>Princeton University </p>
+          </div>
+        </div>
+        <div className={styles.card}>
+          <Img
             src="/mridula.webp"
             alt="Picture Of Dr Mridula Nair"
             width={200}

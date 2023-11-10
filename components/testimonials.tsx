@@ -1,8 +1,8 @@
 import styles from "./testimonials.module.scss";
 import { AiTwotoneStar } from "react-icons/ai";
-import { FaUserCircle as Avatar } from "react-icons/fa";
 import Img from "./image";
 import Slider, { SliderProps } from "./slider";
+import GoogleForm from "./google-form";
 
 type TestimonialsProps = Omit<SliderProps, "children"> & {
   type: "PRIMARY" | "SECONDARY";

@@ -1,6 +1,6 @@
 .section {
   padding: 5rem 0;
-  background: #c32939;
+  background: #d50032;
   & > div {
     display: flex;
     align-items: center;
@@ -30,8 +30,35 @@
   }
 }
 
+.section.minimal {
+  background: none;
+  padding: 0;
+  margin-left: auto;
+  & > div {
+    justify-content: flex-end;
+  }
+  h2 {
+    display: none;
+  }
+  svg {
+    height: 16px;
+    width: 16px;
+    margin-bottom: 0;
+  }
+  a {
+    flex: auto;
+    width: 7rem;
+  }
+  .social {
+    p {
+      display: none;
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .section {
+    padding: 3rem 0 5rem;
     & > div {
       flex-wrap: wrap;
       gap: 2rem;
@@ -44,5 +71,11 @@
     a {
       flex: 0 0 calc(33% - 2rem);
     }
+    p {
+      font-size: 1.2rem;
+    }
+  }
+  .section.minimal {
+    display: none;
   }
 }

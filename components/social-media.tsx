@@ -23,10 +23,16 @@ const socialIcons: SocialIcons = {
   youtube: BsYoutube,
 };
 
-export default function SocialMedia() {
+type SocialMediaProps = {
+  kind: "FULL" | "MINIMAL";
+};
+
+export default function SocialMedia({ kind }: SocialMediaProps) {
   return (
-    <div className={styles.section}>
-      <div className="container">
+    <div
+      className={`${styles.section} ${kind === "MINIMAL" && styles.minimal}`}
+    >
+      <div className={kind === "FULL" ? `container` : ``}>
         <h2>
           Follow us <br /> on Social Media
         </h2>

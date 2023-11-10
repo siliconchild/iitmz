@@ -11,17 +11,17 @@ export default function Hero() {
             width={1200}
             height={800}
             alt="College Students Image"
-            src="/hero2.jpg"
+            src="/hero2-min.jpg"
             loading="eager"
+            sizes="(max-width: 768px) 900px, (min-width: 768px) 1200px"
           />
 
           <div className={styles.content}>
             <h4>IITM Zanzibar Campus</h4>
             <h3>Welcome To</h3>
-            <h2>
-              IIT Madras
-              <span>Zanzibar</span>
-            </h2>
+            <h1>
+              IIT Madras <span>Zanzibar</span>
+            </h1>
             {/* <ApplyDropdown /> */}
           </div>
         </div>

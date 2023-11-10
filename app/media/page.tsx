@@ -3,6 +3,15 @@ import media from "@/data/media";
 import NewsCard from "@/components/news-card";
 import YoutubePlayer from "@/components/youtube-player";
 
+export const metadata = {
+  title: "News",
+  description:
+    "Check Out The Latest News About IIT Madras Zanzibar Campus Here.",
+  alternates: {
+    canonical: `media`,
+  },
+};
+
 export default function MediaPage() {
   return (
     <div className="container">

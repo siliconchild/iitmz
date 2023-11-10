@@ -10,7 +10,7 @@
 
 .content {
   padding: 3rem;
-  h2 {
+  h1 {
     font-size: 5rem;
     letter-spacing: -2px;
     line-height: 6rem;
@@ -52,7 +52,22 @@
 
 .gallery {
   width: fit-content;
-  margin: 0 auto 3rem;
+  margin: 0 auto 5rem;
+}
+
+.map {
+  padding: 3rem;
+  margin-bottom: 4rem;
+  h3 {
+    font-size: 2.8rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+.mapcontainer {
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
 }
 
 @media (max-width: 480px) {
@@ -64,7 +79,7 @@
   }
   .content {
     padding: 1rem 2rem;
-    h2 {
+    h1 {
       font-size: 4rem;
     }
   }
@@ -74,6 +89,13 @@
       &:not(:last-child) {
         margin-bottom: 0.75rem;
       }
+    }
+  }
+  .map {
+    padding: 0;
+    margin-bottom: 3rem;
+    h3 {
+      margin-bottom: 2rem;
     }
   }
 }

@@ -1,6 +1,16 @@
 import styles from "./page.module.scss";
 import Img from "@/components/image";
 import Link from "next/link";
+import Maps from "@/components/map";
+
+export const metadata = {
+  title: "Discover Our Campus",
+  description:
+    "Experience an Enriching Campus Life at IIT Madras Zanzibar. Diverse Clubs, Sports, Cultural Events, And Excellent Facilities Await. Learn More.",
+  alternates: {
+    canonical: `campus-life`,
+  },
+};
 
 export default function CampusLife() {
   return (
@@ -8,9 +18,9 @@ export default function CampusLife() {
       <section className={styles.campus}>
         <div className="container">
           <div className={styles.content}>
-            <h2>
-              Discover <br /> Our Campus <span>.</span>
-            </h2>
+            <h1>
+              Discover <br /> Our Campus
+            </h1>
             <p>
               At IITM Zanzibar, campus life is an integral part of the
               educational experience. Our stimulating environment encourages
@@ -78,6 +88,14 @@ export default function CampusLife() {
           height={300}
           alt="Image of IITM Zanzibar Campus"
         />
+      </div>
+      <div className="container">
+        <div className={styles.map}>
+          <h3>Campus Location</h3>
+          <div className={styles.mapcontainer}>
+            <Maps />
+          </div>
+        </div>
       </div>
     </>
   );

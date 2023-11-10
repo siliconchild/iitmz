@@ -1,12 +1,18 @@
 .topbar {
   background-color: #d50032;
   padding: 1rem 0;
+  & > div {
+    display: flex;
+    align-items: center;
+  }
   a {
     color: #ffffff;
     font-size: 1.3rem;
     font-weight: 600;
     display: inline-block;
-    border-right: 1px solid #e86c8a;
+    &:not(:last-child) {
+      border-right: 1px solid #e86c8a;
+    }
     &:first-child {
       padding: 0 2rem 0 0;
     }

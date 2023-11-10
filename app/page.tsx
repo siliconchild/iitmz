@@ -10,6 +10,12 @@ import AdvisoryCouncil from "@/components/advisory-council";
 import Leadership from "@/components/leadership";
 import SocialMedia from "@/components/social-media";
 
+export const metadata = {
+  alternates: {
+    canonical: `/`,
+  },
+};
+
 export default function Home() {
   return (
     <main>
@@ -17,7 +23,6 @@ export default function Home() {
       <News />
       <Courses />
       <Counter />
-
       <Leadership />
       <AdvisoryCouncil />
       <section className={styles.events_testimonials_section}>
@@ -447,7 +452,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <SocialMedia />
+      <SocialMedia kind="FULL" />
       <Gallery />
     </main>
   );

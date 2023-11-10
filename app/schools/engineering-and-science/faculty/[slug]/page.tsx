@@ -8,6 +8,24 @@ import { RiAwardLine } from "react-icons/ri";
 import Link from "next/link";
 import stringReplacer from "@/components/string-replacer";
 
+export async function generateMetadata({
+  params: { slug },
+}: {
+  params: { slug: string };
+}) {
+  const facultyMember = faculty.find(
+    (facultyMember) => facultyMember.slug === slug
+  );
+
+  return {
+    title: `${facultyMember?.name} | Faculty`,
+    description: facultyMember?.seo?.desc,
+    alternates: {
+      canonical: `schools/engineering-and-science/faculty/${slug}`,
+    },
+  };
+}
+
 const dynamicParams = false;
 export { dynamicParams };
 
@@ -88,7 +106,7 @@ export default function FacultyPage({ params }: { params: { slug: string } }) {
             <p>{facultyMember.interests}</p>
           </div>
 
-          {facultyMember.courses?.length > 0 && (
+          {facultyMember.courses && (
             <div className={styles.courses}>
               <h2>Relevant Courses Taught</h2>
               <ul>

@@ -10,10 +10,10 @@ export default function AdmissionHeader() {
       <section className={`${styles.section}`}>
         <div>
           <div className={styles.header}>
-            <h2>
+            <h1>
               Why Study At <br />
               IITM Zanzibar<span>.</span>
-            </h2>
+            </h1>
             <p>
               Get an unparalleled learning experience in data science and AI.
               Benefit from our cutting-edge courses, esteemed faculty and

@@ -10,7 +10,7 @@ export default function Fees() {
         <div className={styles.tution}>
           <div className={styles.header}>
             <GiGraduateCap />
-            <h2>Tution Fee</h2>
+            <h2>Tuition Fee</h2>
           </div>
           <div className={styles.fee_container}>
             <div className={styles.fee}>

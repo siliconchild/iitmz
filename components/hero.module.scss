@@ -41,14 +41,14 @@
     margin-bottom: 3rem;
   }
   h3,
-  h2,
+  h1,
   span {
     color: #ffffff;
     font-weight: 900;
     text-transform: uppercase;
     text-shadow: 1px 1px 1px #000;
     span {
-      margin-left: 1rem;
+      margin-left: 0rem;
       font-size: 2.8rem;
     }
   }
@@ -56,7 +56,7 @@
     font-size: 2.6rem;
     margin-bottom: 0.5rem;
   }
-  h2 {
+  h1 {
     font-size: 4.4rem;
     margin-bottom: 5rem;
   }
@@ -73,7 +73,7 @@
     h3 {
       font-size: 1.8rem;
     }
-    h2 {
+    h1 {
       font-size: 3.5rem;
       span {
         display: block;

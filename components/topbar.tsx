@@ -1,4 +1,5 @@
 import styles from "./tobpar.module.scss";
+import SocialMedia from "./social-media";
 
 export default function Topbar() {
   return (
@@ -9,6 +10,7 @@ export default function Topbar() {
           iitm_zanzibar@ge.iitm.ac.in
         </a>
         <span>Zanzibar, Tanzania</span>
+        <SocialMedia kind="MINIMAL" />
       </div>
     </div>
   );
