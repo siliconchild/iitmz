@@ -911,6 +911,114 @@ const faculty = [
       },
     ],
   },
+  {
+    slug: "prof-manoj-kumar",
+    seo: {
+      desc: "",
+    },
+    name: "Prof. Manoj Kumar",
+    img: "/k-manoj.jpeg",
+    title: "Professor Department of Mathematics",
+    desc: "",
+    interests:
+      "My Research interests lie in the field of age and size-structured population models, with a specific focus on their applications in epidemiology and criminology. My primary research interests revolve around investigating the influence of structural variables on diverse ecological populations and the dynamics of infectious diseases. To study these models, we employ a multidisciplinary approach that encompasses deterministic and stochastic Partial Differential Equations (PDEs), Bayesian statistics, and control theory.",
+    contact: {
+      email: "manoj@iitmz.ac.in",
+      website: "",
+    },
+    qualification: [
+      {
+        title: "PhD",
+        year: "2023",
+        course: "School of Mathematical and Statistical Sciences",
+        place: "IIT Mandi",
+      },
+      {
+        title: "MSc",
+        year: "2018",
+        course: "Mathematics",
+        place: "IIT Ropar",
+      },
+      {
+        title: "BSc (Hons)",
+        year: "2016",
+        course: "Mathematics",
+        place: "Himachal Pradesh University",
+      },
+    ],
+    papers: [
+      {
+        title:
+          "Modelling and prevention of crime using age-structure and law enforcement",
+        authors: ["M. Kumar", "S. Abbas"],
+        publisher: "J. Math. Anal. Appl., 519 126849",
+        year: 2023,
+      },
+      {
+        title:
+          "Diffusive size-structured population model with time-varying diffusion rate",
+        authors: ["M. Kumar", "S. Abbas"],
+        publisher: "Discrete Contin. Dyn. Syst. Ser. B, 28, 1414-1435",
+        year: 2023,
+      },
+      {
+        title:
+          "Analysis of Diffusive Size-Structured Population Model and Optimal Birth Control",
+        authors: ["M. Kumar", "S. Abbas"],
+        publisher: "Evol. Equ. Control Theory, 12, 423-445.",
+        year: 2023,
+      },
+      {
+        title:
+          "Global Dynamics of an Age-Structured Model for HIV Viral Dynamics with Latently Infected T Cells",
+        authors: ["M. Kumar", "S. Abbas"],
+        publisher: "Math. Comput. Simulation. 198, 237-252.",
+        year: 2022,
+      },
+      {
+        title:
+          "Analysis of steady-state solutions to an age-structured SEQIR model with optimal vaccination",
+        authors: ["M. Kumar", "S. Abbas"],
+        publisher: "Math. Methods Appl. Sci., 45, 10718-10735",
+        year: 2022,
+      },
+      {
+        title:
+          "Analysis of Diffusive Size-Structured Population Model with Stochastic Perturbation",
+        authors: ["M. Kumar", "S. Abbas"],
+        publisher: "Differential Integral Equations. 35, 641-658",
+        year: 2022,
+      },
+      {
+        title:
+          "A novel method for basic reproduction ratio of a diffusive size-structured population model with delay",
+        authors: ["M. Kumar", "S. Abbas", "A Tridane"],
+        publisher: "Nonlinear Dynamics, 109 3189-3198.",
+        year: 2022,
+      },
+      {
+        title:
+          "Optimal control and stability analysis of an age-structured SEIRV model with imperfect vaccination",
+        authors: ["M. Kumar", "S. Abbas", "A Tridane"],
+        publisher: "Math. Biosci. Eng., 20, 14438-14463",
+        year: 2023,
+      },
+    ],
+    awards: [
+      {
+        title: "Qualified CSIR",
+        from: "National Eligibility Test (2019) and Graduate Aptitude Test in Engineering (GATE-2018)",
+      },
+      {
+        title: "Certificate of merit for highest CGPA",
+        from: "IIT Ropar, 2018",
+      },
+      {
+        title: "Certificate of merit",
+        from: "Himachal Pradesh University Shimla, 2016",
+      },
+    ],
+  },
 ];
 
 export default faculty;
