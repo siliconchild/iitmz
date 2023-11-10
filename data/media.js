@@ -1,9 +1,8 @@
 const media = {
   yt: [
     {
-      title:
-        "More countries inviting India to set up IIT campus abroad: PM Modi",
-      id: "Vyf7tIhrJaE",
+      title: "IIT Madras Goes Global, Opens International Campus At Zanzibar",
+      id: "https://www.youtube.com/watch?v=mAV7_7TKGqE&pp=ygUZaWl0bSB6YW56aWJhciBpbmFndXJhdGlvbg%3D%3D",
     },
     {
       title: "Zanzibar and India sign agreement to open IIT campus in Zanzibar",
