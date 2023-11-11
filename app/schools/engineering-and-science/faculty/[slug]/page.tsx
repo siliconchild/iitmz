@@ -65,12 +65,14 @@ export default function FacultyPage({ params }: { params: { slug: string } }) {
               {facultyMember.contact.email}
             </Link>
           </p>
-          <p className={styles.website}>
-            <BsGlobeCentralSouthAsia />
-            <a target="_blank" href={facultyMember.contact.website}>
-              {facultyMember.contact.website}
-            </a>
-          </p>
+          {facultyMember.contact.website && (
+            <p className={styles.website}>
+              <BsGlobeCentralSouthAsia />
+              <a target="_blank" href={facultyMember.contact.website}>
+                {facultyMember.contact.website}
+              </a>
+            </p>
+          )}
           <div className={styles.qualification}>
             <h2>Educational Qualifications</h2>
             {facultyMember.qualification.map((qualification) => (
