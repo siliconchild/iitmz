@@ -1143,6 +1143,280 @@ const faculty = [
       },
     ],
   },
+  {
+    slug: "prof-shivani-goel",
+    seo: {
+      desc: "Dr. Shivani Goel specializes in Algebraic Graph Theory and Enumerative Combinatorics. Engaged in postdoctoral research at IISc Bangalore, Dr. Goel boasts a rich publication record and extensive experience in academia.",
+    },
+    name: "Dr. Shivani Goel",
+    img: "/shivani_ext.png",
+    title: "Assistant Professor, Deptartment of Mathematics",
+    desc: "",
+    interests:
+      "Dr. Shivani Goel's research interests lie in the field of Algebraic Graph Theory and Enumerative Combinatorics.",
+    contact: {
+      email: "shivani.goel.maths@gmail.com",
+      website: "",
+    },
+    awards: [
+      {
+        title: "SERB-National Post Doctoral Fellowship (N-PDF)",
+        from: "2022",
+      },
+      {
+        title: "IOE-Postdoctoral fellowship",
+        from: "IISc, Bangalore, 2021",
+      },
+      {
+        title: "Pre-doctoral fellowship",
+        from: "Department of Mathematics, I.I.T Madras, Jan-Mar 2021",
+      },
+      {
+        title: "Best Thesis Award 2021",
+        from: "Department of Mathematics, I.I.T Madras",
+      },
+      {
+        title: "Institute research award",
+        from: "I.I.T Madras, 2020",
+      },
+      {
+        title: "UGC JRF NET",
+        from: "June 2016",
+      },
+      {
+        title: "Prize for the highest marks, M.Sc (2nd year) Mathematics",
+        from: "",
+      },
+      {
+        title: "Most deserving student, M.Sc. (1st year) Mathematics",
+        from: "",
+      },
+      {
+        title: "Prize for the highest marks, BSc(H) Mathematics (3rd year)",
+        from: "",
+      },
+      {
+        title: "Prize for the highest marks, BSc(H) Mathematics (2nd year)",
+        from: "",
+      },
+    ],
+
+    qualification: [
+      {
+        title: "Ph.D.",
+        year: "2020",
+        course: "Mathematics",
+        place: "I.I.T Madras, Chennai, India",
+      },
+      {
+        title: "M.Phil",
+        year: "2016",
+        course: "Mathematics",
+        place: "University of Delhi, India",
+      },
+      {
+        title: "M.Phil",
+        year: "2016",
+        course: "Mathematics",
+        place: "University of Delhi, India",
+      },
+      {
+        title: "M.Sc (Mathematics)",
+        year: "2013",
+        course: "",
+        place: "Indraprastha College for Women, University of Delhi, India",
+      },
+      {
+        title: "B.Sc(H) Mathematics",
+        year: "2010",
+        course: "",
+        place: "Indraprastha College for Women, University of Delhi, India",
+      },
+    ],
+    papers: [
+      {
+        title: "On resistance matrices of weighted balanced digraphs",
+        authors: ["R. Balaji", "R. B. Bapat", "Shivani Goel"],
+        publisher: "Linear and Multilinear Algebra",
+        year: "2022",
+      },
+      {
+        title: "Steiner distance matrix of caterpillar graphs",
+        authors: ["Ali Azimi", "Ravindra B. Bapat", "Shivani Goel"],
+        publisher: "Special Matrices",
+        year: "2022",
+      },
+      {
+        title:
+          "On distance matrices of wheel graphs with odd number of vertices",
+        authors: ["R. Balaji", "R. B. Bapat", "Shivani Goel"],
+        publisher: "Linear and Multilinear Algebra",
+        year: "2022",
+      },
+      {
+        title: "Resistance matrices of balanced directed graphs",
+        authors: ["R. Balaji", "R. B. Bapat", "Shivani Goel"],
+        publisher: "Linear and Multilinear Algebra",
+        year: "2022",
+      },
+      {
+        title: "Generalized Euclidean distance matrices",
+        authors: ["R. Balaji", "R. B. Bapat", "Shivani Goel"],
+        publisher: "Linear and Multilinear Algebra",
+        year: "2022",
+      },
+      {
+        title:
+          "On distance matrices of helm graphs obtained from wheel graphs with an even number of vertices",
+        authors: ["Shivani Goel"],
+        publisher: "Linear Algebra and its Applications",
+        year: "2021",
+      },
+      {
+        title:
+          "An inverse formula for the distance matrix of a wheel graph with even number of vertices",
+        authors: ["R. Balaji", "R. B. Bapat", "Shivani Goel"],
+        publisher: "Linear Algebra and its Applications",
+        year: "2021",
+      },
+      {
+        title: "Distance matrices perturbed by a Laplacian",
+        authors: ["R. Balaji", "R. B. Bapat", "Shivani Goel"],
+        publisher: "Application of Mathematics",
+        year: "2020",
+      },
+      {
+        title: "Resistance distance in directed cactus graphs",
+        authors: ["R. Balaji", "R. B. Bapat", "Shivani Goel"],
+        publisher: "The Electronic Journal of Linear Algebra",
+        year: "2020",
+      },
+      {
+        title: "Distance matrix of enhanced power graphs of finite groups",
+        authors: ["Anita Arora", "Hiranya Kishore Dey", "Shivani Goel"],
+        publisher: "arXiv",
+        year: "2023",
+      },
+    ],
+  },
+  {
+    slug: "ritika-jain",
+    seo: {
+      desc: "Ritika Jain, a PhD candidate in Electrical Engineering at IISc Bangalore, specializes in Signal Processing, Electrical Engineering, and AI applications in systems biology. Her work includes extensive research and publications in international conferences and journals.",
+    },
+    name: "Dr. Ritika Jain",
+    img: "/ritika.png",
+    title:
+      "Assistant Professor, Dept of Electrical Engineering",
+    desc: "",
+    interests:
+      "Dr. Ritika Jain's academic and research interests include Signal Processing, Electrical Engineering, and applications of AI in systems biology. She is adept at using various coding languages and tools and has a keen interest in exploring the interface of technology and biology, particularly in the context of healthcare and rehabilitation.",
+    contact: {
+      email: "ritika2908jain@gmail.com",
+      website: "https://sites.google.com/view/hritika/about-me",
+    },
+    awards: [
+      {
+        title: "All-India Rank of 576 in GATE 2015",
+        from: "Electronics and Communication Engineering",
+      },
+      {
+        title: "Ranked 5th in university merit list in Bachelor of Engineering",
+        from: "Chhattisgarh Swami Vivekananda Technical University Durg",
+      },
+    ],
+    qualification: [
+      {
+        title: "PhD",
+        year: "2023",
+        course: "Electrical Engineering",
+        place: "Indian Institute of Science, Bangalore",
+      },
+      {
+        title: "MTech",
+        year: "2016",
+        course: "Signal Processing",
+        place: "Indian Institute of Technology Gandhinagar",
+      },
+      {
+        title: "BE",
+        year: "2014",
+        course: "Electronics and Telecommunication Engineering",
+        place: "Bhilai Institute of Technology",
+      },
+    ],
+    papers: [
+      {
+        title:
+          "Poincaré plot analysis for sleep-wake classification of unseen patients using a single EEG channel",
+        authors: ["Ritika Jain", "A G Ramakrishnan"],
+        publisher: "IEEE MeMeA 2022",
+        year: "2022",
+      },
+      {
+        title:
+          "Assessment of Submentalis muscle activity for sleep-wake classification of healthy individuals and patients with sleep disorders",
+        authors: ["Ritika Jain", "A G Ramakrishnan"],
+        publisher: "IEEE EMBC 2022",
+        year: "2022",
+      },
+      {
+        title:
+          "Single EOG channel performs well in distinguishing sleep from wake state for both healthy individuals and patients",
+        authors: ["Ritika Jain", "A G Ramakrishnan"],
+        publisher: "IEEE EMBC 2022",
+        year: "2022",
+      },
+      {
+        title:
+          "Classifying sleep-wake states of patients by training on single EEG or EOG channel data from normal subjects",
+        authors: ["Ritika Jain", "A G Ramakrishnan"],
+        publisher: "IEEE TENSYMP 2022",
+        year: "2022",
+      },
+      {
+        title:
+          "An efficient sleep scoring method using visibility graph and temporal features of single-channel EEG",
+        authors: ["Ritika Jain", "A G Ramakrishnan"],
+        publisher: "IEEE EMBC 2021",
+        year: "2021",
+      },
+      {
+        title:
+          "Sleep-Awake Classification Using EEG Band-Power-Ratios and Complexity Measures",
+        authors: ["Ritika Jain", "A G Ramakrishnan"],
+        publisher: "IEEE INDICON 2020",
+        year: "2020",
+      },
+      {
+        title:
+          "Binary State Prediction of Sleep or Wakefulness Using EEG and EOG Features",
+        authors: ["Ritika Jain", "A G Ramakrishnan"],
+        publisher: "IEEE INDICON 2020",
+        year: "2020",
+      },
+      {
+        title:
+          "Understanding implication of VR-assisted treadmill walk on gait-related indices",
+        authors: ["Dhaval Solanki", "Ritika Jain", "Uttama Lahiri"],
+        publisher: "IEEE ICCCNT 2017",
+        year: "2017",
+      },
+      {
+        title: "Eye movement as a predictor of cognitive ability",
+        authors: ["Valay Patel", "Ritika Jain", "Uttama Lahiri"],
+        publisher: "IEEE ICCCNT 2017",
+        year: "2017",
+      },
+      {
+        title:
+          "A step towards affordable gaze-sensitive communication platform for disabled: Proof-of-concept study",
+        authors: ["Ritika Jain", "Uttama Lahiri"],
+        publisher: "WCITCA 2016",
+        year: "2016",
+      },
+    ],
+  },
 ];
 
 export default faculty;
