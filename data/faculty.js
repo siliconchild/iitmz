@@ -1203,6 +1203,18 @@ const faculty = [
 
     qualification: [
       {
+        title: "NPDF-National Postdoctoral Research Fellow",
+        year: "2023",
+        course: "",
+        place: "IISc Bangalore, India",
+      },
+      {
+        title: "IOE-Postdoctoral Research Fellow",
+        year: "2022",
+        course: "",
+        place: "IISc Bangalore, India",
+      },
+      {
         title: "Ph.D.",
         year: "2020",
         course: "Mathematics",
@@ -1292,6 +1304,35 @@ const faculty = [
         year: "2023",
       },
     ],
+    contributions: [
+      {
+        title: "Referee for Linear Algebra and its Applications",
+      },
+      {
+        title: "Referee for Linear and Multilinear Algebra",
+      },
+      {
+        title: "Referee for Indian Journal of Pure and Applied Mathematics",
+      },
+      {
+        title: "Referee for Advances in Applied Mathematics",
+      },
+      {
+        title: "Referee for Computational and Applied Mathematics",
+      },
+      {
+        title: "Referee for IEEE Transactions on Information Theory",
+      },
+      {
+        title: "Reviewer for AMS MathSciNet Mathematical Reviews",
+      },
+      {
+        title: "Referee for Involve, a Journal of Mathematics",
+      },
+      {
+        title: "Reviewer for Zentralblatt MATH",
+      },
+    ],
   },
   {
     slug: "prof-ritika-jain",
@@ -1300,8 +1341,7 @@ const faculty = [
     },
     name: "Dr. Ritika Jain",
     img: "/ritika.png",
-    title:
-      "Assistant Professor, Dept of Electrical Engineering",
+    title: "Assistant Professor, Dept of Electrical Engineering",
     desc: "",
     interests:
       "Dr. Ritika Jain's academic and research interests include Signal Processing, Electrical Engineering, and applications of AI in systems biology. She is adept at using various coding languages and tools and has a keen interest in exploring the interface of technology and biology, particularly in the context of healthcare and rehabilitation.",
