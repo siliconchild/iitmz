@@ -1215,12 +1215,6 @@ const faculty = [
         place: "University of Delhi, India",
       },
       {
-        title: "M.Phil",
-        year: "2016",
-        course: "Mathematics",
-        place: "University of Delhi, India",
-      },
-      {
         title: "M.Sc (Mathematics)",
         year: "2013",
         course: "",
@@ -1300,7 +1294,7 @@ const faculty = [
     ],
   },
   {
-    slug: "ritika-jain",
+    slug: "prof-ritika-jain",
     seo: {
       desc: "Ritika Jain, a PhD candidate in Electrical Engineering at IISc Bangalore, specializes in Signal Processing, Electrical Engineering, and AI applications in systems biology. Her work includes extensive research and publications in international conferences and journals.",
     },
