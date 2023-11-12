@@ -1344,9 +1344,9 @@ const faculty = [
     title: "Assistant Professor, Dept of Electrical Engineering",
     desc: "",
     interests:
-      "Dr. Ritika Jain's academic and research interests include Signal Processing, Electrical Engineering, and applications of AI in systems biology. She is adept at using various coding languages and tools and has a keen interest in exploring the interface of technology and biology, particularly in the context of healthcare and rehabilitation.",
+      "My research interests are in the field of biomedical signal processing, applied neuroscience, machine learning and applications of AI in healthcare and rehabilitation. I have a keen interest in brain computer interface, sleep, epilepsy and diagnosis of neurological disorders.",
     contact: {
-      email: "ritika2908jain@gmail.com",
+      email: "ritika@iitmz.ac.in",
       website: "https://sites.google.com/view/hritika/about-me",
     },
     awards: [
@@ -1448,6 +1448,42 @@ const faculty = [
         authors: ["Ritika Jain", "Uttama Lahiri"],
         publisher: "WCITCA 2016",
         year: "2016",
+      },
+      {
+        title:
+          "Electrophysiological and neuroimaging studies during resting state and sensory stimulation in disorders of consciousness: a review",
+        authors: ["Ritika Jain", "A G Ramakrishnan"],
+        publisher: "Frontiers in Neuroscience",
+        year: "2020",
+      },
+      {
+        title:
+          "Reliable sleep staging of unseen subjects with fusion of multiple EEG features and RUSBoost",
+        authors: ["Ritika Jain", "A G Ramakrishnan"],
+        publisher: "Biomedical Signal Processing and Control",
+        year: "2021",
+      },
+    ],
+    contributions: [
+      {
+        title:
+          "Member, IEEE student and IEEE Engineering in Medicine and Biology Society.",
+      },
+      {
+        title:
+          "Volunteered to organize the International Conference on Signal Processing and Communications (SPCOM 2018) held at IISC Bangalore.",
+      },
+      {
+        title:
+          "Presented research talk in EECS summer school held at EE department, IISC Bangalore",
+      },
+      {
+        title:
+          "Participated in research week with Google, held by Google Research India, Bangalore",
+      },
+      {
+        title:
+          "Reviewer in journals including Elsevier Biomedical Signal Processing, IEEE Journal of Biomedical and Health Informatics, Frontiers in Neuroscience, and PloS one.",
       },
     ],
   },
