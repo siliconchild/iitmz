@@ -6,7 +6,8 @@ const faculty = [
     },
     name: "Prof. Ramkrishna Pasumarthy",
     img: "/ramkrishna.png",
-    title: "Program Chair, BS DS & AI",
+    title: "Program Chair - BS in DS & AI",
+    titlesec: "Faculty - School of Engg. & Science",
     desc: "",
     contact: {
       email: "ramkrishna@ee.iitm.ac.in",
@@ -125,7 +126,8 @@ const faculty = [
     },
     name: "Dr. Nirav Bhatt",
     img: "/nirav-1.jpg",
-    title: "Program Chair, MTech DS & AI",
+    title: "Program Chair - MTech in DS & AI",
+    titlesec: "Faculty - School of Engg. & Science",
     desc: "",
     interests:
       "In my research, I explore biological and disease networks using multi-sensor and multi-scale data. I focus on modeling, control, optimization, and integration of (Bio-)process Manufacturing to enhance efficiency. I also investigate bioprocess control and process analytical technology for quality assurance. Additionally, I study complex man-made networks through data-driven learning and control approaches. My goal is to advance understanding and management of these networks.",
@@ -277,8 +279,8 @@ const faculty = [
     },
     name: "Prof. Raghunathan Rengaswamy",
     img: "/prof-raghu.jpg",
-    title:
-      "Marti Mannariah Gurunath Chair Department of Chemical Engineering, IIT Madras",
+    title: "Prof. Raghunathan Rengaswamy",
+    titlesec: "Faculty - School of Engg. & Science",
     desc: "",
     interests:
       "My research areas are Reinforcement Learning, Big Data Process Analytics, Machine Learning & Big Data.",
@@ -439,8 +441,8 @@ const faculty = [
     },
     name: "Prof. Preeti Aghalayam",
     img: "/preeti-a.jpg",
-    title: "Dean",
-    titlesec: "Director-in-charge",
+    title: "Dean - School of Engg. &",
+    titlesec: "Science Director-in-Charge",
     desc: "",
     interests:
       "My interest areas include Underground Coal Gasification, Reduction of Automotive NOx, Reduction of Large Reaction Mechanisms and Reactor Modeling",
@@ -572,7 +574,7 @@ const faculty = [
     },
     name: "Prof. Suresh Govindarajan",
     img: "/suresh.png",
-    title: "Professor, Dept of Physics",
+    title: "Faculty - School of Engg. & Science",
     desc: "",
     interests:
       "My interest areas include Theoretical High Energy Physics – Quantum Field Theory and String Theory; Statistical Physics; Combinatorics and Number Theory and their applications in Physics; Mathematical Physics.",
@@ -734,7 +736,7 @@ const faculty = [
     },
     name: "Prof. Narayanan N",
     img: "/narayanan.png",
-    title: "Professor, Dept of Mathematics",
+    title: "Faculty - School of Engg. & Science",
     desc: "",
     interests:
       "My interest areas include Structural Graph Theory: Colouring, Decomposition. Algebraic Combinatorics: Graph Ideals and Comb. Algebra.",
@@ -861,7 +863,7 @@ const faculty = [
     },
     name: "Prof. Umasankar Patra",
     img: "/umasankar-alt.jpeg",
-    title: "Professor, Dept of Humanities And Social Sciences",
+    title: "Faculty - School of Engg. & Science",
     desc: "",
     interests:
       "My research interests are Anglo-American Modernism, Life Writing, Queer Studies, Modernity in India, and Translation.",
@@ -1042,7 +1044,7 @@ const faculty = [
     },
     name: "Dr. Manoj Kumar",
     img: "/k-manoj.jpeg",
-    title: "Assistant Professor, Department of Mathematics",
+    title: "Faculty - School of Engg. & Science",
     desc: "",
     interests:
       "My Research interests lie in the field of age and size-structured population models, with a specific focus on their applications in epidemiology and criminology. My primary research interests revolve around investigating the influence of structural variables on diverse ecological populations and the dynamics of infectious diseases. To study these models, we employ a multidisciplinary approach that encompasses deterministic and stochastic Partial Differential Equations (PDEs), Bayesian statistics, and control theory.",
@@ -1150,7 +1152,7 @@ const faculty = [
     },
     name: "Dr. Shivani Goel",
     img: "/shivani_ext.png",
-    title: "Assistant Professor, Deptartment of Mathematics",
+    title: "Faculty - School of Engg. & Science",
     desc: "",
     interests:
       "Dr. Shivani Goel's research interests lie in the field of Algebraic Graph Theory and Enumerative Combinatorics.",
@@ -1341,7 +1343,7 @@ const faculty = [
     },
     name: "Dr. Ritika Jain",
     img: "/ritika.png",
-    title: "Assistant Professor, Dept of Electrical Engineering",
+    title: "Faculty - School of Engg. & Science",
     desc: "",
     interests:
       "My research interests are in the field of biomedical signal processing, applied neuroscience, machine learning and applications of AI in healthcare and rehabilitation. I have a keen interest in brain computer interface, sleep, epilepsy and diagnosis of neurological disorders.",
