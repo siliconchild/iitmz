@@ -279,8 +279,7 @@ const faculty = [
     },
     name: "Prof. Raghunathan Rengaswamy",
     img: "/prof-raghu.jpg",
-    title: "Prof. Raghunathan Rengaswamy",
-    titlesec: "Faculty - School of Engg. & Science",
+    title: "Faculty - School of Engg. & Science",
     desc: "",
     interests:
       "My research areas are Reinforcement Learning, Big Data Process Analytics, Machine Learning & Big Data.",
@@ -861,7 +860,7 @@ const faculty = [
     seo: {
       desc: "Prof. Umasankar Patra Works in The Department of Humanities And Social Sciences at IIT Madras Zanzibar. Learn More.",
     },
-    name: "Prof. Umasankar Patra",
+    name: "Dr. Umasankar Patra",
     img: "/umasankar-alt.jpeg",
     title: "Faculty - School of Engg. & Science",
     desc: "",
