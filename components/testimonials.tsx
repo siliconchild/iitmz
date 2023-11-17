@@ -2,7 +2,6 @@ import styles from "./testimonials.module.scss";
 import { AiTwotoneStar } from "react-icons/ai";
 import Img from "./image";
 import Slider, { SliderProps } from "./slider";
-import GoogleForm from "./google-form";
 
 type TestimonialsProps = Omit<SliderProps, "children"> & {
   type: "PRIMARY" | "SECONDARY";
@@ -11,10 +10,6 @@ type TestimonialsProps = Omit<SliderProps, "children"> & {
 export default function Testimonials({ ...props }: TestimonialsProps) {
   return (
     <section className={props.type === "PRIMARY" ? `` : styles.secondary}>
-      <GoogleForm
-        id="1FAIpQLScEjJBhTLHZCDUQzyF6bJQPr6cNxswlzuXorbXHMcih2kFLeQ"
-        pathname="/testimonials"
-      />
       <Slider {...props}>
         <div className={styles.item}>
           <div className={styles.quote}>

@@ -1,6 +1,8 @@
 import Testimonials from "@/components/testimonials";
 import styles from "./page.module.scss";
 import "blaze-slider/dist/blaze.css";
+import Form from "@/components/form";
+import { testimonialForm, testimonialFormMeta } from "@/data/forms";
 
 export const metadata = {
   title: "Testimonials",
@@ -15,6 +17,7 @@ export default function TestimonialsPage() {
   return (
     <div className={styles.page}>
       <div className="container">
+        <Form formFields={testimonialForm} formMetaData={testimonialFormMeta} />
         <h1 className="section-title center line">
           What students <br /> Think about IIT Madras
         </h1>
