@@ -131,7 +131,10 @@ export async function POST(req: NextRequest) {
       });
     });
 
-    await Promise.all(fileUploadPromises);
+    if (files.length !== 0){
+        await Promise.all(fileUploadPromises);
+    }
+
 
 
     const formWithTimeStampAndUUID = {
