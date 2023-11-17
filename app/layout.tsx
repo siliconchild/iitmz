@@ -1,4 +1,5 @@
 import "@/styles/globals.css";
+import { Viewport } from "next";
 import { Suspense } from "react";
 import { Lato, Raleway } from "next/font/google";
 import Header from "@/components/header";
@@ -15,6 +16,10 @@ const raleway = Raleway({
   subsets: ["latin"],
 });
 
+export const viewport: Viewport = {
+  themeColor: "#996c254d",
+};
+
 export const metadata = {
   metadataBase: new URL("https://zanzibar.iitm.ac.in"),
   title: {
@@ -24,7 +29,6 @@ export const metadata = {
   description:
     "Discover the Latest from IIT Madras Zanzibar Campus. Exciting Programs and Global Opportunities Await. Learn More!",
   applicationName: "IITM Zanzibar",
-  themeColor: "#d50032",
 };
 
 export default function RootLayout({
