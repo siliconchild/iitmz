@@ -109,7 +109,7 @@ export async function GET(req: NextRequest) {
 export async function POST(req: NextRequest) {
   try {
     const jwt = createJWT();
-    jwt.authorize();
+    await jwt.authorize();
 
     const formData = await req.formData();
     const formString = formData.get("form");
