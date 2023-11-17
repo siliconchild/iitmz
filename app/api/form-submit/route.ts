@@ -9,14 +9,24 @@ const DRIVE_PARENT_FOLDER = "1dKTu4UD3DPGDq8D7tHHCWE0xzUo5hJZK";
 const DOC_ID = "1qg1GYTWM5N6skw3H_Ulow_0EyZolRMBmKnh-aZDrnOo";
 
 const createJWT = (): JWT => {
-  return new JWT({
-    email: process.env.GOOGLE_SHEETS_SERVICE_ACCOUNT_EMAIL,
-    key: process.env.GOOGLE_SHEETS_SERVICE_ACCOUNT_KEY,
-    scopes: [
-      "https://www.googleapis.com/auth/spreadsheets",
-      "https://www.googleapis.com/auth/drive",
-    ],
-  });
+  const {
+    GOOGLE_SHEETS_SERVICE_ACCOUNT_EMAIL,
+    GOOGLE_SHEETS_SERVICE_ACCOUNT_KEY,
+  } = process.env;
+  if (
+    !GOOGLE_SHEETS_SERVICE_ACCOUNT_EMAIL ||
+    !GOOGLE_SHEETS_SERVICE_ACCOUNT_KEY
+  ) {
+    throw Error("Envioronment Variables not set");
+  }
+    return new JWT({
+      email: GOOGLE_SHEETS_SERVICE_ACCOUNT_EMAIL,
+      key: GOOGLE_SHEETS_SERVICE_ACCOUNT_KEY,
+      scopes: [
+        "https://www.googleapis.com/auth/spreadsheets",
+        "https://www.googleapis.com/auth/drive",
+      ],
+    });
 };
 
 const uploadFile = async (file: File, jwt: JWT, docName: string) => {
@@ -109,7 +119,7 @@ export async function GET(req: NextRequest) {
 export async function POST(req: NextRequest) {
   try {
     const jwt = createJWT();
-    jwt.authorize();
+    await jwt.authorize();
 
     const formData = await req.formData();
     const formString = formData.get("form");
