@@ -19,9 +19,13 @@ const createJWT = (): JWT => {
   ) {
     throw Error("Envioronment Variables not set");
   }
+  const decodedPrivateKey = Buffer.from(
+    GOOGLE_SHEETS_SERVICE_ACCOUNT_KEY,
+    "base64"
+  ).toString("utf-8");
     return new JWT({
       email: GOOGLE_SHEETS_SERVICE_ACCOUNT_EMAIL,
-      key: GOOGLE_SHEETS_SERVICE_ACCOUNT_KEY,
+      key: decodedPrivateKey,
       scopes: [
         "https://www.googleapis.com/auth/spreadsheets",
         "https://www.googleapis.com/auth/drive",
