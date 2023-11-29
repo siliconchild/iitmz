@@ -9,7 +9,7 @@ export default function Gallery() {
       <Slider slidesToShow={5}>
         <div className={styles.item}>
           <Img
-            src="/gal1.jpg"
+            src="/gallery-alt-1.jpeg"
             width={260}
             height={290}
             style={{ objectFit: "cover" }}
@@ -18,7 +18,7 @@ export default function Gallery() {
         </div>
         <div className={styles.item}>
           <Img
-            src="/gal2.jpg"
+            src="/gallery-alt-2.jpg"
             width={260}
             height={290}
             style={{ objectFit: "cover" }}
@@ -27,7 +27,7 @@ export default function Gallery() {
         </div>
         <div className={styles.item}>
           <Img
-            src="/gal3.jpg"
+            src="/gallery-alt-3.jpg"
             width={260}
             height={290}
             style={{ objectFit: "cover" }}
@@ -36,7 +36,7 @@ export default function Gallery() {
         </div>
         <div className={styles.item}>
           <Img
-            src="/gal4.jpg"
+            src="/gallery-alt-4.jpg"
             width={260}
             height={290}
             style={{ objectFit: "cover" }}
@@ -45,7 +45,7 @@ export default function Gallery() {
         </div>
         <div className={styles.item}>
           <Img
-            src="/gal5.jpg"
+            src="/gallery-alt-5.jpg"
             width={260}
             height={290}
             style={{ objectFit: "cover" }}
@@ -54,7 +54,7 @@ export default function Gallery() {
         </div>
         <div className={styles.item}>
           <Img
-            src="/gal6.jpg"
+            src="/gallery-alt-6.jpg"
             width={260}
             height={290}
             style={{ objectFit: "cover" }}
