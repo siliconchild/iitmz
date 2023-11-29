@@ -661,8 +661,8 @@ export default function Footer() {
                 </Link>
               </p>
               <p>
-                <Link href="mailto:iitm_zanzibar@ge.iitm.ac.in">
-                  <FaEnvelope /> iitm_zanzibar@ge.iitm.ac.in
+                <Link href="mailto:infodesk@iitmz.ac.in">
+                  <FaEnvelope />infodesk@iitmz.ac.in
                 </Link>
               </p>
 
@@ -682,7 +682,7 @@ export default function Footer() {
             &nbsp;
             {`${new Date().getFullYear()} IITM Zanzibar, All Rights Reserved `}
           </p>
-         <SocialMedia kind="MINIMAL" />
+          <SocialMedia kind="MINIMAL" />
         </div>
       </div>
     </div>
