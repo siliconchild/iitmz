@@ -37,7 +37,7 @@ export default function CareersPage() {
           </p>
         </div> */}
         <div className={styles.grid}>
-          <svg
+          {/* <svg
             xmlns="http://www.w3.org/2000/svg"
             xmlSpace="preserve"
             viewBox="0 0 750 500"
@@ -762,7 +762,7 @@ export default function CareersPage() {
                 <Button>Apply Now</Button>
               </Link>
             </div>
-          </div>
+          </div> */}
         </div>
         <div>
           <div className={styles.criteria}>
