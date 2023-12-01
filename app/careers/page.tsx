@@ -37,7 +37,7 @@ export default function CareersPage() {
           </p>
         </div> */}
         <div className={styles.grid}>
-          {/* <svg
+          <svg
             xmlns="http://www.w3.org/2000/svg"
             xmlSpace="preserve"
             viewBox="0 0 750 500"
@@ -735,34 +735,31 @@ export default function CareersPage() {
           </svg>
           <div className={styles.apply}>
             <h1>We Are Hiring</h1>
-            <p>Interested candidates can apply now</p>
+            <p>Interested candidates can apply now!</p>
             <div>
               <div className={styles.dates}>
                 <div className={styles.date}>
-                  <h4>Final Application</h4>
+                  <h4>Application Deadline</h4>
                   <div>
-                    <h2>25th</h2>
-                    <h3>July</h3>
+                    <h2>30th</h2>
+                    <h3>Dec</h3>
                     <h4>2023</h4>
                   </div>
                 </div>
-                <div className={styles.date}>
-                  <h4>Appointment By</h4>
+                {/* <div className={styles.date}>
+                  <h4>Appointment</h4>
                   <div>
-                    <h2>1st</h2>
-                    <h3>October</h3>
-                    <h4>2023</h4>
+                    <h2></h2>
+                    <h3>TBA</h3>
+                    <h4></h4>
                   </div>
-                </div>
+                </div> */}
               </div>
-              <Link
-                target="_blank"
-                href="https://docs.google.com/forms/d/1dyww6lIPrqOkk7kdNEHU2ENQi9iyHIxLC5xbcs5fBvU/edit?ts=64a41309"
-              >
+              <Link target="_blank" href="https://forms.gle/LUunzd98KCWqxwDo8">
                 <Button>Apply Now</Button>
               </Link>
             </div>
-          </div> */}
+          </div>
         </div>
         <div>
           <div className={styles.criteria}>
@@ -771,11 +768,9 @@ export default function CareersPage() {
               <p>
                 We are seeking candidates who possess a Ph.D. degree and hold
                 preceding degrees (bachelor&rsquo;s and/or master&rsquo;s) with
-                a first-class or equivalent qualification in areas such as
-                Physics, Mathematics, Computer Science, or any branch of
-                Engineering. In particular, we are interested in candidates with
-                research expertise in the fields of Data Sciences, Artificial
-                Intelligence.
+                a first-class or equivalent qualification in areas of basic
+                sciences and Engineering with significant contributions in the
+                fields of Data Sciences and Artificial Intelligence.
               </p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -5305,7 +5300,7 @@ export default function CareersPage() {
             <div>
               <div className={styles.job}>
                 <h3>
-                  Visiting Faculty{" "}
+                  Visiting Faculty
                   <span>
                     <AiOutlineCalendar />1 - 12 Months
                   </span>
@@ -5314,37 +5309,42 @@ export default function CareersPage() {
                   Visiting faculty applicants can include academicians with
                   significant teaching and research experience, senior industry
                   professionals who are enthusiastic about teaching, retired
-                  faculty members, or those currently on sabbatical leave.
-                  Selected candidates will receive a consolidated pay of US$
-                  2500 per month, along with basic health coverage and return
-                  airfare (economy class).
+                  faculty members, or those on sabbatical leave. Selected
+                  candidates will receive a consolidated pay of 2500 USD per
+                  month, along with basic health coverage and return airfare
+                  (economy class). Visiting faculty are expected to engage in
+                  high-quality undergraduate and postgraduate teaching, as well
+                  as to be involved in advising/mentoring students, while
+                  pursuing their academic interests at IIT Madras Zanzibar
+                  Campus.
                 </p>
               </div>
               <div className={styles.job}>
                 <h3>
-                  Early career Fellows{" "}
+                  Assistant Professor (on Contract)
                   <span>
                     <AiOutlineCalendar />3 - 5 Years
                   </span>
                 </h3>
                 <p>
-                  The early career fellowship provides a unique opportunity to
-                  actively contribute to institution-building and shape a
-                  long-term career in academia. Initially, the fellowship will
-                  be for three years, with the possibility of extension up to
-                  five years based on fellows&rsquo; performance. Fellows are
-                  expected to engage in high-quality undergraduate and
-                  postgraduate teaching, as well as institution-building
-                  activities, while pursuing their own research interests at IIT
-                  Madras Zanzibar Campus. Selected fellows will receive a
-                  consolidated salary of US$ 2,500 per month, along with basic
-                  health coverage. Additionally, they will receive a one-time
-                  relocation allowance and an attractive professional
-                  development allowance for travel to conferences, membership in
-                  professional societies, and support for other research
-                  activities. To foster overall growth, fellows will have the
-                  opportunity for short research sojourns of up to six months at
-                  an institute of their choice during their tenure.
+                  The Assistant Professor (on contract) provides a unique
+                  opportunity to actively contribute to institution-building and
+                  shape a long-term career in academia. Initially, the
+                  appointment will be for three years, possibly extending up to
+                  five years, based on the candidates&rsquo; performance.
+                  Successful candidates are expected to engage in high-quality
+                  undergraduate and postgraduate teaching, as well as to be
+                  involved in advising/mentoring students and
+                  institution-building activities, while pursuing their own
+                  research interests and help build a strong research and
+                  development ecosystem at IIT Madras Zanzibar Campus. They are
+                  also expected to be involved in community outreach and
+                  capacity-building activities. Selected candidates will receive
+                  a consolidated salary of 2,500 USD per month and basic health
+                  coverage. Additionally, they will receive an attractive
+                  professional development allowance for travel to conferences,
+                  membership in professional societies, and support for other
+                  research activities as per institute norms.
                 </p>
               </div>
             </div>
