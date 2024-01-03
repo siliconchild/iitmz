@@ -3,7 +3,7 @@ import { AiOutlineUnorderedList, AiOutlineCalendar } from "react-icons/ai";
 import Link from "next/link";
 import Button from "./button";
 import Img from "./image";
-import Image from "next/image";
+import courses from "@/data/courses";
 
 type CoursesProps = {
   layout?: "HORIZONTAL" | "VERTICAL";
@@ -57,7 +57,7 @@ export default function Courses({ layout = "HORIZONTAL" }: CoursesProps) {
                 </Link>
                 <Link
                   target="_blank"
-                  href="https://admissions.ge.iitm.ac.in/iitm-application-form-zanzibar"
+                  href={courses.bs.applicationLink}
                 >
                   <Button>Apply now</Button>
                 </Link>
@@ -103,7 +103,7 @@ export default function Courses({ layout = "HORIZONTAL" }: CoursesProps) {
                 </Link>
                 <Link
                   target="_blank"
-                  href="https://admissions.ge.iitm.ac.in/iitm-zanzibar-campus-application-form-m-tech"
+                  href={courses.mtech.applicationLink}
                 >
                   <Button> Apply now</Button>
                 </Link>
