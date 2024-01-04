@@ -655,14 +655,21 @@ export default function Footer() {
               </Link>
             </div>
             <div className={styles.contact}>
-              <p>
+              {/* <p>
                 <Link href="tel:+919043338564">
                   <BsFillTelephoneFill /> +919043338564
                 </Link>
-              </p>
+              </p> */}
               <p>
                 <Link href="mailto:infodesk@iitmz.ac.in">
-                  <FaEnvelope />infodesk@iitmz.ac.in
+                  <FaEnvelope />
+                  infodesk@iitmz.ac.in
+                </Link>
+              </p>
+              <p>
+                <Link href="mailto:mailto:admissions@iitmz.ac.in">
+                  <FaEnvelope />
+                  admissions@iitmz.ac.in
                 </Link>
               </p>
 
