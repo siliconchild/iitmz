@@ -7,13 +7,21 @@ export default function AdmissionWidget() {
       <button>Admissions 2024</button>
       <div className={styles.content}>
         <Link href="/admission">Apply Now</Link>
-        <Link target="_blank" href="/information_brochure_v2.pdf">
+        <Link target="_blank" href="/IITMZST_Information_Brochure_2024.pdf">
           Information Brochure
         </Link>
-        <Link target="_blank" href="/bs-sample-questions_v3.pdf">
+        <Link
+          className={styles.disabled}
+          target="_blank"
+          href="#"
+        >
           BS Sample Questions
         </Link>
-        <Link target="_blank" href="/mtech-sample-questions_v2.pdf">
+        <Link
+          className={styles.disabled}
+          target="_blank"
+          href="#"
+        >
           MTech Sample Questions
         </Link>
       </div>
