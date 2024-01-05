@@ -5,9 +5,15 @@
   position: relative;
   display: flex;
   align-items: center;
+  & > div {
+      flex: 0 0 46%;
+  }
   img {
-    margin-top: 2rem;
-    animation: mover 1s infinite alternate;
+    flex: 0 0 54%;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-top: -.5rem;
+    //animation: mover 1s infinite alternate;
     @-webkit-keyframes mover {
       0% {
         transform: translateY(0);

@@ -71,7 +71,13 @@ export default function AdmissionHeader() {
             </div>
           </Tabs>
         </div>
-        <Img src="/main2.png" width={480} height={460} alt="" loading="eager" />
+        <Img
+          src="/Campus20.JPG"
+          width={480}
+          height={460}
+          alt=""
+          loading="eager"
+        />
       </section>
     </div>
   );
