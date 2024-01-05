@@ -10,8 +10,8 @@ export default function Hero() {
           <Img
             width={1200}
             height={800}
-            alt="College Students Image"
-            src="/hero.jpg"
+            alt="IITM Zanzibar Campus Image"
+            src="/iitm_campus.jpg"
             loading="eager"
             sizes="(max-width: 768px) 900px, (min-width: 768px) 1200px"
           />
