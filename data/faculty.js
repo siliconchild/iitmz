@@ -10,7 +10,7 @@ const faculty = [
     titlesec: "Faculty - School of Engg. & Science",
     desc: "",
     contact: {
-      email: "ramkrishna@ee.iitm.ac.in",
+      email: "ramkrishna@iitmz.ac.in",
       website: "https://www.ee.iitm.ac.in/ramkrishna/",
     },
     awards: [
@@ -132,7 +132,7 @@ const faculty = [
     interests:
       "In my research, I explore biological and disease networks using multi-sensor and multi-scale data. I focus on modeling, control, optimization, and integration of (Bio-)process Manufacturing to enhance efficiency. I also investigate bioprocess control and process analytical technology for quality assurance. Additionally, I study complex man-made networks through data-driven learning and control approaches. My goal is to advance understanding and management of these networks.",
     contact: {
-      email: "niravbhatt@iitm.ac.in",
+      email: "niravbhatt@iitmz.ac.in",
       website: "https://biotech.iitm.ac.in/faculty/nirav-p-bhatt",
     },
     awards: [
@@ -284,7 +284,7 @@ const faculty = [
     interests:
       "My research areas are Reinforcement Learning, Big Data Process Analytics, Machine Learning & Big Data.",
     contact: {
-      email: "raghur@iitm.ac.in",
+      email: "raghur@iitmz.ac.in",
       website: "https://ibse.iitm.ac.in/people/raghunathan-rengaswamy/",
     },
     awards: [
@@ -446,7 +446,8 @@ const faculty = [
     interests:
       "My interest areas include Underground Coal Gasification, Reduction of Automotive NOx, Reduction of Large Reaction Mechanisms and Reactor Modeling",
     contact: {
-      email: "preeti@iitm.ac.in",
+      email: "director@iitmz.ac.in",
+      alternateEmail: "preeti@iitmz.ac.in",
       website: "https://che.iitm.ac.in/preeti/",
     },
     qualification: [
@@ -578,7 +579,7 @@ const faculty = [
     interests:
       "My interest areas include Theoretical High Energy Physics – Quantum Field Theory and String Theory; Statistical Physics; Combinatorics and Number Theory and their applications in Physics; Mathematical Physics.",
     contact: {
-      email: "suresh@physics.iitm.ac.in",
+      email: "suresh@iitmz.ac.in",
       website: "https://physics.iitm.ac.in/~suresh/",
     },
     qualification: [
@@ -740,7 +741,7 @@ const faculty = [
     interests:
       "My interest areas include Structural Graph Theory: Colouring, Decomposition. Algebraic Combinatorics: Graph Ideals and Comb. Algebra.",
     contact: {
-      email: "naru@iitm.ac.in",
+      email: "naru@iitmz.ac.in",
       website: "https://home.iitm.ac.in/naru/",
     },
     qualification: [
@@ -867,7 +868,7 @@ const faculty = [
     interests:
       "My research interests are Anglo-American Modernism, Life Writing, Queer Studies, Modernity in India, and Translation.",
     contact: {
-      email: "umasankar@iitm.ac.in",
+      email: "umasankarpatra@iitmz.ac.in",
       website: "https://hss.iitm.ac.in/team-members/umasankar/",
     },
     qualification: [
@@ -972,7 +973,7 @@ const faculty = [
     interests:
       "My Research interests lie in the fields of water treatment and rural water supply. I am particularly drawn to domestic and industrial wastewater treatment, with a strong focus on wastewater reuse and recycling. Additionally, I am fascinated by the concept of bioremediation, especially in regards to contaminated soils, air, and water containing heavy metals, pesticides, and other hazardous organic compounds. ",
     contact: {
-      email: "ligy@iitm.ac.in",
+      email: "ligy@iitmz.ac.in",
       website: "https://civil.iitm.ac.in/faculty/ligy/",
     },
     qualification: [

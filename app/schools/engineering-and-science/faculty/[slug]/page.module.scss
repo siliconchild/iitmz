@@ -48,6 +48,7 @@
     display: flex;
     align-items: center;
     line-height: 1.6;
+    margin-bottom: .25rem;
     svg {
       margin-right: 0.5rem;
       flex-shrink: 0;
@@ -55,9 +56,6 @@
   }
 }
 
-.website {
-  font-size: 1.2rem;
-}
 
 .qualification {
   margin: 2rem 0 0;

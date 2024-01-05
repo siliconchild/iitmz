@@ -65,11 +65,19 @@ export default function FacultyPage({ params }: { params: { slug: string } }) {
               {facultyMember.contact.email}
             </Link>
           </p>
+          {facultyMember.contact.alternateEmail && (
+            <p>
+              <AiOutlineMail />
+              <Link href={`mailto:${facultyMember.contact.alternateEmail}`}>
+                {facultyMember.contact.alternateEmail}
+              </Link>
+            </p>
+          )}
           {facultyMember.contact.website && (
             <p className={styles.website}>
               <BsGlobeCentralSouthAsia />
               <a target="_blank" href={facultyMember.contact.website}>
-                {facultyMember.contact.website}
+                website
               </a>
             </p>
           )}
