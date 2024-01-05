@@ -6,9 +6,12 @@ export default function Topbar() {
     <div className={styles.topbar}>
       <div className="container">
         {/* <a href="tel:+919043338564">(+91) 9043338564</a> */}
-        <a href="mailto:infodesk@iitmz.ac.in">infodesk@iitmz.ac.in</a>
-        <a href="mailto:admissions@iitmz.ac.in">admissions@iitmz.ac.in</a>
-        <span>Zanzibar, Tanzania</span>
+        <a href="mailto:infodesk@iitmz.ac.in">
+          <span>for general queries -</span>infodesk@iitmz.ac.in
+        </a>
+        <a href="mailto:admissions@iitmz.ac.in">
+          <span>for admissions -</span>admissions@iitmz.ac.in
+        </a>
         <SocialMedia kind="MINIMAL" />
       </div>
     </div>
