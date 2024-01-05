@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function AdmissionWidget() {
   return (
     <div className={styles.widget}>
-      <button>Admissions 2023</button>
+      <button>Admissions 2024</button>
       <div className={styles.content}>
         <Link href="/admission">Apply Now</Link>
         <Link target="_blank" href="/information_brochure_v2.pdf">
