@@ -857,6 +857,137 @@ const faculty = [
     ],
   },
   {
+    slug: "dr-tushar-shinde",
+    seo: {
+      desc: "Dr. Tushar Shinde is a Faculty of School of Engg. & Science at IIT Madras Zanzibar. Learn More.",
+    },
+    name: "Dr. Tushar Shinde",
+    img: "/tushar.JPG",
+    title: "Faculty - School of Engg. & Science",
+    desc: "",
+    contact: {
+      email: "shinde@iitmz.ac.in",
+      website: "https://sites.google.com/view/tushar-shinde/home",
+    },
+    awards: [
+      {
+        title:
+          "Winner (among 17 finalists across the globe) in the 3 Minute Thesis (3MT)",
+        from: "Competition at ICIP 2018, Athens, Greece",
+      },
+      {
+        title: "Selected in Sakura Science Exchange Program 2019",
+        from: "Administered by Japan Science and Technology Agency, Japan",
+      },
+      {
+        title:
+          "Represented India as a Youth Delegate at the 19th World Festival of Youth and Students 2017",
+        from: "Sochi, Russia",
+      },
+      {
+        title:
+          "Finalist (among 8 finalists across the globe) in the 3 Minute Thesis (3MT) Competition",
+        from: "ICIP 2019, Taipei, Taiwan",
+      },
+      {
+        title:
+          "Honored with Best Student (Student’s Gymkhana) Award 2018-19 for outstanding student activities",
+        from: "IIT Jodhpur",
+      },
+    ],
+    interests:
+      "My research interests are centered around Image and Video Processing, Video Coding and Compression, Artificial Intelligence (AI), Machine Learning (ML), Deep Learning (DL), and applications of AI/ML in Healthcare and Data Science.",
+
+    qualification: [
+      {
+        title: "Postdoc",
+        year: "2023",
+        course: "School of Medicine",
+        place: "Stanford University",
+      },
+      {
+        title: "Ph.D.",
+        year: "2020",
+        course: "Electrical Engineering",
+        place: "Indian Institute of Technology Jodhpur",
+      },
+      {
+        title: "M.Tech.",
+        year: "2015",
+        course: "Information & Communication Technology",
+        place: "Indian Institute of Technology Jodhpur",
+      },
+      {
+        title: "B.Tech.",
+        year: "2011",
+        course: "Electronics Engineering",
+        place: "W. C. E. Sangli",
+      },
+    ],
+papers: [
+  {
+    title: "Background foreground boundary aware efficient motion search for surveillance videos",
+    authors: ["Shinde, T.", "Tiwari, A.K.", "Lin, W.", "Shen, L."],
+    publisher: "Signal Processing: Image Communication, 82, p.115775",
+    year: "2020"
+  },
+  {
+    title: "Adaptive lossless compression of skeleton sequences",
+    authors: ["Lin, W.", "Shinde, T.", "Dai, W.", "Liu, M.", "He, X.", "Tiwari, A.K.", "Xiong, H."],
+    publisher: "Signal Processing: Image Communication, 80, p.115659",
+    year: "2020"
+  },
+  {
+    title: "Key-point sequence lossless compression for intelligent video analysis",
+    authors: ["Lin, W.", "He, X.", "Dai, W.", "See, J.", "Shinde, T.", "Xiong, H.", "Duan, L."],
+    publisher: "IEEE MultiMedia, 27(3), p.12-22",
+    year: "2020"
+  },
+  {
+    title: "Efficient direction-oriented search algorithm for block motion estimation",
+    authors: ["Shinde, T.", "Tiwari, A.K."],
+    publisher: "IET Image Processing, 12(9), p.1567-1576",
+    year: "2018"
+  },
+  {
+    title: "Dose Level Prediction Using Off-the-Shelf Segmentation Network—a Spine SBRT Example",
+    authors: ["Shinde, T.", "et al."],
+    publisher: "American Association of Physicists in Medicine (AAPM) 2023",
+    year: "2023"
+  },
+  {
+    title: "Adaptive Pixel-based Direction Oriented Fast Motion Estimation for Predictive Coding",
+    authors: ["Shinde, T."],
+    publisher: "IEEE Picture Coding Symposium (PCS) 2022",
+    year: "2022"
+  },
+  {
+    title: "Pruning SIFT & SURF for efficient clustering of near-duplicate images",
+    authors: ["Shinde, T.", "Tiwari, A.K."],
+    publisher: "IEEE International Conference on Acoustics, Speech, & Signal Processing (ICASSP) 2019",
+    year: "2019"
+  },
+  {
+    title: "Low-complexity Adaptive Switched Prediction-based Lossless Compression of Time-lapse Hyperspectral Image Data",
+    authors: ["Shinde, T.", "Tiwari, A.K.", "Lin, W."],
+    publisher: "IEEE Global Conference on Signal and Information Processing (GlobalSIP) 2019",
+    year: "2019"
+  },
+  {
+    title: "Efficient motion estimation and predictive coding methods for compression of Spatio-temporal sequences",
+    authors: ["Shinde, T."],
+    publisher: "IEEE Global Conference on Signal and Information Processing (GlobalSIP) 2019, Graduate Student Research Paper",
+    year: "2019"
+  },
+  {
+    title: "Efficient Image Set Compression",
+    authors: ["Shinde, T."],
+    publisher: "IEEE International Conference on Image Processing (ICIP) 2019, 3MT Competition",
+    year: "2019"
+  }
+  ],
+  },
+  {
     slug: "prof-umasankar-patra",
     seo: {
       desc: "Prof. Umasankar Patra Works in The Department of Humanities And Social Sciences at IIT Madras Zanzibar. Learn More.",
