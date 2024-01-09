@@ -24,7 +24,7 @@ export default function Eligilibity(props: EligibilityProps) {
         props.type === "SINGLE" && styles.single
       }`}
     >
-      <h2 className="section-title center line">Eligibility Criteria</h2>
+      <h2 className="section-title center">Eligibility Criteria</h2>
       <Tabs>
         <div className={styles.tabs}>
           <div className={styles.list}>
