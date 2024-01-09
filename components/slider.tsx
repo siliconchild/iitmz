@@ -8,6 +8,7 @@ export type SliderProps = {
   slidesToShowOnMobile?: number;
   slideGap?: string;
   enableAutoplay?: boolean;
+  autoplayInterval: number;
   loop?: boolean;
   showTracks?: boolean;
   children: ReactNode;
@@ -20,12 +21,14 @@ export default function Slider({
   slideGap = "0px",
   loop = true,
   enableAutoplay = true,
+  autoplayInterval = 4000,
   showTracks = false,
 }: SliderProps) {
   const ref = useBlazeSlider({
     all: {
       slidesToShow,
       enableAutoplay,
+      autoplayInterval,
       slideGap,
       loop,
     },
