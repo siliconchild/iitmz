@@ -1,6 +1,4 @@
 import styles from "./steps.module.scss";
-import Button from "./button";
-import Link from "next/link";
 import { IoIdCardOutline } from "react-icons/io5";
 import { SlGraduation } from "react-icons/sl";
 import { BsPatchCheck, BsPen } from "react-icons/bs";
