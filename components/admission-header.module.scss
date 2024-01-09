@@ -2,17 +2,18 @@
   max-width: 1120px;
   margin: 0 auto;
   padding: 5rem 0;
+  gap: 2rem;
   position: relative;
   display: flex;
   align-items: center;
   & > div {
-      flex: 0 0 46%;
+      flex: 0 0 50%;
   }
   img {
-    flex: 0 0 54%;
+    // flex: 0 0 54%;
     object-fit: cover;
     border-radius: 5px;
-    margin-top: -.5rem;
+    margin-top: 1rem;
     //animation: mover 1s infinite alternate;
     @-webkit-keyframes mover {
       0% {

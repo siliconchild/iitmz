@@ -3,6 +3,7 @@ import Img from "./image";
 import { Tabs, TabButton, TabPanel } from "./tabs";
 import ApplyDropdown from "./apply-dropdown";
 import Link from "next/link";
+import Slider from "./slider";
 
 export default function AdmissionHeader() {
   return (
@@ -71,13 +72,18 @@ export default function AdmissionHeader() {
             </div>
           </Tabs>
         </div>
-        <Img
-          src="/Campus20.JPG"
-          width={480}
-          height={460}
-          alt=""
-          loading="eager"
-        />
+        <Slider showTracks={true}>
+          {Array.from({ length: 7 }).map((_, index) => (
+            <Img
+              key={`admission-image-${index + 1}`}
+              src={`/admission-header-${index + 1}.jpg`}
+              width={480}
+              height={440}
+              alt={`Admission header image ${index + 1}`}
+              loading="eager"
+            />
+          ))}
+        </Slider>
       </section>
     </div>
   );
