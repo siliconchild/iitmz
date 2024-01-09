@@ -8,7 +8,7 @@ export type SliderProps = {
   slidesToShowOnMobile?: number;
   slideGap?: string;
   enableAutoplay?: boolean;
-  autoplayInterval: number;
+  autoplayInterval?: number;
   loop?: boolean;
   showTracks?: boolean;
   children: ReactNode;
