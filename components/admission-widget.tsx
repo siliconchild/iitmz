@@ -11,16 +11,14 @@ export default function AdmissionWidget() {
           Information Brochure
         </Link>
         <Link
-          className={styles.disabled}
           target="_blank"
-          href="#"
+          href="/IITMZST_BS_Sample_Questions.pdf"
         >
           BS Sample Questions
         </Link>
         <Link
-          className={styles.disabled}
           target="_blank"
-          href="#"
+          href="/IITMZST_MTech_Sample_Questions.pdf"
         >
           MTech Sample Questions
         </Link>

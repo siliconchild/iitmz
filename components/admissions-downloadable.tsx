@@ -12,16 +12,14 @@ export default function AdmissionsDownloadable() {
             <Button>Information Brochure</Button>
           </Link>
           <Link
-            className={styles.disabled}
             target="_blank"
-            href="/bs-sample-questions_v3.pdf"
+            href="/IITMZST_BS_Sample_Questions.pdf"
           >
             <Button>BS Sample Questions</Button>
           </Link>
           <Link
-            className={styles.disabled}
             target="_blank"
-            href="/mtech-sample-questions_v2.pdf"
+            href="/IITMZST_MTech_Sample_Questions.pdf"
           >
             <Button>MTech Sample Questions</Button>
           </Link>
