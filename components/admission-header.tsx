@@ -21,7 +21,9 @@ export default function AdmissionHeader() {
               industry collaborations, empowering you to excel in these rapidly
               growing fields.
             </p>
-            <ApplyDropdown />
+            <div className={styles.applyButton}>
+              <ApplyDropdown />
+            </div>
           </div>
           <Tabs>
             <div className={styles.tabs}>

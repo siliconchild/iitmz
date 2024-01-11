@@ -126,16 +126,27 @@
   .header {
     display: flex;
     flex-direction: column;
-    margin-top: 3rem;
+    margin-top: 1rem;
     h1 {
       font-size: 4rem;
       line-height: 5rem;
+      text-align: center;
     }
     p {
       width: 100%;
       padding-right: 0;
     }
+    button {
+       margin: 1rem auto 4rem;
+    }
   }
+
+    .applyButton {
+    & > div {
+      display: flex;
+    }
+  }
+
   .tabs {
     padding-right: 0;
     padding: 0 0.5rem;
