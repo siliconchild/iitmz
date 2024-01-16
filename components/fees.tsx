@@ -29,11 +29,12 @@ export default function Fees() {
           </div>
 
           <ul>
-            <div className={styles.fee}>
+            <h3>Will be informed asap</h3>
+            {/* <div className={styles.fee}>
               <h3>Total</h3>
               <h4>USD 4000 / p.a.</h4>
-            </div>
-            <li>
+            </div> */}
+            {/* <li>
               Hostel Admission Fee: <span>USD 100</span>
             </li>
             <li>
@@ -59,7 +60,7 @@ export default function Fees() {
               Qualifying students will be eligible for attractive scholarships
               which will include tuition breaks. * Tuition fee waiver up to 80%
               will be available for meritorious candidates
-            </p>
+            </p> */}
           </ul>
         </div>
       </div>
