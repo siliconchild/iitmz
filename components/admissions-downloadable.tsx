@@ -8,19 +8,16 @@ export default function AdmissionsDownloadable() {
       <div className="container">
         <p>Downloadable resources to help you prepare for Admissions 2023</p>
         <div className={styles.buttons}>
-          <Link target="_blank" href="IITMZST_Information_Brochure_2024.pdf">
+          <Link
+            target="_blank"
+            href="/IITMZST_Information_Brochure_2024_v1.1.pdf"
+          >
             <Button>Information Brochure</Button>
           </Link>
-          <Link
-            target="_blank"
-            href="/IITMZST_BS_Sample_Questions.pdf"
-          >
+          <Link target="_blank" href="/IITMZST_BS_Sample_Questions.pdf">
             <Button>BS Sample Questions</Button>
           </Link>
-          <Link
-            target="_blank"
-            href="/IITMZST_MTech_Sample_Questions.pdf"
-          >
+          <Link target="_blank" href="/IITMZST_MTech_Sample_Questions.pdf">
             <Button>MTech Sample Questions</Button>
           </Link>
         </div>
