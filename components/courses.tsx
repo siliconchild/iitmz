@@ -29,7 +29,7 @@ export default function Courses({ layout = "HORIZONTAL" }: CoursesProps) {
             />
 
             <div className={styles.content}>
-              <a href="course-details.html">
+              <a href="/schools/engineering-and-science/bs-data-science-and-ai">
                 <h3>BS in Data Science & AI</h3>
               </a>
               <p>
@@ -55,10 +55,7 @@ export default function Courses({ layout = "HORIZONTAL" }: CoursesProps) {
                 <Link href="/schools/engineering-and-science/bs-data-science-and-ai">
                   <Button kind="SECONDARY">More Details</Button>
                 </Link>
-                <Link
-                  target="_blank"
-                  href={courses.bs.applicationLink}
-                >
+                <Link target="_blank" href={courses.bs.applicationLink}>
                   <Button>Apply now</Button>
                 </Link>
               </div>
@@ -75,7 +72,7 @@ export default function Courses({ layout = "HORIZONTAL" }: CoursesProps) {
             />
 
             <div className={styles.content}>
-              <a href="course-details.html">
+              <a href="/schools/engineering-and-science/mtech-data-science-and-ai">
                 <h3>MTech in Data Science & AI</h3>
               </a>
 
@@ -101,10 +98,7 @@ export default function Courses({ layout = "HORIZONTAL" }: CoursesProps) {
                 <Link href="/schools/engineering-and-science/mtech-data-science-and-ai">
                   <Button kind="SECONDARY">More Details</Button>
                 </Link>
-                <Link
-                  target="_blank"
-                  href={courses.mtech.applicationLink}
-                >
+                <Link target="_blank" href={courses.mtech.applicationLink}>
                   <Button> Apply now</Button>
                 </Link>
               </div>
