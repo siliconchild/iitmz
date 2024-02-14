@@ -3,7 +3,6 @@ import Hero from "@/components/hero";
 import News from "@/components/news";
 import Courses from "@/components/courses";
 import Counter from "@/components/counter";
-import Events from "@/components/events";
 import Testimonials from "@/components/testimonials";
 import Gallery from "@/components/gallery";
 import AdvisoryCouncil from "@/components/advisory-council";
