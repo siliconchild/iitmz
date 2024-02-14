@@ -738,7 +738,7 @@ export default function CareersPage() {
             <p>Interested candidates can apply now!</p>
             <div>
               <div className={styles.dates}>
-                <div className={styles.date}>
+               {/* <div className={styles.date}>
                   <h4>Application Deadline</h4>
                   <div>
                     <h2>30th</h2>
@@ -746,7 +746,7 @@ export default function CareersPage() {
                     <h4>2023</h4>
                   </div>
                 </div>
-                {/* <div className={styles.date}>
+                <div className={styles.date}>
                   <h4>Appointment</h4>
                   <div>
                     <h2></h2>
