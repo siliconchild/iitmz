@@ -11,7 +11,7 @@ export default function EventsPage (){
           </div>
           <div className={styles.body}>
             {eventsList.map((event) => (
-              <EventCard {...event} />
+              <EventCard key={event.link} {...event} />
             ))}
           </div>
         </div>
