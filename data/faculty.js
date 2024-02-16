@@ -568,6 +568,21 @@ const faculty = [
     ],
   },
   {
+    slug: "dr-paresh-pattani",
+    seo: {
+      desc: "Dr Paresh Pattani is the vice president of IITM Zanzibar. Learn More.",
+    },
+    name: "Dr. Paresh Pattani",
+    img: "/paresh.JPG",
+    title: "Vice President, IITM Zanzibar",
+    desc: "",
+    contact: {
+      email: "paresh@iitmz.ac.in",
+    },
+    bio:
+      ["Dr. Paresh Pattani joined IITM Zanzibar as Vice President - Institutional Development, on Jan 4, 2024. Dr. Pattani is a senior leader with extensive experience in sales support and enabling the ecosystem for Enterprise IT, AI, Cloud, and HPC. Dr. Pattani is a winner of coveted awards and author of scholarly publications, leveraging excellent communication and decision-making skills to convey complex information to technical and non-technical audiences. He is passionate about aligning with non-profit organizations to promote art, culture, and the wellbeing of the local community. Dr. Pattani will be a great asset to the institution, with his experience, empathy and vision.", "Dr. Pattani says “I am super excited to join IITM in Zanzibar. It is the first IIT campus outside India and the team leading this effort is really awesome and works super fast. I am a graduate of IIT Bombay with a PhD from UBC Canada and an MBA from UT Austin. I have several years of management and strategy experience from NEC and Intel. I have a challenging role of Vice President - Institutional Development at IIT Madras in Zanzibar but my experience will help. To top it all I was born and brought up in Tanzania and can speak the basic level of Kiswahili, therefore this gives me an opportunity not only to give back to IIT but also to Tanzania"],
+  },
+  {
     slug: "prof-suresh-govindarajan",
     seo: {
       desc: "Prof. Suresh Govindarajan Works in The Department of Physics at IIT Madras Zanzibar. Learn More.",
@@ -924,68 +939,96 @@ const faculty = [
         place: "W. C. E. Sangli",
       },
     ],
-papers: [
-  {
-    title: "Background foreground boundary aware efficient motion search for surveillance videos",
-    authors: ["Shinde, T.", "Tiwari, A.K.", "Lin, W.", "Shen, L."],
-    publisher: "Signal Processing: Image Communication, 82, p.115775",
-    year: "2020"
-  },
-  {
-    title: "Adaptive lossless compression of skeleton sequences",
-    authors: ["Lin, W.", "Shinde, T.", "Dai, W.", "Liu, M.", "He, X.", "Tiwari, A.K.", "Xiong, H."],
-    publisher: "Signal Processing: Image Communication, 80, p.115659",
-    year: "2020"
-  },
-  {
-    title: "Key-point sequence lossless compression for intelligent video analysis",
-    authors: ["Lin, W.", "He, X.", "Dai, W.", "See, J.", "Shinde, T.", "Xiong, H.", "Duan, L."],
-    publisher: "IEEE MultiMedia, 27(3), p.12-22",
-    year: "2020"
-  },
-  {
-    title: "Efficient direction-oriented search algorithm for block motion estimation",
-    authors: ["Shinde, T.", "Tiwari, A.K."],
-    publisher: "IET Image Processing, 12(9), p.1567-1576",
-    year: "2018"
-  },
-  {
-    title: "Dose Level Prediction Using Off-the-Shelf Segmentation Network—a Spine SBRT Example",
-    authors: ["Shinde, T.", "et al."],
-    publisher: "American Association of Physicists in Medicine (AAPM) 2023",
-    year: "2023"
-  },
-  {
-    title: "Adaptive Pixel-based Direction Oriented Fast Motion Estimation for Predictive Coding",
-    authors: ["Shinde, T."],
-    publisher: "IEEE Picture Coding Symposium (PCS) 2022",
-    year: "2022"
-  },
-  {
-    title: "Pruning SIFT & SURF for efficient clustering of near-duplicate images",
-    authors: ["Shinde, T.", "Tiwari, A.K."],
-    publisher: "IEEE International Conference on Acoustics, Speech, & Signal Processing (ICASSP) 2019",
-    year: "2019"
-  },
-  {
-    title: "Low-complexity Adaptive Switched Prediction-based Lossless Compression of Time-lapse Hyperspectral Image Data",
-    authors: ["Shinde, T.", "Tiwari, A.K.", "Lin, W."],
-    publisher: "IEEE Global Conference on Signal and Information Processing (GlobalSIP) 2019",
-    year: "2019"
-  },
-  {
-    title: "Efficient motion estimation and predictive coding methods for compression of Spatio-temporal sequences",
-    authors: ["Shinde, T."],
-    publisher: "IEEE Global Conference on Signal and Information Processing (GlobalSIP) 2019, Graduate Student Research Paper",
-    year: "2019"
-  },
-  {
-    title: "Efficient Image Set Compression",
-    authors: ["Shinde, T."],
-    publisher: "IEEE International Conference on Image Processing (ICIP) 2019, 3MT Competition",
-    year: "2019"
-  }
-  ],
+    papers: [
+      {
+        title:
+          "Background foreground boundary aware efficient motion search for surveillance videos",
+        authors: ["Shinde, T.", "Tiwari, A.K.", "Lin, W.", "Shen, L."],
+        publisher: "Signal Processing: Image Communication, 82, p.115775",
+        year: "2020",
+      },
+      {
+        title: "Adaptive lossless compression of skeleton sequences",
+        authors: [
+          "Lin, W.",
+          "Shinde, T.",
+          "Dai, W.",
+          "Liu, M.",
+          "He, X.",
+          "Tiwari, A.K.",
+          "Xiong, H.",
+        ],
+        publisher: "Signal Processing: Image Communication, 80, p.115659",
+        year: "2020",
+      },
+      {
+        title:
+          "Key-point sequence lossless compression for intelligent video analysis",
+        authors: [
+          "Lin, W.",
+          "He, X.",
+          "Dai, W.",
+          "See, J.",
+          "Shinde, T.",
+          "Xiong, H.",
+          "Duan, L.",
+        ],
+        publisher: "IEEE MultiMedia, 27(3), p.12-22",
+        year: "2020",
+      },
+      {
+        title:
+          "Efficient direction-oriented search algorithm for block motion estimation",
+        authors: ["Shinde, T.", "Tiwari, A.K."],
+        publisher: "IET Image Processing, 12(9), p.1567-1576",
+        year: "2018",
+      },
+      {
+        title:
+          "Dose Level Prediction Using Off-the-Shelf Segmentation Network—a Spine SBRT Example",
+        authors: ["Shinde, T.", "et al."],
+        publisher: "American Association of Physicists in Medicine (AAPM) 2023",
+        year: "2023",
+      },
+      {
+        title:
+          "Adaptive Pixel-based Direction Oriented Fast Motion Estimation for Predictive Coding",
+        authors: ["Shinde, T."],
+        publisher: "IEEE Picture Coding Symposium (PCS) 2022",
+        year: "2022",
+      },
+      {
+        title:
+          "Pruning SIFT & SURF for efficient clustering of near-duplicate images",
+        authors: ["Shinde, T.", "Tiwari, A.K."],
+        publisher:
+          "IEEE International Conference on Acoustics, Speech, & Signal Processing (ICASSP) 2019",
+        year: "2019",
+      },
+      {
+        title:
+          "Low-complexity Adaptive Switched Prediction-based Lossless Compression of Time-lapse Hyperspectral Image Data",
+        authors: ["Shinde, T.", "Tiwari, A.K.", "Lin, W."],
+        publisher:
+          "IEEE Global Conference on Signal and Information Processing (GlobalSIP) 2019",
+        year: "2019",
+      },
+      {
+        title:
+          "Efficient motion estimation and predictive coding methods for compression of Spatio-temporal sequences",
+        authors: ["Shinde, T."],
+        publisher:
+          "IEEE Global Conference on Signal and Information Processing (GlobalSIP) 2019, Graduate Student Research Paper",
+        year: "2019",
+      },
+      {
+        title: "Efficient Image Set Compression",
+        authors: ["Shinde, T."],
+        publisher:
+          "IEEE International Conference on Image Processing (ICIP) 2019, 3MT Competition",
+        year: "2019",
+      },
+    ],
   },
   {
     slug: "prof-umasankar-patra",
