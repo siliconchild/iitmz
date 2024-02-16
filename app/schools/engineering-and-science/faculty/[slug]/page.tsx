@@ -122,8 +122,8 @@ export default function FacultyPage({ params }: { params: { slug: string } }) {
           {facultyMember.bio && (
             <div className={styles.interests}>
               <h2>Profile</h2>
-              {facultyMember.bio.map(p => (
-              <p>{p}</p>
+              {facultyMember.bio.map((p,index) => (
+              <p key={`profile-${index}`}>{p}</p>
               ))}
             </div>
           )}
