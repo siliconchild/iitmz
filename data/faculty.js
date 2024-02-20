@@ -439,7 +439,7 @@ const faculty = [
       desc: "Prof. Preeti Aghalayam is the Dean And Director in Charge at IIT Madras Zanzibar Campus. Learn More.",
     },
     name: "Prof. Preeti Aghalayam",
-    img: "/preeti-a.jpg",
+    img: "/preeti.jpg",
     title: "Dean - School of Engg. &",
     titlesec: "Science Director-in-Charge",
     desc: "",
@@ -582,7 +582,7 @@ const faculty = [
     },
     bio: [
       "Dr. Paresh Pattani joined IITM Zanzibar campus as Vice President - Institutional Development, on Jan 4, 2024. Dr. Pattani is a senior leader with extensive experience in sales support and enabling the ecosystem for Enterprise IT, AI, Cloud, and HPC. Dr. Pattani is a winner of coveted awards and author of scholarly publications, leveraging excellent communication and decision-making skills to convey complex information to technical and non-technical audiences. He is passionate about aligning with non-profit organizations to promote art, culture, and the wellbeing of the local community. Dr. Pattani will be a great asset to the institution, with his experience, empathy and vision.",
-      "Dr. Pattani says “I am super excited to join IITM in Zanzibar. It is the first IIT campus outside India and the team leading this effort is really awesome and works super fast. I am a graduate of IIT Bombay with a PhD from UBC Canada and an MBA from UT Austin. I have several years of management and strategy experience from NEC and Intel. I have a challenging role of Vice President - Institutional Development at IIT Madras in Zanzibar but my experience will help. To top it all I was born and brought up in Tanzania and can speak the basic level of Kiswahili, therefore this gives me an opportunity not only to give back to IIT but also to Tanzania",
+      "Dr. Pattani says “I am super excited to join IITM in Zanzibar. It is the first IIT campus outside India and the team leading this effort is really awesome and works super fast. I am a graduate of IIT Bombay with a PhD from UBC Canada and an MBA from UT Austin. I have several years of management and strategy experience from NEC and Intel. I have a challenging role of Vice President - Institutional Development at IIT Madras in Zanzibar but my experience will help. To top it all I was born and brought up in Tanzania and can speak the basic level of Kiswahili, therefore this gives me an opportunity not only to give back to IIT but also to Tanzania\".",
     ],
   },
   {
