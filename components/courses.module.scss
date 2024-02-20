@@ -1,6 +1,6 @@
 .section {
   z-index: 2;
-  padding: 5rem 0 7rem 0;
+  padding: 7rem 0 7rem 0;
   position: relative;
 }
 
@@ -155,6 +155,9 @@
 }
 
 @media (max-width: 480px) {
+  .section {
+    padding: 5rem 0 7rem 0;
+  } 
   .grid {
     flex-direction: column;
     gap: 3.5rem;
