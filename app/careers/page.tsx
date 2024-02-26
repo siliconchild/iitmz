@@ -735,10 +735,18 @@ export default function CareersPage() {
           </svg>
           <div className={styles.apply}>
             <h1>We Are Hiring</h1>
-            <p>Interested candidates can apply now!</p>
+            <p>
+              The IIT Madras Zanzibar Campus is inviting applications from
+              individuals with a proven track record of independent,
+              high-quality research and a dedication to both teaching and
+              research for faculty positions. This campus provides excellent
+              opportunities for academics in teaching and research. We welcome
+              applications year-round and will be recruiting Assistant
+              Professors through Rolling Advertisement.
+            </p>
             <div>
               <div className={styles.dates}>
-               {/* <div className={styles.date}>
+                {/* <div className={styles.date}>
                   <h4>Application Deadline</h4>
                   <div>
                     <h2>30th</h2>
@@ -769,8 +777,13 @@ export default function CareersPage() {
                 We are seeking candidates who possess a Ph.D. degree and hold
                 preceding degrees (bachelor&rsquo;s and/or master&rsquo;s) with
                 a first-class or equivalent qualification in areas of basic
-                sciences and Engineering with significant contributions in the
-                fields of Data Sciences and Artificial Intelligence.
+                sciences (including but not limited to Mathematics, Physics,
+                Chemistry, Chemical Engineering, Biotechnology, Humanities &
+                Social Sciences, Management Studies) and Engineering (including
+                but not limited to Computer Science & Engineering, Electrical
+                Engineering, Medical Sciences and Technology, Mechanical
+                Engineering) with significant contributions in the fields of
+                Data Sciences and Artificial Intelligence.
               </p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -5298,7 +5311,7 @@ export default function CareersPage() {
               </svg>
             </div>
             <div>
-              <div className={styles.job}>
+              {/* <div className={styles.job}>
                 <h3>
                   Visiting Faculty
                   <span>
@@ -5318,7 +5331,7 @@ export default function CareersPage() {
                   pursuing their academic interests at IIT Madras Zanzibar
                   Campus.
                 </p>
-              </div>
+              </div> */}
               <div className={styles.job}>
                 <h3>
                   Assistant Professor (on Contract)
@@ -5329,22 +5342,21 @@ export default function CareersPage() {
                 <p>
                   The Assistant Professor (on contract) provides a unique
                   opportunity to actively contribute to institution-building and
-                  shape a long-term career in academia. Initially, the
-                  appointment will be for three years, possibly extending up to
-                  five years, based on the candidates&rsquo; performance.
-                  Successful candidates are expected to engage in high-quality
-                  undergraduate and postgraduate teaching, as well as to be
-                  involved in advising/mentoring students and
-                  institution-building activities, while pursuing their own
-                  research interests and help build a strong research and
-                  development ecosystem at IIT Madras Zanzibar Campus. They are
-                  also expected to be involved in community outreach and
-                  capacity-building activities. Selected candidates will receive
-                  a consolidated salary of 2,500 USD per month and basic health
-                  coverage. Additionally, they will receive an attractive
-                  professional development allowance for travel to conferences,
-                  membership in professional societies, and support for other
-                  research activities as per institute norms.
+                  establish a long-term career in academia. Initially,
+                  appointments will be for three years, potentially extendable
+                  to five years based on performance. Successful candidates are
+                  expected to engage in high-quality undergraduate and
+                  postgraduate teaching, advising/mentoring students,
+                  participating in institution-building activities, and pursuing
+                  their own research interests to enhance the research and
+                  development ecosystem at IIT Madras Zanzibar Campus.
+                  Additionally, they are expected to engage in community
+                  outreach and capacity-building activities. Selected candidates
+                  will receive a consolidated salary of 2,500 USD per month
+                  along with basic health coverage. They will also receive a
+                  professional development allowance for conference travel,
+                  professional society memberships, and other research support
+                  as per institute norms.
                 </p>
               </div>
             </div>
