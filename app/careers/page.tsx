@@ -763,7 +763,7 @@ export default function CareersPage() {
                   </div>
                 </div> */}
               </div>
-              <Link target="_blank" href="https://forms.gle/LUunzd98KCWqxwDo8">
+              <Link target="_blank" href="https://forms.gle/WMME2SWExudbbqR8A">
                 <Button>Apply Now</Button>
               </Link>
             </div>
