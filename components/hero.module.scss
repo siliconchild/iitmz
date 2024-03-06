@@ -32,12 +32,13 @@
   flex-direction: column;
   align-items: center;
   z-index: 3;
+  transform: translateY(-3rem);
   h4 {
-    font-size: 1.8rem;
+    font-size: 2.25rem;
     font-weight: 700;
-    text-transform: uppercase;
+    //text-transform: uppercase;
     text-shadow: 1px 1px 1px #000;
-    color: #ffb013;
+    color: #fff;
     margin-bottom: 3rem;
   }
   h3,
@@ -68,10 +69,10 @@
   }
   .content {
     h4 {
-      font-size: 1.4rem;
+      font-size: 1.6rem;
     }
     h3 {
-      font-size: 1.8rem;
+      font-size: 2rem;
     }
     h1 {
       font-size: 3.5rem;

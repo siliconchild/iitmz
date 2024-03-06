@@ -1,6 +1,7 @@
 import styles from "./hero.module.scss";
 import Slider from "./slider";
 import Img from "./image";
+import ApplyDropdown from "./apply-dropdown";
 
 export default function Hero() {
 
@@ -23,7 +24,8 @@ export default function Hero() {
             <h1>
               IIT Madras <span>Zanzibar</span>
             </h1>
-            {/* <ApplyDropdown /> */}
+            <h4>Admissions for AY 2024-25 are Live</h4>
+            <ApplyDropdown />
           </div>
         </div>
         <div className={styles.item}>
@@ -42,7 +44,8 @@ export default function Hero() {
             <h1>
               IIT Madras <span>Zanzibar</span>
             </h1>
-            {/* <ApplyDropdown /> */}
+            <h4>Admissions for AY 2024-25 are Live</h4>
+            <ApplyDropdown />
           </div>
         </div>
       </Slider>
