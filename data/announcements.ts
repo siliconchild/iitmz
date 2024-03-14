@@ -13,7 +13,7 @@ const announcements: AnnouncementsArray = [
     title: "BS Application closing {{DAYS_LEFT,2024-04-15}}",
   },
   {
-    title: "MTech Application closing {{DAYS_LEFT,2024-03-15}}",
+    title: "MTech Application closing {{DAYS_LEFT,2024-03-18}}",
   },
 ];
 
