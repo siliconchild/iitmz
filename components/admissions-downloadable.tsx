@@ -1,6 +1,7 @@
 import styles from "./admissions-downloadable.module.scss";
 import Button from "./button";
 import Link from "next/link";
+import { MdOutlineFileDownload } from "react-icons/md";
 
 export default function AdmissionsDownloadable() {
   return (
@@ -12,13 +13,34 @@ export default function AdmissionsDownloadable() {
             target="_blank"
             href="/IITMZST_Information_Brochure_2024_v1.1.pdf"
           >
-            <Button>Information Brochure</Button>
+            <Button kind="SECONDARY_BLACK">
+              <MdOutlineFileDownload />
+              Information Brochure
+            </Button>
           </Link>
           <Link target="_blank" href="/IITMZST_BS_Sample_Questions.pdf">
-            <Button>BS Sample Questions</Button>
+            <Button kind="SECONDARY_BLACK">
+              <MdOutlineFileDownload />
+              BS Sample Questions
+            </Button>
           </Link>
           <Link target="_blank" href="/IITMZST_MTech_Sample_Questions.pdf">
-            <Button>MTech Sample Questions</Button>
+            <Button kind="SECONDARY_BLACK">
+              <MdOutlineFileDownload />
+              MTech Sample Questions
+            </Button>
+          </Link>
+          <Link target="_blank" href="/BS2023ScreeningTestQuestionPaper.pdf">
+            <Button kind="SECONDARY_BLACK">
+              <MdOutlineFileDownload />
+              BS Screeing Test Question Paper
+            </Button>
+          </Link>
+          <Link target="_blank" href="/MTech2023ScreeningTestQuestionPaper.pdf">
+            <Button kind="SECONDARY_BLACK">
+              <MdOutlineFileDownload />
+              MTech Screeing Test Question Paper
+            </Button>
           </Link>
         </div>
       </div>

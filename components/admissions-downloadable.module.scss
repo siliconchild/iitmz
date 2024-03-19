@@ -1,20 +1,29 @@
 .section {
-  background: #c32939;
-  padding: 2rem;
+  //background: #c32939;
+  padding: 6rem 0 3rem;
   & > div {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    gap: 3rem;
   }
   p {
-    color: #fff;
-    font-size: 1.6rem;
+   //color: #fff;
+    font-size: 2.1rem;
   }
 }
 
 .buttons {
   display: flex;
-  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  svg {
+    margin-right: .5rem;
+    height: 18px;
+    width: 18px;
+  }
 }
 
 .disabled button {
@@ -25,12 +34,12 @@
 
 @media (max-width: 768px) {
   .section {
-    padding: 3rem 1rem 4rem;
+    padding: 5rem 1rem 4rem;
     & > div {
       flex-direction: column;
     }
     p {
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       text-align: center;
       margin-bottom: 2.5rem;
     }
