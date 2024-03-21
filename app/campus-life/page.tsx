@@ -77,7 +77,7 @@ export default function CampusLife() {
           {Array.from({ length: 12 }, (_, index) => (
             <Img
               key={`image__${index}`}
-              src={`/campus-life-images/${index + 1}.jpg`}
+              src={`/campus-life-scroll-images/${index + 1}.jpg`}
               width={450}
               height={350}
               alt="Image of IITM Zanzibar Campus"
