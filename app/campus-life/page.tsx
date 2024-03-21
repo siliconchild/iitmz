@@ -2,6 +2,8 @@ import styles from "./page.module.scss";
 import Img from "@/components/image";
 import Link from "next/link";
 import Maps from "@/components/map";
+import Slider from "@/components/slider";
+import { FaMapMarkerAlt,FaPhone } from "react-icons/fa";
 
 export const metadata = {
   title: "Discover Our Campus",
@@ -39,29 +41,29 @@ export default function CampusLife() {
             </p>
           </div>
           <div className={styles.images}>
-            <Link target="_blank" href="/layout-ground-floor.webp">
+            <Link target="_blank" href="/cl_2.jpg">
               <Img
                 width={200}
                 height={180}
-                src="/layout-ground-floor.webp"
+                src="/cl_2.jpg"
                 alt=""
                 loading="eager"
               />
             </Link>
-            <Link target="_blank" href="/layout-gate.webp">
+            <Link target="_blank" href="/cl_3.jpg">
               <Img
                 width={200}
                 height={360}
-                src="/layout-gate.webp"
+                src="/cl_3.jpg"
                 alt=""
                 loading="eager"
               />
             </Link>
-            <Link target="_blank" href="/layout-furniture.webp">
+            <Link target="_blank" href="/cl_4.jpg">
               <Img
                 width={200}
                 height={180}
-                src="/layout-furniture.webp"
+                src="/cl_4.jpg"
                 alt=""
                 loading="eager"
               />
@@ -70,30 +72,59 @@ export default function CampusLife() {
         </div>
       </section>
       <div className={styles.gallery}>
-        <Img
-          src="/campus1.png"
-          width={400}
-          height={300}
-          alt="Image of IITM Zanzibar Campus"
-        />
-        <Img
-          src="/campus1.jpg"
-          width={400}
-          height={300}
-          alt="Image of IITM Zanzibar Campus"
-        />
-        <Img
-          src="/campus2.png"
-          width={400}
-          height={300}
-          alt="Image of IITM Zanzibar Campus"
-        />
+        <Slider slidesToShow={3}>
+          {Array.from({ length: 12 }, (_, index) => (
+            <Img
+              src={`/campus-life-scroll/${index + 1}.JPG`}
+              width={450}
+              height={350}
+              alt="Image of IITM Zanzibar Campus"
+            />
+          ))}
+        </Slider>
       </div>
       <div className="container">
         <div className={styles.map}>
-          <h3>Campus Location</h3>
-          <div className={styles.mapcontainer}>
-            <Maps />
+          <div className={styles.addresscontainer}>
+            <div className={styles.address}>
+              <h3>Campus Location</h3>
+              <div className={styles.addressfield}>
+                <div>
+                  <FaMapMarkerAlt />
+                  <h4>Address</h4>
+                </div>
+                <span>
+                  IIT Madras Zanzibar Campus
+                  <br /> PO Box 394, Bweleo,
+                  <br /> Urban West - 71215 <br />
+                  Zanzibar, Tanzania
+                </span>
+              </div>
+              <div className={styles.contactfield}>
+                <div>
+                  <FaPhone />
+                  <h4>General Query Email</h4>
+                </div>
+                <span>infodesk@iitmz.ac.in</span>
+              </div>
+              <div className={styles.contactfield}>
+                <div>
+                  <FaPhone />
+                  <h4>Admissions Email</h4>
+                </div>
+                <span>admissions@iitmz.ac.in</span>
+              </div>
+              {/* <div className={styles.contactfield}>
+                <h3>Phone</h3>
+                <div>
+                  <FaPhone />
+                  <span>+1 234 567 8900</span>
+                </div>
+              </div> */}
+            </div>
+            <div className={styles.mapcontainer}>
+              <Maps />
+            </div>
           </div>
         </div>
       </div>
