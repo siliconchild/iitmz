@@ -3,7 +3,8 @@ import Img from "@/components/image";
 import Link from "next/link";
 import Maps from "@/components/map";
 import Slider from "@/components/slider";
-import { FaMapMarkerAlt,FaPhone } from "react-icons/fa";
+import { FaMapMarkerAlt} from "react-icons/fa";
+import { IoMdMailOpen } from "react-icons/io";
 
 export const metadata = {
   title: "Discover Our Campus",
@@ -75,6 +76,7 @@ export default function CampusLife() {
         <Slider slidesToShow={3}>
           {Array.from({ length: 12 }, (_, index) => (
             <Img
+              key={`image__${index}`}
               src={`/campus-life-scroll/${index + 1}.JPG`}
               width={450}
               height={350}
@@ -102,14 +104,14 @@ export default function CampusLife() {
               </div>
               <div className={styles.contactfield}>
                 <div>
-                  <FaPhone />
+                  <IoMdMailOpen />
                   <h4>General Query Email</h4>
                 </div>
                 <span>infodesk@iitmz.ac.in</span>
               </div>
               <div className={styles.contactfield}>
                 <div>
-                  <FaPhone />
+                  <IoMdMailOpen />
                   <h4>Admissions Email</h4>
                 </div>
                 <span>admissions@iitmz.ac.in</span>
