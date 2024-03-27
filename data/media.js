@@ -1,6 +1,10 @@
 const media = {
   yt: [
     {
+      title: "Inauguration of IIT Madras Zanzibar, Tanzania",
+      id: "2JGyGjTwOlY",
+    },
+    {
       title: "IIT Madras Goes Global, Opens International Campus At Zanzibar",
       id: "mAV7_7TKGqE",
     },
@@ -22,14 +26,27 @@ const media = {
       title: "Meet The Woman In Charge Of IIT Zanzibar | Newsbreak",
       id: "oVPxHNDlgPQ",
     },
-
-    {
-      title:
-        "IIT Madras Campus in Zanzibar, Tanzania | Strengthening Global Education",
-      id: "CyIGEw5Te9I",
-    },
   ],
   articles: [
+    {
+      title:
+        "IIT Madras Zanzibar: what does it mean to be an IIT outside India?",
+      desc: "The IITs were conceived and established as contributors to the human resource development of the nation. This is iterated in the “Indian” foundation of their name, the IIT, and a sign in the main building of IIT Kharagpur that reads “Dedicated to the Service of the Nation” underscores this national imperative.",
+      link: "https://indianexpress.com/article/explained/iit-madras-zanzibar-what-does-it-mean-to-be-an-iit-outside-india-9160055",
+      image: {
+        url: "/indian-express.avif",
+        alt: "Image of the campus building - Indian Institute of Technology Madras, Zanzibar Campus",
+      },
+    },
+    {
+      title: " IIT Madras Zanzibar calls for applications for its Second Batch",
+      desc: "Due to overwhelming enthusiasm from the student community in India and abroad, the Institute is considering an increase in the number of seats for both programs. To make the teaching-learning experience substantive and aligned with the needs of the market, industry collaboration and exchange programs are being assiduously explored.",
+      link: "https://pib.gov.in/PressReleasePage.aspx?PRID=2005295",
+      image: {
+        url: "/pib.jpg",
+        alt: "Image of the first batch students - IITM, Zanzibar Campus",
+      },
+    },
     {
       title: "Indian students can also apply at IIT’s African campus ",
       desc: "Indian students can also apply and appear for the three-level process for admission into the first offshore campus to be started by the Indian Institute of Technology Madras on the African island of Zanzibar in Tanzania. The fees will be $12,000 per year for bachelors and $4,000 for post-graduate. Classes will begin in October. ",
