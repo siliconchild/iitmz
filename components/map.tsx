@@ -20,7 +20,7 @@ export default function Maps() {
           longitude: 39.2849,
           zoom: 9,
         }}
-        style={{ height: "100%", width: "100%" }}
+        style={{ minHeight: "300px", height: "100%", width: "100%", borderRadius: "7px" }}
         mapStyle="mapbox://styles/techdevge/clnk8xwa9000j01p96k0y3qlk"
         mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX}
         onLoad={() => setIsMounted(true)}
