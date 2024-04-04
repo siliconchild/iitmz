@@ -1,6 +1,4 @@
 import styles from "./steps.module.scss";
-import Button from "./button";
-import Link from "next/link";
 import { IoIdCardOutline } from "react-icons/io5";
 import { SlGraduation } from "react-icons/sl";
 import { BsPatchCheck, BsPen } from "react-icons/bs";
@@ -11,12 +9,15 @@ export default function Steps() {
       <div className="container">
         <div className={styles.header}>
           <h2 className="section-title">How To Apply</h2>
-          {/* <div className={styles.process}>
-            <p>Learn More About Our Selection Process</p>
-            <Link target="_blank" href="/zanzibar/selection_process.pdf">
+          <div className={styles.process}>
+            <p>
+              For all Admission related queries email to{" "}
+              <a href="mailto:admissions@iitmz.ac.in">admissions@iitmz.ac.in</a>
+            </p>
+            {/* <Link target="_blank" href="/zanzibar/selection_process.pdf">
               <Button kind="SECONDARY">Download PDF</Button>
-            </Link>
-          </div> */}
+            </Link> */}
+          </div>
         </div>
 
         <div className={styles.grid}>

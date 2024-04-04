@@ -7,15 +7,13 @@ type AnnouncementsArray = Announcement[];
 const announcements: AnnouncementsArray = [
   {
     title:
-      "Sample question papers for BS & MTech in DS & AI are available for Download in the Admissions 2023 Sidebar Widget",
+      "Admissions for A.Y. 2024-25 for BS & MTech programs in Data Science & AI are live. Apply Now!",
   },
-  // {
-  //   title:
-  //     "Applications deadline is extended till 12th August. Hurry! Applications are closing {{DAYS_LEFT,2023-08-12}}. Apply Now!",
-  // },
   {
-    title:
-      "For MTech applications - Last date for exam registrations to the mandatory NPTEL courses is on 10/10/2023",
+    title: "BS Application closing {{DAYS_LEFT,2024-04-15}}",
+  },
+  {
+    title: "MTech Application closing {{DAYS_LEFT,2024-03-18}}",
   },
 ];
 

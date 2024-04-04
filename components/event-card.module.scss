@@ -1,0 +1,140 @@
+.card {
+  display: flex;
+  margin-bottom: 1rem;
+  border: 1px solid #e4e5f7;
+  border-radius: 5px;
+}
+
+.poster {
+  flex: 0 0 27.5%;
+  img {
+    margin-bottom: 0;
+    height: 100%;
+  }
+}
+
+.body {
+   padding: 2.5rem 5rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  align-items: center;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  h4 {
+    height: 5rem;
+    width: 7rem;
+    background: #ffb013;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    line-height: 5.5rem;
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #141517;
+    margin-right: 2rem;
+    border-radius: 3px;
+  }
+  h5 {
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    color: #141517;
+    font-weight: 400;
+  }
+}
+
+.content {
+  h3 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+  }
+  span {
+    font-size: 1.3rem;
+    font-weight: 600;
+    display: flex;
+    margin-bottom: 1rem;
+    align-items: center;
+    letter-spacing: .4px;
+    svg {
+      margin-right: 5px;
+      height: 18px;
+      width: 18px;
+    }
+  }
+  p {
+    font-size: 1.5rem;
+    margin: 3rem 0 1rem;
+    line-height: 1.8;
+  }
+}
+
+@media (max-width: 768px) {
+  .card{
+    flex-direction: column;
+    border-radius: 7px;
+  }
+  .poster {
+    padding: 1.25rem 1.25rem 0;
+    img {
+      border-radius: 5px;
+    }
+  }
+  .body {
+    padding: 4rem 2rem 1rem;
+  }
+  .header {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 4rem;
+    margin-bottom: 1rem;
+    button {
+        font-size: 1.4rem;
+        padding: 0 2rem;
+    }
+    a,button {
+        width: 100%;
+    }
+  }
+  .date {
+    h4 {
+      font-size: 2.5rem;
+      width: 5rem;
+      height: 4rem;
+      line-height: 4.25rem;
+      margin-right: 1.25rem;
+    }
+    h5 {
+      font-size: 1.4rem;
+    }
+  }
+  .content {
+    width: 100%;
+    padding: 0.5rem;
+    h3 {
+      font-size: 2.1rem;
+      line-height: 1.5;
+      margin-bottom: 1.25rem;
+    }
+    span {
+      font-size: 1.3rem;
+      svg {
+        margin-right: 8px;
+        height: 12px;
+        width: 12px;
+      }
+    }
+    p {
+        margin: 3.5rem 0 1rem;
+    }
+  }
+}

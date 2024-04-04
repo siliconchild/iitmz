@@ -65,26 +65,36 @@ export default function FacultyPage({ params }: { params: { slug: string } }) {
               {facultyMember.contact.email}
             </Link>
           </p>
+          {facultyMember.contact.alternateEmail && (
+            <p>
+              <AiOutlineMail />
+              <Link href={`mailto:${facultyMember.contact.alternateEmail}`}>
+                {facultyMember.contact.alternateEmail}
+              </Link>
+            </p>
+          )}
           {facultyMember.contact.website && (
             <p className={styles.website}>
               <BsGlobeCentralSouthAsia />
               <a target="_blank" href={facultyMember.contact.website}>
-                {facultyMember.contact.website}
+                website
               </a>
             </p>
           )}
-          <div className={styles.qualification}>
-            <h2>Educational Qualifications</h2>
-            {facultyMember.qualification.map((qualification) => (
-              <div key={qualification.title}>
-                <h3>
-                  {qualification.title} <span>{qualification.year}</span>
-                </h3>
-                <p>{qualification.course}</p>
-                <p>{qualification.place}</p>
-              </div>
-            ))}
-          </div>
+          {facultyMember.qualification && (
+            <div className={styles.qualification}>
+              <h2>Educational Qualifications</h2>
+              {facultyMember.qualification.map((qualification) => (
+                <div key={qualification.title}>
+                  <h3>
+                    {qualification.title} <span>{qualification.year}</span>
+                  </h3>
+                  <p>{qualification.course}</p>
+                  <p>{qualification.place}</p>
+                </div>
+              ))}
+            </div>
+          )}
           {facultyMember.awards && (
             <div className={styles.awards}>
               <h2>Awards</h2>
@@ -103,11 +113,20 @@ export default function FacultyPage({ params }: { params: { slug: string } }) {
           )}
         </div>
         <div className={styles.main}>
-          <div className={styles.interests}>
-            <h2>Research Interests</h2>
-            <p>{facultyMember.interests}</p>
-          </div>
-
+          {facultyMember.interests && (
+            <div className={styles.interests}>
+              <h2>Research Interests</h2>
+              <p>{facultyMember.interests}</p>
+            </div>
+          )}
+          {facultyMember.bio && (
+            <div className={styles.interests}>
+              <h2>Profile</h2>
+              {facultyMember.bio.map((p,index) => (
+              <p key={`profile-${index}`}>{p}</p>
+              ))}
+            </div>
+          )}
           {facultyMember.courses && (
             <div className={styles.courses}>
               <h2>Relevant Courses Taught</h2>
@@ -118,29 +137,30 @@ export default function FacultyPage({ params }: { params: { slug: string } }) {
               </ul>
             </div>
           )}
-
-          <div className={styles.papers}>
-            <h2>Selected Papers</h2>
-            {facultyMember.papers.map((paper) => (
-              <div className={styles.paper} key={paper.title}>
-                <h4>
-                  <AiTwotoneCalendar /> {paper.year}
-                </h4>
-                <h3>{stringReplacer(paper.title)}</h3>
-                <div className={styles.authors}>
-                  {paper.authors.map((author) => (
-                    <p key={author}>
-                      <FaUserEdit /> {author}
-                    </p>
-                  ))}
+          {facultyMember.papers && (
+            <div className={styles.papers}>
+              <h2>Selected Papers</h2>
+              {facultyMember.papers.map((paper) => (
+                <div className={styles.paper} key={paper.title}>
+                  <h4>
+                    <AiTwotoneCalendar /> {paper.year}
+                  </h4>
+                  <h3>{stringReplacer(paper.title)}</h3>
+                  <div className={styles.authors}>
+                    {paper.authors.map((author) => (
+                      <p key={author}>
+                        <FaUserEdit /> {author}
+                      </p>
+                    ))}
+                  </div>
+                  <p>
+                    {" "}
+                    <BsBookmarksFill /> {paper.publisher}
+                  </p>
                 </div>
-                <p>
-                  {" "}
-                  <BsBookmarksFill /> {paper.publisher}
-                </p>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          )}
           {facultyMember.books && (
             <div className={styles.books}>
               <h2>Books Published</h2>

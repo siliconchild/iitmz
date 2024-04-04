@@ -2,12 +2,19 @@
   max-width: 1120px;
   margin: 0 auto;
   padding: 5rem 0;
+  gap: 2rem;
   position: relative;
   display: flex;
   align-items: center;
+  & > div {
+      flex: 0 0 50%;
+  }
   img {
-    margin-top: 2rem;
-    animation: mover 1s infinite alternate;
+    // flex: 0 0 54%;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-top: 1rem;
+    //animation: mover 1s infinite alternate;
     @-webkit-keyframes mover {
       0% {
         transform: translateY(0);
@@ -119,16 +126,27 @@
   .header {
     display: flex;
     flex-direction: column;
-    margin-top: 3rem;
+    margin-top: 1rem;
     h1 {
       font-size: 4rem;
       line-height: 5rem;
+      text-align: center;
     }
     p {
       width: 100%;
       padding-right: 0;
     }
+    button {
+       margin: 1rem auto 4rem;
+    }
   }
+
+    .applyButton {
+    & > div {
+      display: flex;
+    }
+  }
+
   .tabs {
     padding-right: 0;
     padding: 0 0.5rem;

@@ -10,7 +10,7 @@ const faculty = [
     titlesec: "Faculty - School of Engg. & Science",
     desc: "",
     contact: {
-      email: "ramkrishna@ee.iitm.ac.in",
+      email: "ramkrishna@iitmz.ac.in",
       website: "https://www.ee.iitm.ac.in/ramkrishna/",
     },
     awards: [
@@ -132,7 +132,7 @@ const faculty = [
     interests:
       "In my research, I explore biological and disease networks using multi-sensor and multi-scale data. I focus on modeling, control, optimization, and integration of (Bio-)process Manufacturing to enhance efficiency. I also investigate bioprocess control and process analytical technology for quality assurance. Additionally, I study complex man-made networks through data-driven learning and control approaches. My goal is to advance understanding and management of these networks.",
     contact: {
-      email: "niravbhatt@iitm.ac.in",
+      email: "niravbhatt@iitmz.ac.in",
       website: "https://biotech.iitm.ac.in/faculty/nirav-p-bhatt",
     },
     awards: [
@@ -284,7 +284,7 @@ const faculty = [
     interests:
       "My research areas are Reinforcement Learning, Big Data Process Analytics, Machine Learning & Big Data.",
     contact: {
-      email: "raghur@iitm.ac.in",
+      email: "raghur@iitmz.ac.in",
       website: "https://ibse.iitm.ac.in/people/raghunathan-rengaswamy/",
     },
     awards: [
@@ -439,14 +439,15 @@ const faculty = [
       desc: "Prof. Preeti Aghalayam is the Dean And Director in Charge at IIT Madras Zanzibar Campus. Learn More.",
     },
     name: "Prof. Preeti Aghalayam",
-    img: "/preeti-a.jpg",
+    img: "/preeti.jpg",
     title: "Dean - School of Engg. &",
     titlesec: "Science Director-in-Charge",
     desc: "",
     interests:
       "My interest areas include Underground Coal Gasification, Reduction of Automotive NOx, Reduction of Large Reaction Mechanisms and Reactor Modeling",
     contact: {
-      email: "preeti@iitm.ac.in",
+      email: "director@iitmz.ac.in",
+      alternateEmail: "preeti@iitmz.ac.in",
       website: "https://che.iitm.ac.in/preeti/",
     },
     qualification: [
@@ -567,6 +568,24 @@ const faculty = [
     ],
   },
   {
+    slug: "dr-paresh-pattani",
+    seo: {
+      desc: "Dr Paresh Pattani is the vice president of IITM Zanzibar. Learn More.",
+    },
+    name: "Dr. Paresh Pattani",
+    img: "/paresh.JPG",
+    title: "Vice President",
+    titlesec: "Institutional Development",
+    desc: "",
+    contact: {
+      email: "vp@iitmz.ac.in",
+    },
+    bio: [
+      "Dr. Paresh Pattani joined IITM Zanzibar campus as Vice President - Institutional Development, on Jan 4, 2024. Dr. Pattani is a senior leader with extensive experience in sales support and enabling the ecosystem for Enterprise IT, AI, Cloud, and HPC. Dr. Pattani is a winner of coveted awards and author of scholarly publications, leveraging excellent communication and decision-making skills to convey complex information to technical and non-technical audiences. He is passionate about aligning with non-profit organizations to promote art, culture, and the wellbeing of the local community. Dr. Pattani will be a great asset to the institution, with his experience, empathy and vision.",
+      "Dr. Pattani says “I am super excited to join IITM in Zanzibar. It is the first IIT campus outside India and the team leading this effort is really awesome and works super fast. I am a graduate of IIT Bombay with a PhD from UBC Canada and an MBA from UT Austin. I have several years of management and strategy experience from NEC and Intel. I have a challenging role of Vice President - Institutional Development at IIT Madras in Zanzibar but my experience will help. To top it all I was born and brought up in Tanzania and can speak the basic level of Kiswahili, therefore this gives me an opportunity not only to give back to IIT but also to Tanzania\".",
+    ],
+  },
+  {
     slug: "prof-suresh-govindarajan",
     seo: {
       desc: "Prof. Suresh Govindarajan Works in The Department of Physics at IIT Madras Zanzibar. Learn More.",
@@ -578,7 +597,7 @@ const faculty = [
     interests:
       "My interest areas include Theoretical High Energy Physics – Quantum Field Theory and String Theory; Statistical Physics; Combinatorics and Number Theory and their applications in Physics; Mathematical Physics.",
     contact: {
-      email: "suresh@physics.iitm.ac.in",
+      email: "suresh@iitmz.ac.in",
       website: "https://physics.iitm.ac.in/~suresh/",
     },
     qualification: [
@@ -740,7 +759,7 @@ const faculty = [
     interests:
       "My interest areas include Structural Graph Theory: Colouring, Decomposition. Algebraic Combinatorics: Graph Ideals and Comb. Algebra.",
     contact: {
-      email: "naru@iitm.ac.in",
+      email: "naru@iitmz.ac.in",
       website: "https://home.iitm.ac.in/naru/",
     },
     qualification: [
@@ -856,6 +875,165 @@ const faculty = [
     ],
   },
   {
+    slug: "dr-tushar-shinde",
+    seo: {
+      desc: "Dr. Tushar Shinde is a Faculty of School of Engg. & Science at IIT Madras Zanzibar. Learn More.",
+    },
+    name: "Dr. Tushar Shinde",
+    img: "/tushar.JPG",
+    title: "Faculty - School of Engg. & Science",
+    desc: "",
+    contact: {
+      email: "shinde@iitmz.ac.in",
+      website: "https://sites.google.com/view/tushar-shinde/home",
+    },
+    awards: [
+      {
+        title:
+          "Winner (among 17 finalists across the globe) in the 3 Minute Thesis (3MT)",
+        from: "Competition at ICIP 2018, Athens, Greece",
+      },
+      {
+        title: "Selected in Sakura Science Exchange Program 2019",
+        from: "Administered by Japan Science and Technology Agency, Japan",
+      },
+      {
+        title:
+          "Represented India as a Youth Delegate at the 19th World Festival of Youth and Students 2017",
+        from: "Sochi, Russia",
+      },
+      {
+        title:
+          "Finalist (among 8 finalists across the globe) in the 3 Minute Thesis (3MT) Competition",
+        from: "ICIP 2019, Taipei, Taiwan",
+      },
+      {
+        title:
+          "Honored with Best Student (Student’s Gymkhana) Award 2018-19 for outstanding student activities",
+        from: "IIT Jodhpur",
+      },
+    ],
+    interests:
+      "My research interests are centered around Image and Video Processing, Video Coding and Compression, Artificial Intelligence (AI), Machine Learning (ML), Deep Learning (DL), and applications of AI/ML in Healthcare and Data Science.",
+
+    qualification: [
+      {
+        title: "Postdoc",
+        year: "2023",
+        course: "School of Medicine",
+        place: "Stanford University",
+      },
+      {
+        title: "Ph.D.",
+        year: "2020",
+        course: "Electrical Engineering",
+        place: "Indian Institute of Technology Jodhpur",
+      },
+      {
+        title: "M.Tech.",
+        year: "2015",
+        course: "Information & Communication Technology",
+        place: "Indian Institute of Technology Jodhpur",
+      },
+      {
+        title: "B.Tech.",
+        year: "2011",
+        course: "Electronics Engineering",
+        place: "W. C. E. Sangli",
+      },
+    ],
+    papers: [
+      {
+        title:
+          "Background foreground boundary aware efficient motion search for surveillance videos",
+        authors: ["Shinde, T.", "Tiwari, A.K.", "Lin, W.", "Shen, L."],
+        publisher: "Signal Processing: Image Communication, 82, p.115775",
+        year: "2020",
+      },
+      {
+        title: "Adaptive lossless compression of skeleton sequences",
+        authors: [
+          "Lin, W.",
+          "Shinde, T.",
+          "Dai, W.",
+          "Liu, M.",
+          "He, X.",
+          "Tiwari, A.K.",
+          "Xiong, H.",
+        ],
+        publisher: "Signal Processing: Image Communication, 80, p.115659",
+        year: "2020",
+      },
+      {
+        title:
+          "Key-point sequence lossless compression for intelligent video analysis",
+        authors: [
+          "Lin, W.",
+          "He, X.",
+          "Dai, W.",
+          "See, J.",
+          "Shinde, T.",
+          "Xiong, H.",
+          "Duan, L.",
+        ],
+        publisher: "IEEE MultiMedia, 27(3), p.12-22",
+        year: "2020",
+      },
+      {
+        title:
+          "Efficient direction-oriented search algorithm for block motion estimation",
+        authors: ["Shinde, T.", "Tiwari, A.K."],
+        publisher: "IET Image Processing, 12(9), p.1567-1576",
+        year: "2018",
+      },
+      {
+        title:
+          "Dose Level Prediction Using Off-the-Shelf Segmentation Network—a Spine SBRT Example",
+        authors: ["Shinde, T.", "et al."],
+        publisher: "American Association of Physicists in Medicine (AAPM) 2023",
+        year: "2023",
+      },
+      {
+        title:
+          "Adaptive Pixel-based Direction Oriented Fast Motion Estimation for Predictive Coding",
+        authors: ["Shinde, T."],
+        publisher: "IEEE Picture Coding Symposium (PCS) 2022",
+        year: "2022",
+      },
+      {
+        title:
+          "Pruning SIFT & SURF for efficient clustering of near-duplicate images",
+        authors: ["Shinde, T.", "Tiwari, A.K."],
+        publisher:
+          "IEEE International Conference on Acoustics, Speech, & Signal Processing (ICASSP) 2019",
+        year: "2019",
+      },
+      {
+        title:
+          "Low-complexity Adaptive Switched Prediction-based Lossless Compression of Time-lapse Hyperspectral Image Data",
+        authors: ["Shinde, T.", "Tiwari, A.K.", "Lin, W."],
+        publisher:
+          "IEEE Global Conference on Signal and Information Processing (GlobalSIP) 2019",
+        year: "2019",
+      },
+      {
+        title:
+          "Efficient motion estimation and predictive coding methods for compression of Spatio-temporal sequences",
+        authors: ["Shinde, T."],
+        publisher:
+          "IEEE Global Conference on Signal and Information Processing (GlobalSIP) 2019, Graduate Student Research Paper",
+        year: "2019",
+      },
+      {
+        title: "Efficient Image Set Compression",
+        authors: ["Shinde, T."],
+        publisher:
+          "IEEE International Conference on Image Processing (ICIP) 2019, 3MT Competition",
+        year: "2019",
+      },
+    ],
+  },
+  {
     slug: "prof-umasankar-patra",
     seo: {
       desc: "Prof. Umasankar Patra Works in The Department of Humanities And Social Sciences at IIT Madras Zanzibar. Learn More.",
@@ -867,7 +1045,7 @@ const faculty = [
     interests:
       "My research interests are Anglo-American Modernism, Life Writing, Queer Studies, Modernity in India, and Translation.",
     contact: {
-      email: "umasankar@iitm.ac.in",
+      email: "umasankarpatra@iitmz.ac.in",
       website: "https://hss.iitm.ac.in/team-members/umasankar/",
     },
     qualification: [
@@ -972,7 +1150,7 @@ const faculty = [
     interests:
       "My Research interests lie in the fields of water treatment and rural water supply. I am particularly drawn to domestic and industrial wastewater treatment, with a strong focus on wastewater reuse and recycling. Additionally, I am fascinated by the concept of bioremediation, especially in regards to contaminated soils, air, and water containing heavy metals, pesticides, and other hazardous organic compounds. ",
     contact: {
-      email: "ligy@iitm.ac.in",
+      email: "ligy@iitmz.ac.in",
       website: "https://civil.iitm.ac.in/faculty/ligy/",
     },
     qualification: [
@@ -1141,197 +1319,6 @@ const faculty = [
       {
         title: "Certificate of merit",
         from: "Himachal Pradesh University Shimla, 2016",
-      },
-    ],
-  },
-  {
-    slug: "prof-shivani-goel",
-    seo: {
-      desc: "Dr. Shivani Goel specializes in Algebraic Graph Theory and Enumerative Combinatorics. Engaged in postdoctoral research at IISc Bangalore, Dr. Goel boasts a rich publication record and extensive experience in academia.",
-    },
-    name: "Dr. Shivani Goel",
-    img: "/shivani_ext.png",
-    title: "Faculty - School of Engg. & Science",
-    desc: "",
-    interests:
-      "Dr. Shivani Goel's research interests lie in the field of Algebraic Graph Theory and Enumerative Combinatorics.",
-    contact: {
-      email: "shivani.goel.maths@gmail.com",
-      website: "",
-    },
-    awards: [
-      {
-        title: "SERB-National Post Doctoral Fellowship (N-PDF)",
-        from: "2022",
-      },
-      {
-        title: "IOE-Postdoctoral fellowship",
-        from: "IISc, Bangalore, 2021",
-      },
-      {
-        title: "Pre-doctoral fellowship",
-        from: "Department of Mathematics, I.I.T Madras, Jan-Mar 2021",
-      },
-      {
-        title: "Best Thesis Award 2021",
-        from: "Department of Mathematics, I.I.T Madras",
-      },
-      {
-        title: "Institute research award",
-        from: "I.I.T Madras, 2020",
-      },
-      {
-        title: "UGC JRF NET",
-        from: "June 2016",
-      },
-      {
-        title: "Prize for the highest marks, M.Sc (2nd year) Mathematics",
-        from: "",
-      },
-      {
-        title: "Most deserving student, M.Sc. (1st year) Mathematics",
-        from: "",
-      },
-      {
-        title: "Prize for the highest marks, BSc(H) Mathematics (3rd year)",
-        from: "",
-      },
-      {
-        title: "Prize for the highest marks, BSc(H) Mathematics (2nd year)",
-        from: "",
-      },
-    ],
-
-    qualification: [
-      {
-        title: "NPDF-National Postdoctoral Research Fellow",
-        year: "2023",
-        course: "",
-        place: "IISc Bangalore, India",
-      },
-      {
-        title: "IOE-Postdoctoral Research Fellow",
-        year: "2022",
-        course: "",
-        place: "IISc Bangalore, India",
-      },
-      {
-        title: "Ph.D.",
-        year: "2020",
-        course: "Mathematics",
-        place: "I.I.T Madras, Chennai, India",
-      },
-      {
-        title: "M.Phil",
-        year: "2016",
-        course: "Mathematics",
-        place: "University of Delhi, India",
-      },
-      {
-        title: "M.Sc (Mathematics)",
-        year: "2013",
-        course: "",
-        place: "Indraprastha College for Women, University of Delhi, India",
-      },
-      {
-        title: "B.Sc(H) Mathematics",
-        year: "2010",
-        course: "",
-        place: "Indraprastha College for Women, University of Delhi, India",
-      },
-    ],
-    papers: [
-      {
-        title: "On resistance matrices of weighted balanced digraphs",
-        authors: ["R. Balaji", "R. B. Bapat", "Shivani Goel"],
-        publisher: "Linear and Multilinear Algebra",
-        year: "2022",
-      },
-      {
-        title: "Steiner distance matrix of caterpillar graphs",
-        authors: ["Ali Azimi", "Ravindra B. Bapat", "Shivani Goel"],
-        publisher: "Special Matrices",
-        year: "2022",
-      },
-      {
-        title:
-          "On distance matrices of wheel graphs with odd number of vertices",
-        authors: ["R. Balaji", "R. B. Bapat", "Shivani Goel"],
-        publisher: "Linear and Multilinear Algebra",
-        year: "2022",
-      },
-      {
-        title: "Resistance matrices of balanced directed graphs",
-        authors: ["R. Balaji", "R. B. Bapat", "Shivani Goel"],
-        publisher: "Linear and Multilinear Algebra",
-        year: "2022",
-      },
-      {
-        title: "Generalized Euclidean distance matrices",
-        authors: ["R. Balaji", "R. B. Bapat", "Shivani Goel"],
-        publisher: "Linear and Multilinear Algebra",
-        year: "2022",
-      },
-      {
-        title:
-          "On distance matrices of helm graphs obtained from wheel graphs with an even number of vertices",
-        authors: ["Shivani Goel"],
-        publisher: "Linear Algebra and its Applications",
-        year: "2021",
-      },
-      {
-        title:
-          "An inverse formula for the distance matrix of a wheel graph with even number of vertices",
-        authors: ["R. Balaji", "R. B. Bapat", "Shivani Goel"],
-        publisher: "Linear Algebra and its Applications",
-        year: "2021",
-      },
-      {
-        title: "Distance matrices perturbed by a Laplacian",
-        authors: ["R. Balaji", "R. B. Bapat", "Shivani Goel"],
-        publisher: "Application of Mathematics",
-        year: "2020",
-      },
-      {
-        title: "Resistance distance in directed cactus graphs",
-        authors: ["R. Balaji", "R. B. Bapat", "Shivani Goel"],
-        publisher: "The Electronic Journal of Linear Algebra",
-        year: "2020",
-      },
-      {
-        title: "Distance matrix of enhanced power graphs of finite groups",
-        authors: ["Anita Arora", "Hiranya Kishore Dey", "Shivani Goel"],
-        publisher: "arXiv",
-        year: "2023",
-      },
-    ],
-    contributions: [
-      {
-        title: "Referee for Linear Algebra and its Applications",
-      },
-      {
-        title: "Referee for Linear and Multilinear Algebra",
-      },
-      {
-        title: "Referee for Indian Journal of Pure and Applied Mathematics",
-      },
-      {
-        title: "Referee for Advances in Applied Mathematics",
-      },
-      {
-        title: "Referee for Computational and Applied Mathematics",
-      },
-      {
-        title: "Referee for IEEE Transactions on Information Theory",
-      },
-      {
-        title: "Reviewer for AMS MathSciNet Mathematical Reviews",
-      },
-      {
-        title: "Referee for Involve, a Journal of Mathematics",
-      },
-      {
-        title: "Reviewer for Zentralblatt MATH",
       },
     ],
   },

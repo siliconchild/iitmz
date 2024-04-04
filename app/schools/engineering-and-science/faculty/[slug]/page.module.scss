@@ -32,7 +32,7 @@
 
   h1 {
     line-height: 1;
-    margin-bottom: 0.75rem;
+    margin-bottom: 1.5rem;
   }
 
   & > h3 {
@@ -48,6 +48,7 @@
     display: flex;
     align-items: center;
     line-height: 1.6;
+    margin-bottom: .25rem;
     svg {
       margin-right: 0.5rem;
       flex-shrink: 0;
@@ -55,9 +56,6 @@
   }
 }
 
-.website {
-  font-size: 1.2rem;
-}
 
 .qualification {
   margin: 2rem 0 0;
@@ -108,7 +106,7 @@
   padding: 4rem 4rem 4rem 1.5rem;
 
   h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
   & > div {
     &:not(:last-child) {
@@ -126,7 +124,11 @@
   padding: 2rem;
   p {
     font-size: 1.5rem;
-    line-height: 1.7;
+    line-height: 1.8;
+    text-align: justify;
+    &:nth-child(3){
+      margin-top: 1.5rem;
+    }
   }
 }
 

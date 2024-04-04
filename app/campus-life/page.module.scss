@@ -147,8 +147,9 @@
   }
 }
 
+
 .mapcontainer {
-  height: 500px;
+  height: 470px;
   width: 100%;
   overflow: hidden;
   flex: 0 0 65%;
@@ -177,6 +178,7 @@
   .gallery {
     margin: 2.5rem 1rem;
     img {
+      height: 300px;
       &:not(:last-child) {
         margin-bottom: 0.75rem;
       }

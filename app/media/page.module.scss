@@ -4,10 +4,10 @@
 
 .youtube_container {
   display: flex;
-  gap: 1.3rem;
+  gap: 1.5rem;
   flex-wrap: wrap;
   & > div {
-    width: calc(33.33% - 1.3rem);
+    width: calc(33.33% - 1.5rem);
     height: 225px;
     iframe {
       width: 100%;

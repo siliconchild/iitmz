@@ -23,8 +23,10 @@ export default function daysLeft(dateString: string) {
       result = "today";
     } else if (daysLeft === 1 && isFutureDate) {
       result = "tomorrow";
-    } else if (daysLeft > 0) {
+    } else if (daysLeft > 0 && daysLeft <= 7) {
       result = `in ${daysLeft} days`;
+    } else if (day > 7) {
+      result = `on ${day}-${targetDate.toLocaleString('default', { month: 'short' }).slice(0, 3)}-${year}`
     }
     return result;
   }

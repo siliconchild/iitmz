@@ -10,21 +10,16 @@
     font-size: 1.3rem;
     font-weight: 600;
     display: inline-block;
-    &:not(:last-child) {
-      border-right: 1px solid #e86c8a;
-    }
+    padding: 0 2rem;
     &:first-child {
       padding: 0 2rem 0 0;
+      border-right: 1px solid #e86c8a;
     }
-    &:nth-child(2) {
-      padding: 0 2rem;
+    span {
+      margin-right: 0.75rem;
+      color: #eee;
+      font-size: 1.2rem;
     }
-  }
-  span {
-    padding-left: 2rem;
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: #ffffff;
   }
 }
 
@@ -32,18 +27,18 @@
   .topbar {
     padding: 0.6rem;
     a {
+      padding: 0 1rem;
       font-size: 1rem;
 
       &:first-child {
-        padding: 0 0.5rem 0 0;
+        padding: 0 0.75rem 0 0;
       }
-      &:nth-child(2) {
-        padding: 0 0.5rem;
+      &:last-child {
+        border-right: none;
       }
-    }
-    span {
-      font-size: 1rem;
-      padding-left: 0.5rem;
+      span {
+        font-size: 1rem;
+      }
     }
   }
 }

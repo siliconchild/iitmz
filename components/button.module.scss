@@ -9,7 +9,7 @@
   background-color: #ffb013;
   padding: 0 2rem;
   border: 2px solid transparent;
-  border-radius: 3px;
+  border-radius: 5px;
   transition: all 0.3s ease;
   position: relative;
   outline: none;
@@ -47,6 +47,17 @@
   background-color: #fff;
   border: 1px solid #c32939;
 }
+
+.button.secondaryBlack {
+  color: #374151;
+  border: 1px solid #37415163;
+  background-color: #fff;
+  border-radius: 25px;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+}
+
 
 @media (max-width: 480px) {
   .button {

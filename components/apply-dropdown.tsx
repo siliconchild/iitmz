@@ -3,6 +3,7 @@ import styles from "./apply-dropdown.module.scss";
 import Link from "next/link";
 import { Menu, MenuItem, MenuButton } from "@szhsin/react-menu";
 import buttonStyles from "./button.module.scss";
+import courses from "@/data/courses";
 
 export default function ApplyDropdown() {
   return (
@@ -13,18 +14,12 @@ export default function ApplyDropdown() {
         }
       >
         <MenuItem>
-          <Link
-            target="_blank"
-            href="https://admissions.ge.iitm.ac.in/iitm-application-form-zanzibar"
-          >
+          <Link target="_blank" href={courses.bs.applicationLink}>
             BS in Data Science & AI
           </Link>
         </MenuItem>
         <MenuItem>
-          <Link
-            target="_blank"
-            href="https://admissions.ge.iitm.ac.in/iitm-zanzibar-campus-application-form-m-tech"
-          >
+          <Link target="_blank" href={courses.mtech.applicationLink}>
             MTech in Data Science & AI
           </Link>
         </MenuItem>

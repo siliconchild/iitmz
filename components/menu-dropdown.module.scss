@@ -40,6 +40,10 @@
   }
   .menu_dropdown {
     left: -50%;
+    .menu_dropdown {
+      left: 0;
+      top: 110%;
+    }
   }
   .menu_dropdown.footer {
     top: 100%;

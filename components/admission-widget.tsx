@@ -4,16 +4,19 @@ import Link from "next/link";
 export default function AdmissionWidget() {
   return (
     <div className={styles.widget}>
-      <button>Admissions 2023</button>
+      <button>Admissions 2024</button>
       <div className={styles.content}>
         <Link href="/admission">Apply Now</Link>
-        <Link target="_blank" href="/information_brochure_v2.pdf">
+        <Link
+          target="_blank"
+          href="/IITMZST_Information_Brochure_2024_v1.1.pdf"
+        >
           Information Brochure
         </Link>
-        <Link target="_blank" href="/bs-sample-questions_v3.pdf">
+        <Link target="_blank" href="/IITMZST_BS_Sample_Questions.pdf">
           BS Sample Questions
         </Link>
-        <Link target="_blank" href="/mtech-sample-questions_v2.pdf">
+        <Link target="_blank" href="/IITMZST_MTech_Sample_Questions.pdf">
           MTech Sample Questions
         </Link>
       </div>

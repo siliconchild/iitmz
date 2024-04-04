@@ -46,6 +46,12 @@
   }
 }
 
+.disabled {
+  color: #e7e7e7;
+  cursor: not-allowed;
+}
+
+
 @media (max-width: 480px) {
   .widget {
     transform: translateX(34.3rem);

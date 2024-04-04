@@ -38,6 +38,14 @@
   ul {
     width: 70%;
     margin: 1rem 0;
+    /* Temporary style start */
+    padding: 3.5rem 0;
+    display: flex;
+    align-items: flex-end;
+    h3 {
+      font-weight: 500;
+    }
+    /* Temporary style end */
     li {
       line-height: 2.4rem;
       font-size: 1.5rem;
@@ -139,6 +147,9 @@
     ul {
       width: 100%;
       padding: 0 1rem;
+      /* Temporary style start */
+      padding: 0 2rem;
+      /* Temporary style end */
     }
     .fee {
       h3 {

@@ -1,7 +1,6 @@
 import styles from "./fees.module.scss";
-import { GiGraduateCap } from "react-icons/gi";
-import { LuBedDouble } from "react-icons/lu";
-import { RiHotelBedFill } from "react-icons/ri";
+import { SlGraduation } from "react-icons/sl";
+import { PiBed } from "react-icons/pi";
 
 export default function Fees() {
   return (
@@ -9,7 +8,7 @@ export default function Fees() {
       <div className="container">
         <div className={styles.tution}>
           <div className={styles.header}>
-            <GiGraduateCap />
+            <SlGraduation />
             <h2>Tuition Fee</h2>
           </div>
           <div className={styles.fee_container}>
@@ -19,17 +18,18 @@ export default function Fees() {
             </div>
             <div className={styles.fee}>
               <h3>MTech in Data Science & AI</h3>
-              <h4>USD 4000 / p.a.</h4>
+              <h4>USD 6000 / p.a.</h4>
             </div>
           </div>
         </div>
-        <div className={styles.accomodation}>
+        {/* <div className={styles.accomodation}>
           <div className={styles.header}>
-            <RiHotelBedFill />
+            <PiBed />
             <h2>Accommodation Fee</h2>
           </div>
 
           <ul>
+            <h3>Will be informed asap</h3>
             <div className={styles.fee}>
               <h3>Total</h3>
               <h4>USD 4000 / p.a.</h4>
@@ -62,7 +62,7 @@ export default function Fees() {
               will be available for meritorious candidates
             </p>
           </ul>
-        </div>
+        </div> */}
       </div>
     </section>
   );
