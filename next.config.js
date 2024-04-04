@@ -11,6 +11,21 @@ let config = {
       },
     ];
   },
+  async redirects() {
+    return [
+      // Basic redirect
+      {
+        source: "/financial-aid",
+        destination: "/",
+        permanent: false,
+      },
+      {
+        source: "/testimonials",
+        destination: "/",
+        permanent: false,
+      },
+    ];
+  },
   images: {
     dangerouslyAllowSVG: true,
     contentDispositionType: "attachment",
