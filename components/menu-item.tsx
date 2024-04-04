@@ -66,15 +66,7 @@ export default function MenuItem({ item, depthLevel, kind }: MenuItemProps) {
           <button
             type="button"
             aria-haspopup="menu"
-            onClick={() => {
-              if (window.innerWidth > 960) {
-                router.push(item.link);
-              } else {
-                depthLevel < 1
-                  ? setDropdown((prev) => !prev)
-                  : router.push(item.link);
-              }
-            }}
+            onClick={()=> setDropdown(prev => !prev)}
           >
             {item.title}{" "}
             {depthLevel > 0 ? (
