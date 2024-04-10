@@ -10,10 +10,10 @@ const announcements: AnnouncementsArray = [
       "Admissions for A.Y. 2024-25 for BS & MTech programs in Data Science & AI are live. Apply Now!",
   },
   {
-    title: "BS Application closing {{DAYS_LEFT,2024-04-15}}",
+    title: "BS Application closing {{DAYS_LEFT,2024-04-30}}",
   },
   {
-    title: "MTech Application closing {{DAYS_LEFT,2024-03-18}}",
+    title: "MTech Applications are closed as of now",
   },
 ];
 
