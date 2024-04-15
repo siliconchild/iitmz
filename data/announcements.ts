@@ -5,16 +5,16 @@ interface Announcement {
 type AnnouncementsArray = Announcement[];
 
 const announcements: AnnouncementsArray = [
+  // {
+  //   title: "BS Application closing {{DAYS_LEFT,2024-04-30}}",
+  // },
   {
     title:
-      "Admissions for A.Y. 2024-25 for BS & MTech programs in Data Science & AI are live. Apply Now!",
+      "Application Period Extended for BS in Data Science & AI: Last Date to Apply: April 30, 2024",
   },
   {
-    title: "BS Application closing {{DAYS_LEFT,2024-04-30}}",
-  },
-  {
-    title: "MTech Applications are closed as of now",
-  },
+    title: "Register for the Live Webinar: Check Events Page for more info"
+  }
 ];
 
 export default announcements;
