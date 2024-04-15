@@ -2,6 +2,8 @@ import styles from "./hero.module.scss";
 import Slider from "./slider";
 import Img from "./image";
 import ApplyDropdown from "./apply-dropdown";
+import Button from "./button";
+import Link from "next/link";
 
 export default function Hero() {
 
@@ -24,8 +26,19 @@ export default function Hero() {
             <h1>
               IIT Madras <span>Zanzibar</span>
             </h1>
-            <h4>Admissions for AY 2024-25 are Live</h4>
-            <ApplyDropdown />
+            <h4>
+              BS Live Webinar with Director of IITM & Director-in-Charge of
+              IITMZ
+            </h4>
+            <h5>April 16, 5.30 PM IST | 3 PM EAT</h5>
+            <Button>
+              <Link
+                target="_blank"
+                href=" https://us06web.zoom.us/webinar/register/WN_7AuU0zV4ToaM37eOExj31A"
+              >
+                Register Now
+              </Link>
+            </Button>
           </div>
         </div>
         <div className={styles.item}>
@@ -44,8 +57,19 @@ export default function Hero() {
             <h1>
               IIT Madras <span>Zanzibar</span>
             </h1>
-            <h4>Admissions for AY 2024-25 are Live</h4>
-            <ApplyDropdown />
+            <h4>
+              BS Live Webinar with Director of IITM & Director-in-Charge of
+              IITMZ
+            </h4>
+            <h5>April 16, 5.30 PM IST | 3 PM EAT</h5>
+            <Button>
+              <Link
+                target="_blank"
+                href=" https://us06web.zoom.us/webinar/register/WN_7AuU0zV4ToaM37eOExj31A"
+              >
+                Register Now
+              </Link>
+            </Button>
           </div>
         </div>
       </Slider>
