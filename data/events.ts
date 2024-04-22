@@ -23,6 +23,21 @@ const eventsList = [
     location: "Virtual",
     desc: "This Discover IITM Zanzibar will focus on living & learning at the IITM Zanzibar Campus, especially for BS Students. All African Nationals studying & working in other countries are also welcome to join this webinar! Join the webinar to hear from the 1st cohort of students in BS Program on why you need to choose the IIT Madras Zanzibar Campus for your Undergraduate Studies!",
   },
+  {
+    img: "/Webinar6.png",
+    date: {
+      day: "24",
+      monthYear: "April 2024",
+    },
+    link: "https://us06web.zoom.us/webinar/register/WN_i4qUriBvTLKuj_22-fmSbg",
+    name: "An Inside Story: Experiences of Our First Batch Students",
+    time: "06:30 PM IST | 04:00 PM EAT",
+    location: "Virtual",
+    desc: "The Webinar offers a unique opportunity to delve into the vibrant and enriching experiences of current students at IIT Madras Zanzibar. During the webinar, students will take center stage as they share their journeys and perspectives on studying at this world-class institution.",
+  },
 ];
 
+
 export default eventsList;
+
+export type EventsType = typeof eventsList;

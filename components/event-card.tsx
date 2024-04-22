@@ -4,6 +4,7 @@ import { SlLocationPin } from "react-icons/sl";
 import Img from "./image";
 import Link from "next/link";
 import Button from "./button";
+import Image from "next/image";
 
 type EventCardProps = {
   img: string;
@@ -16,13 +17,14 @@ type EventCardProps = {
   time: string;
   location: string;
   desc: string;
+  type: "PAST" | "UPCOMING";
 }
 
-export default function EventCard({img,date,link,name,time,location,desc}: EventCardProps) {
+export default function EventCard({img,date,link,name,time,location,desc, type}: EventCardProps) {
   return (
     <div className={styles.card}>
       <div className={styles.poster}>
-        <Img src={img} alt="Event Poster" width={400} height={400} />
+        <Image src={img} alt="Event Poster" width={400} height={400} />
       </div>
       <div className={styles.body}>
         <div className={styles.header}>
@@ -30,9 +32,11 @@ export default function EventCard({img,date,link,name,time,location,desc}: Event
             <h4>{date.day}</h4>
             <h5>{date.monthYear}</h5>
           </div>
-          <Link target="_blank" href={link}>
-            <Button kind="SECONDARY">Register Now</Button>
-          </Link>
+          {type === "UPCOMING" && (
+            <Link target="_blank" href={link}>
+              <Button kind="SECONDARY">Register Now</Button>
+            </Link>
+          )}
         </div>
         <div className={styles.content}>
           <h3>{name}</h3>
@@ -46,9 +50,7 @@ export default function EventCard({img,date,link,name,time,location,desc}: Event
               {location}
             </span>
           </div>
-          <p>
-            {desc}
-          </p>
+          <p>{desc}</p>
         </div>
       </div>
     </div>

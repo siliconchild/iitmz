@@ -26,15 +26,12 @@ export default function Hero() {
             <h1>
               IIT Madras <span>Zanzibar</span>
             </h1>
-            <h4>
-              BS Live Webinar with Director of IITM & Director-in-Charge of
-              IITMZ
-            </h4>
-            <h5>April 16, 5.30 PM IST | 3 PM EAT</h5>
+            <h4>Live Webinar with 1st Cohort of students at IITM Zanzibar</h4>
+            <h5>April 24, 6.30 PM IST | 4 PM EAT</h5>
             <Button>
               <Link
                 target="_blank"
-                href=" https://us06web.zoom.us/webinar/register/WN_7AuU0zV4ToaM37eOExj31A"
+                href="https://us06web.zoom.us/webinar/register/WN_i4qUriBvTLKuj_22-fmSbg"
               >
                 Register Now
               </Link>
@@ -57,15 +54,12 @@ export default function Hero() {
             <h1>
               IIT Madras <span>Zanzibar</span>
             </h1>
-            <h4>
-              BS Live Webinar with Director of IITM & Director-in-Charge of
-              IITMZ
-            </h4>
-            <h5>April 16, 5.30 PM IST | 3 PM EAT</h5>
+            <h4>Live Webinar with 1st Cohort of students at IITM Zanzibar</h4>
+            <h5>April 24, 6.30 PM IST | 4 PM EAT</h5>
             <Button>
               <Link
                 target="_blank"
-                href=" https://us06web.zoom.us/webinar/register/WN_7AuU0zV4ToaM37eOExj31A"
+                href="https://us06web.zoom.us/webinar/register/WN_i4qUriBvTLKuj_22-fmSbg"
               >
                 Register Now
               </Link>

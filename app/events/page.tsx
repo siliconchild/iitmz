@@ -1,5 +1,5 @@
 import styles from "./page.module.scss";
-import EventCard from "@/components/event-card";
+import EventsContainer from "@/components/events-container";
 import eventsList from "@/data/events";
 
 export default function EventsPage (){
@@ -10,9 +10,7 @@ export default function EventsPage (){
             <h1>Events</h1>
           </div>
           <div className={styles.body}>
-            {eventsList.map((event) => (
-              <EventCard key={event.link} {...event} />
-            ))}
+              <EventsContainer list={eventsList} />
           </div>
         </div>
       </div>
