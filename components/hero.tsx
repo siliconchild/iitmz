@@ -25,7 +25,7 @@ export default function Hero() {
               IIT Madras <span>Zanzibar</span>
             </h1>
             <h4>Applications for BS in Data Science & AI are live</h4>
-            <h5>May 05, 2024 | 11:59 PM IST</h5>
+            <h5>Last Date: May 05, 2024 | 11:59 PM IST</h5>
             <Button>
               <Link
                 target="_blank"
@@ -53,7 +53,7 @@ export default function Hero() {
               IIT Madras <span>Zanzibar</span>
             </h1>
             <h4>Applications for BS in Data Science & AI are live</h4>
-            <h5>May 05, 2024 | 11:59 PM IST</h5>
+            <h5>Last Date: May 05, 2024 | 11:59 PM IST</h5>
             <Button>
               <Link
                 target="_blank"
