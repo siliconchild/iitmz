@@ -7,10 +7,7 @@ type AnnouncementsArray = Announcement[];
 const announcements: AnnouncementsArray = [
   {
     title:
-      "Admissions for A.Y. 2024-25 for BS & MTech programs in Data Science & AI are live. Apply Now!",
-  },
-  {
-    title: "BS Application closing {{DAYS_LEFT,2024-04-15}}",
+      "Application Period Extended for BS in Data Science & AI: Last Date to Apply: May 05, 2024 | 11:59 PM IST",
   },
   {
     title: "MTech Application closing {{DAYS_LEFT,2024-03-18}}",

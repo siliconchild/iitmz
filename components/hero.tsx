@@ -24,8 +24,21 @@ export default function Hero() {
             <h1>
               IIT Madras <span>Zanzibar</span>
             </h1>
+<<<<<<< HEAD
             <h4>Admissions for AY 2024-25 are Live</h4>
             <ApplyDropdown />
+=======
+            <h4>Applications for BS in Data Science & AI are live</h4>
+            <h5>May 05, 2024 | 11:59 PM IST</h5>
+            <Button>
+              <Link
+                target="_blank"
+                href="https://admissions.ge.iitm.ac.in/iitmz-bsdsai"
+              >
+                Apply Now
+              </Link>
+            </Button>
+>>>>>>> 70087db (Bs application details added)
           </div>
         </div>
         <div className={styles.item}>
@@ -44,8 +57,21 @@ export default function Hero() {
             <h1>
               IIT Madras <span>Zanzibar</span>
             </h1>
+<<<<<<< HEAD
             <h4>Admissions for AY 2024-25 are Live</h4>
             <ApplyDropdown />
+=======
+            <h4>Applications for BS in Data Science & AI are live</h4>
+            <h5>May 05, 2024 | 11:59 PM IST</h5>
+            <Button>
+              <Link
+                target="_blank"
+                href="https://admissions.ge.iitm.ac.in/iitmz-bsdsai"
+              >
+                Apply Now
+              </Link>
+            </Button>
+>>>>>>> 70087db (Bs application details added)
           </div>
         </div>
       </Slider>
