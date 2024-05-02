@@ -10,7 +10,7 @@ const announcements: AnnouncementsArray = [
   // },
   {
     title:
-      "Application Period Extended for BS in Data Science & AI: Last Date to Apply: April 30, 2024",
+      "Application Period Extended for BS in Data Science & AI: Last Date to Apply: May 05, 2024 | 11:59 PM IST",
   },
   {
     title: "Register for the Live Webinar: Check Events Page for more info"
