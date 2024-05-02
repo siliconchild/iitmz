@@ -1,6 +1,8 @@
 import styles from "./hero.module.scss";
 import Slider from "./slider";
 import Img from "./image";
+import Button from "./button";
+import Link from "next/link";
 import ApplyDropdown from "./apply-dropdown";
 
 export default function Hero() {
