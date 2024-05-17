@@ -107,7 +107,7 @@ export default function CourseDetail({ params }: { params: { slug: string } }) {
                 "resources" in course &&
                 course?.resources.map((resource: any) => (
                   <div key={resource.title}>
-                    <Link href={resource.link}>
+                    <Link target="_blank" href={resource.link}>
                       <Button kind="SECONDARY_BLACK">
                         <MdOutlineFileDownload />
                        {resource.title}

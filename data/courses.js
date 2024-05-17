@@ -834,7 +834,7 @@ export const courses = {
       {
         title:
           "MTech Ocean Structures Screening Test Syllabus & Question types & mark allocation",
-        link: "MTech_OS_Screening_Test Syllabus.pdf",
+        link: "/MTech_OS_Screening_Test Syllabus.pdf",
       },
     ],
     curriculum: {
