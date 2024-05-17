@@ -9,8 +9,11 @@ const announcements: AnnouncementsArray = [
   //   title: "BS Application closing {{DAYS_LEFT,2024-04-30}}",
   // },
   {
+    title: "BS in DS & AI Screening Test is scheduled on June 09, 2024",
+  },
+  {
     title:
-      "Application Period Extended for BS in Data Science & AI: Last Date to Apply: May 05, 2024 | 11:59 PM IST",
+      "Applications are open for the New MTech Program in Ocean Structures, Last Date: June 20, 2024.",
   },
 ];
 

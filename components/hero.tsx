@@ -26,12 +26,12 @@ export default function Hero() {
             <h1>
               IIT Madras <span>Zanzibar</span>
             </h1>
-            <h4>Applications for BS in Data Science & AI are live</h4>
-            <h5>Last Date: May 05, 2024 | 11:59 PM IST</h5>
+            <h4>MTech Ocean Structures Applications are live</h4>
+            <h5>Last Date: June 20, 2024 | 11:59 PM</h5>
             <Button>
               <Link
                 target="_blank"
-                href="https://admissions.ge.iitm.ac.in/iitmz-bsdsai"
+                href="https://admissions.ge.iitm.ac.in/iitmz-mtechos"
               >
                 Apply Now
               </Link>
@@ -54,12 +54,12 @@ export default function Hero() {
             <h1>
               IIT Madras <span>Zanzibar</span>
             </h1>
-            <h4>Applications for BS in Data Science & AI are live</h4>
-            <h5>Last Date: May 05, 2024 | 11:59 PM IST</h5>
+            <h4>MTech Ocean Structures Applications are live</h4>
+            <h5>Last Date: June 20, 2024 | 11:59 PM</h5>
             <Button>
               <Link
                 target="_blank"
-                href="https://admissions.ge.iitm.ac.in/iitmz-bsdsai"
+                href="https://admissions.ge.iitm.ac.in/iitmz-mtechos"
               >
                 Apply Now
               </Link>
