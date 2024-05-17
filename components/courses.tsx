@@ -104,6 +104,50 @@ export default function Courses({ layout = "HORIZONTAL" }: CoursesProps) {
               </div>
             </div>
           </div>
+
+          <div className={styles.item}>
+            <Img
+              src="/ocean-structures.jpg"
+              width={270}
+              height={320}
+              style={{ objectFit: "cover" }}
+              alt="Image of human and machine"
+            />
+
+            <div className={styles.content}>
+              <a href="/schools/engineering-and-science/mtech-ocean-structures">
+                <h3>MTech in Ocean Structures</h3>
+              </a>
+
+              <p>
+                The Master of Technology in Ocean Structures offered at IIT
+                Madras Zanzibar Campus will have a curriculum tailor-made to the
+                industry needs in the Oil & Gas and Maritime sector. The program
+                covers the basics of marine & offshore hydrodynamics, structural
+                design for oil and gas exploration offshore platforms, ports,
+                harbours including port structures & breakwater. The course
+                equips students with core and elective courses to prepare them
+                for careers in the oil & gas and maritime sectors.
+              </p>
+
+              <div className={styles.footer}>
+                <div>
+                  <AiOutlineCalendar />
+                  <span>2 Years</span>
+                </div>
+                <div>
+                  <AiOutlineUnorderedList />
+                  <span>208 Credits</span>
+                </div>
+                <Link href="/schools/engineering-and-science/mtech-ocean-structures">
+                  <Button kind="SECONDARY">More Details</Button>
+                </Link>
+                <Link target="_blank" href={courses.mtech_os.applicationLink}>
+                  <Button> Apply now</Button>
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

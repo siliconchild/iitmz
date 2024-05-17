@@ -1,6 +1,7 @@
-const courses = {
+export const courses = {
   bs: {
     slug: "bs-data-science-and-ai",
+    coverImg: "/cd3x.png",
     applicationLink: "https://admissions.ge.iitm.ac.in/iitmz-bsdsai",
     seo: {
       desc: "BS in Data Science & AI at IIT Madras Zanzibar. 4-Year Program. Comprehensive Curriculum. Hands-on Expertise. Diverse Job Prospects. Apply Now.",
@@ -21,6 +22,43 @@ const courses = {
         "Business analyst or data strategist in companies leveraging data for strategic decision- making.",
       ],
     },
+    eligibility: [
+      {
+        content:
+          "Eligible applicants will appear for a test at a test center; shortlisted candidates will be called for an interview. A holistic assessment of the quality of the application, performance in the screening test, and interviews conducted by the expert faculty panel will be used to admit students. The screening test will be similar to SAT in level/type. Further details will be announced shortly.",
+        type: "REQUIRED",
+      },
+      {
+        content:
+          "To be eligible for the Bachelor of Science in Data Science and Artificial Intelligence (BS DS & AI) program at IITM Zanzibar Campus, you must meet one of the following eligibility criteria",
+        type: "REQUIRED",
+      },
+      {
+        content:
+          "Advanced Certificate of Secondary Education (Form VI) with 3 principal passes, in Natural Sciences",
+        type: "ANY",
+      },
+      {
+        content:
+          "Final examination of the 10+2 system or two-year Pre-University, conducted by any recognized Central/ Indian State Board (CBSE etc.)",
+        type: "ANY",
+      },
+      {
+        content:
+          "General Certificate Education (GCE) Examination (London/Cambridge/Sri Lanka) at the Advanced (A) Level",
+        type: "ANY",
+      },
+      {
+        content:
+          "High School Certificate Examination of the Cambridge University or International Baccalaureate Diploma of the International Baccalaureate office, Geneva",
+        type: "ANY",
+      },
+      {
+        content:
+          "Any Public School/Board/University examination in India or in any foreign country recognized as equivalent to 10+2 system by the Association of Indian Universities (AIU)",
+        type: "ANY",
+      },
+    ],
     curriculum: {
       semesters: [
         {
@@ -523,6 +561,7 @@ const courses = {
   },
   mtech: {
     slug: "mtech-data-science-and-ai",
+    coverImg: "/cd3x.png",
     applicationLink: "https://admissions.ge.iitm.ac.in/iitmz-mtechdsai",
     seo: {
       desc: "MTech in Data Science & AI at IIT Madras Zanzibar. 2-Year Program. Specialized Skills in AI, Machine Learning, Big Data, And More. Apply Now.",
@@ -546,6 +585,17 @@ const courses = {
         "Business Intelligence Analyst",
       ],
     },
+    eligibility: [
+      {
+        content:
+          "Eligible applicants will appear for a test at a test center; shortlisted candidates will be called for an interview. A holistic assessment of the quality of the application, performance in the screening test, and interviews conducted by the expert faculty panel will be used to admit students. The screening test will be similar to SAT in level/type. Further details will be announced shortly.",
+        type: "REQUIRED",
+      },
+      {
+        content: "4 year UG degree in Engineering/Science",
+        type: "REQUIRED",
+      },
+    ],
     curriculum: {
       semesters: [
         {
@@ -727,6 +777,392 @@ const courses = {
               T: "",
               E: "",
               P: "",
+              O: "40",
+              totalCredits: "40",
+            },
+          ],
+        },
+      ],
+    },
+  },
+  mtech_os: {
+    slug: "mtech-ocean-structures",
+    coverImg: "/os-cover.jpg",
+    applicationLink: "https://admissions.ge.iitm.ac.in/iitmz-mtechos",
+    seo: {
+      desc: "The Master of Technology in Ocean Structures offered at IIT Madras Zanzibar Campus will have a curriculum tailor-made to the industry needs in the Oil & Gas and Maritime sector. Apply Now.",
+    },
+    title: "MTech in Ocean Structures",
+    meta: {
+      duration: "2 Years",
+      credits: "208",
+      department: "Engineering",
+      language: "English",
+    },
+    desc: "The MTech in Ocean Structures program presents a rigorous and comprehensive curriculum designed to cultivate expertise Ocean structures covering Offshore Platforms for oil and Gas exploration, Renewable Energy such as offshore wind, wave and tidal energy, port and harbour infrastructures including jetties, berths, breakwater, dredging and reclamation aspects. Along with core courses like Wave hydrodynamics, Offshore Structures, Port and harbour structures and a selection of supplementary electives. There is a heavy emphasis on hands-on lab work cum tutorials in design of the above and industry driven projects. The course will enable the students to acquire research aptitude along with the necessary skills to succeed in the job market.",
+    prospects: {
+      desc: "Graduates of our MTech Ocean Structures program are in high demand, contributing expertise to the dynamic field of coastal and offshore engineering, shaping sustainable solutions for maritime infrastructure and environmental resilience. The potential employers include both government and private employers in Tanzania and around the globe in the port, harbour and energy market. The potential employers are as follows::",
+      points: [
+        "Songas Ltd",
+        "Panafrican Energy Tanzania Limited",
+        "Equinor Tanzania As",
+        "East Coast Energy Tanzania Limited",
+        "Mogas Tanzania Limited.",
+        "BG Tanzania Limited",
+        "Houston Power",
+        "Oilcom Tanzania Limited",
+        "International & Regional Companies in such as",
+        "Aker Solutions",
+        "Technip",
+        "Mcdermot International",
+        "COWI",
+      ],
+    },
+    eligibility: [
+      {
+        content:
+          " 4-year Undergraduate degree in Civil Engineering with a minimum of 60% marks",
+        type: "REQUIRED",
+      },
+      {
+        content:
+          "Eligible applicants will appear for an online screening test; shortlisted candidates will be called for an interview. A holistic assessment of the quality of the application, performance in the screening test, and interviews conducted by the expert faculty panel will be used to admit students. The screening test will be similar to SAT in level/type. ",
+        type: "REQUIRED",
+      },
+    ],
+    resources: [
+      {
+        title:
+          "MTech Ocean Structures Screening Test Syllabus & Question types & mark allocation",
+        link: "MTech_OS_Screening_Test Syllabus.pdf",
+      },
+    ],
+    curriculum: {
+      info: [
+        "Stream 1: Offshore and Ship structures",
+        "Stream 2: Port, Harbour & Coastal structures",
+        "Note: Stream selection will be based on the CGPA obtained by the students at the end of first semester.",
+      ],
+      semesters: [
+        {
+          title: "Semester I - Common to both streams",
+          credits: "55",
+          courses: [
+            {
+              courseName: "Basics of Ocean Engineering",
+              category: "",
+              L: "3",
+              T: "0",
+              E: "0",
+              A: "0",
+              O: "6",
+              totalCredits: "9",
+            },
+            {
+              courseName: "Wave hydrodynamics",
+              category: "",
+              L: "3",
+              T: "0",
+              E: "1",
+              A: "0",
+              O: "6",
+              totalCredits: "10",
+            },
+            {
+              courseName: "Dynamics of ocean structures",
+              category: "",
+              L: "3",
+              T: "0",
+              E: "0",
+              A: "0",
+              O: "6",
+              totalCredits: "9",
+            },
+            {
+              courseName: "Marine geotechnical engineering",
+              category: "",
+              L: "3",
+              T: "0",
+              E: "0",
+              A: "0",
+              O: "6",
+              totalCredits: "9",
+            },
+            {
+              courseName: "Conceptual design of marine structures",
+              category: "",
+              L: "3",
+              T: "0",
+              E: "0",
+              A: "0",
+              O: "6",
+              totalCredits: "9",
+            },
+            {
+              courseName: "Statics and Dynamics of floating structures",
+              category: "",
+              L: "3",
+              T: "0",
+              E: "0",
+              A: "0",
+              O: "6",
+              totalCredits: "9",
+            },
+          ],
+        },
+        {
+          title: "Semester II: Stream 1 - Offshore and Ship structures",
+          credits: "56",
+          courses: [
+            {
+              courseName: "Design of fixed offshore structures",
+              category: "",
+              L: "3",
+              T: "1",
+              E: "0",
+              A: "0",
+              O: "6",
+              totalCredits: "10",
+            },
+            {
+              courseName: "Experimental methods and Measurements",
+              category: "",
+              L: "3",
+              T: "0",
+              E: "1",
+              A: "0",
+              O: "6",
+              totalCredits: "10",
+            },
+            {
+              courseName:
+                "Materials and fabrication of ship and offshore structures",
+              category: "",
+              L: "3",
+              T: "0",
+              E: "0",
+              A: "0",
+              O: "6",
+              totalCredits: "9",
+            },
+            {
+              courseName: "Numerical modelling of offshore structures",
+              category: "",
+              L: "2",
+              T: "0",
+              E: "0",
+              A: "3",
+              O: "4",
+              totalCredits: "9",
+            },
+            {
+              courseName: "FEM applied to ocean engineering",
+              category: "",
+              L: "3",
+              T: "0",
+              E: "0",
+              A: "0",
+              O: "6",
+              totalCredits: "9",
+            },
+            {
+              courseName: "Stream Elective - 01",
+              category: "",
+              L: "3",
+              T: "0",
+              E: "0",
+              A: "0",
+              O: "6",
+              totalCredits: "9",
+            },
+          ],
+        },
+        {
+          title: "Semester II: Stream 2 - Port harbour and coastal structures",
+          credits: "56",
+          courses: [
+            {
+              courseName: "Port & harbour structures",
+              category: "",
+              L: "3",
+              T: "0",
+              E: "0",
+              A: "0",
+              O: "6",
+              totalCredits: "9",
+            },
+            {
+              courseName: "Experimental methods and Measurements",
+              category: "",
+              L: "3",
+              T: "0",
+              E: "1",
+              A: "0",
+              O: "6",
+              totalCredits: "10",
+            },
+            {
+              courseName: "Coastal engineering",
+              category: "",
+              L: "3",
+              T: "0",
+              E: "0",
+              A: "0",
+              O: "6",
+              totalCredits: "9",
+            },
+            {
+              courseName: "Numerical techniques in ocean hydrodynamics",
+              category: "",
+              L: "2",
+              T: "1",
+              E: "0",
+              A: "3",
+              O: "4",
+              totalCredits: "10",
+            },
+            {
+              courseName: "FEM applied to ocean engineering",
+              category: "",
+              L: "3",
+              T: "0",
+              E: "0",
+              A: "0",
+              O: "6",
+              totalCredits: "9",
+            },
+            {
+              courseName: "Stream Elective - 01",
+              category: "",
+              L: "3",
+              T: "0",
+              E: "0",
+              A: "0",
+              O: "6",
+              totalCredits: "9",
+            },
+          ],
+        },
+        {
+          title: "Summer Training - Common to both streams",
+          credits: "10",
+          courses: [
+            {
+              courseName:
+                "Summer training in computer modelling and simulation",
+              category: "",
+              L: "0",
+              T: "0",
+              E: "0",
+              A: "0",
+              O: "10",
+              totalCredits: "10",
+            },
+          ],
+        },
+        {
+          title: "Semester III: Stream 1 - Offshore and Ship Structures",
+          credits: "47",
+          courses: [
+            {
+              courseName: "Pipelines and Riser Engineering",
+              category: "",
+              L: "3",
+              T: "0",
+              E: "0",
+              A: "0",
+              O: "6",
+              totalCredits: "9",
+            },
+            {
+              courseName: "Stream Elective - 02",
+              category: "",
+              L: "3",
+              T: "0",
+              E: "0",
+              A: "0",
+              O: "6",
+              totalCredits: "9",
+            },
+            {
+              courseName: "Stream Elective - 03",
+              category: "",
+              L: "3",
+              T: "0",
+              E: "0",
+              A: "0",
+              O: "6",
+              totalCredits: "9",
+            },
+            {
+              courseName: "M.Tech Ocean Structures Project (Phase I)",
+              category: "",
+              L: "0",
+              T: "0",
+              E: "0",
+              A: "0",
+              O: "20",
+              totalCredits: "20",
+            },
+          ],
+        },
+        {
+          title: "Semester III: Stream 2 - Port harbour and coastal structures",
+          credits: "47",
+          courses: [
+            {
+              courseName: "Dredging and reclamation",
+              category: "",
+              L: "3",
+              T: "0",
+              E: "0",
+              A: "0",
+              O: "6",
+              totalCredits: "9",
+            },
+            {
+              courseName: "Stream Elective - 02",
+              category: "",
+              L: "3",
+              T: "0",
+              E: "0",
+              A: "0",
+              O: "6",
+              totalCredits: "9",
+            },
+            {
+              courseName: "Stream Elective - 03",
+              category: "",
+              L: "3",
+              T: "0",
+              E: "0",
+              A: "0",
+              O: "6",
+              totalCredits: "9",
+            },
+            {
+              courseName: "M.Tech Ocean Structures Project (Phase I)",
+              category: "",
+              L: "0",
+              T: "0",
+              E: "0",
+              A: "0",
+              O: "20",
+              totalCredits: "20",
+            },
+          ],
+        },
+        {
+          title: "Semester IV - Common to both streams",
+          credits: "40",
+          courses: [
+            {
+              courseName: "M.Tech Ocean Structures Project (Phase II)",
+              category: "",
+              L: "0",
+              T: "0",
+              E: "0",
+              A: "0",
               O: "40",
               totalCredits: "40",
             },

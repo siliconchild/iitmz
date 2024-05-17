@@ -8,8 +8,11 @@ import {
   AiOutlineCalendar,
   AiOutlineCheck,
 } from "react-icons/ai";
+import {MdOutlineFileDownload} from "react-icons/md";
 import { BiBuilding } from "react-icons/bi";
 import { GoGlobe } from "react-icons/go";
+import Button from "@/components/button";
+import Link from "next/link";
 
 export async function generateMetadata({
   params: { slug },
@@ -45,7 +48,7 @@ export default function CourseDetail({ params }: { params: { slug: string } }) {
     <section className={styles.section}>
       <div className={styles.header}>
         <Img
-          src="/cd3x.png"
+          src={course?.coverImg || ""}
           alt="data science course image"
           width={900}
           height={600}
@@ -53,7 +56,12 @@ export default function CourseDetail({ params }: { params: { slug: string } }) {
       </div>
       <div className="container">
         <section className={styles.body}>
-          <h1>{course?.title}</h1>
+          <div className="header">
+            <h1>{course?.title}</h1>
+            <Link href={course?.applicationLink || ``}>
+              <Button kind="PRIMARY">Apply Now</Button>
+            </Link>
+          </div>
           <div className={styles.meta}>
             <div className={styles.item}>
               <AiOutlineCalendar />
@@ -93,11 +101,35 @@ export default function CourseDetail({ params }: { params: { slug: string } }) {
             </ul>
           </div>
           <div>
+            <h4>Downloadable Resources</h4>
+            <div className={styles.downloadableFiles}>
+              {course &&
+                "resources" in course &&
+                course?.resources.map((resource: any) => (
+                  <div key={resource.title}>
+                    <Link href={resource.link}>
+                      <Button kind="SECONDARY_BLACK">
+                        <MdOutlineFileDownload />
+                       {resource.title}
+                      </Button>
+                    </Link>
+                  </div>
+                ))}
+            </div>
+          </div>
+          <div>
             <h4>Eligibility Criteria</h4>
             <Eligilibity type="SINGLE" courseSlug={params.slug} />
           </div>
           <div className={styles.curriculum}>
             <Accordion title="Curriculum">
+              {course && "info" in course?.curriculum && (
+                <div className={styles.info}>
+                  {course?.curriculum.info.map((item) => (
+                    <p key={item}>{item}</p>
+                  ))}
+                </div>
+              )}
               {course?.curriculum.semesters.map((semester, index) => (
                 <AccordionItem
                   key={semester.title}
@@ -111,7 +143,7 @@ export default function CourseDetail({ params }: { params: { slug: string } }) {
                     <thead>
                       <tr>
                         <th>Course Name</th>
-                        <th title="To know what (L, T, E, P, O) is hover your mouse pointer over it">
+                        <th title="To know what (L, T, E, P, A, O) is hover your mouse pointer over it">
                           Category
                         </th>
                         <th title="Lectures">L</th>
@@ -130,7 +162,10 @@ export default function CourseDetail({ params }: { params: { slug: string } }) {
                           <td data-cell="Lectures">{course.L}</td>
                           <td data-cell="Tutorials">{course.T}</td>
                           <td data-cell="Extended Tutorials">{course.E}</td>
-                          <td data-cell="Practicals">{course.P}</td>
+                          {"P" in course && (
+                            <td data-cell="Practicals">{course.P}</td>
+                          )}
+                          {"A" in course && <td data-cell="A">{course.A}</td>}
                           <td data-cell="Outside Classroom">{course.O}</td>
                           <td data-cell="Total">{course.totalCredits}</td>
                         </tr>

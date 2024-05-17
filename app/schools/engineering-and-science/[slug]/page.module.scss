@@ -111,9 +111,26 @@
   }
 }
 
+.downloadableFiles {
+  margin-top: 2rem;
+  button {
+    svg {
+      width: 22px;
+      height: 22px;
+      margin-right: 1rem;
+    }
+  }
+}
+
 .curriculum {
   h5 {
     font-size: 1.6rem;
+  }
+  .info {
+    padding: 2.4rem;
+    p {
+      margin-bottom: .5rem;
+    }
   }
 }
 

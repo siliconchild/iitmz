@@ -24,6 +24,11 @@ let config = {
         destination: "/",
         permanent: false,
       },
+      {
+        source: "/mtech-os",
+        destination: "/schools/engineering-and-science/mtech-ocean-structures",
+        permanent: false,
+      },
     ];
   },
   images: {
