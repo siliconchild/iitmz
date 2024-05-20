@@ -5,6 +5,7 @@ import Img from "./image";
 import Link from "next/link";
 import Button from "./button";
 import Image from "next/image";
+import parse from "html-react-parser";
 
 type EventCardProps = {
   img: string;
@@ -50,7 +51,7 @@ export default function EventCard({img,date,link,name,time,location,desc, type}:
               {location}
             </span>
           </div>
-          <p>{desc}</p>
+          <p>{parse(desc)}</p>
         </div>
       </div>
     </div>

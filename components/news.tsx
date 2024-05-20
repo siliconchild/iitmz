@@ -18,31 +18,31 @@ export default function News() {
             </Link>
           </div>
           <NewsCard
-            link="https://www.indiatoday.in/education-today/news/story/iit-madras-set-to-create-history-by-establishing-an-international-campus-in-zanzibar-tanzania-2404437-2023-07-10"
+            link="https://www.iitmz.ac.in/admission"
             image={{
-              url: "/slot1.webp",
+              url: "/bs-news.JPG",
               alt: "Logo of IIT Madras",
             }}
-            title=" IIT Madras set to create history by establishing an international campus in Zanzibar-Tanzania"
-            desc="The Indian Institute of Technology Madras (IIT Madras), the top-ranked Educational Institute in the country, has become the first IIT in the country to launch an international campus, which is coming up in Zanzibar-Tanzania."
+            title="The BS Screening Test for the AY 2024-25 is scheduled for June 09, 2024"
+            desc="IIT Madras Zanzibar BS screening test for the AY 2024-25 will be held in different cities across the world on June 09, 2024, from 2 to 5 PM IST. BS Candidates will receive the BS Admit Card at the end of May 2024. Check your registered email for more details."
           />
           <NewsCard
-            link="https://www.cnbctv18.com/education/meet-preeti-aghalayam-the-first-woman-director-of-an-iit-zanzibar-campus-17195151.htm"
+            link="https://www.iitmz.ac.in/schools/engineering-and-science/mtech-ocean-structures"
             image={{
-              url: "/slot2.webp",
+              url: "/ocean-structures.jpg",
               alt: "Image of Preeti Aghalayam",
             }}
-            title="Meet Preeti Aghalayam — the first ever woman director of an IIT"
-            desc="Preeti Aghalayam, an alumna of IIT Madras, has been appointed as the director-in-charge of the upcoming Zanzibar campus of IIT Madras "
+            title="MTech Ocean Structures - IIT Madras Zanzibar Campus has announced a new Master's program for the AY 2024-25"
+            desc="IIT Madras Zanzibar Campus invites applications to its new MTech Program in Ocean Structures from candidates of all Nationalities. Applications will close by June 20, 2024 "
           />
           <NewsCard
-            link="https://indianexpress.com/article/opinion/columns/director-in-charge-iit-madras-zanzibar-writes-taking-the-indian-campus-to-the-world-8892772/"
+            link="https://www.iitmz.ac.in/events"
             image={{
-              url: "/slot3.webp",
+              url: "/stemv2.jpeg",
               alt: "Image of IITM Zanzibar campus building",
             }}
-            title="Head of IIT Madras Zanzibar writes: Taking the Indian campus to the world "
-            desc="Scientific research today has to be interdisciplinary, multifaceted and should bring together a diversity of views."
+            title="Discover STEM’ - Genwise Residential Program for High Schoolers"
+            desc="he 'Discover STEM' Program at IIT Madras-Zanzibar, conducted by GenWise, is a residential camp for students entering grades 11 or 12. Scheduled from July 28 to August 9, 2024, it offers modules on Engineering Design and Astrophysics and expert talks in various STEM areas."
           />
         </div>
       </div>

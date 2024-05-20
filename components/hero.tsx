@@ -9,7 +9,7 @@ export default function Hero() {
 
   return (
     <section>
-      <Slider>
+      <Slider autoplayInterval={8000}>
         <div className={styles.item}>
           <Img
             width={1200}
@@ -54,14 +54,13 @@ export default function Hero() {
             <h1>
               IIT Madras <span>Zanzibar</span>
             </h1>
-            <h4>MTech Ocean Structures Applications are live</h4>
-            <h5>Last Date: June 20, 2024 | 11:59 PM</h5>
+            <h4>
+              Discover STEM&rsquo; - Genwise Residential Program for High Schoolers
+            </h4>
+            <h5>06:30 PM IST | 04:00 PM EAT</h5>
             <Button>
-              <Link
-                target="_blank"
-                href="https://admissions.ge.iitm.ac.in/iitmz-mtechos"
-              >
-                Apply Now
+              <Link target="_blank" href="https://www.iitmz.ac.in/events">
+                Know More
               </Link>
             </Button>
           </div>
