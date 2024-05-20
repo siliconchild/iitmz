@@ -85,7 +85,7 @@
   // h2 {
   //   display: none;
   // }
-  .grid {
+  .grid { 
     padding: 3rem 0;
     flex-direction: column;
   }
@@ -124,6 +124,7 @@
   @media (max-width: 480px) {
     padding: 0;
     .item {
+      flex-direction: column;
       margin-bottom: 0;
       img {
         width: 100%;
