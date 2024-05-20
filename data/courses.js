@@ -796,7 +796,7 @@ export const courses = {
     meta: {
       duration: "2 Years",
       credits: "208",
-      department: "School of Engineering & Science",
+      department: "Engineering & Science",
       language: "English",
     },
     desc: "The MTech in Ocean Structures program presents a rigorous and comprehensive curriculum designed to cultivate expertise Ocean structures covering Offshore Platforms for oil and Gas exploration, Renewable Energy such as offshore wind, wave and tidal energy, port and harbour infrastructures including jetties, berths, breakwater, dredging and reclamation aspects. Along with core courses like Wave hydrodynamics, Offshore Structures, Port and harbour structures and a selection of supplementary electives. There is a heavy emphasis on hands-on lab work cum tutorials in design of the above and industry driven projects. The course will enable the students to acquire research aptitude along with the necessary skills to succeed in the job market.",
