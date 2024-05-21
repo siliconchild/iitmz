@@ -56,11 +56,20 @@ export default function CourseDetail({ params }: { params: { slug: string } }) {
       </div>
       <div className="container">
         <section className={styles.body}>
-          <div className="header">
+          <div className={styles.titleBar}>
             <h1>{course?.title}</h1>
-            <Link href={course?.applicationLink || ``}>
-              <Button kind="PRIMARY">Apply Now</Button>
-            </Link>
+            <div className={styles.cta}>
+              {course && "flyerLink" in course && (
+                <Link target="_blank" href={course?.flyerLink}>
+                  <Button kind="SECONDARY">Download Flyer</Button>
+                </Link>
+              )}
+              {course?.applicationLink && (
+                <Link href={course?.applicationLink}>
+                  <Button kind="PRIMARY">Apply Now</Button>
+                </Link>
+              )}
+            </div>
           </div>
           <div className={styles.meta}>
             <div className={styles.item}>
@@ -110,7 +119,7 @@ export default function CourseDetail({ params }: { params: { slug: string } }) {
                     <Link target="_blank" href={resource.link}>
                       <Button kind="SECONDARY_BLACK">
                         <MdOutlineFileDownload />
-                       {resource.title}
+                        {resource.title}
                       </Button>
                     </Link>
                   </div>

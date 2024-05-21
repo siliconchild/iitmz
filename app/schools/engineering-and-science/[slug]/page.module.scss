@@ -21,6 +21,8 @@
     object-fit: cover;
   }
 }
+
+
 .body {
   margin-top: -70px;
   position: relative;
@@ -45,6 +47,16 @@
   & > div {
     margin-bottom: 4rem;
   }
+}
+
+.titleBar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cta {
+  display: flex;
+  gap: 2rem;
 }
 
 .meta {
@@ -193,6 +205,13 @@
     p {
       font-size: 1.5rem;
     }
+  }
+  .titleBar {
+    display: flex;
+    flex-direction: column;
+  }
+  .cta {
+    padding: 0 1rem;
   }
   .description {
     padding: 0 0.75rem;
