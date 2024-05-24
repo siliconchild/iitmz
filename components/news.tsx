@@ -41,8 +41,8 @@ export default function News() {
               url: "/stemv2.jpeg",
               alt: "Image of IITM Zanzibar campus building",
             }}
-            title="Discover STEM’ - Genwise Residential Program for High Schoolers"
-            desc="he 'Discover STEM' Program at IIT Madras-Zanzibar, conducted by GenWise, is a residential camp for students entering grades 11 or 12. Scheduled from July 28 to August 9, 2024, it offers modules on Engineering Design and Astrophysics and expert talks in various STEM areas."
+            title="'Discover STEM’ - Genwise Residential Program for High Schoolers"
+            desc="The 'Discover STEM' Program at IIT Madras Zanzibar, conducted by GenWise, is a residential camp for students completing grade 10, 11 or 12. Scheduled from July 28 to August 9, 2024, it offers modules on Engineering Design and Astrophysics and expert talks in various STEM areas."
           />
         </div>
       </div>
