@@ -55,7 +55,7 @@ export default function Hero() {
               IIT Madras <span>Zanzibar</span>
             </h1>
             <h4>
-              Discover STEM&rsquo; - Genwise Residential Program for High Schoolers
+            &lsquo;Discover STEM&rsquo; - Genwise Residential Program for High Schoolers
             </h4>
             <h5>06:30 PM IST | 04:00 PM EAT</h5>
             <Button>
