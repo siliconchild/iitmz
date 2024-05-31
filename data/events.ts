@@ -47,6 +47,18 @@ const eventsList = [
     location: "IIT Madras, Zanzibar Campus",
     desc: "The 'Discover STEM' Program at IIT Madras Zanzibar, conducted by GenWise, is a residential camp for students completing grade 10, 11 or 12. Running from July 28 to August 9, 2024, it offers modules on Engineering Design and Astrophysics, and expert talks in various STEM areas. Participants will also enjoy the IITM-Zanzibar campus and Zanzibar island's beauty. The program helps students discover strengths, make career choices, develop critical skills, and find a community of peers and mentors. The fee is US$ 1190 (early bird price: US$ 990 by June 26, 2024). Eligibility: exam scores, teacher recommendation, or top 85th percentile in ASSET. <br /><br /> <strong>For more information on the 'Discover STEM program', visit - <a href='https://www.giftedworld.org/discover-stem' target='_blank'>click here</a></strong> <br /><br /><strong>For information on the program webinar - <a href='https://www.giftedworld.org/discover-stem#webinar' target='_blank'>click here</a></strong>",
   },
+  {
+    img: "/ai-workshop .jpg",
+    date: {
+      day: "7",
+      monthYear: "June 2024",
+    },
+    link: "https://forms.gle/bAGtxZGZMsYYoDy38",
+    name: "Artificial Intelligence for All: An Introductory Workshop",
+    time: "09:30 AM | 05:30 PM EAT",
+    location: "Dar es Salaam Institute of Technology, Dar es Salaam",
+    desc: "Join us for the 'AI for All: An Introductory Workshop' on 7-8 June 2024, from 9:30 am to 5:30 pm (EAT) at the Dar es Salaam Institute of Technology. This free workshop, led by experts from Indian Institute of Technology Madras Zanzibar and Dar es Salaam Institute of Technology, offers an in-depth exploration of Data Science, Artificial Intelligence, and Natural Language Processing. Engage in hands-on practical sessions covering essential topics such as mathematical foundations, descriptive statistics, data visualization, regression techniques, classification methods, and unsupervised learning. Participants will receive a certificate recognizing their newly acquired skills. Don't miss this opportunity to delve into the world of AI. <br /><br /> <strong>For download the flyer - <a href='/Artificial-Intelligence-for-All-An-Introductory-Workshop.pdf' target='_blank'>click here</a></strong><br /><br /><strong>For information on the program webinar - <a href='' target='_blank'>click here</a></strong>",
+  },
 ];
 
 
