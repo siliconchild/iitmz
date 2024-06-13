@@ -109,23 +109,26 @@ export default function CourseDetail({ params }: { params: { slug: string } }) {
               ))}
             </ul>
           </div>
-          <div>
-            <h4>Downloadable Resources</h4>
-            <div className={styles.downloadableFiles}>
-              {course &&
-                "resources" in course &&
-                course?.resources.map((resource: any) => (
-                  <div key={resource.title}>
-                    <Link target="_blank" href={resource.link}>
-                      <Button kind="SECONDARY_BLACK">
-                        <MdOutlineFileDownload />
-                        {resource.title}
-                      </Button>
-                    </Link>
-                  </div>
-                ))}
+          {course && "downloadableResources" in course && (
+            <div>
+              <h4>Downloadable Resources</h4>
+              <div className={styles.downloadableFiles}>
+                {course &&
+                  "resources" in course &&
+                  course?.resources.map((resource: any) => (
+                    <div key={resource.title}>
+                      <Link target="_blank" href={resource.link}>
+                        <Button kind="SECONDARY_BLACK">
+                          <MdOutlineFileDownload />
+                          {resource.title}
+                        </Button>
+                      </Link>
+                    </div>
+                  ))}
+              </div>
             </div>
-          </div>
+          )}
+
           <div>
             <h4>Eligibility Criteria</h4>
             <Eligilibity type="SINGLE" courseSlug={params.slug} />
