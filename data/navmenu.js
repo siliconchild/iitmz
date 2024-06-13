@@ -33,7 +33,7 @@ const navMenu = [
   { title: "In Media", link: "/media/" },
   { title: "Our Partners", link: "/partners/" },
   { title: "Campus Life", link: "/campus-life/" },
-  // { title: "Financial Aid", link: "/financial-aid/" },
+  { title: "Financial Aid", link: "/financial-aid/" },
   { title: "Events", link: "/events/" },
   { title: "Admissions", link: "/admission/" },
   { title: "Privacy Policy", link: "/privacy-policy", type: "FOOTER_ONLY" },

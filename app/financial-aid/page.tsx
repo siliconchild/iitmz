@@ -1,4 +1,6 @@
 import styles from "./page.module.scss";
+import Link from "next/link";
+import Button from "@/components/button";
 
 export const metadata = {
   title: "Financial Aid",
@@ -17,16 +19,25 @@ export default function FinancialAidPage() {
           <div>
             <h1 className="section-title">Financial Aid & Support</h1>
             <p>
-              The Zanzibar campus of IIT Madras believes in making its
-              world-class education accessible to a diverse cohort of students.
-              We want to ensure that you, an exceptional student, can come study
-              with us without financial barriers. We are putting together
-              several means and ways to support students. IITM alumni are
-              putting together financial assistance, and we are also negotiating
-              on other possibilities including scholarships from various
-              government bodies & bank loans. This page will house information
-              as and when we are ready to announce it.
+              The IIT Madras Zanzibar believes in making its world-class
+              education accessible to a diverse cohort of students. We want to
+              ensure that you, an exceptional student, can come study with us
+              without financial barriers. We are putting together several means
+              and ways to support students. The institution is raising funds
+              from IITM alumni & government bodies for tuition waivers. Several
+              banks are coming forward with special loan packages for IITM
+              Zanzibar students.
             </p>
+            <p>
+              Note: This is the application for financial assistance for
+              full-time study in degree programs at IITM Zanzibar.
+            </p>
+            <Link
+              target="_blank"
+              href="https://ge.iitm.ac.in/forms/iitmz-financial-assistance"
+            >
+              <Button kind="PRIMARY">Apply Now</Button>
+            </Link>
           </div>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 598 392">
             <defs>
@@ -534,48 +545,6 @@ export default function FinancialAidPage() {
               </g>
             </g>
           </svg>
-        </div>
-        <div className={styles.main}>
-          <div className={styles.item}>
-            <div className={styles.title}>
-              <h2>
-                IITM Alumni Awards <br /> 2023
-              </h2>
-            </div>
-            <div className={styles.content}>
-              <p>
-                IIT Madras alumni are the strongest advocates of the quality of
-                our education. They are excited by the opportunities at the
-                first international campus of IITM. They are coming together
-                this year to fund 50% of the tuition fees for Year 1
-                (2023-&rsquo;24), for up to 8 deserving students. We will write
-                to all eligible students after applications close, ask you to
-                apply separately to the award and review the information for
-                making our decision. These will be announced in late September,
-                and awardees will have a chance to interact with the sponsoring
-                alumni online for mentorship.
-              </p>
-            </div>
-          </div>
-          <div className={styles.item}>
-            <div className={styles.title}>
-              <h2>
-                Test Toppers Prize <br /> 2023
-              </h2>
-            </div>
-            <div className={styles.content}>
-              <p>
-                We recognise that the Zanzibar Screening Test for the
-                undergraduate applicants, is a big unknown. There are no papers
-                from the past year to prepare from or evaluate yourself against.
-                Despite these odds, we expect that some of you will do
-                exceptionally well. We will present cash awards to the top 5
-                performers in the screening test. You don&rsquo;t have to do
-                anything to apply for this award (except do very well in the
-                test!). These will be announced in late September.
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
