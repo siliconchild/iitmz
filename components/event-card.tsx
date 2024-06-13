@@ -9,19 +9,19 @@ import parse from "html-react-parser";
 
 type EventCardProps = {
   img: string;
-  date: {
-    day: string,
-    monthYear: string
-  };
-  link: string;
+  startDate: string;
+  endDate?: string;
+  regLink: string;
   name: string;
+  slug?: string;
   time: string;
   location: string;
   desc: string;
+  links?: { title: string; link: string }[];
   type: "PAST" | "UPCOMING";
 }
 
-export default function EventCard({img,date,link,name,time,location,desc, type}: EventCardProps) {
+export default function EventCard({img, startDate, endDate, regLink,name, slug, time, location, desc, links, type}: EventCardProps) {
   return (
     <div className={styles.card}>
       <div className={styles.poster}>
@@ -30,14 +30,25 @@ export default function EventCard({img,date,link,name,time,location,desc, type}:
       <div className={styles.body}>
         <div className={styles.header}>
           <div className={styles.date}>
-            <h4>{date.day}</h4>
-            <h5>{date.monthYear}</h5>
+            <div>
+              <h3>{startDate}</h3>
+            </div>
+            {endDate && (
+              <>
+                <span>&#8212;</span>
+                <div>
+                  <h3>{endDate}</h3>
+                </div>
+              </>
+            )}
           </div>
-          {type === "UPCOMING" && (
-            <Link target="_blank" href={link}>
-              <Button kind="SECONDARY">Register Now</Button>
-            </Link>
-          )}
+          <div className={styles.cta}>
+            {type === "UPCOMING" && (
+              <Link target="_blank" href={regLink}>
+                <Button kind="PRIMARY">Register Now</Button>
+              </Link>
+            )}
+          </div>
         </div>
         <div className={styles.content}>
           <h3>{name}</h3>
@@ -52,6 +63,19 @@ export default function EventCard({img,date,link,name,time,location,desc, type}:
             </span>
           </div>
           <p>{parse(desc)}</p>
+          <div className={styles.links}>
+            {links &&
+              links.map((linkItem) => (
+                <Link key={linkItem.title} href={linkItem.link}>
+                  <Button kind="SECONDARY">{linkItem.title}</Button>
+                </Link>
+              ))}
+            {slug && (
+              <Link href={`/events/${slug}`}>
+                <Button kind="SECONDARY">Know More</Button>
+              </Link>
+            )}
+          </div>
         </div>
       </div>
     </div>

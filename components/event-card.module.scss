@@ -1,8 +1,9 @@
 .card {
   display: flex;
-  margin-bottom: 1rem;
+  margin-bottom: 4rem;
   border: 1px solid #e4e5f7;
   border-radius: 5px;
+  padding: 2rem;
 }
 
 .poster {
@@ -15,40 +16,30 @@
 }
 
 .body {
-   padding: 2.5rem 5rem;
+   padding: 2.5rem 3rem 2rem 5rem;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
   align-items: center;
+}
+.cta {
+  display: flex;
+  gap: 1.25rem;
 }
 
 .date {
   display: flex;
   align-items: center;
-  h4 {
-    height: 5rem;
-    width: 7rem;
-    background: #ffb013;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    line-height: 5.5rem;
-    font-size: 3.2rem;
-    font-weight: 700;
-    color: #141517;
-    margin-right: 2rem;
-    border-radius: 3px;
+  gap: .75rem;
+  & > div:first-child {
+    border-left: 4px solid #ffb013;
+    padding: 1rem 0 1rem 1.5rem;
   }
-  h5 {
-    background: #ffffff;
-    display: flex;
-    justify-content: center;
-    font-size: 15px;
-    color: #141517;
-    font-weight: 400;
+  span {
+    color: #a3a3a3;
   }
 }
 
@@ -82,10 +73,22 @@
   }
 }
 
+.links {
+  margin-top: 3rem;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  button {
+    font-size: 1.4rem;
+  }
+}
+
 @media (max-width: 768px) {
   .card{
     flex-direction: column;
     border-radius: 7px;
+    margin-bottom: 1.5rem;
+    padding: .5rem;
   }
   .poster {
     padding: 1.25rem 1.25rem 0;
@@ -94,16 +97,17 @@
     }
   }
   .body {
-    padding: 4rem 2rem 1rem;
+    padding: 3rem 2rem 1rem;
   }
   .header {
     flex-direction: column-reverse;
     align-items: flex-start;
-    gap: 4rem;
+    gap: 1rem;
     margin-bottom: 1rem;
     button {
         font-size: 1.4rem;
         padding: 0 2rem;
+        margin-bottom: 2rem;
     }
     a,button {
         width: 100%;
