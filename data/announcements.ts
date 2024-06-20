@@ -9,11 +9,12 @@ const announcements: AnnouncementsArray = [
   //   title: "BS Application closing {{DAYS_LEFT,2024-04-30}}",
   // },
   {
-    title: "BS in DS & AI Screening Test is scheduled on June 09, 2024",
+    title:
+      "BS selection process is underway. Candidates are requested to check their registered email for next steps",
   },
   {
     title:
-      "Applications are open for the New MTech Program in Ocean Structures, Last Date: June 20, 2024.",
+      "MTech Ocean Structures - Application Deadline has been extended to June 30, 2024",
   },
 ];
 

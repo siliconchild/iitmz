@@ -61,12 +61,17 @@ export default function CourseDetail({ params }: { params: { slug: string } }) {
             <div className={styles.cta}>
               {course && "flyerLink" in course && (
                 <Link target="_blank" href={course?.flyerLink}>
-                  <Button kind="SECONDARY">Download Flyer</Button>
+                  <Button kind="SECONDARY">Download Program Flyer</Button>
                 </Link>
               )}
               {course?.applicationLink && (
                 <Link href={course?.applicationLink}>
-                  <Button kind="PRIMARY">Apply Now</Button>
+                  <Button
+                    kind="PRIMARY"
+                    disabled={course.applicationLink === "#"}
+                  >
+                    Apply Now
+                  </Button>
                 </Link>
               )}
             </div>

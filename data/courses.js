@@ -563,8 +563,7 @@ export const courses = {
   mtech: {
     slug: "mtech-data-science-and-ai",
     coverImg: "/cd3x.png",
-    // applicationLink: "https://admissions.ge.iitm.ac.in/iitmz-mtechdsai",
-    applicationLink: "#",
+    applicationLink: "https://admissions.ge.iitm.ac.in/iitmz-mtechdsai",
     seo: {
       desc: "MTech in Data Science & AI at IIT Madras Zanzibar. 2-Year Program. Specialized Skills in AI, Machine Learning, Big Data, And More. Apply Now.",
     },
@@ -791,7 +790,7 @@ export const courses = {
     slug: "mtech-ocean-structures",
     coverImg: "/os-cover.jpg",
     applicationLink: "https://admissions.ge.iitm.ac.in/iitmz-mtechos",
-    flyerLink: "/mtech-os-flyer.pdf",
+    flyerLink: "/MTech_In_OS_Program_Flyer.pdf",
     seo: {
       desc: "The Master of Technology in Ocean Structures offered at IIT Madras Zanzibar Campus will have a curriculum tailor-made to the industry needs in the Oil & Gas and Maritime sector. Apply Now.",
     },

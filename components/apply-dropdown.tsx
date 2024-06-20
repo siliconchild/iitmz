@@ -13,11 +13,11 @@ export default function ApplyDropdown() {
           <MenuButton className={buttonStyles.button}>Apply Now</MenuButton>
         }
       >
-        <MenuItem>
+        {/* <MenuItem>
           <Link target="_blank" href={courses.bs.applicationLink}>
             BS in Data Science & AI
           </Link>
-        </MenuItem>
+        </MenuItem> */}
         <MenuItem>
           <Link target="_blank" href={courses.mtech.applicationLink}>
             MTech in Data Science & AI
