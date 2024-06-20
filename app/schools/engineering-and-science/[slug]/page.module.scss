@@ -70,7 +70,7 @@
   align-items: center;
   .item {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 4fr;
     grid-template-rows: repeat(2, 1fr);
     svg {
       height: 28px;
@@ -212,6 +212,7 @@
   }
   .cta {
     padding: 0 1rem;
+    flex-direction: column;
   }
   .description {
     padding: 0 0.75rem;
@@ -219,6 +220,7 @@
   .meta {
     justify-content: space-evenly;
     .item {
+      width: 40%;
       span {
         font-size: 1.3rem;
       }

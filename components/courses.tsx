@@ -20,14 +20,15 @@ export default function Courses({ layout = "HORIZONTAL" }: CoursesProps) {
         <h2 className="section-title center line">Academic Programs</h2>
         <div className={styles.grid}>
           <div className={styles.item}>
-            <Img
-              src="/course3.jpg"
-              width={270}
-              height={320}
-              style={{ objectFit: "cover" }}
-              alt="Image of human and machine"
-            />
-
+            <div className={styles.image}>
+              <Img
+                src="/course3.jpg"
+                width={270}
+                height={320}
+                style={{ objectFit: "cover" }}
+                alt="Image of human and machine"
+              />
+            </div>
             <div className={styles.content}>
               <a href="/schools/engineering-and-science/bs-data-science-and-ai">
                 <h3>BS in Data Science & AI</h3>
@@ -56,20 +57,22 @@ export default function Courses({ layout = "HORIZONTAL" }: CoursesProps) {
                   <Button kind="SECONDARY">More Details</Button>
                 </Link>
                 <Link target="_blank" href={courses.bs.applicationLink}>
-                  <Button>Apply now</Button>
+                  <Button disabled>Apply now</Button>
                 </Link>
               </div>
             </div>
           </div>
 
           <div className={styles.item}>
-            <Img
-              src="/course4.jpg"
-              width={270}
-              height={320}
-              style={{ objectFit: "cover" }}
-              alt="Image of human and machine"
-            />
+            <div className={styles.image}>
+              <Img
+                src="/course4.jpg"
+                width={270}
+                height={320}
+                style={{ objectFit: "cover" }}
+                alt="Image of human and machine"
+              />
+            </div>
 
             <div className={styles.content}>
               <a href="/schools/engineering-and-science/mtech-data-science-and-ai">
@@ -106,13 +109,15 @@ export default function Courses({ layout = "HORIZONTAL" }: CoursesProps) {
           </div>
 
           <div className={styles.item}>
-            <Img
-              src="/ocean-structures.jpg"
-              width={270}
-              height={320}
-              style={{ objectFit: "cover" }}
-              alt="Image of human and machine"
-            />
+            <div className={styles.image}>
+              <Img
+                src="/ocean-structures.jpg"
+                width={270}
+                height={320}
+                style={{ objectFit: "cover" }}
+                alt="Image of human and machine"
+              />
+            </div>
 
             <div className={styles.content}>
               <a href="/schools/engineering-and-science/mtech-ocean-structures">
