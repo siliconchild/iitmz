@@ -58,6 +58,12 @@
   align-items: center;
 }
 
+.button.disabled {
+  background-color: #e2e4e8;
+  color: #6d6d6d;
+  cursor: not-allowed;
+}
+
 
 @media (max-width: 480px) {
   .button {
