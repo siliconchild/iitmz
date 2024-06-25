@@ -27,7 +27,7 @@ export default function Hero() {
               IIT Madras <span>Zanzibar</span>
             </h1>
             <h4>MTech Ocean Structures Applications are live</h4>
-            <h5>Last Date: June 20, 2024 | 11:59 PM</h5>
+            <h5>Last Date: June 20, 2024 | 11:59 PM IST</h5>
             <Button>
               <Link
                 target="_blank"
@@ -55,12 +55,41 @@ export default function Hero() {
               IIT Madras <span>Zanzibar</span>
             </h1>
             <h4>
-            &lsquo;Discover STEM&rsquo; - Genwise Residential Program for High Schoolers
+              &lsquo;Discover STEM&rsquo; - Genwise Residential Program for High
+              Schoolers
             </h4>
             <h5>06:30 PM IST | 04:00 PM EAT</h5>
             <Button>
-              <Link target="_blank" href="https://www.iitmz.ac.in/events">
+              <Link target="_blank" href="/events">
                 Know More
+              </Link>
+            </Button>
+          </div>
+        </div>
+        <div className={styles.item}>
+          <Img
+            width={1200}
+            height={800}
+            alt="IITM Zanzibar Campus Image"
+            src="/Scrolling/campus-life-main.jpg"
+            loading="eager"
+            sizes="(max-width: 768px) 900px, (min-width: 768px) 1200px"
+          />
+
+          <div className={styles.content}>
+            {/* <h4>IITM Zanzibar Campus</h4> */}
+            <h3>Welcome To</h3>
+            <h1>
+              IIT Madras <span>Zanzibar</span>
+            </h1>
+            <h4>MTech Data Science & AI Applications are live</h4>
+            <h5>Last Date: July 05, 2024 | 11:59 PM IST</h5>
+            <Button>
+              <Link
+                target="_blank"
+                href="https://admissions.ge.iitm.ac.in/iitmz-mtechdsai"
+              >
+                Apply Now
               </Link>
             </Button>
           </div>
