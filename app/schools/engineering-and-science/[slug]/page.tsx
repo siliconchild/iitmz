@@ -119,8 +119,8 @@ export default function CourseDetail({ params }: { params: { slug: string } }) {
               <h4>Downloadable Resources</h4>
               <div className={styles.downloadableFiles}>
                 {course &&
-                  "resources" in course &&
-                  course?.resources.map((resource: any) => (
+                  "downloadableResources" in course &&
+                  course?.downloadableResources.map((resource: any) => (
                     <div key={resource.title}>
                       <Link target="_blank" href={resource.link}>
                         <Button kind="SECONDARY_BLACK">

@@ -832,7 +832,7 @@ export const courses = {
         type: "REQUIRED",
       },
     ],
-    resources: [
+    downloadableResources: [
       {
         title:
           "MTech Ocean Structures - Screening Test Syllabus, Question types & mark allocation",
