@@ -24,6 +24,16 @@ let config = {
         destination: "/schools/engineering-and-science/mtech-ocean-structures",
         permanent: false,
       },
+			{
+				source: "/mtech-dsai",
+				destination: "/schools/engineering-and-science/mtech-data-science-and-ai",
+				permanent: false,
+			},
+			{
+				source: "/bs-dsai",
+				destination: "/schools/engineering-and-science/bs-data-science-and-ai",
+				permanent: false
+			}
     ];
   },
   images: {
