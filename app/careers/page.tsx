@@ -5378,8 +5378,8 @@ export default function CareersPage() {
                   research using computational methods in Physics and delivering
                   high-quality undergraduate teaching in the subject.
                   Additionally, they will develop elective courses for both
-                  undergraduate and Master's students. Interested candidates
-                  should click on the "Apply Now" button located above and submit your
+                  undergraduate and Master&rsquo;s students. Interested candidates
+                  should click on the &ldquo;Apply Now&rdquo; button located above and submit your
                   application by July 20, 2024.
                 </p>
               </div>
