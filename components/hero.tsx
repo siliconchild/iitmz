@@ -83,7 +83,7 @@ export default function Hero() {
               IIT Madras <span>Zanzibar</span>
             </h1>
             <h4>MTech Data Science & AI Applications are live</h4>
-            <h5>Last Date: July 05, 2024 | 11:59 PM IST</h5>
+            <h5>Last Date: July 20, 2024 | 11:59 PM IST</h5>
             <Button>
               <Link
                 target="_blank"
