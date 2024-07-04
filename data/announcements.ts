@@ -10,14 +10,14 @@ const announcements: AnnouncementsArray = [
   // },
   {
     title:
-      "BS selection process is underway. Candidates are requested to check their registered email for next steps",
+      "BS Results are out. Candidates are asked to check their registered email for the results",
   },
 	{
-		title: "MTech Data Science & AI - Application Deadline has been extended to July 05, 2024",
+		title: "MTech Ocean Structures - Application Deadline has been extended to July 20, 2024",
 	},
   {
     title:
-      "MTech Ocean Structures - Application Deadline has been extended to June 30, 2024",
+      "MTech Data Science & AI - Application Deadline has been extended to July 20, 2024",
   },
 ];
 
