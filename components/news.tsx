@@ -18,13 +18,13 @@ export default function News() {
             </Link>
           </div>
           <NewsCard
-            link="https://www.iitmz.ac.in/admission"
+            link="#"
             image={{
               url: "/bs-news.JPG",
               alt: "Logo of IIT Madras",
             }}
-            title="The BS Screening Test for the AY 2024-25 is scheduled for June 09, 2024"
-            desc="IIT Madras Zanzibar BS screening test for the AY 2024-25 will be held in different cities across the world on June 09, 2024, from 2 to 5 PM IST. BS Candidates will receive the BS Admit Card at the end of May 2024. Check your registered email for more details."
+            title="The results of BS in Data Science & AI are out"
+            desc="The IIT Madras BS in Data Science & AI final results were informed to the shortlisted candidates. Candidates are requested to check their registered emails for the updates from the admission team"
           />
           <NewsCard
             link="https://www.iitmz.ac.in/schools/engineering-and-science/mtech-ocean-structures"

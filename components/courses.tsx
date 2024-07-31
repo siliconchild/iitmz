@@ -102,7 +102,7 @@ export default function Courses({ layout = "HORIZONTAL" }: CoursesProps) {
                   <Button kind="SECONDARY">More Details</Button>
                 </Link>
                 <Link target="_blank" href={courses.mtech.applicationLink}>
-                  <Button> Apply now</Button>
+                  <Button disabled> Apply now</Button>
                 </Link>
               </div>
             </div>
@@ -148,7 +148,7 @@ export default function Courses({ layout = "HORIZONTAL" }: CoursesProps) {
                   <Button kind="SECONDARY">More Details</Button>
                 </Link>
                 <Link target="_blank" href={courses.mtech_os.applicationLink}>
-                  <Button> Apply now</Button>
+                  <Button disabled> Apply now</Button>
                 </Link>
               </div>
             </div>

@@ -26,16 +26,12 @@ export default function Hero() {
             <h1>
               IIT Madras <span>Zanzibar</span>
             </h1>
-            <h4>MTech Ocean Structures Applications are live</h4>
-            <h5>Last Date: July 20, 2024 | 11:59 PM IST</h5>
-            <Button>
-              <Link
-                target="_blank"
-                href="https://admissions.ge.iitm.ac.in/iitmz-mtechos"
-              >
-                Apply Now
-              </Link>
-            </Button>
+            <h4>
+              Admissions to all academic programs for AY 2024-25 are now closed
+            </h4>
+            <h5>
+              For admission queries, reach out to admissions@iitmz.ac.in
+            </h5>
           </div>
         </div>
         <div className={styles.item}>
@@ -58,38 +54,10 @@ export default function Hero() {
               &lsquo;Discover STEM&rsquo; - Genwise Residential Program for High
               Schoolers
             </h4>
-            <h5>06:30 PM IST | 04:00 PM EAT</h5>
+            <h5>July 28 - Aug 09, 2024</h5>
             <Button>
               <Link target="_blank" href="/events">
                 Know More
-              </Link>
-            </Button>
-          </div>
-        </div>
-        <div className={styles.item}>
-          <Img
-            width={1200}
-            height={800}
-            alt="IITM Zanzibar Campus Image"
-            src="/Scrolling/campus-life-main.jpg"
-            loading="eager"
-            sizes="(max-width: 768px) 900px, (min-width: 768px) 1200px"
-          />
-
-          <div className={styles.content}>
-            {/* <h4>IITM Zanzibar Campus</h4> */}
-            <h3>Welcome To</h3>
-            <h1>
-              IIT Madras <span>Zanzibar</span>
-            </h1>
-            <h4>MTech Data Science & AI Applications are live</h4>
-            <h5>Last Date: July 20, 2024 | 11:59 PM IST</h5>
-            <Button>
-              <Link
-                target="_blank"
-                href="https://admissions.ge.iitm.ac.in/iitmz-mtechdsai"
-              >
-                Apply Now
               </Link>
             </Button>
           </div>

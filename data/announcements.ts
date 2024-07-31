@@ -10,11 +10,12 @@ const announcements: AnnouncementsArray = [
   // },
   {
     title:
-      "BS Results are out. Candidates are asked to check their registered email for the results",
+      "Selected BS & MTech candidates are requested to email 'admissions@iitmz.ac.in' for any queries",
   },
-	{
-		title: "MTech Ocean Structures - Application Deadline has been extended to July 20, 2024",
-	},
+  {
+    title:
+      "MTech Ocean Structures & MTech Data Science & AI- Candidates are requested to check their emails for admission status and further steps",
+  },
   {
     title:
       "MTech Data Science & AI - Application Deadline has been extended to July 20, 2024",

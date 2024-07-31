@@ -4,6 +4,7 @@ import { Tabs, TabButton, TabPanel } from "./tabs";
 import ApplyDropdown from "./apply-dropdown";
 import Link from "next/link";
 import Slider from "./slider";
+import Button from "./button";
 
 export default function AdmissionHeader() {
   return (
@@ -22,8 +23,10 @@ export default function AdmissionHeader() {
               growing fields.
             </p>
             <div className={styles.applyButton}>
-              <ApplyDropdown />
+              {/* <ApplyDropdown /> */}
+              <Button disabled>Apply Now</Button>
             </div>
+            <h4>Applications are now closed for AY 2024-25</h4>
           </div>
           <Tabs>
             <div className={styles.tabs}>

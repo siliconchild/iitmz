@@ -9,6 +9,7 @@ import ApplyDropdown from "./apply-dropdown";
 import Topbar from "./topbar";
 import Navbar from "./navbar";
 import Ticker from "./ticker";
+import Button from "./button";
 
 export default function Header() {
   const [navToggle, setNavToggle] = useState(false);
@@ -2263,8 +2264,9 @@ export default function Header() {
               alt="Institute Of Eminence Icon"
             />
           </a>
-
-          <ApplyDropdown />
+          <Link href={`/admission`}>
+            <Button kind="PRIMARY">Apply Now</Button>
+          </Link>
 
           <button
             className={`${styles.menu} ${navToggle ? styles.menu_open : ``}`}
