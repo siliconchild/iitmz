@@ -43,19 +43,6 @@
     width: max-content;
     margin-top: auto;
   }
-  &:last-child {
-    position: relative;
-    margin-top: -1rem;
-    &::before {
-      position: absolute;
-      left: 0;
-      top: 10%;
-      content: "";
-      display: block;
-      height: 75%;
-      border-left: 1px solid #ffb013;
-    }
-  }
 }
 
 .body {

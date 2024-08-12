@@ -6,6 +6,7 @@ import Counter from "@/components/counter";
 import Testimonials from "@/components/testimonials";
 import Gallery from "@/components/gallery";
 import AdvisoryCouncil from "@/components/advisory-council";
+import GovernanceBoard from "@/components/governance-board";
 import Leadership from "@/components/leadership";
 import SocialMedia from "@/components/social-media";
 
@@ -23,6 +24,7 @@ export default function Home() {
       <Courses />
       <Counter />
       <Leadership />
+      <GovernanceBoard />
       <AdvisoryCouncil />
       <section className={styles.events_testimonials_section}>
         <div className="container">
