@@ -5,75 +5,75 @@ export const governanceBoardMember = [
   {
     name: "Prof. Mohamed Sheikh",
     title:
-      "Director, Department of Research, Training and Extension, Ministry of Livestock and Fisheries.",
+      "Director, Department of Research, Training and Extension, Ministry of Livestock and Fisheries, Govt. of Tanzania",
     img: "/Mohamed-Sheikh.png",
   },
   {
     name: "Prof. Raghunathan Rengaswamy",
-    title: "Dean, Global Engagement, IIT Madras",
+    title: "Dean, Global Engagement, Professor Chemical Engineering, IIT Madras",
     img: "/prof-raghu.jpg",
   },
   {
-    name: "Prof: Hamed R. H. Hikmany",
-    title: "Principal, Zanzibar School of Health",
+    name: "Prof. Hamed R. H. Hikmany",
+    title: "Principal, Zanzibar School of Health, Zanzibar",
     img: "/Prof-Hamed-R-H-Hikmany.jpg",
   },
   {
-    name: "Prof Ligy Philip",
+    name: "Prof. Ligy Philip",
     title:
-      "Professor, Civil Engg., IIT Madras, former Dean (planning), IIT Madras and Professor-in-charge (Infrastructure), IITM Zanzibar",
+      "Professor, Civil Engg., IIT Madras and Professor-in-charge (Infrastructure), IITM Zanzibar",
     img: "/ligy-1.png",
   },
   {
     name: "Prof. Mussa J. Assad",
     title:
-      "Deputy Vice Chancellor [Administration and Finance] and acting Vice Chancellor Muslim University of Morogoro (MUM)",
+      "Deputy Vice Chancellor [Administration and Finance] and acting Vice Chancellor Muslim University of Morogoro (MUM), Tanzania",
     img: "/Prof-Mussa-J-Assad.jpeg",
   },
   {
     name: "Prof. Elisante Ole Gabriel",
-    title: "Tanzania Chief Court Administrator",
+    title: "Tanzania Chief Court Administrator, Judiciary of Tanzania",
     img: "/elisante-ole-gabriel-large.jpeg",
   },
   {
     name: "Dr. Said Ally Khamis",
-    title: "Executive Secretary - National Examination Council Tanzania(NECTA)",
+    title: "Executive Secretary - National Examinations Council of Tanzania (NECTA), Govt. of Tanzania",
     img: "/Dr.-Said-Ally-Khamis.jpg",
   },
   {
     name: "Prof. Maulilio John Kipanyula",
     title:
-      "Vice Chancellor of the Nelson Mandela Africa Institute of Science and Technology",
+      "Vice Chancellor, Nelson Mandela Africa Institute of Science and Technology, Tanzania",
     img: "/Prof-Maulilio-John-Kipanyula.jpg",
   },
   {
     name: "Dr. Asha Rose Migiro",
-    title: "Former Ambassador of UK",
+    title: "Former Tanzanian High Commissioner to the United Kingdom, Former United Nations Deputy Secretary General",
     img: "/Dr-Asha-Rose-Migiro.jpg",
   },
   {
-    name: "Prof Devang Khakhar",
+    name: "Prof. Devang Khakhar",
     title:
-      "Professor, Chemical Engg., IIT Bombay and former director, IIT Bombay",
+      "Professor, Chemical Engg. and former director, IIT Bombay",
     img: "/Prof-Devang-V-Khakhar.jpg",
   },
   {
-    name: "Prof Bhaskar Ramamurthi",
+    name: "Prof. Bhaskar Ramamurthi",
     title:
-      "Professor, Electrical Engg., IIT Madras and former director, IIT Madras",
+      "Professor, Electrical Engg. and former director, IIT Madras",
     img: "/Prof.-Bhaskar-Ramamurthi.jpeg",
   },
   {
     name: "Prof. Ganapathi Ramachandran",
     title:
-      "Chairman and Non-Executive Director,Trigyn Technologies Limited; President -SICCI & Co-Chair FICCI Africa Council",
+      "Chairman and Non-Executive Director, Trigyn Technologies Limited; President - SICCI & Co-Chair FICCI Africa Council",
     img: "/Prof-Ganapathi-Ramachandran.jpeg",
   },
 
   {
     name: "Prof. Preeti Aghalayam",
     title:
-      "Director-in-charge Dean of School of Engg. & Science Zanzibar campus, IIT Madras",
+      "Director-in-charge and Dean of School of Engg. & Science, IIT Madras Zanzibar",
     img: "/preeti.jpg",
   },
 ];
