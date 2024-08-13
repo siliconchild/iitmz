@@ -48,19 +48,19 @@ export const governanceBoardMember = [
   },
   {
     name: "Dr. Asha Rose Migiro",
-    title: "Former Tanzanian High Commissioner to the United Kingdom, Former United Nations Deputy Secretary General",
+    title: "Former High Commissioner of Tanzania to the United Kingdom, Former United Nations Deputy Secretary General",
     img: "/Dr-Asha-Rose-Migiro.jpg",
   },
   {
     name: "Prof. Devang Khakhar",
     title:
-      "Professor, Chemical Engg. and former director, IIT Bombay",
+      "Professor, Chemical Engg. and Former Director, IIT Bombay",
     img: "/Prof-Devang-V-Khakhar.jpg",
   },
   {
     name: "Prof. Bhaskar Ramamurthi",
     title:
-      "Professor, Electrical Engg. and former director, IIT Madras",
+      "Professor, Electrical Engg. and Former Director, IIT Madras",
     img: "/Prof.-Bhaskar-Ramamurthi.jpeg",
   },
   {
