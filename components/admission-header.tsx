@@ -23,10 +23,10 @@ export default function AdmissionHeader() {
               growing fields.
             </p>
             <div className={styles.applyButton}>
-              {/* <ApplyDropdown /> */}
-              <Button disabled>Apply Now</Button>
+              <ApplyDropdown />
+              {/* <Button>Apply Now</Button> */}
             </div>
-            <h4>Applications are now closed for AY 2024-25</h4>
+            {/* <h4>Applications are now closed for AY 2024-25</h4> */}
           </div>
           <Tabs>
             <div className={styles.tabs}>
