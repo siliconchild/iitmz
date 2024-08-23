@@ -65,7 +65,7 @@ export default function CourseDetail({ params }: { params: { slug: string } }) {
                 </Link>
               )}
               {course?.applicationLink && (
-                <Link href={course?.applicationLink}>
+                <Link target="_blank" href={course?.applicationLink}>
                   <Button
                     kind="PRIMARY"
                     disabled={course.applicationLink === "#"}
