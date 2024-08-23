@@ -18,11 +18,11 @@ export default function ApplyDropdown() {
             BS in Data Science & AI
           </Link>
         </MenuItem> */}
-        <MenuItem>
+        {/* <MenuItem>
           <Link target="_blank" href={courses.mtech.applicationLink}>
             MTech in Data Science & AI
           </Link>
-        </MenuItem>
+        </MenuItem> */}
         <MenuItem>
           <Link target="_blank" href={courses.mtech_os.applicationLink}>
           MTech in Ocean Structures
