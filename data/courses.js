@@ -790,7 +790,7 @@ export const courses = {
     slug: "mtech-ocean-structures",
     coverImg: "/os-cover.jpg",
     applicationLink: "https://admissions.ge.iitm.ac.in/iitmz-mtechos",
-    flyerLink: "/MTech_In_OS_Program_Flyer.pdf",
+    flyerLink: "/IITMZ_MTech_In_Ocean_Structures.pdf",
     seo: {
       desc: "The Master of Technology in Ocean Structures offered at IIT Madras Zanzibar Campus will have a curriculum tailor-made to the industry needs in the Oil & Gas and Maritime sector. Apply Now.",
     },

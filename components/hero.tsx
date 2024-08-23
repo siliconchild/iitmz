@@ -27,11 +27,16 @@ export default function Hero() {
               IIT Madras <span>Zanzibar</span>
             </h1>
             <h4>
-              Admissions to all academic programs for AY 2024-25 are now closed
+              MTech Ocean Structures Applications are live
             </h4>
             <h5>
-              For admission queries, reach out to admissions@iitmz.ac.in
+            Last Date: Sep 15, 2024 | 11:59 PM
             </h5>
+            <Button>
+              <Link target="_blank" href="https://admissions.ge.iitm.ac.in/iitmz-mtechos">
+                Apply Now
+              </Link>
+            </Button>
           </div>
         </div>
         <div className={styles.item}>
@@ -51,13 +56,12 @@ export default function Hero() {
               IIT Madras <span>Zanzibar</span>
             </h1>
             <h4>
-              &lsquo;Discover STEM&rsquo; - Genwise Residential Program for High
-              Schoolers
+              MTech Ocean Structures Applications are live
             </h4>
-            <h5>July 28 - Aug 09, 2024</h5>
+            <h5>Last Date: Sep 15, 2024 | 11:59 PM</h5>
             <Button>
-              <Link target="_blank" href="/events">
-                Know More
+              <Link target="_blank" href="https://admissions.ge.iitm.ac.in/iitmz-mtechos">
+                Apply Now
               </Link>
             </Button>
           </div>
