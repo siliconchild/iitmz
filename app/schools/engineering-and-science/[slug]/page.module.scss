@@ -32,8 +32,8 @@
   padding: 4rem 5rem;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
   h1 {
-    margin-bottom: 3rem;
     font-size: 3rem;
+    margin-bottom: 1.25rem;
   }
 
   h4 {
@@ -46,6 +46,17 @@
   }
   & > div {
     margin-bottom: 4rem;
+  }
+}
+
+.mainTitle {
+    margin-bottom: 1rem;
+}
+
+.applicationClosingDate {
+  span {
+    color: #af132a;
+    font-size: 1.6rem;
   }
 }
 
@@ -198,8 +209,7 @@
       }
     }
     h1 {
-      margin-bottom: 2rem;
-      padding: 0 1rem;
+      margin-bottom: .5rem;
       font-size: 2rem;
     }
     p {
@@ -209,6 +219,10 @@
   .titleBar {
     display: flex;
     flex-direction: column;
+  }
+  .mainTitle {
+    margin-bottom: 3rem;
+    padding: 0 1rem;
   }
   .cta {
     padding: 0 1rem;

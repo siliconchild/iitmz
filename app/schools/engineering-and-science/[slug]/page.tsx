@@ -57,7 +57,16 @@ export default function CourseDetail({ params }: { params: { slug: string } }) {
       <div className="container">
         <section className={styles.body}>
           <div className={styles.titleBar}>
-            <h1>{course?.title}</h1>
+            <div className={styles.mainTitle}>
+              <h1>{course?.title}</h1>
+              {course?.applicationClosingDate && (
+                <p className={styles.applicationClosingDate}>
+                  <strong>Applications Close on -</strong>{" "}
+                  <span>{course?.applicationClosingDate}</span>
+                </p>
+              )}
+            </div>
+
             <div className={styles.cta}>
               {course && "flyerLink" in course && (
                 <Link target="_blank" href={course?.flyerLink}>

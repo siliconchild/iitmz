@@ -8,6 +8,7 @@ export const courses = {
       desc: "BS in Data Science & AI at IIT Madras Zanzibar. 4-Year Program. Comprehensive Curriculum. Hands-on Expertise. Diverse Job Prospects. Apply Now.",
     },
     title: "BS in Data Science & AI",
+    applicationClosingDate: null,
     meta: {
       duration: "4 Years",
       credits: "433",
@@ -568,6 +569,7 @@ export const courses = {
       desc: "MTech in Data Science & AI at IIT Madras Zanzibar. 2-Year Program. Specialized Skills in AI, Machine Learning, Big Data, And More. Apply Now.",
     },
     title: "MTech in Data Science & AI",
+    applicationClosingDate: null,
     meta: {
       duration: "2 Years",
       credits: "190",
@@ -801,6 +803,7 @@ export const courses = {
       department: "Engineering & Science",
       language: "English",
     },
+    applicationClosingDate: "15 Sep 2024",
     desc: "The MTech in Ocean Structures program presents a rigorous and comprehensive curriculum designed to cultivate expertise Ocean structures covering Offshore Platforms for oil and Gas exploration, Renewable Energy such as offshore wind, wave and tidal energy, port and harbour infrastructures including jetties, berths, breakwater, dredging and reclamation aspects. Along with core courses like Wave hydrodynamics, Offshore Structures, Port and harbour structures and a selection of supplementary electives. There is a heavy emphasis on hands-on lab work cum tutorials in design of the above and industry driven projects. The course will enable the students to acquire research aptitude along with the necessary skills to succeed in the job market.",
     prospects: {
       desc: "Graduates of our MTech Ocean Structures program are in high demand, contributing expertise to the dynamic field of coastal and offshore engineering, shaping sustainable solutions for maritime infrastructure and environmental resilience. The potential employers include both government and private employers in Tanzania and around the globe in the port, harbour and energy market. The potential employers are as follows::",
