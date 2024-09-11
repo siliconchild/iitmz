@@ -24,6 +24,10 @@ const navMenu = [
             title: "Academic Calendar",
             link: "/academic-calendar",
           },
+          {
+            title: "Ordinances",
+            link: "/schools/engineering-and-science/ordinances",
+          },
         ],
       },
     ],
