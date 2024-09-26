@@ -1,3 +1,5 @@
+import faculty from "./faculty";
+
 export const courses = {
   bs: {
     slug: "bs-data-science-and-ai",
@@ -68,6 +70,7 @@ export const courses = {
           credits: "47",
           courses: [
             {
+              courseNo: "Z1003",
               courseName: "Introduction to Calculus ",
               category: "Science",
               L: "3",
@@ -76,8 +79,14 @@ export const courses = {
               P: "",
               O: "6",
               totalCredits: "10",
+              details: {
+                content:
+                  "<strong>Derivatives:</strong> Limits, Continuous functions and derivatives, chain rule, applications of derivatives <br/><br /><strong>Integrals:</strong> Summation vs Integration, Indefinite integrals, definite integrals, techniques of integration, integration by parts. <br/><br /> <strong>Partial derivatives:</strong> maxima, minima and saddle points. <br/><br /><strong>Multiple integrals:</strong> Cylindrical and spherical coordinates, double and triple integrals.<br/><br /><strong>Vector Calculus:</strong> Line integrals, Green’s theorem, Surface integrals, Divergence theorem, Curl and Stokes’ Theorem. ",
+                faculty: "Dr. Bharath S",
+              },
             },
             {
+              courseNo: "Z1001",
               courseName: "Physics for Data Scientists",
               category: "Science",
               L: "3",
@@ -86,8 +95,14 @@ export const courses = {
               P: "",
               O: "6",
               totalCredits: "10",
+              details: {
+                content:
+                  "Classical mechanics: mechanics of a particle, mechanics of a system of particles , generalized coordinates, equations of motions - Lagrangian and Hamiltonian<br/><br />Thermodynamics: First law - energy, work and heat, Second law - entropy, Applications of first and second law for ideal gas, Phase transitions - van der Waals equation of state<br/><br /> Quantum mechanics: The quantum nature of radiation, interference experiment with radiation and particle beams. Postulates of quantum mechanics, Schrodinger wave equation. Applications to simple physical systems such as free particle, particle in a box and barrier penetration, spin, two-state systems <br/><br />Statistical mechanics: phase space, distribution functions, ergodic hypothesis, statistical ensemble - microcanonical, canonical, kinetic theory - Maxwell-Boltzmann distribution, equipartition theorem, kinetic energy, temperature, pressure, statistical definition of entropy, thermal fluctuations, Brownian motion (Langevin’s approach) <br/><br />Case studies::case studies from Physics that use data science methods",
+                faculty: "Dr. Vivek Mishra",
+              },
             },
             {
+              courseNo: "Z1005",
               courseName: "Engineering Calculations",
               category: "Science",
               L: "",
@@ -96,8 +111,14 @@ export const courses = {
               P: "3",
               O: "3",
               totalCredits: "6",
+              details: {
+                content:
+                  "Typology of data (data classification), Physical process variables, Units, Dimensions, Systems of units,Homogeneity & Unit conversions, Estimation of Numerical values, Significant figures, Errors, error propagation, Working with spreadsheets - basic manipulations & calculations, Conceptual thinking (data science examples)",
+                faculty: "Dr. Shankar Narasimhan",
+              },
             },
             {
+              courseNo: "Z1007",
               courseName: "Basics of Computing",
               category: "Engineering",
               L: "3",
@@ -106,8 +127,14 @@ export const courses = {
               P: "3",
               O: "6",
               totalCredits: "12",
+              details: {
+                content:
+                  "Introduction to computation, Python Fundamentals: Variables, expressions and statements; Conditional execution. Functions and program flow; Iterations; Recursion. Basic Python data types: lists, strings, dictionaries, tuples; String manipulation; Matrix manipulation <br/><br /> File handling; Extending Python, Error handling; Regular expressions and Parsing, Testing, Debugging, Exceptions and Assertions <br/><br /> Object-oriented programming in Python,Understanding program performance; profiling code; Advanced topics: parallel programming, data visualization.",
+                faculty: "Dr. Ritika Jain",
+              },
             },
             {
+              courseNo: "Z1009",
               courseName: "Writing for Self ",
               category: "Humanities",
               L: "2",
@@ -116,6 +143,11 @@ export const courses = {
               P: "2",
               O: "5",
               totalCredits: "9",
+              details: {
+                content:
+                  "Reading of autobiographical literature from Africa, India and other areas. In this module, students will analyze  common elements and highlight the differences in language and structure. Practice exercises will be on writing  about oneself, including intellectual development, childhood, and current experiences in an international college campus..<br/><br />Breaking down writing pieces to understand the importance of coherence, cogency and grammar. Students will  be encouraged to examine principles of good writing and also to practice writing faster and more effectively.<br/><br />Communicating information visually is the subject of this module. Eschewing text, students will depict ideas  and information (& data) in graphs, charts and other visual means. The practice element will be presentations  made to the class, bringing together the visual and the verbal communication aspects.<br/><br />Writing longer pieces - here students explore various kinds of writing including long personal essays and  popular science articles. The module will pull together learnings from the previous ones to produce good  writing.",
+                faculty: "Dr. Aysha Viswamohan",
+              },
             },
           ],
         },

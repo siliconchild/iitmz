@@ -13,7 +13,7 @@ const navMenu = [
             link: "/schools/engineering-and-science#pac",
           },
           {
-            title: "Courses",
+            title: "Programs Offered",
             link: "/schools/engineering-and-science#courses",
           },
           {

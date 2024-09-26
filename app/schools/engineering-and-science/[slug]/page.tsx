@@ -13,6 +13,7 @@ import { BiBuilding } from "react-icons/bi";
 import { GoGlobe } from "react-icons/go";
 import Button from "@/components/button";
 import Link from "next/link";
+import CourseCiriculumDetail from "@/components/course-ciriculum-detail";
 
 export async function generateMetadata({
   params: { slug },
@@ -182,19 +183,7 @@ export default function CourseDetail({ params }: { params: { slug: string } }) {
                     </thead>
                     <tbody>
                       {semester.courses.map((course) => (
-                        <tr key={course.courseName}>
-                          <td data-cell="Name:">{course.courseName}</td>
-                          <td data-cell="Category">{course.category}</td>
-                          <td data-cell="Lectures">{course.L}</td>
-                          <td data-cell="Tutorials">{course.T}</td>
-                          <td data-cell="Extended Tutorials">{course.E}</td>
-                          {"P" in course && (
-                            <td data-cell="Practicals">{course.P}</td>
-                          )}
-                          {"A" in course && <td data-cell="A">{course.A}</td>}
-                          <td data-cell="Outside Classroom">{course.O}</td>
-                          <td data-cell="Total">{course.totalCredits}</td>
-                        </tr>
+                        <CourseCiriculumDetail course={course} />
                       ))}
                     </tbody>
                   </table>
