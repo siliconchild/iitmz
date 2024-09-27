@@ -183,7 +183,7 @@ export default function CourseDetail({ params }: { params: { slug: string } }) {
                     </thead>
                     <tbody>
                       {semester.courses.map((course) => (
-                        <CourseCiriculumDetail course={course} />
+                        <CourseCiriculumDetail key={course.courseName} course={course} />
                       ))}
                     </tbody>
                   </table>
