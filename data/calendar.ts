@@ -7,4 +7,8 @@ export const academicCalendarData = [
     title: "Oct 2024 - Feb 2025",
     link: "/AcademicCalendar-October-2024-February-2025.pdf",
   },
+  {
+    title: "Feb 2025 - Jul 2025",
+    link: "/AcademicCalendar-February2025-July2025.pdf",
+  },
 ];
