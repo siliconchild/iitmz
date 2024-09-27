@@ -1,0 +1,74 @@
+.courseRow {
+    width: 100%;
+    align-items: space-between;
+}
+
+.courseRowTitle {
+    width: 100% !important;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+}
+
+.detailsButtonMobile {
+    display: none;
+}
+
+.detailsButton {
+    width: fit-content !important;
+    font-size: 1.2rem;
+    padding: 0.5rem 1.5rem !important;
+    margin-right: 1.5rem;
+    border-radius: 10px;
+    background-color: #e0e7ff !important;
+    color: #312e81;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.details {
+    padding: 2rem !important;
+    & > p {
+        text-align: left;
+        font-size: 1.5rem;
+    }
+}
+
+.faculty { 
+    display: flex;
+    gap: .75rem;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    p {
+        font-size: 1.5rem;
+        span {
+            font-weight: bold;
+            font-size: 1.4rem;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .courseRow {
+        margin-top: 2.5rem;
+        display: block;
+    }
+    .detailsButton {
+        display: none;
+    }
+    .detailsButtonMobile {
+        width: 100%;
+        display: flex;
+        font-size: 1.2rem;
+        align-items: center;
+        gap: 0.75rem;
+        background-color: #e0e7ff !important;
+        border-bottom: 1px solid #4f46e5;
+        justify-content: space-between;
+    }
+    .details  {
+        flex-direction: column;
+    }
+}

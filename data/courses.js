@@ -1,3 +1,4 @@
+import { content } from "googleapis/build/src/apis/content";
 import faculty from "./faculty";
 
 export const courses = {
@@ -97,7 +98,7 @@ export const courses = {
               totalCredits: "10",
               details: {
                 content:
-                  "Classical mechanics: mechanics of a particle, mechanics of a system of particles , generalized coordinates, equations of motions - Lagrangian and Hamiltonian<br/><br />Thermodynamics: First law - energy, work and heat, Second law - entropy, Applications of first and second law for ideal gas, Phase transitions - van der Waals equation of state<br/><br /> Quantum mechanics: The quantum nature of radiation, interference experiment with radiation and particle beams. Postulates of quantum mechanics, Schrodinger wave equation. Applications to simple physical systems such as free particle, particle in a box and barrier penetration, spin, two-state systems <br/><br />Statistical mechanics: phase space, distribution functions, ergodic hypothesis, statistical ensemble - microcanonical, canonical, kinetic theory - Maxwell-Boltzmann distribution, equipartition theorem, kinetic energy, temperature, pressure, statistical definition of entropy, thermal fluctuations, Brownian motion (Langevin’s approach) <br/><br />Case studies::case studies from Physics that use data science methods",
+                  "<strong>Classical mechanics:</strong> mechanics of a particle, mechanics of a system of particles , generalized coordinates, equations of motions - Lagrangian and Hamiltonian<br/><br /><strong>Thermodynamics:</strong> First law - energy, work and heat, Second law - entropy, Applications of first and second law for ideal gas, Phase transitions - van der Waals equation of state<br/><br /> <strong>Quantum mechanics:</strong/> The quantum nature of radiation, interference experiment with radiation and particle beams. Postulates of quantum mechanics, Schrodinger wave equation. Applications to simple physical systems such as free particle, particle in a box and barrier penetration, spin, two-state systems <br/><br /><strong>Statistical mechanics:</strong> phase space, distribution functions, ergodic hypothesis, statistical ensemble - microcanonical, canonical, kinetic theory - Maxwell-Boltzmann distribution, equipartition theorem, kinetic energy, temperature, pressure, statistical definition of entropy, thermal fluctuations, Brownian motion (Langevin’s approach) <br/><br /><strong>Case studies:</strong /> case studies from Physics that use data science methods",
                 faculty: "Dr. Vivek Mishra",
               },
             },
@@ -213,6 +214,7 @@ export const courses = {
           credits: "51",
           courses: [
             {
+              courseNo: "Z2001",
               courseName: "Applied Linear Algebra",
               category: "Science",
               L: "3",
@@ -221,8 +223,14 @@ export const courses = {
               P: "",
               O: "6",
               totalCredits: "10",
+              details: {
+                content:
+                  "<strong>What is Linear Algebra:</strong /> Vectors, dot products, linear combinations, linear functions, Matrices. Systems of Linear Equations: Gaussian elimination, Elementary row operations.<br/><br /> <strong>Vector spaces and subspaces:</strong /> Spaces of vectors, span, basis, linear independence , dimension, rank nullity theorem, four  fundamental subspaces, change of basis, complete solution to a system of linear equations, orthonormal bases. Matrices: Eigenvalues and Eigenvectors, Diagonalisation of matrices, Symmetric matrices, Positive definite matrices,  generalized Eigenvectors, Jordan form, Singular value decomposition.<br/><br />Linear transformation, matrix representation of a linear transformation. Applications: Image processing, Optimisation, Networks",
+                faculty: "Dr. Ramkrishna Pasumarthy",
+              },
             },
             {
+              courseNo: "Z2003",
               courseName: "Statistical theory for Engineers",
               category: "Science",
               L: "3",
@@ -231,8 +239,14 @@ export const courses = {
               P: "",
               O: "6",
               totalCredits: "10",
+              details: {
+                content:
+                  "<strong>Descriptive Statistics: </strong>Summarization of data, sample statistics such as mean, median,  mode, variance, standard deviations, correlation, frequency plots, box plots, concepts  of quartile, whisker, outlier, parity plot, normal probability plot, Sample distribution, point estimations and its properties, central limit theorem, Unbiased estimators, bias and variance of an estimator, minimum variance unbiased  estimator, Standard error, mean squared error of an estimator, relative efficiency of  estimators, Methods of point estimation: Method of moments, Maximum likelihood estimation, Bayesian estimation<br /> <br /><strong>Hypothesis testing: </strong>Statistical hypothesis, one-sided and two-sided alternative hypothesis, type-I and type-II errors, Power of hypothesis testing, P-value, Procedure for Hypothesis testing, z-test, t-test, chi-square test, contingency table tests, statistical inference for two samples, confidence intervals on difference of means, paired t-test, comparison of variances and F-test<br /> <br /><strong>Simple linear regression: </strong>Simple linear regression, properties of the simple linear regression, confidence intervals on the slope and intercepts, residual analysis, coefficient of determination, Analysis of Variance for testing regression (or quality of fit)<br /> <br />",
+                faculty: "Dr. Pradeep Sarvepalli",
+              },
             },
             {
+              courseNo: "Z2005",
               courseName: "Programming and Data Structures including Lab",
               category: "Professional",
               L: "3",
@@ -241,8 +255,14 @@ export const courses = {
               P: "3",
               O: "9",
               totalCredits: "15",
+              details: {
+                content:
+                  "Introduction to algorithms and data structures <br /><br /><strong>Basic data structures:</strong> stacks, linked lists, queues <br /><br /><strong>Basic algorithms:</strong> Simple sorting <br /><br /><strong>Advanced sorting algorithms:</strong> <br />Binary Trees, Hash tables, Heaps <br />Dynamic Programming algorithms <br />Greedy algorithms <br />Introduction to graphs <br />Graph algorithms: BFS, DFS, A* <br /><br /><strong>Advanced topics:</strong> Parallel programming, Randomized algorithms <br /><br /><strong>Programming and Data Structures including Lab</strong> <br />Introduction to algorithms and data structures <br />",
+                faculty: "Dr. Innocent Nyalala",
+              },
             },
             {
+              courseNo: "Z2007",
               courseName: "Introduction to Optimization",
               category: "Engineering",
               L: "3",
@@ -251,6 +271,11 @@ export const courses = {
               P: "",
               O: "6",
               totalCredits: "10",
+              details: {
+                content:
+                  "<strong>Introduction:</strong> Formulation of optimization problems in engineering and data science, classification of different types of optimization problems. Mathematical background: Vector spaces, matrix algebra, eigenvalues, eigenvectors, positive definite matrices, multivariable calculus (gradient, Hessian, Taylor’s theorem). <br /> <br /><strong>Unconstrained optimization:</strong> Necessary and sufficient condition for optima (univariate, multivariate)Algorithms for univariate optimization (search and bracketing, bisection, golden section etc.) Multivariate unconstrained optimization: Necessary and sufficient condition for optima, line search and trust region methods, steepest descent, Newton and quasi-Newton methods. Linear programming: Theory, Simplex method, duality.<br /><br /><strong>Constrained optimization:</strong> KKT conditions for minimum, active set method for quadratic programming Nonlinear programming: Penalty function methods, Sequential Quadratic Programming (SQP) Applications to data science: Least squares, estimation, Support vector machine.",
+                faculty: "Dr. Manoj Kumar",
+              },
             },
             {
               courseName: "Elective (Programming for Engineers Suggested)",
@@ -638,6 +663,7 @@ export const courses = {
           credits: "54",
           courses: [
             {
+              courseNo: "Z5009",
               courseName: "Research Skills & Seminar",
               category: "",
               L: "",
@@ -646,8 +672,14 @@ export const courses = {
               P: "3",
               O: "3",
               totalCredits: "6",
+              details: {
+                content:
+                  "Introduction to research<br />Literature search<br />Critical analysis of research articles<br />Technical writing<br />Lab safety<br />Ethics, Workplace diversity<br />Writing including code documentation, opinion pieces and research proposals/articles",
+                faculty: "Dr. AK Suresh",
+              },
             },
             {
+              courseNo: "Z5001",
               courseName: "Mathematical foundations of Data Science",
               category: "",
               L: "3",
@@ -656,8 +688,14 @@ export const courses = {
               P: "",
               O: "8",
               totalCredits: "12",
+              details: {
+                content:
+                  "<strong>Basics of Data Science: </strong> Introduction; Typology of problems; Importance of linear algebra, statistics and optimization from a data science perspective; Structured thinking for solving data science problems.<br /><br /> <strong>Linear Algebra:</strong/> Matrices and their properties (determinants, traces, rank, nullity, etc.); Eigenvalues and eigenvectors; Matrix factorizations; Inner products; Distance measures; Projections; Notion of hyperplanes; half-planes.<br /> <br /><strong>Probability, Statistics and Random Processes: </strong> Probability theory and axioms; Random variables; Probability distributions and density functions (univariate and multivariate); Expectations and moments; Covariance and correlation; Statistics and sampling distributions; Hypothesis testing of means, proportions, variances and correlations; Confidence (statistical) intervals; Correlation functions; White-noise process.<br /><br /><strong>Optimization: </strong> Unconstrained optimization; Necessary and sufficient conditions for optima; Gradient descent methods; Constrained optimization, KKT conditions; Introduction to non-gradient techniques; Introduction to least squares optimization; Optimization view of machine learning.Introduction to Data Science Methods: Linear regression as an exemplar function approximation problem; Linear classification problems",
+                faculty: "Dr. Shankar Narasimhan",
+              },
             },
             {
+              courseNo: "Z5007",
               courseName: "Programming & Data Structures",
               category: "",
               L: "3",
@@ -666,8 +704,14 @@ export const courses = {
               P: "3",
               O: "8",
               totalCredits: "15",
+              details: {
+                content:
+                  "Introduction to algorithms and data structures<br />Basic data structures: stacks, linked lists, queues <br />Basic algorithms: Simple sorting<br />Advanced sorting algorithms<br />Binary Trees, Hash tables, Heaps<br />Dynamic Programming algorithms<br />Greedy algorithms<br />Introduction to graphs<br />Graph algorithms: BFS, DFS, A*<br />Advanced topics: Parallel programming, Randomized algorithms<br />",
+                faculty: "Dr. Tushar Shinde",
+              },
             },
             {
+              courseNo: "Z5003",
               courseName: "Introduction to Data Analytics",
               category: "",
               L: "4",
@@ -676,9 +720,15 @@ export const courses = {
               P: "",
               O: "8",
               totalCredits: "12",
+              details: {
+                content:
+                  "<strong>Unsupervised Learning:</strong>Representation Learning - PCA, Estimation - Review of MLE, Bayesian estimation, Clustering - K-Means, Hierarchical Clustering, Spectral Clustering<br /><br /><strong>Binary Classification:</strong> K-Nearest Neighbors, Decision Trees, Bias-Variance Dichotomy, Model Validation: Cross validation, Bayesian Decision Theory, Generative vs Discriminative Modeling for classification,Generative: Naive Bayes, Gaussian Discriminant Analysis, Hidden Markov Model: Discriminative: Logistic Regression<br /><br /><strong>Advanced Methods for Classification:</strong> Support Vector Machines - Kernels, Ensemble Methods:Bagging - Random Forest, Boosting - Adaboost/GBDT/XgBoost, Artificial Neural Networks, Multi-Class Classification - one vs all, one vs one Supervised Learning:  Regression, Linear Regression, Ordinary Least Squares, Non-linear regression (basis functions), Ridge Regression, LASSO<br /><br /><strong>Gentle Introduction to Sequential Decision Making:</strong> (online learning, Bandit, RL)",
+                faculty: "Dr. Nirav Bhatt",
+              },
             },
             {
-              courseName: "Elective",
+              courseNo: "Z6005",
+              courseName: "Natural Language Processing",
               category: "",
               L: "",
               T: "",
@@ -686,6 +736,11 @@ export const courses = {
               P: "",
               O: "",
               totalCredits: "9",
+              details: {
+                content:
+                  "Introduction to NLP and classical NLP tasks. Language Models: Probabilistic language model and unigram, bigram, n-grams, zeros, smoothing, Evaluating Models, perplexity.Word Embeddings: One-hot representations of words, Distributed Representations of  words, SVD for learning word representations, Continuous bag of words model, Skip gram model with negative sampling (word2vec) GloVe word embeddings Evaluating  word embeddings.<br /><br />Sequence models for language: Recurrent Neural Networks Sequence-to-sequence modeling, neural machine translation, beam decoding,  attention, Byte-Pair Encoding. Transformers, dot-product attention and concepts of Query, keys, values, self  attention, multi-head attention..<br /><br />Advanced topics in NLP: Large Language Models, self-supervised learning and large  language models, BERT, GPT, etc., transfer learning. <br /><br />Fine tuning and Prompt engineering for NLP tasks such as name-entity recognition,  sentiment analysis, machine translation, Discourse Analysis, document  summarization, Question answering",
+                faculty: "Dr. Nirav Bhatt/Dr. Arun Ayyar",
+              },
             },
           ],
         },

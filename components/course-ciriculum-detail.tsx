@@ -1,6 +1,9 @@
 "use client";
 import parse from "html-react-parser";
+import { AiOutlinePlus , AiOutlineMinus} from "react-icons/ai";
+import { FaChalkboardUser } from "react-icons/fa6";
 import { useState } from "react";
+import styles from "./course-ciriculum-detail.module.scss";
 
 type CourseDetailProps = {
   course: Course;
@@ -27,21 +30,25 @@ export default function CourseCiriculumDetail({course}: CourseDetailProps) {
   const [showDetails, setShowDetails] = useState(false);
   return (
     <>
-      <tr key={course.courseName}>
-        <td data-cell="Name:">
-          {course.courseName}
+      <tr key={course.courseName} className={styles.courseRow}>
+        <td data-cell="Name:" className={styles.courseRowTitle}>
+          <div>{course.courseName}</div>
           {course.details && (
             <button
               onClick={() => setShowDetails(!showDetails)}
-              style={{
-                width: "fit-content",
-                fontSize: "1.2rem",
-                padding: "0.5rem 1rem",
-                marginLeft: "1rem",
-                borderRadius: "10px",
-              }}
+              className={styles.detailsButton}
             >
-              View Course Details
+              {showDetails ? (
+                <>
+                  Hide Course Details
+                  <AiOutlineMinus />
+                </>
+              ) : (
+                <>
+                  View Course Details
+                  <AiOutlinePlus />
+                </>
+              )}
             </button>
           )}
         </td>
@@ -53,13 +60,37 @@ export default function CourseCiriculumDetail({course}: CourseDetailProps) {
         {"A" in course && <td data-cell="A">{course.A}</td>}
         <td data-cell="Outside Classroom">{course.O}</td>
         <td data-cell="Total">{course.totalCredits}</td>
+        {course.details && (
+          <div>
+            <button
+              onClick={() => setShowDetails(!showDetails)}
+              className={styles.detailsButtonMobile}
+            >
+              {showDetails ? (
+                <>
+                  Hide Course Details
+                  <AiOutlineMinus />
+                </>
+              ) : (
+                <>
+                  View Course Details
+                  <AiOutlinePlus />
+                </>
+              )}
+            </button>
+          </div>
+        )}
       </tr>
       <tr>
         {showDetails && course.details ? (
-          <td colSpan={7} style={{ padding: "2rem" }}>
-            <p style={{ textAlign: "left", fontSize: "1.5rem" }}>
-              {parse(course.details.content)}
-            </p>
+          <td colSpan={7} className={styles.details}>
+            <div className={styles.faculty}>
+              <FaChalkboardUser />
+              <p>
+                Faculty - <span>{course.details.faculty}</span>
+              </p>
+            </div>
+            <p>{parse(course.details.content)}</p>
           </td>
         ) : null}
       </tr>
