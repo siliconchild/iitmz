@@ -9,6 +9,6 @@ export const academicCalendarData = [
   },
   {
     title: "Feb 2025 - Jul 2025",
-    link: "/AcademicCalendar-February2025-July2025.pdf",
+    link: "/AcademicCalendar-February-2025-July-2025.pdf",
   },
 ];
