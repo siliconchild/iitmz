@@ -1,6 +1,3 @@
-import { content } from "googleapis/build/src/apis/content";
-import faculty from "./faculty";
-
 export const courses = {
   bs: {
     slug: "bs-data-science-and-ai",
