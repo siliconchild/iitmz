@@ -22,11 +22,11 @@ const announcements: AnnouncementsArray = [
   // },
   {
     title:
-      "Applications are live for the MTech Program in Ocean Structures from candidates of all Nationalities. Applications will close by Sep 15, 2024",
+      "BS & MTech classes have started from Oct' 24",
   },
   {
     title:
-      "Selected BS & MTech candidates are requested to check their emails for updates from the admissions team",
+      "Admissions for the AY 2025-26: BS & MTech programs will start from 1 Feb 2024",
   },
 ];
 
