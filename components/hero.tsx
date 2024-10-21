@@ -26,7 +26,7 @@ export default function Hero() {
             <h1>
               IIT Madras <span>Zanzibar</span>
             </h1>
-            <h4>
+            {/* <h4>
               MTech Ocean Structures Applications are live
             </h4>
             <h5>
@@ -36,7 +36,7 @@ export default function Hero() {
               <Link target="_blank" href="https://admissions.ge.iitm.ac.in/iitmz-mtechos">
                 Apply Now
               </Link>
-            </Button>
+            </Button> */}
           </div>
         </div>
         <div className={styles.item}>
@@ -55,7 +55,7 @@ export default function Hero() {
             <h1>
               IIT Madras <span>Zanzibar</span>
             </h1>
-            <h4>
+            {/* <h4>
               MTech Ocean Structures Applications are live
             </h4>
             <h5>Last Date: Sep 15, 2024 | 11:59 PM</h5>
@@ -63,7 +63,7 @@ export default function Hero() {
               <Link target="_blank" href="https://admissions.ge.iitm.ac.in/iitmz-mtechos">
                 Apply Now
               </Link>
-            </Button>
+            </Button> */}
           </div>
         </div>
       </Slider>
