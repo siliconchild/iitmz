@@ -18,7 +18,13 @@ export default function Ticker() {
   if (announcements.length === 0) return null;
 
   const sanitizedAnnouncements = announcements.map((announcement: Announcement) => ({
-    title: parse(DOMPurify.sanitize(announcement.title)),
+    title: parse(
+      DOMPurify.sanitize(announcement.title, {
+        ALLOWED_TAGS: ["a"],
+        ALLOWED_ATTR: ["href", "target", "rel"],
+        ADD_ATTR: ["target", "rel"],
+      }),
+    ),
   }));
 
   const renderAnnouncementContent = (announcement: SanitizedAnnouncement) => {

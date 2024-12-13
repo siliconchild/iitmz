@@ -21,17 +21,11 @@ export default function Hero() {
 
           <div className={styles.content}>
             {/* <h4>IITM Zanzibar Campus</h4> */}
-            <h3>Web-Enabled Masters Program for working professionals</h3>
-            <h1>
-              MTech <span>Industrial AI</span>
-            </h1>
-            {/* <h4>
-              MTech Ocean Structures Applications are live
-            </h4>
-            <h5>
-            Last Date: Sep 15, 2024 | 11:59 PM
-            </h5>
-            */}
+            <h3>Web-Enabled Masters Program for Working Professionals</h3>
+            <h1>MTech Industrial AI</h1>
+            {/* <h4>MTech Ocean Structures Applications are live</h4>
+            <h5>Last Date: Sep 15, 2024 | 11:59 PM</h5> */}
+
             <Button>
               <Link target="_blank" href="https://admissions.iitmz.ac.in/iitmz-mtechiai">
                 Apply Now
@@ -52,9 +46,7 @@ export default function Hero() {
           <div className={styles.content}>
             {/* <h4>IITM Zanzibar Campus</h4> */}
             <h3>Welcome To</h3>
-            <h1>
-              IIT Madras <span>Zanzibar</span>
-            </h1>
+            <h1>IIT Madras Zanzibar</h1>
             {/* <h4>
               MTech Ocean Structures Applications are live
             </h4>
