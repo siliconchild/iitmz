@@ -1,36 +1,40 @@
 .section {
-  display: flex;
-  overflow: hidden;
+    display: flex;
+    overflow: hidden;
 }
 
 .head {
-  background: #d50032;
-  flex: 0 0 15%;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.6rem;
-  padding: 1rem;
+    background: #d50032;
+    flex: 0 0 15%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    padding: 1rem;
 }
 
 .body {
-  background: #f7f8fb;
-  flex: 0 0 85%;
-  display: flex;
-  padding: 1rem;
-  p {
-    padding: 0 2rem;
-    border-right: 1px solid #000;
-  }
+    background: #f7f8fb;
+    flex: 0 0 85%;
+    display: flex;
+    padding: 1rem;
+    p {
+        padding: 0 2rem;
+        border-right: 1px solid #000;
+        a {
+            color: #d50032;
+            text-decoration: none;
+        }
+    }
 }
 
 @media (max-width: 480px) {
-  .head {
-    display: none;
-  }
-  .body {
-    padding: 1rem 0;
-    min-height: 3.5rem;
-  }
+    .head {
+        display: none;
+    }
+    .body {
+        padding: 1rem 0;
+        min-height: 3.5rem;
+    }
 }
