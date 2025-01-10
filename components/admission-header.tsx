@@ -17,13 +17,16 @@ export default function AdmissionHeader() {
               IITM Zanzibar<span>.</span>
             </h1>
             <p>
-              Get an unparalleled learning experience in data science and AI.
-              Benefit from our cutting-edge courses, esteemed faculty and
-              industry collaborations, empowering you to excel in these rapidly
+              Get an unparalleled learning experience in data science and AI. Benefit from our cutting-edge
+              courses, esteemed faculty and industry collaborations, empowering you to excel in these rapidly
               growing fields.
             </p>
             <div className={styles.applyButton}>
-              <ApplyDropdown />
+              <Button>
+                <Link target="_blank" href="https://admissions.iitmz.ac.in/">
+                  Apply Now
+                </Link>
+              </Button>
               {/* <Button>Apply Now</Button> */}
             </div>
             {/* <h4>Applications are now closed for AY 2024-25</h4> */}
@@ -39,39 +42,27 @@ export default function AdmissionHeader() {
 
               <TabPanel index={0}>
                 <p>
-                  A curriculum that prepares students for the challenges of the
-                  future. With a strong emphasis on practical learning,
-                  interdisciplinary approaches, and industry relevance, the
-                  curriculum equips students with the latest knowledge and
-                  skills. From cutting-edge technologies to innovative research
-                  opportunities, the advanced curriculum at IITM ensures
-                  students are well-prepared to excel in their chosen fields and
-                  make a meaningful impact in the world. Click{" "}
-                  <Link href="/schools/engineering-and-science/bs-data-science-and-ai">
-                    here
-                  </Link>{" "}
-                  to see the curriculum for BS in DS & AI and{" "}
-                  <Link href="/schools/engineering-and-science/mtech-data-science-and-ai">
-                    here
-                  </Link>{" "}
-                  for MTech in DS & AI
+                  A curriculum that prepares students for the challenges of the future. With a strong emphasis
+                  on practical learning, interdisciplinary approaches, and industry relevance, the curriculum
+                  equips students with the latest knowledge and skills. From cutting-edge technologies to
+                  innovative research opportunities, the advanced curriculum at IITM ensures students are
+                  well-prepared to excel in their chosen fields and make a meaningful impact in the world.
+                  Click <Link href="/schools/engineering-and-science/bs-data-science-and-ai">here</Link> to
+                  see the curriculum for BS in DS & AI and{" "}
+                  <Link href="/schools/engineering-and-science/mtech-data-science-and-ai">here</Link> for
+                  MTech in DS & AI
                 </p>
               </TabPanel>
               <TabPanel index={1}>
                 <p>
-                  IITM Zanzibar boasts an acclaimed faculty renowned for their
-                  expertise and contributions to their respective fields.
-                  Comprising distinguished professors, researchers, and industry
-                  professionals, the faculty brings a wealth of knowledge and
-                  experience to the classroom. Their mentorship and guidance
-                  inspire students to achieve their full potential, fostering a
-                  dynamic learning environment. With a commitment to excellence
-                  in teaching and research, the acclaimed faculty at IITM plays
-                  a pivotal role in shaping future leaders and innovators. Know
-                  more about the IITM Zanzibar faculty{" "}
-                  <Link href="/schools/engineering-and-science#faculty">
-                    here
-                  </Link>
+                  IITM Zanzibar boasts an acclaimed faculty renowned for their expertise and contributions to
+                  their respective fields. Comprising distinguished professors, researchers, and industry
+                  professionals, the faculty brings a wealth of knowledge and experience to the classroom.
+                  Their mentorship and guidance inspire students to achieve their full potential, fostering a
+                  dynamic learning environment. With a commitment to excellence in teaching and research, the
+                  acclaimed faculty at IITM plays a pivotal role in shaping future leaders and innovators.
+                  Know more about the IITM Zanzibar faculty{" "}
+                  <Link href="/schools/engineering-and-science#faculty">here</Link>
                 </p>
               </TabPanel>
             </div>

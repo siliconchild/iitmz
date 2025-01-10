@@ -21,13 +21,13 @@ export default function Hero() {
 
           <div className={styles.content}>
             {/* <h4>IITM Zanzibar Campus</h4> */}
-            <h3>Web-Enabled Masters Program for Working Professionals</h3>
-            <h1>MTech Industrial AI</h1>
+            <h3> Application for the BS &amp; MTech full-time degree programs</h3>
+            <h1>starts from Feb 01, 2025</h1>
             {/* <h4>MTech Ocean Structures Applications are live</h4>
             <h5>Last Date: Sep 15, 2024 | 11:59 PM</h5> */}
 
             <Button>
-              <Link target="_blank" href="https://admissions.iitmz.ac.in/iitmz-mtechiai">
+              <Link target="_blank" href="https://admissions.iitmz.ac.in/">
                 Apply Now
               </Link>
             </Button>
