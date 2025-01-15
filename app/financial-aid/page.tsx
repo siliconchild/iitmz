@@ -28,7 +28,7 @@ export default function FinancialAidPage() {
               banks are coming forward with special loan packages for IITM
               Zanzibar students.
             </p>
-            <p>
+            {/* <p>
               Note: This is the application for financial assistance for
               full-time study in degree programs at IITM Zanzibar.
             </p>
@@ -37,7 +37,7 @@ export default function FinancialAidPage() {
               href="https://ge.iitm.ac.in/forms/iitmz-financial-assistance"
             >
               <Button kind="PRIMARY">Apply Now</Button>
-            </Link>
+            </Link> */}
           </div>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 598 392">
             <defs>
