@@ -26,6 +26,7 @@
     "googleapis": "^128.0.0",
     "html-react-parser": "^5.1.10",
     "isomorphic-dompurify": "^2.19.0",
+    "jsdom": "^26.0.0",
     "mapbox-gl": "^2.15.0",
     "next": "^14.2.4",
     "next-images": "^1.8.5",
@@ -43,7 +44,8 @@
     "react-select": "^5.8.0",
     "react-string-replace": "^1.1.1",
     "sharp": "^0.32.6",
-    "typescript": "^5.5.3"
+    "typescript": "^5.5.3",
+    "velite": "^0.2.2"
   },
   "devDependencies": {
     "sass": "^1.77.6"

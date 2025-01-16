@@ -1,0 +1,50 @@
+.papers {
+    & > div {
+        border: 1.5px solid #edeef2;
+        border-radius: 7px;
+        padding: 1rem 2rem;
+        &:not(:last-child) {
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+.paper {
+    > * {
+        &:not(:last-child) {
+            margin-bottom: 0.7rem;
+        }
+    }
+    h4 {
+        color: #f4b442;
+    }
+    h3 {
+        margin-bottom: 1.25rem !important;
+        span {
+            display: flex;
+            align-items: flex-end;
+            svg,
+            img {
+                height: 32px;
+                width: 32px;
+                margin-right: 0.5rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .paper {
+        h3 {
+            font-size: 1.5rem;
+            span {
+                align-items: flex-start;
+                svg {
+                    height: 24px;
+                    width: 48px;
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+}
