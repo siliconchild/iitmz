@@ -22,7 +22,10 @@ export default function Hero() {
           <div className={styles.content}>
             {/* <h4>IITM Zanzibar Campus</h4> */}
             <h3> Application for the BS &amp; MTech full-time degree programs</h3>
-            <h4>Starts from Feb 01, 2025</h4>
+            <h4>
+              {/* Starts from Feb 01, 2025 */}
+              For AY 2025-26: Starts from Jan 10, 2025
+            </h4>
             {/* <h4>MTech Ocean Structures Applications are live</h4>
             <h5>Last Date: Sep 15, 2024 | 11:59 PM</h5> */}
 
