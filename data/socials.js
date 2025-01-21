@@ -22,7 +22,7 @@ const socials = [
   {
     title: "Youtube",
     icon: "youtube",
-    link: "https://www.youtube.com/@IITMZanzibar",
+    link: "https://www.youtube.com/@IITMZ",
   },
 ];
 
