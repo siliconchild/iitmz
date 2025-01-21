@@ -18,31 +18,31 @@ export default function News() {
             </Link>
           </div>
           <NewsCard
-            link="https://www.iitmz.ac.in/admission"
+            link="https://admissions.iitmz.ac.in/"
             image={{
-              url: "/1.jpeg",
+              url: "/news-admission1.jpg",
               alt: "Logo of IIT Madras",
             }}
-            title="The BS & MTech academic courses have started from Oct 7, 2024"
-            desc="The classes for the AY 2024-25 for the BS & MTech degree programs at IITM Zanzibar have started on Oct 07, 2024"
+            title="Admissions for the AY 2025-26 is live"
+            desc="Applications for the BS & MTech full-time degree programs starts from Jan 10, 2025"
           />
           <NewsCard
             link="https://www.iitmz.ac.in/admission"
             image={{
-              url: "/OS.jpg",
+              url: "/news-admission2.png",
               alt: "Image of Preeti Aghalayam",
             }}
-            title="MTech Ocean Structures"
-            desc="Classes has started for the new MTech program in Ocean Structures from AY 2024-25"
+            title="For more information on the admissions"
+            desc="Degree Programs, Eligibility Criteria, Tuition Fee, Selection Process, Admission Brochure, Screening Test Question Papers & Application Link"
           />
           <NewsCard
-            link="https://www.iitmz.ac.in/admission"
+            link="#"
             image={{
               url: "/bs-news.JPG",
               alt: "Image of IITM Zanzibar campus building",
             }}
-            title="Admissions for the AY 2025-26 will open in Feb 2025"
-            desc="The next application cycle for the BS & MTech programs will start from Feb 01, 2025"
+            title="IITM Zanzibar Screening Test Information Brochure"
+            desc="Information Brochure for Admission to Full-Time BS and MTech programs at Indian Institute of Technology Madras, Zanzibar Campus"
           />
         </div>
       </div>
