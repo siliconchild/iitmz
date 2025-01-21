@@ -1,13 +1,8 @@
-const isDev = process.argv.indexOf("dev") !== -1;
-const isBuild = process.argv.indexOf("build") !== -1;
-if (!process.env.VELITE_STARTED && (isDev || isBuild)) {
-  process.env.VELITE_STARTED = "1";
-  const { build } = await import("velite");
-  await build({ watch: isDev, clean: !isDev });
-}
-
+import withPlaiceholder from "@plaiceholder/next";
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+
+let config = {
+  // To have old resource links to still function after the domain was moved from www.iitm.ac.in/zanzibar/
   async rewrites() {
     return [
       {
@@ -29,16 +24,16 @@ const nextConfig = {
         destination: "/schools/engineering-and-science/mtech-ocean-structures",
         permanent: false,
       },
-      {
-        source: "/mtech-dsai",
-        destination: "/schools/engineering-and-science/mtech-data-science-and-ai",
-        permanent: false,
-      },
-      {
-        source: "/bs-dsai",
-        destination: "/schools/engineering-and-science/bs-data-science-and-ai",
-        permanent: false,
-      },
+			{
+				source: "/mtech-dsai",
+				destination: "/schools/engineering-and-science/mtech-data-science-and-ai",
+				permanent: false,
+			},
+			{
+				source: "/bs-dsai",
+				destination: "/schools/engineering-and-science/bs-data-science-and-ai",
+				permanent: false
+			}
     ];
   },
   images: {
@@ -56,4 +51,4 @@ const nextConfig = {
   },
 };
 
-export default nextConfig;
+export default withPlaiceholder(config);
