@@ -49,18 +49,6 @@ export default function Hero() {
           <div className={styles.content}>
             {/* <h4>IITM Zanzibar Campus</h4> */}
             <h3>Welcome To</h3>
-<<<<<<< HEAD
-            <h1>
-              IIT Madras <span>Zanzibar</span>
-            </h1>
-            <h4>Applications for BS in Data Science & AI are live</h4>
-            <h5>May 05, 2024 | 11:59 PM IST</h5>
-            <Button>
-              <Link
-                target="_blank"
-                href="https://admissions.ge.iitm.ac.in/iitmz-bsdsai"
-              >
-=======
             <h1>IIT Madras Zanzibar</h1>
             {/* <h4>
               MTech Ocean Structures Applications are live
@@ -68,7 +56,6 @@ export default function Hero() {
             <h5>Last Date: Sep 15, 2024 | 11:59 PM</h5>
             <Button>
               <Link target="_blank" href="https://admissions.ge.iitm.ac.in/iitmz-mtechos">
->>>>>>> e62bea1d52f6235dac96573648184eb2f3445ffa
                 Apply Now
               </Link>
             </Button> */}
