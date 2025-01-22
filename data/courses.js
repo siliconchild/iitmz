@@ -2,8 +2,7 @@ export const courses = {
   bs: {
     slug: "bs-data-science-and-ai",
     coverImg: "/cd3x.png",
-    // applicationLink: "https://admissions.ge.iitm.ac.in/iitmz-bsdsai",
-    applicationLink: "#",
+    applicationLink: "https://admissions.iitmz.ac.in/bsdsai",
     seo: {
       desc: "BS in Data Science & AI at IIT Madras Zanzibar. 4-Year Program. Comprehensive Curriculum. Hands-on Expertise. Diverse Job Prospects. Apply Now.",
     },
@@ -909,8 +908,7 @@ export const courses = {
     },
     eligibility: [
       {
-        content:
-          " 4-year Undergraduate degree in Civil Engineering with a minimum of 60% marks",
+        content: " 4-year Undergraduate degree in Civil Engineering with a minimum of 60% marks",
         type: "REQUIRED",
       },
       {
@@ -921,8 +919,7 @@ export const courses = {
     ],
     downloadableResources: [
       {
-        title:
-          "MTech Ocean Structures - Screening Test Syllabus, Question types & mark allocation",
+        title: "MTech Ocean Structures - Screening Test Syllabus, Question types & mark allocation",
         link: "/MTech_OS_Screening_Test Syllabus.pdf",
       },
     ],
@@ -1024,8 +1021,7 @@ export const courses = {
               totalCredits: "10",
             },
             {
-              courseName:
-                "Materials and fabrication of ship and offshore structures",
+              courseName: "Materials and fabrication of ship and offshore structures",
               category: "",
               L: "3",
               T: "0",
@@ -1137,8 +1133,7 @@ export const courses = {
           credits: "10",
           courses: [
             {
-              courseName:
-                "Summer training in computer modelling and simulation",
+              courseName: "Summer training in computer modelling and simulation",
               category: "",
               L: "0",
               T: "0",
