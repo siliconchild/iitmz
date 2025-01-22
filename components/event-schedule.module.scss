@@ -1,0 +1,53 @@
+.scheduleItem {
+  margin-bottom: 1.5rem;
+  padding: 2.5rem;
+  border: 1px solid #edeef2;
+  border-radius: 7px;
+}
+
+.time {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 1.45rem;
+  svg {
+    height: 14px;
+    width: 14px;
+    margin-right: .75rem;
+  }
+}
+
+.track {
+  font-size: 1.55rem;
+  margin-bottom: 1rem;
+  font-weight: 600; 
+  svg {
+    height: 14px;
+    width: 14px;
+    margin-right: .75rem;
+  }
+}
+
+.subtracks {
+  list-style: disc;
+  padding-left: 1.5rem;
+  li:not(:last-child) {
+    margin-bottom: .75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .scheduleItem {
+    padding: 1.5rem;
+  }
+  .time {
+    font-size: 1.3rem;
+  }
+  .track {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+  }
+  .subtracks {
+    font-size: 1.4rem;
+  }
+}

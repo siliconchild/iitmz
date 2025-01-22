@@ -1,6 +1,7 @@
 import styles from "./news-card.module.scss";
 import Img from "./image";
 import Link from "next/link";
+import Button from "./button";
 
 type NewsCardProps = {
   link: string;
@@ -19,6 +20,7 @@ export default function NewsCard({ link, image, title, desc }: NewsCardProps) {
         <Img src={image.url} width={200} height={100} alt={image.alt} />
         <h3>{title}</h3>
         <p>{desc}</p>
+        <Button kind="SECONDARY" disabled={link === "#"}>Know More</Button>
       </Link>
     </div>
   );

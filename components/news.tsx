@@ -18,31 +18,31 @@ export default function News() {
             </Link>
           </div>
           <NewsCard
-            link="https://www.indiatoday.in/education-today/news/story/iit-madras-set-to-create-history-by-establishing-an-international-campus-in-zanzibar-tanzania-2404437-2023-07-10"
+            link="https://admissions.iitmz.ac.in/"
             image={{
-              url: "/slot1.webp",
+              url: "/news-admission1.jpg",
               alt: "Logo of IIT Madras",
             }}
-            title=" IIT Madras set to create history by establishing an international campus in Zanzibar-Tanzania"
-            desc="The Indian Institute of Technology Madras (IIT Madras), the top-ranked Educational Institute in the country, has become the first IIT in the country to launch an international campus, which is coming up in Zanzibar-Tanzania."
+            title="Admissions for the AY 2025-26 is live"
+            desc="Applications for the BS & MTech full-time degree programs starts from Jan 10, 2025"
           />
           <NewsCard
-            link="https://www.cnbctv18.com/education/meet-preeti-aghalayam-the-first-woman-director-of-an-iit-zanzibar-campus-17195151.htm"
+            link="https://www.iitmz.ac.in/admission"
             image={{
-              url: "/slot2.webp",
+              url: "/news-admission2.png",
               alt: "Image of Preeti Aghalayam",
             }}
-            title="Meet Preeti Aghalayam — the first ever woman director of an IIT"
-            desc="Preeti Aghalayam, an alumna of IIT Madras, has been appointed as the director-in-charge of the upcoming Zanzibar campus of IIT Madras "
+            title="For more information on the admissions"
+            desc="Degree Programs, Eligibility Criteria, Tuition Fee, Selection Process, Admission Brochure, Screening Test Question Papers & Application Link"
           />
           <NewsCard
-            link="https://indianexpress.com/article/opinion/columns/director-in-charge-iit-madras-zanzibar-writes-taking-the-indian-campus-to-the-world-8892772/"
+            link="#"
             image={{
-              url: "/slot3.webp",
+              url: "/bs-news.JPG",
               alt: "Image of IITM Zanzibar campus building",
             }}
-            title="Head of IIT Madras Zanzibar writes: Taking the Indian campus to the world "
-            desc="Scientific research today has to be interdisciplinary, multifaceted and should bring together a diversity of views."
+            title="IITM Zanzibar Screening Test Information Brochure"
+            desc="Information Brochure for Admission to Full-Time BS and MTech programs at Indian Institute of Technology Madras, Zanzibar Campus"
           />
         </div>
       </div>

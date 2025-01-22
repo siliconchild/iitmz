@@ -5359,6 +5359,30 @@ export default function CareersPage() {
                   as per institute norms.
                 </p>
               </div>
+              <div className={styles.job}>
+                <h3>
+                  Assistant Professor - Physics
+                  <span>
+                    <AiOutlineCalendar /> On Contract
+                  </span>
+                </h3>
+                <p>
+                  IITM Zanzibar is inviting applications for the position of
+                  Assistant Professor (on contract) in Physics, specializing in
+                  computational methods. Candidates must hold a PhD in Physics
+                  or a closely related field and possess a strong research
+                  background with expertise in computational methods. While
+                  experience in machine learning and/or big data is
+                  advantageous, it is not a requirement. The appointed
+                  individual will be responsible for conducting independent
+                  research using computational methods in Physics and delivering
+                  high-quality undergraduate teaching in the subject.
+                  Additionally, they will develop elective courses for both
+                  undergraduate and Master&rsquo;s students. Interested candidates
+                  should click on the &ldquo;Apply Now&rdquo; button located above and submit your
+                  application by July 20, 2024.
+                </p>
+              </div>
             </div>
           </div>
         </div>

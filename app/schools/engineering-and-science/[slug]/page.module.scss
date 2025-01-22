@@ -21,6 +21,8 @@
     object-fit: cover;
   }
 }
+
+
 .body {
   margin-top: -70px;
   position: relative;
@@ -30,8 +32,8 @@
   padding: 4rem 5rem;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
   h1 {
-    margin-bottom: 3rem;
     font-size: 3rem;
+    margin-bottom: 1.25rem;
   }
 
   h4 {
@@ -47,6 +49,27 @@
   }
 }
 
+.mainTitle {
+    margin-bottom: 1rem;
+}
+
+.applicationClosingDate {
+  span {
+    color: #af132a;
+    font-size: 1.6rem;
+  }
+}
+
+.titleBar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cta {
+  display: flex;
+  gap: 2rem;
+}
+
 .meta {
   display: flex;
   flex-wrap: wrap;
@@ -58,7 +81,7 @@
   align-items: center;
   .item {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 4fr;
     grid-template-rows: repeat(2, 1fr);
     svg {
       height: 28px;
@@ -111,9 +134,26 @@
   }
 }
 
+.downloadableFiles {
+  margin-top: 2rem;
+  button {
+    svg {
+      width: 22px;
+      height: 22px;
+      margin-right: 1rem;
+    }
+  }
+}
+
 .curriculum {
   h5 {
     font-size: 1.6rem;
+  }
+  .info {
+    padding: 2.4rem;
+    p {
+      margin-bottom: .5rem;
+    }
   }
 }
 
@@ -169,13 +209,24 @@
       }
     }
     h1 {
-      margin-bottom: 2rem;
-      padding: 0 1rem;
+      margin-bottom: .5rem;
       font-size: 2rem;
     }
     p {
       font-size: 1.5rem;
     }
+  }
+  .titleBar {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainTitle {
+    margin-bottom: 3rem;
+    padding: 0 1rem;
+  }
+  .cta {
+    padding: 0 1rem;
+    flex-direction: column;
   }
   .description {
     padding: 0 0.75rem;
@@ -183,6 +234,7 @@
   .meta {
     justify-content: space-evenly;
     .item {
+      width: 40%;
       span {
         font-size: 1.3rem;
       }
@@ -225,7 +277,7 @@
       }
       &:last-of-type {
         text-align: left;
-        margin-bottom: 2rem;
+        //margin-bottom: 2rem;
       }
     }
     tbody {

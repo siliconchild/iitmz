@@ -1,0 +1,58 @@
+.page {
+    padding: 4rem 0 3rem;
+}
+
+.header {
+  padding: 3rem 0 0;
+  gap: 5%;
+  align-items: center;
+
+  h1 {
+    font-size: 3.6rem;
+    border-left: 4px solid #ffb013;
+    padding-left: 2rem;
+    margin-top: 1rem;
+  }
+  p {
+    font-size: 1.5rem;
+    margin: 3rem 0 2rem;;
+  }
+}
+
+.ordinanceGrid {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+}
+
+.ordinance {
+    padding: 2rem 1rem;
+    border-top: 1px solid rgba(151,151,151,0.35);
+    color: #c00404;
+    font-weight: 400;
+    cursor: pointer;
+    & > a {
+     display: flex;
+     align-items: center;
+    }
+    svg {
+        height: 24px;
+        width: 24px;
+        margin-right: .75rem;
+    }
+    h3 {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 0;
+        h1 {
+            font-size: 3rem;
+        }
+    }
+    .page {
+      padding: 3rem 0;
+    }
+}

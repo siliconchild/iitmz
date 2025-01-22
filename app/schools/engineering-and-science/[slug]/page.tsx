@@ -8,8 +8,12 @@ import {
   AiOutlineCalendar,
   AiOutlineCheck,
 } from "react-icons/ai";
+import {MdOutlineFileDownload} from "react-icons/md";
 import { BiBuilding } from "react-icons/bi";
 import { GoGlobe } from "react-icons/go";
+import Button from "@/components/button";
+import Link from "next/link";
+import CourseCiriculumDetail from "@/components/course-ciriculum-detail";
 
 export async function generateMetadata({
   params: { slug },
@@ -45,7 +49,7 @@ export default function CourseDetail({ params }: { params: { slug: string } }) {
     <section className={styles.section}>
       <div className={styles.header}>
         <Img
-          src="/cd3x.png"
+          src={course?.coverImg || ""}
           alt="data science course image"
           width={900}
           height={600}
@@ -53,7 +57,35 @@ export default function CourseDetail({ params }: { params: { slug: string } }) {
       </div>
       <div className="container">
         <section className={styles.body}>
-          <h1>{course?.title}</h1>
+          <div className={styles.titleBar}>
+            <div className={styles.mainTitle}>
+              <h1>{course?.title}</h1>
+              {course?.applicationClosingDate && (
+                <p className={styles.applicationClosingDate}>
+                  <strong>Applications Close on -</strong>{" "}
+                  <span>{course?.applicationClosingDate}</span>
+                </p>
+              )}
+            </div>
+
+            <div className={styles.cta}>
+              {course && "flyerLink" in course && (
+                <Link target="_blank" href={course?.flyerLink}>
+                  <Button kind="SECONDARY">Download Program Flyer</Button>
+                </Link>
+              )}
+              {course?.applicationLink && (
+                <Link target="_blank" href={course?.applicationLink}>
+                  <Button
+                    kind="PRIMARY"
+                    disabled={course.applicationLink === "#"}
+                  >
+                    Apply Now
+                  </Button>
+                </Link>
+              )}
+            </div>
+          </div>
           <div className={styles.meta}>
             <div className={styles.item}>
               <AiOutlineCalendar />
@@ -92,12 +124,39 @@ export default function CourseDetail({ params }: { params: { slug: string } }) {
               ))}
             </ul>
           </div>
+          {course && "downloadableResources" in course && (
+            <div>
+              <h4>Downloadable Resources</h4>
+              <div className={styles.downloadableFiles}>
+                {course &&
+                  "downloadableResources" in course &&
+                  course?.downloadableResources.map((resource: any) => (
+                    <div key={resource.title}>
+                      <Link target="_blank" href={resource.link}>
+                        <Button kind="SECONDARY_BLACK">
+                          <MdOutlineFileDownload />
+                          {resource.title}
+                        </Button>
+                      </Link>
+                    </div>
+                  ))}
+              </div>
+            </div>
+          )}
+
           <div>
             <h4>Eligibility Criteria</h4>
             <Eligilibity type="SINGLE" courseSlug={params.slug} />
           </div>
           <div className={styles.curriculum}>
             <Accordion title="Curriculum">
+              {course && "info" in course?.curriculum && (
+                <div className={styles.info}>
+                  {course?.curriculum.info.map((item) => (
+                    <p key={item}>{item}</p>
+                  ))}
+                </div>
+              )}
               {course?.curriculum.semesters.map((semester, index) => (
                 <AccordionItem
                   key={semester.title}
@@ -111,7 +170,7 @@ export default function CourseDetail({ params }: { params: { slug: string } }) {
                     <thead>
                       <tr>
                         <th>Course Name</th>
-                        <th title="To know what (L, T, E, P, O) is hover your mouse pointer over it">
+                        <th title="To know what (L, T, E, P, A, O) is hover your mouse pointer over it">
                           Category
                         </th>
                         <th title="Lectures">L</th>
@@ -124,16 +183,7 @@ export default function CourseDetail({ params }: { params: { slug: string } }) {
                     </thead>
                     <tbody>
                       {semester.courses.map((course) => (
-                        <tr key={course.courseName}>
-                          <td data-cell="Name:">{course.courseName}</td>
-                          <td data-cell="Category">{course.category}</td>
-                          <td data-cell="Lectures">{course.L}</td>
-                          <td data-cell="Tutorials">{course.T}</td>
-                          <td data-cell="Extended Tutorials">{course.E}</td>
-                          <td data-cell="Practicals">{course.P}</td>
-                          <td data-cell="Outside Classroom">{course.O}</td>
-                          <td data-cell="Total">{course.totalCredits}</td>
-                        </tr>
+                        <CourseCiriculumDetail key={course.courseName} course={course} />
                       ))}
                     </tbody>
                   </table>

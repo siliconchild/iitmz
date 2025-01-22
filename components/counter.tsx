@@ -99,7 +99,7 @@ export default function Counter() {
               />
             </svg>
             <div className={styles.content}>
-              <h4>#68</h4>
+              <h4>#77</h4>
               <p>QS World</p>
               <p>Engineering & Technology</p>
             </div>

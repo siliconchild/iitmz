@@ -16,6 +16,7 @@
 
 .fee {
   display: flex;
+  flex-direction: column;
 
   h3 {
     padding: 1rem 2rem;
@@ -132,11 +133,9 @@
     h3 {
       padding: 0.5rem 1rem;
       font-size: 1.4rem;
-      width: 65%;
       line-height: 2.4;
     }
     h4 {
-      width: 35%;
       padding: 0.5rem 1rem;
       font-size: 1.2rem;
       line-height: 2.8;

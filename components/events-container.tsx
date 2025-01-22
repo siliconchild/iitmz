@@ -3,27 +3,10 @@ import styles from "./events-container.module.scss"
 import EventCard from "@/components/event-card";
 import { EventsType } from "@/data/events";
 import { Tabs, TabButton, TabPanel } from "./tabs";
-
-function filterEventsByDate(events: EventsType) {
-  const currentDate = new Date();
-  const upcomingEvents: EventsType = [];
-  const pastEvents: EventsType = [];
-
-  events.forEach((event) => {
-    const eventDate = new Date(`${event.date.monthYear} ${event.date.day}`);
-    if (eventDate >= currentDate) {
-      upcomingEvents.push(event);
-    } else {
-      pastEvents.push(event);
-    }
-  });
-
-  return { upcomingEvents, pastEvents };
-}
+import {filterEventsByDate} from "@/utils/filterEventsByDate";
 
 export default function EventsContainer({list}: {list: EventsType}){
     const {upcomingEvents, pastEvents} = filterEventsByDate(list);
-    console.log(upcomingEvents)
     return (
       <div className={styles.section}>
         <Tabs>
@@ -40,7 +23,7 @@ export default function EventsContainer({list}: {list: EventsType}){
             <TabPanel index={0}>
               {upcomingEvents.length > 0 ? (
                 upcomingEvents.map((event) => (
-                  <EventCard key={event.link} {...event} type="UPCOMING" />
+                  <EventCard key={event.regLink} {...event} type="UPCOMING" />
                 ))
               ) : (
                 <div className={styles.noItem}>
@@ -52,7 +35,7 @@ export default function EventsContainer({list}: {list: EventsType}){
             <TabPanel index={1}>
               {pastEvents &&
                 pastEvents.map((event) => (
-                  <EventCard key={event.link} {...event} type="PAST" />
+                  <EventCard key={event.regLink} {...event} type="PAST" />
                 ))}
             </TabPanel>
           </div>

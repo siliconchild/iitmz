@@ -1,15 +1,17 @@
-const courses = {
+export const courses = {
   bs: {
     slug: "bs-data-science-and-ai",
-    applicationLink: "https://admissions.ge.iitm.ac.in/iitmz-bsdsai",
+    coverImg: "/cd3x.png",
+    applicationLink: "https://admissions.iitmz.ac.in/bsdsai",
     seo: {
       desc: "BS in Data Science & AI at IIT Madras Zanzibar. 4-Year Program. Comprehensive Curriculum. Hands-on Expertise. Diverse Job Prospects. Apply Now.",
     },
     title: "BS in Data Science & AI",
+    applicationClosingDate: null,
     meta: {
       duration: "4 Years",
       credits: "433",
-      department: "Data Science",
+      department: "Engineering & Science",
       language: "English",
     },
     desc: "Welcome to the Bachelor of Science in Data Science and Artificial Intelligence (BS DSAI) program at IITM Zanzibar Campus. Our program is designed to equip students with the knowledge and skills needed to thrive in the fast-paced and ever-evolving field of data science and artificial intelligence. As a student in our program, you will embark on a comprehensive learning journey that blends foundational science and mathematics courses with specialised DSAI subjects. With a strong emphasis on practical experience and project-based learning, you will have the opportunity to apply your knowledge to real-world challenges and gain hands-on expertise in data analysis, machine learning, natural language processing and more.",
@@ -21,6 +23,43 @@ const courses = {
         "Business analyst or data strategist in companies leveraging data for strategic decision- making.",
       ],
     },
+    eligibility: [
+      {
+        content:
+          "Eligible applicants will appear for a test at a test center; shortlisted candidates will be called for an interview. A holistic assessment of the quality of the application, performance in the screening test, and interviews conducted by the expert faculty panel will be used to admit students. The screening test will be similar to SAT in level/type. Further details will be announced shortly.",
+        type: "REQUIRED",
+      },
+      {
+        content:
+          "To be eligible for the Bachelor of Science in Data Science and Artificial Intelligence (BS DS & AI) program at IITM Zanzibar Campus, you must meet one of the following eligibility criteria",
+        type: "REQUIRED",
+      },
+      {
+        content:
+          "Advanced Certificate of Secondary Education (Form VI) with 3 principal passes, in Natural Sciences",
+        type: "ANY",
+      },
+      {
+        content:
+          "Final examination of the 10+2 system or two-year Pre-University, conducted by any recognized Central/ Indian State Board (CBSE etc.)",
+        type: "ANY",
+      },
+      {
+        content:
+          "General Certificate Education (GCE) Examination (London/Cambridge/Sri Lanka) at the Advanced (A) Level",
+        type: "ANY",
+      },
+      {
+        content:
+          "High School Certificate Examination of the Cambridge University or International Baccalaureate Diploma of the International Baccalaureate office, Geneva",
+        type: "ANY",
+      },
+      {
+        content:
+          "Any Public School/Board/University examination in India or in any foreign country recognized as equivalent to 10+2 system by the Association of Indian Universities (AIU)",
+        type: "ANY",
+      },
+    ],
     curriculum: {
       semesters: [
         {
@@ -28,6 +67,7 @@ const courses = {
           credits: "47",
           courses: [
             {
+              courseNo: "Z1003",
               courseName: "Introduction to Calculus ",
               category: "Science",
               L: "3",
@@ -36,8 +76,14 @@ const courses = {
               P: "",
               O: "6",
               totalCredits: "10",
+              details: {
+                content:
+                  "<strong>Derivatives:</strong> Limits, Continuous functions and derivatives, chain rule, applications of derivatives <br/><br /><strong>Integrals:</strong> Summation vs Integration, Indefinite integrals, definite integrals, techniques of integration, integration by parts. <br/><br /> <strong>Partial derivatives:</strong> maxima, minima and saddle points. <br/><br /><strong>Multiple integrals:</strong> Cylindrical and spherical coordinates, double and triple integrals.<br/><br /><strong>Vector Calculus:</strong> Line integrals, Green’s theorem, Surface integrals, Divergence theorem, Curl and Stokes’ Theorem. ",
+                faculty: "Dr. Bharath S",
+              },
             },
             {
+              courseNo: "Z1001",
               courseName: "Physics for Data Scientists",
               category: "Science",
               L: "3",
@@ -46,8 +92,14 @@ const courses = {
               P: "",
               O: "6",
               totalCredits: "10",
+              details: {
+                content:
+                  "<strong>Classical mechanics:</strong> mechanics of a particle, mechanics of a system of particles , generalized coordinates, equations of motions - Lagrangian and Hamiltonian<br/><br /><strong>Thermodynamics:</strong> First law - energy, work and heat, Second law - entropy, Applications of first and second law for ideal gas, Phase transitions - van der Waals equation of state<br/><br /> <strong>Quantum mechanics:</strong/> The quantum nature of radiation, interference experiment with radiation and particle beams. Postulates of quantum mechanics, Schrodinger wave equation. Applications to simple physical systems such as free particle, particle in a box and barrier penetration, spin, two-state systems <br/><br /><strong>Statistical mechanics:</strong> phase space, distribution functions, ergodic hypothesis, statistical ensemble - microcanonical, canonical, kinetic theory - Maxwell-Boltzmann distribution, equipartition theorem, kinetic energy, temperature, pressure, statistical definition of entropy, thermal fluctuations, Brownian motion (Langevin’s approach) <br/><br /><strong>Case studies:</strong /> case studies from Physics that use data science methods",
+                faculty: "Dr. Vivek Mishra",
+              },
             },
             {
+              courseNo: "Z1005",
               courseName: "Engineering Calculations",
               category: "Science",
               L: "",
@@ -56,8 +108,14 @@ const courses = {
               P: "3",
               O: "3",
               totalCredits: "6",
+              details: {
+                content:
+                  "Typology of data (data classification), Physical process variables, Units, Dimensions, Systems of units,Homogeneity & Unit conversions, Estimation of Numerical values, Significant figures, Errors, error propagation, Working with spreadsheets - basic manipulations & calculations, Conceptual thinking (data science examples)",
+                faculty: "Dr. Shankar Narasimhan",
+              },
             },
             {
+              courseNo: "Z1007",
               courseName: "Basics of Computing",
               category: "Engineering",
               L: "3",
@@ -66,8 +124,14 @@ const courses = {
               P: "3",
               O: "6",
               totalCredits: "12",
+              details: {
+                content:
+                  "Introduction to computation, Python Fundamentals: Variables, expressions and statements; Conditional execution. Functions and program flow; Iterations; Recursion. Basic Python data types: lists, strings, dictionaries, tuples; String manipulation; Matrix manipulation <br/><br /> File handling; Extending Python, Error handling; Regular expressions and Parsing, Testing, Debugging, Exceptions and Assertions <br/><br /> Object-oriented programming in Python,Understanding program performance; profiling code; Advanced topics: parallel programming, data visualization.",
+                faculty: "Dr. Ritika Jain",
+              },
             },
             {
+              courseNo: "Z1009",
               courseName: "Writing for Self ",
               category: "Humanities",
               L: "2",
@@ -76,6 +140,11 @@ const courses = {
               P: "2",
               O: "5",
               totalCredits: "9",
+              details: {
+                content:
+                  "Reading of autobiographical literature from Africa, India and other areas. In this module, students will analyze  common elements and highlight the differences in language and structure. Practice exercises will be on writing  about oneself, including intellectual development, childhood, and current experiences in an international college campus..<br/><br />Breaking down writing pieces to understand the importance of coherence, cogency and grammar. Students will  be encouraged to examine principles of good writing and also to practice writing faster and more effectively.<br/><br />Communicating information visually is the subject of this module. Eschewing text, students will depict ideas  and information (& data) in graphs, charts and other visual means. The practice element will be presentations  made to the class, bringing together the visual and the verbal communication aspects.<br/><br />Writing longer pieces - here students explore various kinds of writing including long personal essays and  popular science articles. The module will pull together learnings from the previous ones to produce good  writing.",
+                faculty: "Dr. Aysha Viswamohan",
+              },
             },
           ],
         },
@@ -141,6 +210,7 @@ const courses = {
           credits: "51",
           courses: [
             {
+              courseNo: "Z2001",
               courseName: "Applied Linear Algebra",
               category: "Science",
               L: "3",
@@ -149,8 +219,14 @@ const courses = {
               P: "",
               O: "6",
               totalCredits: "10",
+              details: {
+                content:
+                  "<strong>What is Linear Algebra:</strong /> Vectors, dot products, linear combinations, linear functions, Matrices. Systems of Linear Equations: Gaussian elimination, Elementary row operations.<br/><br /> <strong>Vector spaces and subspaces:</strong /> Spaces of vectors, span, basis, linear independence , dimension, rank nullity theorem, four  fundamental subspaces, change of basis, complete solution to a system of linear equations, orthonormal bases. Matrices: Eigenvalues and Eigenvectors, Diagonalisation of matrices, Symmetric matrices, Positive definite matrices,  generalized Eigenvectors, Jordan form, Singular value decomposition.<br/><br />Linear transformation, matrix representation of a linear transformation. Applications: Image processing, Optimisation, Networks",
+                faculty: "Dr. Ramkrishna Pasumarthy",
+              },
             },
             {
+              courseNo: "Z2003",
               courseName: "Statistical theory for Engineers",
               category: "Science",
               L: "3",
@@ -159,8 +235,14 @@ const courses = {
               P: "",
               O: "6",
               totalCredits: "10",
+              details: {
+                content:
+                  "<strong>Descriptive Statistics: </strong>Summarization of data, sample statistics such as mean, median,  mode, variance, standard deviations, correlation, frequency plots, box plots, concepts  of quartile, whisker, outlier, parity plot, normal probability plot, Sample distribution, point estimations and its properties, central limit theorem, Unbiased estimators, bias and variance of an estimator, minimum variance unbiased  estimator, Standard error, mean squared error of an estimator, relative efficiency of  estimators, Methods of point estimation: Method of moments, Maximum likelihood estimation, Bayesian estimation<br /> <br /><strong>Hypothesis testing: </strong>Statistical hypothesis, one-sided and two-sided alternative hypothesis, type-I and type-II errors, Power of hypothesis testing, P-value, Procedure for Hypothesis testing, z-test, t-test, chi-square test, contingency table tests, statistical inference for two samples, confidence intervals on difference of means, paired t-test, comparison of variances and F-test<br /> <br /><strong>Simple linear regression: </strong>Simple linear regression, properties of the simple linear regression, confidence intervals on the slope and intercepts, residual analysis, coefficient of determination, Analysis of Variance for testing regression (or quality of fit)<br /> <br />",
+                faculty: "Dr. Pradeep Sarvepalli",
+              },
             },
             {
+              courseNo: "Z2005",
               courseName: "Programming and Data Structures including Lab",
               category: "Professional",
               L: "3",
@@ -169,8 +251,14 @@ const courses = {
               P: "3",
               O: "9",
               totalCredits: "15",
+              details: {
+                content:
+                  "Introduction to algorithms and data structures <br /><br /><strong>Basic data structures:</strong> stacks, linked lists, queues <br /><br /><strong>Basic algorithms:</strong> Simple sorting <br /><br /><strong>Advanced sorting algorithms:</strong> <br />Binary Trees, Hash tables, Heaps <br />Dynamic Programming algorithms <br />Greedy algorithms <br />Introduction to graphs <br />Graph algorithms: BFS, DFS, A* <br /><br /><strong>Advanced topics:</strong> Parallel programming, Randomized algorithms <br /><br /><strong>Programming and Data Structures including Lab</strong> <br />Introduction to algorithms and data structures <br />",
+                faculty: "Dr. Innocent Nyalala",
+              },
             },
             {
+              courseNo: "Z2007",
               courseName: "Introduction to Optimization",
               category: "Engineering",
               L: "3",
@@ -179,6 +267,11 @@ const courses = {
               P: "",
               O: "6",
               totalCredits: "10",
+              details: {
+                content:
+                  "<strong>Introduction:</strong> Formulation of optimization problems in engineering and data science, classification of different types of optimization problems. Mathematical background: Vector spaces, matrix algebra, eigenvalues, eigenvectors, positive definite matrices, multivariable calculus (gradient, Hessian, Taylor’s theorem). <br /> <br /><strong>Unconstrained optimization:</strong> Necessary and sufficient condition for optima (univariate, multivariate)Algorithms for univariate optimization (search and bracketing, bisection, golden section etc.) Multivariate unconstrained optimization: Necessary and sufficient condition for optima, line search and trust region methods, steepest descent, Newton and quasi-Newton methods. Linear programming: Theory, Simplex method, duality.<br /><br /><strong>Constrained optimization:</strong> KKT conditions for minimum, active set method for quadratic programming Nonlinear programming: Penalty function methods, Sequential Quadratic Programming (SQP) Applications to data science: Least squares, estimation, Support vector machine.",
+                faculty: "Dr. Manoj Kumar",
+              },
             },
             {
               courseName: "Elective (Programming for Engineers Suggested)",
@@ -523,15 +616,17 @@ const courses = {
   },
   mtech: {
     slug: "mtech-data-science-and-ai",
-    applicationLink: "https://admissions.ge.iitm.ac.in/iitmz-mtechdsai",
+    coverImg: "/cd3x.png",
+    applicationLink: "https://admissions.iitmz.ac.in/mtechdsai",
     seo: {
       desc: "MTech in Data Science & AI at IIT Madras Zanzibar. 2-Year Program. Specialized Skills in AI, Machine Learning, Big Data, And More. Apply Now.",
     },
     title: "MTech in Data Science & AI",
+    applicationClosingDate: null,
     meta: {
       duration: "2 Years",
       credits: "190",
-      department: "Data Science",
+      department: "Engineering & Science",
       language: "English",
     },
     desc: "Welcome to the Master of Technology in Data Science and Artificial Intelligence (MTech DSAI) program at IITM Zanzibar Campus. Our program is designed to provide students with advanced knowledge and specialised skills in the fields of data science and artificial intelligence, preparing them for leadership roles in industry and research. As a student in our program, you will engage in rigorous coursework, research project and practical training that will enhance your expertise in areas such as machine learning, deep learning, big data analytics, and more. Our faculty members, renowned experts in the field, will guide you through cutting-edge techniques and methodologies to solve complex data-driven challenges.",
@@ -546,6 +641,17 @@ const courses = {
         "Business Intelligence Analyst",
       ],
     },
+    eligibility: [
+      {
+        content:
+          "Eligible applicants will appear for a test at a test center; shortlisted candidates will be called for an interview. A holistic assessment of the quality of the application, performance in the screening test, and interviews conducted by the expert faculty panel will be used to admit students. The screening test will be similar to SAT in level/type. Further details will be announced shortly.",
+        type: "REQUIRED",
+      },
+      {
+        content: "4 year UG degree in Engineering/Science",
+        type: "REQUIRED",
+      },
+    ],
     curriculum: {
       semesters: [
         {
@@ -553,6 +659,7 @@ const courses = {
           credits: "54",
           courses: [
             {
+              courseNo: "Z5009",
               courseName: "Research Skills & Seminar",
               category: "",
               L: "",
@@ -561,8 +668,14 @@ const courses = {
               P: "3",
               O: "3",
               totalCredits: "6",
+              details: {
+                content:
+                  "Introduction to research<br />Literature search<br />Critical analysis of research articles<br />Technical writing<br />Lab safety<br />Ethics, Workplace diversity<br />Writing including code documentation, opinion pieces and research proposals/articles",
+                faculty: "Dr. AK Suresh",
+              },
             },
             {
+              courseNo: "Z5001",
               courseName: "Mathematical foundations of Data Science",
               category: "",
               L: "3",
@@ -571,8 +684,14 @@ const courses = {
               P: "",
               O: "8",
               totalCredits: "12",
+              details: {
+                content:
+                  "<strong>Basics of Data Science: </strong> Introduction; Typology of problems; Importance of linear algebra, statistics and optimization from a data science perspective; Structured thinking for solving data science problems.<br /><br /> <strong>Linear Algebra:</strong/> Matrices and their properties (determinants, traces, rank, nullity, etc.); Eigenvalues and eigenvectors; Matrix factorizations; Inner products; Distance measures; Projections; Notion of hyperplanes; half-planes.<br /> <br /><strong>Probability, Statistics and Random Processes: </strong> Probability theory and axioms; Random variables; Probability distributions and density functions (univariate and multivariate); Expectations and moments; Covariance and correlation; Statistics and sampling distributions; Hypothesis testing of means, proportions, variances and correlations; Confidence (statistical) intervals; Correlation functions; White-noise process.<br /><br /><strong>Optimization: </strong> Unconstrained optimization; Necessary and sufficient conditions for optima; Gradient descent methods; Constrained optimization, KKT conditions; Introduction to non-gradient techniques; Introduction to least squares optimization; Optimization view of machine learning.Introduction to Data Science Methods: Linear regression as an exemplar function approximation problem; Linear classification problems",
+                faculty: "Dr. Shankar Narasimhan",
+              },
             },
             {
+              courseNo: "Z5007",
               courseName: "Programming & Data Structures",
               category: "",
               L: "3",
@@ -581,8 +700,14 @@ const courses = {
               P: "3",
               O: "8",
               totalCredits: "15",
+              details: {
+                content:
+                  "Introduction to algorithms and data structures<br />Basic data structures: stacks, linked lists, queues <br />Basic algorithms: Simple sorting<br />Advanced sorting algorithms<br />Binary Trees, Hash tables, Heaps<br />Dynamic Programming algorithms<br />Greedy algorithms<br />Introduction to graphs<br />Graph algorithms: BFS, DFS, A*<br />Advanced topics: Parallel programming, Randomized algorithms<br />",
+                faculty: "Dr. Tushar Shinde",
+              },
             },
             {
+              courseNo: "Z5003",
               courseName: "Introduction to Data Analytics",
               category: "",
               L: "4",
@@ -591,9 +716,15 @@ const courses = {
               P: "",
               O: "8",
               totalCredits: "12",
+              details: {
+                content:
+                  "<strong>Unsupervised Learning:</strong>Representation Learning - PCA, Estimation - Review of MLE, Bayesian estimation, Clustering - K-Means, Hierarchical Clustering, Spectral Clustering<br /><br /><strong>Binary Classification:</strong> K-Nearest Neighbors, Decision Trees, Bias-Variance Dichotomy, Model Validation: Cross validation, Bayesian Decision Theory, Generative vs Discriminative Modeling for classification,Generative: Naive Bayes, Gaussian Discriminant Analysis, Hidden Markov Model: Discriminative: Logistic Regression<br /><br /><strong>Advanced Methods for Classification:</strong> Support Vector Machines - Kernels, Ensemble Methods:Bagging - Random Forest, Boosting - Adaboost/GBDT/XgBoost, Artificial Neural Networks, Multi-Class Classification - one vs all, one vs one Supervised Learning:  Regression, Linear Regression, Ordinary Least Squares, Non-linear regression (basis functions), Ridge Regression, LASSO<br /><br /><strong>Gentle Introduction to Sequential Decision Making:</strong> (online learning, Bandit, RL)",
+                faculty: "Dr. Nirav Bhatt",
+              },
             },
             {
-              courseName: "Elective",
+              courseNo: "Z6005",
+              courseName: "Natural Language Processing",
               category: "",
               L: "",
               T: "",
@@ -601,6 +732,11 @@ const courses = {
               P: "",
               O: "",
               totalCredits: "9",
+              details: {
+                content:
+                  "Introduction to NLP and classical NLP tasks. Language Models: Probabilistic language model and unigram, bigram, n-grams, zeros, smoothing, Evaluating Models, perplexity.Word Embeddings: One-hot representations of words, Distributed Representations of  words, SVD for learning word representations, Continuous bag of words model, Skip gram model with negative sampling (word2vec) GloVe word embeddings Evaluating  word embeddings.<br /><br />Sequence models for language: Recurrent Neural Networks Sequence-to-sequence modeling, neural machine translation, beam decoding,  attention, Byte-Pair Encoding. Transformers, dot-product attention and concepts of Query, keys, values, self  attention, multi-head attention..<br /><br />Advanced topics in NLP: Large Language Models, self-supervised learning and large  language models, BERT, GPT, etc., transfer learning. <br /><br />Fine tuning and Prompt engineering for NLP tasks such as name-entity recognition,  sentiment analysis, machine translation, Discourse Analysis, document  summarization, Question answering",
+                faculty: "Dr. Nirav Bhatt/Dr. Arun Ayyar",
+              },
             },
           ],
         },
@@ -727,6 +863,390 @@ const courses = {
               T: "",
               E: "",
               P: "",
+              O: "40",
+              totalCredits: "40",
+            },
+          ],
+        },
+      ],
+    },
+  },
+  mtech_os: {
+    slug: "mtech-ocean-structures",
+    coverImg: "/os-cover.jpg",
+    applicationLink: "https://admissions.iitmz.ac.in/mtechos",
+    flyerLink: "/IITMZ_MTech_In_Ocean_Structures.pdf",
+    seo: {
+      desc: "The Master of Technology in Ocean Structures offered at IIT Madras Zanzibar Campus will have a curriculum tailor-made to the industry needs in the Oil & Gas and Maritime sector. Apply Now.",
+    },
+    title: "MTech in Ocean Structures",
+    meta: {
+      duration: "2 Years",
+      credits: "208",
+      department: "Engineering & Science",
+      language: "English",
+    },
+    applicationClosingDate: "May 31, 2025",
+    desc: "The MTech in Ocean Structures program presents a rigorous and comprehensive curriculum designed to cultivate expertise Ocean structures covering Offshore Platforms for oil and Gas exploration, Renewable Energy such as offshore wind, wave and tidal energy, port and harbour infrastructures including jetties, berths, breakwater, dredging and reclamation aspects. Along with core courses like Wave hydrodynamics, Offshore Structures, Port and harbour structures and a selection of supplementary electives. There is a heavy emphasis on hands-on lab work cum tutorials in design of the above and industry driven projects. The course will enable the students to acquire research aptitude along with the necessary skills to succeed in the job market.",
+    prospects: {
+      desc: "Graduates of our MTech Ocean Structures program are in high demand, contributing expertise to the dynamic field of coastal and offshore engineering, shaping sustainable solutions for maritime infrastructure and environmental resilience. The potential employers include both government and private employers in Tanzania and around the globe in the port, harbour and energy market. The potential employers are as follows::",
+      points: [
+        "Songas Ltd",
+        "Panafrican Energy Tanzania Limited",
+        "Equinor Tanzania As",
+        "East Coast Energy Tanzania Limited",
+        "Mogas Tanzania Limited.",
+        "BG Tanzania Limited",
+        "Houston Power",
+        "Oilcom Tanzania Limited",
+        "International & Regional Companies in such as",
+        "Aker Solutions",
+        "Technip",
+        "Mcdermot International",
+        "COWI",
+      ],
+    },
+    eligibility: [
+      {
+        content: " 4-year Undergraduate degree in Civil Engineering with a minimum of 60% marks",
+        type: "REQUIRED",
+      },
+      {
+        content:
+          "Eligible applicants will appear for an online screening test; shortlisted candidates will be called for an interview. A holistic assessment of the quality of the application, performance in the screening test, and interviews conducted by the expert faculty panel will be used to admit students. The screening test will be similar to SAT in level/type. ",
+        type: "REQUIRED",
+      },
+    ],
+    downloadableResources: [
+      {
+        title: "MTech Ocean Structures - Screening Test Syllabus, Question types & mark allocation",
+        link: "/MTech_OS_Screening_Test Syllabus.pdf",
+      },
+    ],
+    curriculum: {
+      info: [
+        "Stream 1: Offshore and Ship structures",
+        "Stream 2: Port, Harbour & Coastal structures",
+        "Note: Stream selection will be based on the CGPA obtained by the students at the end of first semester.",
+      ],
+      semesters: [
+        {
+          title: "Semester I - Common to both streams",
+          credits: "55",
+          courses: [
+            {
+              courseName: "Basics of Ocean Engineering",
+              category: "",
+              L: "3",
+              T: "0",
+              E: "0",
+              A: "0",
+              O: "6",
+              totalCredits: "9",
+            },
+            {
+              courseName: "Wave hydrodynamics",
+              category: "",
+              L: "3",
+              T: "0",
+              E: "1",
+              A: "0",
+              O: "6",
+              totalCredits: "10",
+            },
+            {
+              courseName: "Dynamics of ocean structures",
+              category: "",
+              L: "3",
+              T: "0",
+              E: "0",
+              A: "0",
+              O: "6",
+              totalCredits: "9",
+            },
+            {
+              courseName: "Marine geotechnical engineering",
+              category: "",
+              L: "3",
+              T: "0",
+              E: "0",
+              A: "0",
+              O: "6",
+              totalCredits: "9",
+            },
+            {
+              courseName: "Conceptual design of marine structures",
+              category: "",
+              L: "3",
+              T: "0",
+              E: "0",
+              A: "0",
+              O: "6",
+              totalCredits: "9",
+            },
+            {
+              courseName: "Statics and Dynamics of floating structures",
+              category: "",
+              L: "3",
+              T: "0",
+              E: "0",
+              A: "0",
+              O: "6",
+              totalCredits: "9",
+            },
+          ],
+        },
+        {
+          title: "Semester II: Stream 1 - Offshore and Ship structures",
+          credits: "56",
+          courses: [
+            {
+              courseName: "Design of fixed offshore structures",
+              category: "",
+              L: "3",
+              T: "1",
+              E: "0",
+              A: "0",
+              O: "6",
+              totalCredits: "10",
+            },
+            {
+              courseName: "Experimental methods and Measurements",
+              category: "",
+              L: "3",
+              T: "0",
+              E: "1",
+              A: "0",
+              O: "6",
+              totalCredits: "10",
+            },
+            {
+              courseName: "Materials and fabrication of ship and offshore structures",
+              category: "",
+              L: "3",
+              T: "0",
+              E: "0",
+              A: "0",
+              O: "6",
+              totalCredits: "9",
+            },
+            {
+              courseName: "Numerical modelling of offshore structures",
+              category: "",
+              L: "2",
+              T: "0",
+              E: "0",
+              A: "3",
+              O: "4",
+              totalCredits: "9",
+            },
+            {
+              courseName: "FEM applied to ocean engineering",
+              category: "",
+              L: "3",
+              T: "0",
+              E: "0",
+              A: "0",
+              O: "6",
+              totalCredits: "9",
+            },
+            {
+              courseName: "Stream Elective - 01",
+              category: "",
+              L: "3",
+              T: "0",
+              E: "0",
+              A: "0",
+              O: "6",
+              totalCredits: "9",
+            },
+          ],
+        },
+        {
+          title: "Semester II: Stream 2 - Port harbour and coastal structures",
+          credits: "56",
+          courses: [
+            {
+              courseName: "Port & harbour structures",
+              category: "",
+              L: "3",
+              T: "0",
+              E: "0",
+              A: "0",
+              O: "6",
+              totalCredits: "9",
+            },
+            {
+              courseName: "Experimental methods and Measurements",
+              category: "",
+              L: "3",
+              T: "0",
+              E: "1",
+              A: "0",
+              O: "6",
+              totalCredits: "10",
+            },
+            {
+              courseName: "Coastal engineering",
+              category: "",
+              L: "3",
+              T: "0",
+              E: "0",
+              A: "0",
+              O: "6",
+              totalCredits: "9",
+            },
+            {
+              courseName: "Numerical techniques in ocean hydrodynamics",
+              category: "",
+              L: "2",
+              T: "1",
+              E: "0",
+              A: "3",
+              O: "4",
+              totalCredits: "10",
+            },
+            {
+              courseName: "FEM applied to ocean engineering",
+              category: "",
+              L: "3",
+              T: "0",
+              E: "0",
+              A: "0",
+              O: "6",
+              totalCredits: "9",
+            },
+            {
+              courseName: "Stream Elective - 01",
+              category: "",
+              L: "3",
+              T: "0",
+              E: "0",
+              A: "0",
+              O: "6",
+              totalCredits: "9",
+            },
+          ],
+        },
+        {
+          title: "Summer Training - Common to both streams",
+          credits: "10",
+          courses: [
+            {
+              courseName: "Summer training in computer modelling and simulation",
+              category: "",
+              L: "0",
+              T: "0",
+              E: "0",
+              A: "0",
+              O: "10",
+              totalCredits: "10",
+            },
+          ],
+        },
+        {
+          title: "Semester III: Stream 1 - Offshore and Ship Structures",
+          credits: "47",
+          courses: [
+            {
+              courseName: "Pipelines and Riser Engineering",
+              category: "",
+              L: "3",
+              T: "0",
+              E: "0",
+              A: "0",
+              O: "6",
+              totalCredits: "9",
+            },
+            {
+              courseName: "Stream Elective - 02",
+              category: "",
+              L: "3",
+              T: "0",
+              E: "0",
+              A: "0",
+              O: "6",
+              totalCredits: "9",
+            },
+            {
+              courseName: "Stream Elective - 03",
+              category: "",
+              L: "3",
+              T: "0",
+              E: "0",
+              A: "0",
+              O: "6",
+              totalCredits: "9",
+            },
+            {
+              courseName: "M.Tech Ocean Structures Project (Phase I)",
+              category: "",
+              L: "0",
+              T: "0",
+              E: "0",
+              A: "0",
+              O: "20",
+              totalCredits: "20",
+            },
+          ],
+        },
+        {
+          title: "Semester III: Stream 2 - Port harbour and coastal structures",
+          credits: "47",
+          courses: [
+            {
+              courseName: "Dredging and reclamation",
+              category: "",
+              L: "3",
+              T: "0",
+              E: "0",
+              A: "0",
+              O: "6",
+              totalCredits: "9",
+            },
+            {
+              courseName: "Stream Elective - 02",
+              category: "",
+              L: "3",
+              T: "0",
+              E: "0",
+              A: "0",
+              O: "6",
+              totalCredits: "9",
+            },
+            {
+              courseName: "Stream Elective - 03",
+              category: "",
+              L: "3",
+              T: "0",
+              E: "0",
+              A: "0",
+              O: "6",
+              totalCredits: "9",
+            },
+            {
+              courseName: "M.Tech Ocean Structures Project (Phase I)",
+              category: "",
+              L: "0",
+              T: "0",
+              E: "0",
+              A: "0",
+              O: "20",
+              totalCredits: "20",
+            },
+          ],
+        },
+        {
+          title: "Semester IV - Common to both streams",
+          credits: "40",
+          courses: [
+            {
+              courseName: "M.Tech Ocean Structures Project (Phase II)",
+              category: "",
+              L: "0",
+              T: "0",
+              E: "0",
+              A: "0",
               O: "40",
               totalCredits: "40",
             },

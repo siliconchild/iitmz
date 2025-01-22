@@ -20,6 +20,10 @@ export default function Fees() {
               <h3>MTech in Data Science & AI</h3>
               <h4>USD 6000 / p.a.</h4>
             </div>
+            <div className={styles.fee}>
+              <h3>MTech in Ocean Structures</h3>
+              <h4>USD 6000 / p.a.</h4>
+            </div>
           </div>
         </div>
         {/* <div className={styles.accomodation}>

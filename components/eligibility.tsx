@@ -15,9 +15,19 @@ type EligibilityProps =
 const coursesMap: { [key: string]: number } = {
   "bs-data-science-and-ai": 0,
   "mtech-data-science-and-ai": 1,
+  "mtech-ocean-structures": 2,
 };
 
+
 export default function Eligilibity(props: EligibilityProps) {
+  const getIndex = (courseIndex: number) => {
+    if (props.type === "FULL") {
+      return courseIndex;
+    } else if (props.type === "SINGLE") {
+      return coursesMap[props.courseSlug] === courseIndex ? 0 : 1;
+    }
+    return 0;
+  };
   return (
     <section
       className={`${styles.section} ${
@@ -34,16 +44,13 @@ export default function Eligilibity(props: EligibilityProps) {
             <TabButton index={1} className={styles.tab_button_active}>
               MTech in Data Science & AI
             </TabButton>
+            <TabButton index={2} className={styles.tab_button_active}>
+              MTech in Ocean Structures
+            </TabButton>
           </div>
 
           <TabPanel
-            index={
-              props.type === "FULL"
-                ? 0
-                : props.type === "SINGLE" && coursesMap[props.courseSlug] === 0
-                ? 0
-                : 1
-            }
+            index={getIndex(0)}
           >
             <div className={styles.panel}>
               <ul>
@@ -110,13 +117,7 @@ export default function Eligilibity(props: EligibilityProps) {
             </div>
           </TabPanel>
           <TabPanel
-            index={
-              props.type === "FULL"
-                ? 1
-                : props.type === "SINGLE" && coursesMap[props.courseSlug] === 1
-                ? 0
-                : 1
-            }
+            index={getIndex(1)}
           >
             <div className={styles.panel}>
               <ul>
@@ -140,7 +141,34 @@ export default function Eligilibity(props: EligibilityProps) {
             </div>
           </TabPanel>
         </div>
+        <TabPanel
+          index={getIndex(2)}
+        >
+          <div className={styles.panel}>
+            <ul>
+              <li>
+                <BsFillCheckCircleFill className={styles.green} />
+                <p>
+                  4-year Undergraduate degree in Civil Engineering with a
+                  minimum of 60% marks.
+                </p>
+              </li>
+              <li>
+                <BsFillCheckCircleFill className={styles.green} />
+                <p>
+                  Eligible applicants will appear for an online screening test;
+                  shortlisted candidates will be called for an interview. A
+                  holistic assessment of the quality of the application,
+                  performance in the screening test, and interviews conducted by
+                  the expert faculty panel will be used to admit students. The
+                  screening test will be similar to SAT in level/type.{" "}
+                </p>
+              </li>
+            </ul>
+          </div>
+        </TabPanel>
       </Tabs>
     </section>
   );
 }
+

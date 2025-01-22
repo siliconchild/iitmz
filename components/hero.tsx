@@ -1,15 +1,14 @@
 import styles from "./hero.module.scss";
 import Slider from "./slider";
 import Img from "./image";
-import ApplyDropdown from "./apply-dropdown";
 import Button from "./button";
 import Link from "next/link";
+import ApplyDropdown from "./apply-dropdown";
 
 export default function Hero() {
-
   return (
     <section>
-      <Slider>
+      <Slider autoplayInterval={8000}>
         <div className={styles.item}>
           <Img
             width={1200}
@@ -22,17 +21,16 @@ export default function Hero() {
 
           <div className={styles.content}>
             {/* <h4>IITM Zanzibar Campus</h4> */}
-            <h3>Welcome To</h3>
-            <h1>
-              IIT Madras <span>Zanzibar</span>
-            </h1>
-            <h4>Applications for BS in Data Science & AI are live</h4>
-            <h5>May 05, 2024 | 11:59 PM IST</h5>
+            <h3> Application for the BS &amp; MTech full-time degree programs</h3>
+            <h4>
+              {/* Starts from Feb 01, 2025 */}
+              For AY 2025-26: Starts from Jan 10, 2025
+            </h4>
+            {/* <h4>MTech Ocean Structures Applications are live</h4>
+            <h5>Last Date: Sep 15, 2024 | 11:59 PM</h5> */}
+
             <Button>
-              <Link
-                target="_blank"
-                href="https://admissions.ge.iitm.ac.in/iitmz-bsdsai"
-              >
+              <Link target="_blank" href="https://admissions.iitmz.ac.in/">
                 Apply Now
               </Link>
             </Button>
@@ -51,6 +49,7 @@ export default function Hero() {
           <div className={styles.content}>
             {/* <h4>IITM Zanzibar Campus</h4> */}
             <h3>Welcome To</h3>
+<<<<<<< HEAD
             <h1>
               IIT Madras <span>Zanzibar</span>
             </h1>
@@ -61,9 +60,18 @@ export default function Hero() {
                 target="_blank"
                 href="https://admissions.ge.iitm.ac.in/iitmz-bsdsai"
               >
+=======
+            <h1>IIT Madras Zanzibar</h1>
+            {/* <h4>
+              MTech Ocean Structures Applications are live
+            </h4>
+            <h5>Last Date: Sep 15, 2024 | 11:59 PM</h5>
+            <Button>
+              <Link target="_blank" href="https://admissions.ge.iitm.ac.in/iitmz-mtechos">
+>>>>>>> e62bea1d52f6235dac96573648184eb2f3445ffa
                 Apply Now
               </Link>
-            </Button>
+            </Button> */}
           </div>
         </div>
       </Slider>

@@ -1,4 +1,6 @@
 import styles from "./page.module.scss";
+import Link from "next/link";
+import Button from "@/components/button";
 
 export const metadata = {
   title: "Financial Aid",
@@ -17,16 +19,22 @@ export default function FinancialAidPage() {
           <div>
             <h1 className="section-title">Financial Aid & Support</h1>
             <p>
-              The Zanzibar campus of IIT Madras believes in making its
-              world-class education accessible to a diverse cohort of students.
-              We want to ensure that you, an exceptional student, can come study
-              with us without financial barriers. We are putting together
-              several means and ways to support students. IITM alumni are
-              putting together financial assistance, and we are also negotiating
-              on other possibilities including scholarships from various
-              government bodies & bank loans. This page will house information
-              as and when we are ready to announce it.
+              The IIT Madras Zanzibar believes in making its world-class education accessible to a diverse
+              cohort of students. We want to ensure that you, an exceptional student, can come study with us
+              without financial barriers. We are putting together several means and ways to support students.
+              The institution is raising funds from IITM alumni & government bodies for tuition waivers.
+              Several banks are coming forward with special loan packages for IITM Zanzibar students.
             </p>
+            {/* <p>
+              Note: This is the application for financial assistance for
+              full-time study in degree programs at IITM Zanzibar.
+            </p>
+            <Link
+              target="_blank"
+              href="https://ge.iitm.ac.in/forms/iitmz-financial-assistance"
+            >
+              <Button kind="PRIMARY">Apply Now</Button>
+            </Link> */}
           </div>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 598 392">
             <defs>
@@ -165,14 +173,8 @@ export default function FinancialAidPage() {
                   d="m211.39 212.34 16.58 9.82 10.83-6.41v-4.15l-27.26-3.33-.15 4.07zM189.39 199.32l16.58 9.82 10.83-6.41-.15-4.02-27.17-3.41-.09 4.02z"
                   className="cls-24"
                 />
-                <path
-                  d="m191.48 224.12 16.59 9.81 16.58-9.81-.21-4.04H191.5l-.02 4.04z"
-                  className="cls-26"
-                />
-                <path
-                  d="m169.49 211.1 16.58 9.82 16.59-9.82-.07-4.05h-33.1v4.05z"
-                  className="cls-22"
-                />
+                <path d="m191.48 224.12 16.59 9.81 16.58-9.81-.21-4.04H191.5l-.02 4.04z" className="cls-26" />
+                <path d="m169.49 211.1 16.58 9.82 16.59-9.82-.07-4.05h-33.1v4.05z" className="cls-22" />
                 <path
                   d="m171.58 235.9 16.59 9.81 16.58-9.81.14-3.93-16.72-5.89L171.6 232l-.02 3.9z"
                   className="cls-26"
@@ -185,94 +187,40 @@ export default function FinancialAidPage() {
                   d="m151.68 247.67 16.58 9.82 16.59-9.82-.05-3.97-16.54-5.84-16.62 5.84.04 3.97z"
                   className="cls-26"
                 />
-                <path
-                  d="m129.68 234.66 16.59 9.81 16.58-9.81-.07-3.98-33.1.1v3.88z"
-                  className="cls-22"
-                />
-                <path
-                  d="m131.78 259.45 16.58 9.82 16.59-9.82-.38-3.78-32.79 3.78z"
-                  className="cls-26"
-                />
-                <path
-                  d="m109.78 246.43 16.59 9.82 16.58-9.82-.12-4.01h-33l-.05 4.01z"
-                  className="cls-22"
-                />
-                <path
-                  d="m111.88 271.23 16.58 9.81 22.69-13.56-39.24-.34-.03 4.09z"
-                  className="cls-26"
-                />
-                <path
-                  d="m89.88 258.21 16.58 9.82 16.59-9.82-.1-3.95H89.77l.11 3.95z"
-                  className="cls-22"
-                />
+                <path d="m129.68 234.66 16.59 9.81 16.58-9.81-.07-3.98-33.1.1v3.88z" className="cls-22" />
+                <path d="m131.78 259.45 16.58 9.82 16.59-9.82-.38-3.78-32.79 3.78z" className="cls-26" />
+                <path d="m109.78 246.43 16.59 9.82 16.58-9.82-.12-4.01h-33l-.05 4.01z" className="cls-22" />
+                <path d="m111.88 271.23 16.58 9.81 22.69-13.56-39.24-.34-.03 4.09z" className="cls-26" />
+                <path d="m89.88 258.21 16.58 9.82 16.59-9.82-.1-3.95H89.77l.11 3.95z" className="cls-22" />
                 <path
                   d="m211.39 208.35 16.58 9.81 10.83-6.4-16.59-9.81-10.82 6.4zM189.39 195.33l16.58 9.82 10.83-6.41-16.59-9.81-10.82 6.4z"
                   className="cls-15"
                 />
-                <path
-                  d="m191.48 220.13 16.59 9.81 16.58-9.81-16.58-9.82-16.59 9.82z"
-                  className="cls-23"
-                />
-                <path
-                  d="m169.49 207.11 16.58 9.82 16.59-9.82-16.59-9.81-16.58 9.81z"
-                  className="cls-2"
-                />
-                <path
-                  d="m171.58 231.91 16.59 9.81 16.58-9.81-16.58-9.82-16.59 9.82z"
-                  className="cls-23"
-                />
-                <path
-                  d="m149.58 218.89 16.59 9.81 16.59-9.81-16.59-9.82-16.59 9.82z"
-                  className="cls-2"
-                />
-                <path
-                  d="m151.68 243.68 16.58 9.82 16.59-9.82-16.59-9.81-16.58 9.81z"
-                  className="cls-23"
-                />
-                <path
-                  d="m129.68 230.67 16.59 9.81 16.58-9.81-16.58-9.82-16.59 9.82z"
-                  className="cls-2"
-                />
-                <path
-                  d="m131.78 255.46 16.58 9.81 16.59-9.81-16.59-9.81-16.58 9.81z"
-                  className="cls-23"
-                />
-                <path
-                  d="m109.78 242.44 16.59 9.82 16.58-9.82-16.58-9.81-16.59 9.81z"
-                  className="cls-2"
-                />
-                <path
-                  d="m111.88 267.24 16.58 9.81 22.69-13.57-16.58-9.81-22.69 13.57z"
-                  className="cls-23"
-                />
-                <path
-                  d="m89.88 254.22 16.58 9.82 16.59-9.82-16.59-9.81-16.58 9.81z"
-                  className="cls-2"
-                />
+                <path d="m191.48 220.13 16.59 9.81 16.58-9.81-16.58-9.82-16.59 9.82z" className="cls-23" />
+                <path d="m169.49 207.11 16.58 9.82 16.59-9.82-16.59-9.81-16.58 9.81z" className="cls-2" />
+                <path d="m171.58 231.91 16.59 9.81 16.58-9.81-16.58-9.82-16.59 9.82z" className="cls-23" />
+                <path d="m149.58 218.89 16.59 9.81 16.59-9.81-16.59-9.82-16.59 9.82z" className="cls-2" />
+                <path d="m151.68 243.68 16.58 9.82 16.59-9.82-16.59-9.81-16.58 9.81z" className="cls-23" />
+                <path d="m129.68 230.67 16.59 9.81 16.58-9.81-16.58-9.82-16.59 9.82z" className="cls-2" />
+                <path d="m131.78 255.46 16.58 9.81 16.59-9.81-16.59-9.81-16.58 9.81z" className="cls-23" />
+                <path d="m109.78 242.44 16.59 9.82 16.58-9.82-16.58-9.81-16.59 9.81z" className="cls-2" />
+                <path d="m111.88 267.24 16.58 9.81 22.69-13.57-16.58-9.81-22.69 13.57z" className="cls-23" />
+                <path d="m89.88 254.22 16.58 9.82 16.59-9.82-16.59-9.81-16.58 9.81z" className="cls-2" />
                 <path
                   d="m166.48 185.58 16.58 9.81 10.82-6.4-.14-4.02-27.18-3.41-.08 4.02z"
                   className="cls-24"
                 />
-                <path
-                  d="m146.57 197.36 16.59 9.81 16.58-9.81-.06-4.05h-33.1l-.01 4.05z"
-                  className="cls-22"
-                />
+                <path d="m146.57 197.36 16.59 9.81 16.58-9.81-.06-4.05h-33.1l-.01 4.05z" className="cls-22" />
                 <path
                   d="m126.67 209.14 16.59 9.81 16.58-9.81-.12-4.02-32.99.05-.06 3.97z"
                   className="cls-22"
                 />
-                <path
-                  d="m106.77 220.91 16.58 9.82 16.59-9.82-.07-3.97-33.1.1v3.87z"
-                  className="cls-22"
-                />
+                <path d="m106.77 220.91 16.58 9.82 16.59-9.82-.07-3.97-33.1.1v3.87z" className="cls-22" />
                 <path
                   d="m86.87 232.69 16.58 9.81 16.59-9.81-.13-4.01H86.92l-.05 4.01zM66.96 244.47l16.59 9.81 16.58-9.81-.1-3.96H66.85l.11 3.96z"
                   className="cls-22"
                 />
-                <path
-                  d="m166.48 181.59 16.58 9.81 10.82-6.4-16.58-9.82-10.82 6.41z"
-                  className="cls-15"
-                />
+                <path d="m166.48 181.59 16.58 9.81 10.82-6.4-16.58-9.82-10.82 6.41z" className="cls-15" />
                 <path
                   d="m146.57 193.37 16.59 9.81 16.58-9.81-16.58-9.82-16.59 9.82zM126.67 205.14l16.59 9.82 16.58-9.82-16.58-9.81-16.59 9.81zM106.77 216.92l16.58 9.82 16.59-9.82-16.59-9.81-16.58 9.81zM86.87 228.7l16.58 9.81 16.59-9.81-16.59-9.82-16.58 9.82zM66.96 240.48l16.59 9.81 16.58-9.81-16.58-9.82-16.59 9.82z"
                   className="cls-2"
@@ -281,26 +229,14 @@ export default function FinancialAidPage() {
                   d="m143.56 171.84 16.59 9.81 10.82-6.4-.14-4.03-27.18-3.41-.09 4.03z"
                   className="cls-24"
                 />
-                <path
-                  d="m123.66 183.61 16.58 9.82 16.59-9.82-.07-4.04h-33.1v4.04z"
-                  className="cls-22"
-                />
-                <path
-                  d="m103.76 195.39 16.58 9.82 16.59-9.82-.12-4.02-33 .06-.05 3.96z"
-                  className="cls-22"
-                />
-                <path
-                  d="m83.86 207.17 16.58 9.81 16.59-9.81-.07-3.98-33.1.1v3.88z"
-                  className="cls-22"
-                />
+                <path d="m123.66 183.61 16.58 9.82 16.59-9.82-.07-4.04h-33.1v4.04z" className="cls-22" />
+                <path d="m103.76 195.39 16.58 9.82 16.59-9.82-.12-4.02-33 .06-.05 3.96z" className="cls-22" />
+                <path d="m83.86 207.17 16.58 9.81 16.59-9.81-.07-3.98-33.1.1v3.88z" className="cls-22" />
                 <path
                   d="m63.95 218.95 16.59 9.81 16.58-9.81-.12-4.02H64.01l-.06 4.02zM44.05 230.72l16.59 9.82 16.58-9.82-.1-3.95H43.94l.11 3.95z"
                   className="cls-22"
                 />
-                <path
-                  d="m143.56 167.84 16.59 9.82 10.82-6.41-16.58-9.81-10.83 6.4z"
-                  className="cls-15"
-                />
+                <path d="m143.56 167.84 16.59 9.82 10.82-6.41-16.58-9.81-10.83 6.4z" className="cls-15" />
                 <path
                   d="m123.66 179.62 16.58 9.82 16.59-9.82-16.59-9.81-16.58 9.81zM103.76 191.4l16.58 9.81 16.59-9.81-16.59-9.81-16.58 9.81zM83.86 203.18l16.58 9.81 16.59-9.81-16.59-9.82-16.58 9.82zM63.95 214.95l16.59 9.82 16.58-9.82-16.58-9.81-16.59 9.81zM44.05 226.73l16.59 9.82 16.58-9.82-16.58-9.81-16.59 9.81z"
                   className="cls-2"
@@ -319,18 +255,12 @@ export default function FinancialAidPage() {
                   d="m80.84 181.65 16.59 9.81 16.58-9.81-.12-4.02-32.99.05-.06 3.97z"
                   className="cls-22"
                 />
-                <path
-                  d="m60.94 193.42 16.59 9.82 16.58-9.82-.07-3.97-33.1.1v3.87z"
-                  className="cls-22"
-                />
+                <path d="m60.94 193.42 16.59 9.82 16.58-9.82-.07-3.97-33.1.1v3.87z" className="cls-22" />
                 <path
                   d="m41.04 205.2 16.58 9.82 16.59-9.82-.13-4.01H41.09l-.05 4.01zM21.14 216.98l16.58 9.81 16.59-9.81-.1-3.96H21.03l.11 3.96z"
                   className="cls-22"
                 />
-                <path
-                  d="m120.65 154.1 16.58 9.82 10.83-6.41-16.59-9.81-10.82 6.4z"
-                  className="cls-15"
-                />
+                <path d="m120.65 154.1 16.58 9.82 10.83-6.41-16.59-9.81-10.82 6.4z" className="cls-15" />
                 <path
                   d="m100.75 165.88 16.58 9.81 16.59-9.81-16.59-9.82-16.58 9.82z"
                   style={{
@@ -341,10 +271,7 @@ export default function FinancialAidPage() {
                   d="m80.84 177.66 16.59 9.81 16.58-9.81-16.58-9.82-16.59 9.82zM60.94 189.43l16.59 9.82 16.58-9.82-16.58-9.81-16.59 9.81zM41.04 201.21l16.58 9.82 16.59-9.82-16.59-9.81-16.58 9.81zM21.14 212.99l16.58 9.81 16.59-9.81-16.59-9.82-16.58 9.82z"
                   className="cls-2"
                 />
-                <path
-                  d="m354.59 252.25 9.43-4.38 155.43 89.65-9.43 4.38-155.43-89.65z"
-                  className="cls-32"
-                />
+                <path d="m354.59 252.25 9.43-4.38 155.43 89.65-9.43 4.38-155.43-89.65z" className="cls-32" />
                 <g className="cls-38">
                   <path
                     d="m507.16 84.87 3.65-2.11-.62 252.33-3.64 2.12.61-252.34z"
@@ -372,39 +299,18 @@ export default function FinancialAidPage() {
                       fill: "#b7b8b8",
                     }}
                   />
-                  <path
-                    d="m366.97 10.46 3.81-2.21 130.69 75.46-3.81 2.21-130.69-75.46z"
-                    className="cls-21"
-                  />
-                  <path
-                    d="m497.66 85.92-.64 237.74-130.69-75.45.64-237.75 130.69 75.46z"
-                    className="cls-8"
-                  />
+                  <path d="m366.97 10.46 3.81-2.21 130.69 75.46-3.81 2.21-130.69-75.46z" className="cls-21" />
+                  <path d="m497.66 85.92-.64 237.74-130.69-75.45.64-237.75 130.69 75.46z" className="cls-8" />
                 </g>
                 <g className="cls-38">
-                  <path
-                    d="m491.94 158.53-.01 5.22L371.1 93.99l.01-5.22 120.83 69.76z"
-                    className="cls-21"
-                  />
+                  <path d="m491.94 158.53-.01 5.22L371.1 93.99l.01-5.22 120.83 69.76z" className="cls-21" />
                 </g>
                 <g className="cls-38">
-                  <path
-                    d="m461.57 75.56 5.22-3.04.05-16.67-5.23 3.04-.04 16.67z"
-                    className="cls-10"
-                  />
-                  <path
-                    d="m461.61 58.89 8.39-4.83-50.24-29.01-8.38 4.83 50.23 29.01z"
-                    className="cls-10"
-                  />
-                  <path
-                    d="m411.38 29.88-.05 16.68 50.24 29 .04-16.67-50.23-29.01z"
-                    className="cls-11"
-                  />
+                  <path d="m461.57 75.56 5.22-3.04.05-16.67-5.23 3.04-.04 16.67z" className="cls-10" />
+                  <path d="m461.61 58.89 8.39-4.83-50.24-29.01-8.38 4.83 50.23 29.01z" className="cls-10" />
+                  <path d="m411.38 29.88-.05 16.68 50.24 29 .04-16.67-50.23-29.01z" className="cls-11" />
                 </g>
-                <path
-                  d="m461.79 63.76 8.25-4.61v-5.12l-8.43 4.86.18 4.87z"
-                  className="cls-10"
-                />
+                <path d="m461.79 63.76 8.25-4.61v-5.12l-8.43 4.86.18 4.87z" className="cls-10" />
                 <path
                   d="m491.39 314.36-123.85-71.51V95.19l123.84 71.5.01 147.67z"
                   style={{
@@ -534,48 +440,6 @@ export default function FinancialAidPage() {
               </g>
             </g>
           </svg>
-        </div>
-        <div className={styles.main}>
-          <div className={styles.item}>
-            <div className={styles.title}>
-              <h2>
-                IITM Alumni Awards <br /> 2023
-              </h2>
-            </div>
-            <div className={styles.content}>
-              <p>
-                IIT Madras alumni are the strongest advocates of the quality of
-                our education. They are excited by the opportunities at the
-                first international campus of IITM. They are coming together
-                this year to fund 50% of the tuition fees for Year 1
-                (2023-&rsquo;24), for up to 8 deserving students. We will write
-                to all eligible students after applications close, ask you to
-                apply separately to the award and review the information for
-                making our decision. These will be announced in late September,
-                and awardees will have a chance to interact with the sponsoring
-                alumni online for mentorship.
-              </p>
-            </div>
-          </div>
-          <div className={styles.item}>
-            <div className={styles.title}>
-              <h2>
-                Test Toppers Prize <br /> 2023
-              </h2>
-            </div>
-            <div className={styles.content}>
-              <p>
-                We recognise that the Zanzibar Screening Test for the
-                undergraduate applicants, is a big unknown. There are no papers
-                from the past year to prepare from or evaluate yourself against.
-                Despite these odds, we expect that some of you will do
-                exceptionally well. We will present cash awards to the top 5
-                performers in the screening test. You don&rsquo;t have to do
-                anything to apply for this award (except do very well in the
-                test!). These will be announced in late September.
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </section>

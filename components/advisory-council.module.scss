@@ -9,6 +9,17 @@
   }
 }
 
+.flex_grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  row-gap: 2rem;
+  .card {
+    width: calc(20% - 1rem);
+  }
+}
+
 .card {
   margin-top: 3rem;
   width: 25%;
