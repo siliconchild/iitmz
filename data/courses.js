@@ -7,7 +7,8 @@ export const courses = {
       desc: "BS in Data Science & AI at IIT Madras Zanzibar. 4-Year Program. Comprehensive Curriculum. Hands-on Expertise. Diverse Job Prospects. Apply Now.",
     },
     title: "BS in Data Science & AI",
-    applicationClosingDate: null,
+    // applicationClosingDate: null,
+    applicationClosingDate: "May 31, 2025",
     meta: {
       duration: "4 Years",
       credits: "433",
@@ -622,7 +623,7 @@ export const courses = {
       desc: "MTech in Data Science & AI at IIT Madras Zanzibar. 2-Year Program. Specialized Skills in AI, Machine Learning, Big Data, And More. Apply Now.",
     },
     title: "MTech in Data Science & AI",
-    applicationClosingDate: null,
+    applicationClosingDate: "May 31, 2025",
     meta: {
       duration: "2 Years",
       credits: "190",
