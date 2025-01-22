@@ -1,19 +1,42 @@
 import { defineConfig, s } from "velite";
 
 export default defineConfig({
-  root: "src/content",
+  root: "content",
   assets: "public/",
   collections: {
-    programs: {
+    faculty: {
       name: "faculty",
       pattern: ["faculty/**/*.mdx"],
       schema: s
         .object({
-          slug: s.string(),
-          title: s.string().max(99),
-          cover: s.union([s.string(), s.array(s.string())]),
           order: s.number(),
-          tags: s.array(s.string()).optional(),
+          slug: s.string(),
+          metadesc: s.string(),
+          name: s.string(),
+          img: s.string(),
+          title: s.string(),
+          subtitle: s.string().optional(),
+          email: s.string().optional(),
+          alternateEmail: s.string().optional(),
+          website: s.string().optional(),
+          qualification: s
+            .array(
+              s.object({
+                title: s.string(),
+                course: s.string(),
+                institution: s.string().optional(),
+                year: s.number(),
+              }),
+            )
+            .optional(),
+          awards: s
+            .array(
+              s.object({
+                title: s.string(),
+                subtitle: s.string(),
+              }),
+            )
+            .optional(),
           body: s.mdx(),
         })
         .transform((data) => ({

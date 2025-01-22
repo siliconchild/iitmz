@@ -1,39 +1,43 @@
 import { AiTwotoneCalendar } from "react-icons/ai";
 import { FaUserEdit } from "react-icons/fa";
 import { BsBookmarksFill } from "react-icons/bs";
-import { ReactNode } from "react";
+import { ReactElement } from "react";
 import stringReplacer from "@/components/string-replacer";
-import styles from "./papers.module.css";
+import styles from "./papers.module.scss";
 
-type Paper = {
+type PaperProps = {
   title: string;
   authors: string[];
   year: string;
   publisher: string;
 };
 
-export function Paper({ paper }: { paper: Paper }) {
+export function Paper({ title, authors, year, publisher }: PaperProps) {
   return (
-    <div className={styles.paper} key={paper.title}>
+    <div className={styles.paper} key={title}>
       <h4>
-        <AiTwotoneCalendar /> {paper.year}
+        <AiTwotoneCalendar /> {year}
       </h4>
-      <h3>{stringReplacer(paper.title)}</h3>
+      <h3>{stringReplacer(title)}</h3>
       <div className={styles.authors}>
-        {paper.authors.map((author) => (
+        {authors.map((author) => (
           <p key={author}>
             <FaUserEdit /> {author}
           </p>
         ))}
       </div>
       <p>
-        <BsBookmarksFill /> {paper.publisher}
+        <BsBookmarksFill /> {publisher}
       </p>
     </div>
   );
 }
 
-export function Papers({ children }: { children: ReactNode[] }) {
+type PapersProps = {
+  children: ReactElement<typeof Paper> | ReactElement<typeof Paper>[];
+};
+
+export function Papers({ children }: PapersProps) {
   return (
     <div className={styles.papers}>
       <h2>Selected Papers</h2>

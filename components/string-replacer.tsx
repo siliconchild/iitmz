@@ -3,7 +3,7 @@ import daysLeft from "@/lib/daysLeft";
 
 export default function stringReplacer(content: string) {
   const daysLeftRegex = /\{\{DAYS_LEFT,(\d{4}-\d{2}-\d{2})\}\}/;
-  const sl2Regex = /\{\{sl\(2\)ex\}\}/;
+  const sl2Regex = /sl\(2\)/g;
 
   if (content.match(daysLeftRegex)) {
     let daysLeftString: string;

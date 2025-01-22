@@ -1,28 +1,32 @@
-import { ReactNode } from "react";
-import styles from "./book.module.css";
+import { ReactElement } from "react";
+import styles from "./book.module.scss";
 import Img from "@/components/image";
 
-type Book = {
+type BookProps = {
   title: string;
   publisher: string;
   year: number;
   cover: string;
 };
 
-export function Book({ book }: { book: Book }) {
+export function Book({ title, publisher, year, cover }: BookProps) {
   return (
-    <li key={book.title}>
-      <Img src={book.cover} height={150} width={100} alt={`Book Cover of ${book.title}`} />
+    <li key={title}>
+      <Img src={cover} height={150} width={100} alt={`Book Cover of ${title}`} />
       <div>
-        <h4>{book.title}</h4>
-        <p>{book.publisher}</p>
-        <h5>{book.year}</h5>
+        <h4>{title}</h4>
+        <p>{publisher}</p>
+        <h5>{year}</h5>
       </div>
     </li>
   );
 }
 
-export function Books({ children }: { children: ReactNode }) {
+type BooksProps = {
+  children: ReactElement<typeof Book> | ReactElement<typeof Book>[];
+};
+
+export function Books({ children }: BooksProps) {
   return (
     <div className={styles.books}>
       <h2>Books Published</h2>
