@@ -21,16 +21,9 @@ export default function Hero() {
 
           <div className={styles.content}>
             <h3> Application for the BS &amp; MTech full-time degree programs</h3>
-<<<<<<< HEAD
-            <h4>Starts from Feb 01, 2025</h4>
-=======
-            <h4>
-              {/* Starts from Feb 01, 2025 */}
-              For AY 2025-26: Starts from Jan 10, 2025
-            </h4>
-            {/* <h4>MTech Ocean Structures Applications are live</h4>
-            <h5>Last Date: Sep 15, 2024 | 11:59 PM</h5> */}
->>>>>>> 9bee9ad2470e5ddc08ccd595638e1dcbf5fc683d
+            <h4>For AY 2025-26: Starts from Jan 10, 2025</h4>
+
+            {/* <h5>Last Date: Sep 15, 2024 | 11:59 PM</h5>  */}
 
             <Button>
               <Link target="_blank" href="https://admissions.iitmz.ac.in/">
