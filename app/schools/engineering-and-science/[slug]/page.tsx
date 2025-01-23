@@ -3,23 +3,19 @@ import courses from "@/data/courses";
 import Img from "@/components/image";
 import { Accordion, AccordionItem } from "@/components/accordion";
 import Eligilibity from "@/components/eligibility";
-import {
-  AiOutlineUnorderedList,
-  AiOutlineCalendar,
-  AiOutlineCheck,
-} from "react-icons/ai";
-import {MdOutlineFileDownload} from "react-icons/md";
+import { AiOutlineUnorderedList, AiOutlineCalendar, AiOutlineCheck } from "react-icons/ai";
+import { MdOutlineFileDownload } from "react-icons/md";
 import { BiBuilding } from "react-icons/bi";
 import { GoGlobe } from "react-icons/go";
 import Button from "@/components/button";
 import Link from "next/link";
 import CourseCiriculumDetail from "@/components/course-ciriculum-detail";
 
-export async function generateMetadata({
-  params: { slug },
-}: {
-  params: { slug: string };
-}) {
+export async function generateMetadata(props: { params: Promise<{ slug: string }> }) {
+  const params = await props.params;
+
+  const { slug } = params;
+
   const course = Object.values(courses).find((course) => course.slug === slug);
 
   return {
@@ -31,29 +27,20 @@ export async function generateMetadata({
   };
 }
 
-const dynamicParams = false;
-export { dynamicParams };
-
 export async function generateStaticParams() {
   return Object.values(courses).map((course) => ({
     slug: course.slug,
   }));
 }
 
-export default function CourseDetail({ params }: { params: { slug: string } }) {
-  const course = Object.values(courses).find(
-    (course) => course.slug === params.slug
-  );
+export default async function CourseDetail(props: { params: Promise<{ slug: string }> }) {
+  const params = await props.params;
+  const course = Object.values(courses).find((course) => course.slug === params.slug);
 
   return (
     <section className={styles.section}>
       <div className={styles.header}>
-        <Img
-          src={course?.coverImg || ""}
-          alt="data science course image"
-          width={900}
-          height={600}
-        />
+        <Img src={course?.coverImg || ""} alt="data science course image" width={900} height={600} />
       </div>
       <div className="container">
         <section className={styles.body}>
@@ -62,8 +49,7 @@ export default function CourseDetail({ params }: { params: { slug: string } }) {
               <h1>{course?.title}</h1>
               {course?.applicationClosingDate && (
                 <p className={styles.applicationClosingDate}>
-                  <strong>Applications Close on -</strong>{" "}
-                  <span>{course?.applicationClosingDate}</span>
+                  <strong>Applications Close on -</strong> <span>{course?.applicationClosingDate}</span>
                 </p>
               )}
             </div>
@@ -76,10 +62,7 @@ export default function CourseDetail({ params }: { params: { slug: string } }) {
               )}
               {course?.applicationLink && (
                 <Link target="_blank" href={course?.applicationLink}>
-                  <Button
-                    kind="PRIMARY"
-                    disabled={course.applicationLink === "#"}
-                  >
+                  <Button kind="PRIMARY" disabled={course.applicationLink === "#"}>
                     Apply Now
                   </Button>
                 </Link>
@@ -152,16 +135,11 @@ export default function CourseDetail({ params }: { params: { slug: string } }) {
             <Accordion title="Curriculum">
               {course && "info" in course?.curriculum && (
                 <div className={styles.info}>
-                  {course?.curriculum.info.map((item) => (
-                    <p key={item}>{item}</p>
-                  ))}
+                  {course?.curriculum.info.map((item) => <p key={item}>{item}</p>)}
                 </div>
               )}
               {course?.curriculum.semesters.map((semester, index) => (
-                <AccordionItem
-                  key={semester.title}
-                  initialEntered={index === 0}
-                >
+                <AccordionItem key={semester.title} initialEntered={index === 0}>
                   <div>
                     <h5>{semester.title}</h5>
                     <p>{`${semester.credits} credits`}</p>

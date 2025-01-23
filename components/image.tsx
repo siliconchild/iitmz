@@ -11,7 +11,5 @@ export default async function Img(props: ImageProps) {
     return <Image {...props} />;
   }
   const base64 = await getPlaceHolderImage(String(props.src));
-  return (
-    <Image {...props} placeholder="blur" blurDataURL={base64} alt={props.alt} />
-  );
+  return <Image {...props} placeholder="blur" blurDataURL={base64} alt={props.alt || "image"} />;
 }

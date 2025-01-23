@@ -8,14 +8,12 @@ import { RiAwardLine } from "react-icons/ri";
 import Link from "next/link";
 import stringReplacer from "@/components/string-replacer";
 
-export async function generateMetadata({
-  params: { slug },
-}: {
-  params: { slug: string };
-}) {
-  const facultyMember = faculty.find(
-    (facultyMember) => facultyMember.slug === slug
-  );
+export async function generateMetadata(props: { params: Promise<{ slug: string }> }) {
+  const params = await props.params;
+
+  const { slug } = params;
+
+  const facultyMember = faculty.find((facultyMember) => facultyMember.slug === slug);
 
   return {
     title: `${facultyMember?.name} | Faculty`,
@@ -25,9 +23,6 @@ export async function generateMetadata({
     },
   };
 }
-
-const dynamicParams = false;
-export { dynamicParams };
 
 export async function generateStaticParams() {
   return faculty.map((facultyMember) => ({
@@ -40,30 +35,22 @@ interface Contribution {
   link?: string;
 }
 
-export default function FacultyPage({ params }: { params: { slug: string } }) {
-  const facultyMember = faculty.find(
-    (facultyMember) => facultyMember.slug === params.slug
-  );
+export default async function FacultyPage(props: { params: Promise<{ slug: string }> }) {
+  const params = await props.params;
+  const facultyMember = faculty.find((facultyMember) => facultyMember.slug === params.slug);
   if (!facultyMember) return <div>404</div>; // Implement 404 Page.
   return (
     <section className={styles.section}>
       <div className="container">
         <div className={styles.profile}>
-          <Img
-            src={facultyMember.img}
-            width={200}
-            height={200}
-            alt={`Photo of ${facultyMember.name}`}
-          />
+          <Img src={facultyMember.img} width={200} height={200} alt={`Photo of ${facultyMember.name}`} />
 
           <h1>{facultyMember.name}</h1>
           <h3>{facultyMember.title}</h3>
           {facultyMember.titlesec && <h3>{facultyMember.titlesec}</h3>}
           <p>
             <AiOutlineMail />
-            <Link href={`mailto:${facultyMember.contact.email}`}>
-              {facultyMember.contact.email}
-            </Link>
+            <Link href={`mailto:${facultyMember.contact.email}`}>{facultyMember.contact.email}</Link>
           </p>
           {facultyMember.contact.alternateEmail && (
             <p>
@@ -122,8 +109,8 @@ export default function FacultyPage({ params }: { params: { slug: string } }) {
           {facultyMember.bio && (
             <div className={styles.interests}>
               <h2>Profile</h2>
-              {facultyMember.bio.map((p,index) => (
-              <p key={`profile-${index}`}>{p}</p>
+              {facultyMember.bio.map((p, index) => (
+                <p key={`profile-${index}`}>{p}</p>
               ))}
             </div>
           )}
@@ -167,12 +154,7 @@ export default function FacultyPage({ params }: { params: { slug: string } }) {
               <ul>
                 {facultyMember.books.map((book) => (
                   <li key={book.title}>
-                    <Img
-                      src={book.cover}
-                      height={150}
-                      width={100}
-                      alt={`Book Cover of ${book.title}`}
-                    />
+                    <Img src={book.cover} height={150} width={100} alt={`Book Cover of ${book.title}`} />
                     <div>
                       <h4>{book.title}</h4>
                       <p>{book.publisher}</p>
@@ -187,20 +169,17 @@ export default function FacultyPage({ params }: { params: { slug: string } }) {
             <div className={styles.courses}>
               <h2>Selected Professional Contributions</h2>
               <ul>
-                {facultyMember.contributions.map(
-                  (contribution: Contribution) => (
-                    <li key={contribution.title}>
-                      {contribution.link ? (
-                        <a target="_blank" href={contribution.link}>
-                          {contribution.title}{" "}
-                          <span>[Click Here to Know More]</span>
-                        </a>
-                      ) : (
-                        <>{contribution.title}</>
-                      )}
-                    </li>
-                  )
-                )}
+                {facultyMember.contributions.map((contribution: Contribution) => (
+                  <li key={contribution.title}>
+                    {contribution.link ? (
+                      <a target="_blank" href={contribution.link}>
+                        {contribution.title} <span>[Click Here to Know More]</span>
+                      </a>
+                    ) : (
+                      <>{contribution.title}</>
+                    )}
+                  </li>
+                ))}
               </ul>
             </div>
           )}

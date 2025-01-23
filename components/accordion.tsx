@@ -15,7 +15,7 @@ type AccordionProps = {
 }
 
 type AccordionItemProps = {
-  children: ReactElement[];
+  children: ReactElement<any>[];
   initialEntered?: boolean;
 };
 

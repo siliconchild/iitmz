@@ -26,9 +26,9 @@ export default function Courses({ layout = "HORIZONTAL" }: CoursesProps) {
               />
             </div>
             <div className={styles.content}>
-              <a href="/schools/engineering-and-science/bs-data-science-and-ai">
+              <Link href="/schools/engineering-and-science/bs-data-science-and-ai">
                 <h3>BS in Data Science & AI</h3>
-              </a>
+              </Link>
               <p>
                 The program will deliver a comprehensive curriculum in Data Science and Artificial
                 Intelligence, designed to teach in-demand skills necessary to excel in this rapidly evolving
@@ -69,9 +69,9 @@ export default function Courses({ layout = "HORIZONTAL" }: CoursesProps) {
             </div>
 
             <div className={styles.content}>
-              <a href="/schools/engineering-and-science/mtech-data-science-and-ai">
+              <Link href="/schools/engineering-and-science/mtech-data-science-and-ai">
                 <h3>MTech in Data Science & AI</h3>
-              </a>
+              </Link>
 
               <p>
                 This program presents a rigorous and comprehensive curriculum designed to cultivate expertise
@@ -112,9 +112,9 @@ export default function Courses({ layout = "HORIZONTAL" }: CoursesProps) {
             </div>
 
             <div className={styles.content}>
-              <a href="/schools/engineering-and-science/mtech-ocean-structures">
+              <Link href="/schools/engineering-and-science/mtech-ocean-structures">
                 <h3>MTech in Ocean Structures</h3>
-              </a>
+              </Link>
 
               <p>
                 The Master of Technology in Ocean Structures offered at IIT Madras Zanzibar Campus will have a
