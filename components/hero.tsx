@@ -20,11 +20,8 @@ export default function Hero() {
           />
 
           <div className={styles.content}>
-            {/* <h4>IITM Zanzibar Campus</h4> */}
             <h3> Application for the BS &amp; MTech full-time degree programs</h3>
             <h4>Starts from Feb 01, 2025</h4>
-            {/* <h4>MTech Ocean Structures Applications are live</h4>
-            <h5>Last Date: Sep 15, 2024 | 11:59 PM</h5> */}
 
             <Button>
               <Link target="_blank" href="https://admissions.iitmz.ac.in/">
@@ -44,13 +41,9 @@ export default function Hero() {
           />
 
           <div className={styles.content}>
-            {/* <h4>IITM Zanzibar Campus</h4> */}
             <h3>Welcome To</h3>
-            <h1>IIT Madras Zanzibar</h1>
-            {/* <h4>
-              MTech Ocean Structures Applications are live
-            </h4>
-            <h5>Last Date: Sep 15, 2024 | 11:59 PM</h5>
+            <h2> IIITM Zanzibar Campus</h2>
+            {/* <h4>Last Date: Sep 15, 2024 | 11:59 PM</h4>
             <Button>
               <Link target="_blank" href="https://admissions.ge.iitm.ac.in/iitmz-mtechos">
                 Apply Now
