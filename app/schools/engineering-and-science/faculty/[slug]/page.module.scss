@@ -5,17 +5,17 @@
         box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
         display: flex;
         gap: 2.5rem;
-        align-items: flex-start;
         background: #fff;
         border-radius: 4px;
     }
 }
 
 .profile {
-    width: 25%;
-    padding: 4rem 1.5rem 4rem 5rem;
+    width: 27.5%;
+    padding: 4rem 2.5rem 4rem 5rem;
     display: flex;
     flex-direction: column;
+    border-right: 1px solid rgba(0, 0, 0, 0.075);
     // align-items: center;
 
     img {
@@ -102,73 +102,86 @@
 }
 
 .main {
-    width: 75%;
-    padding: 4rem 4rem 4rem 2rem;
+    width: 72.5%;
+    background: white;
+    padding: 2.5rem 2rem;
     display: flex;
     flex-direction: column;
-    gap: 4rem;
-
+    gap: 1rem;
     section {
-        background: #ffffff;
+        & > h1,
+        & > h2,
+        & > h3,
+        & > h4,
+        & > h5,
+        & > h6 {
+            color: #1a1a1a;
+            margin: 2rem 0 1rem;
+            line-height: 1.4;
+        }
+
+        & > h1 {
+            font-size: 2rem;
+        }
+        & > h2 {
+            font-size: 2rem;
+        }
+        & > h3 {
+            font-size: 1.5rem;
+        }
+        & > h4 {
+            font-size: 1.25rem;
+        }
 
         & > p {
-            font-size: 1.5rem;
-            line-height: 1.75;
-            color: #374151; // TailwindUI-like text color
-            margin-bottom: 1.5rem;
-
+            color: #4a4a4a;
+            line-height: 1.6;
+            margin-bottom: 1.25rem;
+            font-size: 1.65rem;
             &:last-child {
                 margin-bottom: 0;
-                padding-bottom: 1.75rem;
-                border-bottom: 1px solid #edeef2;
             }
         }
 
-        ul {
+        & > ul,
+        & > ol {
+            padding-left: 0.5rem;
+            margin-bottom: 1.25rem;
+            padding-top: 1rem;
             list-style: none;
-            padding: 0;
-            margin: 1.5rem 0 0;
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
 
             li {
+                position: relative;
+                margin-bottom: 1.25rem;
+                border-bottom: 1px solid #edeef2;
+                padding-bottom: 0.75rem;
+                padding-left: 1.75rem;
+                color: #4a4a4a;
                 font-size: 1.5rem;
-                line-height: 1.6;
-                color: #374151;
-                padding: 1rem 1.25rem;
-                background: #f9fafb;
-                border-radius: 0.375rem;
-                transition: background-color 0.2s ease;
+                line-height: 1.5;
 
-                &:hover {
-                    background: #f3f4f6;
-                }
-
-                a {
-                    text-decoration: none;
-
-                    span {
-                        color: #4f46e5; // TailwindUI indigo
-                        transition: color 0.2s ease;
-
-                        &:hover {
-                            color: #4338ca;
-                        }
-                    }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 1rem;
+                    width: 0.375rem;
+                    height: 0.375rem;
+                    background-color: #6b7280;
+                    border-radius: 50%;
                 }
             }
         }
-    }
 
-    h2 {
-        font-size: 2.15rem;
-        color: #111827;
-        font-weight: 600;
-        margin-bottom: 1.5rem;
-        display: flex;
-        align-items: center;
-        gap: 0.75rem;
+        a {
+            color: #2563eb;
+            text-decoration: none;
+            transition: color 0.2s;
+
+            &:hover {
+                color: #1d4ed8;
+            }
+        }
     }
 }
 
@@ -184,6 +197,8 @@
         width: 100%;
         align-items: flex-start;
         padding: 2rem;
+        border-right: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.075);
         img {
             margin: 2rem auto 4rem;
         }
@@ -203,6 +218,9 @@
     }
     .main {
         width: 100%;
-        padding: 1rem 1rem 1.5rem;
+        padding: 2rem 1.25rem 1.5rem;
+        & > p {
+            font-size: 1.5rem;
+        }
     }
 }

@@ -26,7 +26,7 @@ export function Paper({ title, authors, year, publisher }: PaperProps) {
           </p>
         ))}
       </div>
-      <p>
+      <p className={styles.publisher}>
         <BsBookmarksFill /> {publisher}
       </p>
     </div>
@@ -39,9 +39,9 @@ type PapersProps = {
 
 export function Papers({ children }: PapersProps) {
   return (
-    <div className={styles.papers}>
+    <section className={styles.papers}>
       <h2>Selected Papers</h2>
       {children}
-    </div>
+    </section>
   );
 }

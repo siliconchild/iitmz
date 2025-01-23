@@ -28,9 +28,9 @@ type BooksProps = {
 
 export function Books({ children }: BooksProps) {
   return (
-    <div className={styles.books}>
+    <section className={styles.books}>
       <h2>Books Published</h2>
       <ul>{children}</ul>
-    </div>
+    </section>
   );
 }
