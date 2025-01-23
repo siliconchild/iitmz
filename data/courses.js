@@ -7,11 +7,12 @@ export const courses = {
       desc: "BS in Data Science & AI at IIT Madras Zanzibar. 4-Year Program. Comprehensive Curriculum. Hands-on Expertise. Diverse Job Prospects. Apply Now.",
     },
     title: "BS in Data Science & AI",
-    applicationClosingDate: null,
+    // applicationClosingDate: null,
+    applicationClosingDate: "May 31, 2025",
     meta: {
       duration: "4 Years",
       credits: "433",
-      department: "Data Science",
+      department: "Engineering & Science",
       language: "English",
     },
     desc: "Welcome to the Bachelor of Science in Data Science and Artificial Intelligence (BS DSAI) program at IITM Zanzibar Campus. Our program is designed to equip students with the knowledge and skills needed to thrive in the fast-paced and ever-evolving field of data science and artificial intelligence. As a student in our program, you will embark on a comprehensive learning journey that blends foundational science and mathematics courses with specialised DSAI subjects. With a strong emphasis on practical experience and project-based learning, you will have the opportunity to apply your knowledge to real-world challenges and gain hands-on expertise in data analysis, machine learning, natural language processing and more.",
@@ -617,16 +618,16 @@ export const courses = {
   mtech: {
     slug: "mtech-data-science-and-ai",
     coverImg: "/cd3x.png",
-    applicationLink: "https://admissions.ge.iitm.ac.in/iitmz-mtechdsai",
+    applicationLink: "https://admissions.iitmz.ac.in/mtechdsai",
     seo: {
       desc: "MTech in Data Science & AI at IIT Madras Zanzibar. 2-Year Program. Specialized Skills in AI, Machine Learning, Big Data, And More. Apply Now.",
     },
     title: "MTech in Data Science & AI",
-    applicationClosingDate: null,
+    applicationClosingDate: "May 31, 2025",
     meta: {
       duration: "2 Years",
       credits: "190",
-      department: "Data Science",
+      department: "Engineering & Science",
       language: "English",
     },
     desc: "Welcome to the Master of Technology in Data Science and Artificial Intelligence (MTech DSAI) program at IITM Zanzibar Campus. Our program is designed to provide students with advanced knowledge and specialised skills in the fields of data science and artificial intelligence, preparing them for leadership roles in industry and research. As a student in our program, you will engage in rigorous coursework, research project and practical training that will enhance your expertise in areas such as machine learning, deep learning, big data analytics, and more. Our faculty members, renowned experts in the field, will guide you through cutting-edge techniques and methodologies to solve complex data-driven challenges.",
@@ -874,7 +875,7 @@ export const courses = {
   mtech_os: {
     slug: "mtech-ocean-structures",
     coverImg: "/os-cover.jpg",
-    applicationLink: "https://admissions.ge.iitm.ac.in/iitmz-mtechos",
+    applicationLink: "https://admissions.iitmz.ac.in/mtechos",
     flyerLink: "/IITMZ_MTech_In_Ocean_Structures.pdf",
     seo: {
       desc: "The Master of Technology in Ocean Structures offered at IIT Madras Zanzibar Campus will have a curriculum tailor-made to the industry needs in the Oil & Gas and Maritime sector. Apply Now.",
@@ -886,7 +887,7 @@ export const courses = {
       department: "Engineering & Science",
       language: "English",
     },
-    applicationClosingDate: "15 Sep 2024",
+    applicationClosingDate: "May 31, 2025",
     desc: "The MTech in Ocean Structures program presents a rigorous and comprehensive curriculum designed to cultivate expertise Ocean structures covering Offshore Platforms for oil and Gas exploration, Renewable Energy such as offshore wind, wave and tidal energy, port and harbour infrastructures including jetties, berths, breakwater, dredging and reclamation aspects. Along with core courses like Wave hydrodynamics, Offshore Structures, Port and harbour structures and a selection of supplementary electives. There is a heavy emphasis on hands-on lab work cum tutorials in design of the above and industry driven projects. The course will enable the students to acquire research aptitude along with the necessary skills to succeed in the job market.",
     prospects: {
       desc: "Graduates of our MTech Ocean Structures program are in high demand, contributing expertise to the dynamic field of coastal and offshore engineering, shaping sustainable solutions for maritime infrastructure and environmental resilience. The potential employers include both government and private employers in Tanzania and around the globe in the port, harbour and energy market. The potential employers are as follows::",
