@@ -1,44 +1,41 @@
 "use client";
 import styles from "./ticker.module.scss";
-import announcements from "@/data/announcements";
 import Marquee from "react-fast-marquee";
 import stringReplacer from "./string-replacer";
-import DOMPurify from "isomorphic-dompurify";
-import parse from "html-react-parser";
+import { Announcement, AnnouncementsArray } from "@/data/announcements";
+import Link from "next/link";
 
-interface Announcement {
-  title: string;
-}
+type TickerProps = {
+  announcements: AnnouncementsArray;
+};
 
-interface SanitizedAnnouncement {
-  title: string | JSX.Element | JSX.Element[];
-}
-
-export default function Ticker() {
+export default function Ticker({ announcements }: TickerProps) {
   if (announcements.length === 0) return null;
+  const currentDate = new Date();
+  const activeAnnouncements = announcements.filter(
+    (announcement) => new Date(announcement.activeTill) >= currentDate,
+  );
 
-  const sanitizedAnnouncements = announcements.map((announcement: Announcement) => ({
-    title: parse(
-      DOMPurify.sanitize(announcement.title, {
-        ALLOWED_TAGS: ["a"],
-        ALLOWED_ATTR: ["href", "target", "rel"],
-        ADD_ATTR: ["target", "rel"],
-      }),
-    ),
-  }));
+  const renderAnnouncementContent = (announcement: Announcement) => {
+    const content = typeof announcement.content === "string" ? stringReplacer(announcement.content) : "";
 
-  const renderAnnouncementContent = (announcement: SanitizedAnnouncement) => {
-    const content =
-      typeof announcement.title === "string" ? stringReplacer(announcement.title) : announcement.title;
-
-    return <p key={typeof content === "string" ? content : Math.random().toString()}>{content}</p>;
+    return (
+      <p key={announcement.uuid}>
+        <span>{content}</span>
+        {announcement.linkUrl && announcement.linkText && (
+          <Link href={announcement.linkUrl}>{announcement.linkText}</Link>
+        )}
+      </p>
+    );
   };
 
   return (
     <div className={styles.section}>
       <div className={styles.head}>Announcements</div>
       <div className={styles.body}>
-        <Marquee pauseOnHover>{sanitizedAnnouncements.map(renderAnnouncementContent)}</Marquee>
+        {activeAnnouncements && (
+          <Marquee pauseOnHover>{activeAnnouncements.map(renderAnnouncementContent)}</Marquee>
+        )}
       </div>
     </div>
   );

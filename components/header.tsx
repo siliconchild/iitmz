@@ -10,8 +10,13 @@ import Topbar from "./topbar";
 import Navbar from "./navbar";
 import Ticker from "./ticker";
 import Button from "./button";
+import { AnnouncementsArray } from "@/data/announcements";
 
-export default function Header() {
+type HeaderProps = {
+  announcements: AnnouncementsArray | null;
+};
+
+export default function Header({ announcements }: HeaderProps) {
   const [navToggle, setNavToggle] = useState(false);
   const pathname = usePathname();
   useEffect(() => {
@@ -2296,7 +2301,7 @@ export default function Header() {
         </div>
         <Navbar navToggle={navToggle} kind="HEADER" />
       </div>
-      <Ticker />
+      {announcements && <Ticker announcements={announcements} />}
     </header>
   );
 }
