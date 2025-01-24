@@ -17,9 +17,9 @@ export default function AdmissionPage() {
   return (
     <>
       <AdmissionHeader />
-      <Steps />
-      <AcademicPrograms />
       <AdmissionTimeline />
+      <AcademicPrograms />
+      <Steps />
       <InquirySection />
     </>
   );

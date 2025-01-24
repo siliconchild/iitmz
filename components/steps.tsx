@@ -11,11 +11,7 @@ export default function Steps() {
       <div className="container">
         <div className={styles.header}>
           <h2 className="section-title">Admission Process</h2>
-          <div className={styles.process}>
-            <p>
-              For queries email <a href="mailto:admissions@iitmz.ac.in">admissions@iitmz.ac.in</a>
-            </p>
-          </div>
+
         </div>
 
         <div className={styles.grid}>

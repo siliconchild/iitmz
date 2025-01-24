@@ -1,7 +1,6 @@
 import styles from "./admissions-course-card.module.scss";
 import Link from "next/link";
 import Button from "./button";
-import Img from "./image";
 
 type CourseLink = {
   label: string;
@@ -10,7 +9,6 @@ type CourseLink = {
 
 type CourseCardProps = {
   title: string;
-  imageSrc: string;
   links: CourseLink[];
   applicationLink: string;
   applicationDisabled?: boolean;
@@ -18,7 +16,6 @@ type CourseCardProps = {
 
 export default function CourseCard({
   title,
-  imageSrc,
   links,
   applicationLink,
   applicationDisabled = false,

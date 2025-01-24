@@ -80,7 +80,7 @@ export default async function PagePage({
             </div>
 
             <div className={styles.cta}>
-              {coursesMember.flyerLink  && (
+              {coursesMember.flyerLink && (
                 <Link target="_blank" href={coursesMember.flyerLink}>
                   <Button kind="SECONDARY">Download Program Flyer</Button>
                 </Link>
@@ -119,8 +119,7 @@ export default async function PagePage({
               <span>{coursesMember.language}</span>
             </div>
           </div>
-        </section>
-        {coursesMember.body && (
+          {coursesMember.body && (
             <MDXContent
               code={coursesMember.body}
               components={coursesPageComponents}
@@ -130,6 +129,7 @@ export default async function PagePage({
               }}
             />
           )}
+        </section>
       </div>
     </section>
   );
