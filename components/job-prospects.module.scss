@@ -1,0 +1,35 @@
+.prospects {
+    padding: 3rem 3rem 1rem;
+    background: #f5f8ff;
+    border: 1px solid #edeef2;
+    border-radius: 5px;
+    h4 {
+      margin-bottom: 1rem;
+    }
+    p {
+      line-height: 1.8;
+    }
+    ul {
+      margin: 2rem 0;
+      li {
+        position: relative;
+        padding-left: 2.6rem;
+        margin-bottom: 1.5rem;
+        list-style-type: none;
+        svg {
+          margin-right: 1.5rem;
+        }
+      }
+    }
+  }
+  @media (max-width: 480px) {
+    .prospects {
+        padding: 2rem 1.5rem;
+        ul {
+          li {
+            line-height: 2;
+            padding-left: 1.5rem;
+          }
+        }
+      }
+  }  

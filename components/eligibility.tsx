@@ -112,6 +112,64 @@ export default function Eligilibity(props: EligibilityProps) {
                     in any foreign country recognized as equivalent to 10+2
                     system by the Association of Indian Universities (AIU)
                   </p>
+                </li>  <li>
+                  <BsFillCheckCircleFill className={styles.green} />
+                  <p>
+                    Eligible applicants will appear for a test at a test center;
+                    shortlisted candidates will be called for an interview. A
+                    holistic assessment of the quality of the application,
+                    performance in the screening test, and interviews conducted
+                    by the expert faculty panel will be used to admit students.
+                    The screening test will be similar to SAT in level/type.
+                    Further details will be announced shortly.
+                  </p>
+                </li>
+                <li>
+                  <BsFillCheckCircleFill className={styles.green} />
+                  <p>
+                    To be eligible for the Bachelor of Science in Data Science
+                    and Artificial Intelligence (BS DS & AI) program at IITM
+                    Zanzibar Campus, you must meet one of the following
+                    eligibility criteria
+                  </p>
+                </li>
+                <li>
+                  <AiOutlinePause className={styles.green} />
+                  <p>
+                    Advanced Certificate of Secondary Education (Form VI) with 3
+                    principal passes, in Natural Sciences
+                  </p>
+                </li>
+                <li>
+                  <AiOutlinePause className={styles.green} />
+                  <p>
+                    Final examination of the 10+2 system or two-year
+                    Pre-University, conducted by any recognized Central/ Indian
+                    State Board (CBSE etc.)
+                  </p>
+                </li>
+                <li>
+                  <AiOutlinePause className={styles.green} />
+                  <p>
+                    General Certificate Education (GCE) Examination
+                    (London/Cambridge/Sri Lanka) at the Advanced (A) Level
+                  </p>
+                </li>
+                <li>
+                  <AiOutlinePause className={styles.green} />
+                  <p>
+                    High School Certificate Examination of the Cambridge
+                    University or International Baccalaureate Diploma of the
+                    International Baccalaureate office, Geneva
+                  </p>
+                </li>
+                <li>
+                  <AiOutlinePause className={styles.green} />
+                  <p>
+                    Any Public School/Board/University examination in India or
+                    in any foreign country recognized as equivalent to 10+2
+                    system by the Association of Indian Universities (AIU)
+                  </p>
                 </li>
               </ul>
             </div>

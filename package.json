@@ -44,10 +44,10 @@
     "react-select": "^5.8.0",
     "react-string-replace": "^1.1.1",
     "sharp": "^0.32.6",
-    "typescript": "^5.5.3",
-    "velite": "^0.2.2"
+    "typescript": "^5.5.3"
   },
   "devDependencies": {
-    "sass": "^1.77.6"
+    "sass": "^1.77.6",
+    "velite": "^0.2.2"
   }
 }

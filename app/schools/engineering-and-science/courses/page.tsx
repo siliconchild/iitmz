@@ -25,10 +25,10 @@ function getCourses(coursesSlug: string) {
 
 export async function generateMetadata({ params: { slug } }: { params: { slug: string } }) {
   const coursesMember = courses.find((coursesMember) => coursesMember.slug === slug);
- if(!coursesMember) return null;
+
   return {
-    title: `${coursesMember?.title} | Courses`,
-    description: coursesMember?.seo?.desc || `IITM Zanzibar ${coursesMember.title} course information`,
+    title: `${coursesMember?.name} | Courses`,
+    description: coursesMember?.metadesc,
     alternates: {
       canonical: `schools/engineering-and-science/courses/${slug}`,
     },
@@ -80,7 +80,7 @@ export default async function PagePage({
             </div>
 
             <div className={styles.cta}>
-              {coursesMember.flyerLink  && (
+              {coursesMember && "flyerLink" in courses && (
                 <Link target="_blank" href={coursesMember.flyerLink}>
                   <Button kind="SECONDARY">Download Program Flyer</Button>
                 </Link>
@@ -126,7 +126,7 @@ export default async function PagePage({
               components={coursesPageComponents}
               frontmatter={{
                 title: coursesMember.title,
-                cover: coursesMember.coverImg,
+                cover: coursesMember.img,
               }}
             />
           )}
