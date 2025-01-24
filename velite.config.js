@@ -55,7 +55,7 @@ export default defineConfig({
           cardImg: s.string(),
           coverImg: s.string(),
           duration: s.string(),
-          credits: s.string(),
+          credits: s.number(),
           department: s.string(),
           language: s.string(),
           flyerLink: s.string().optional(),

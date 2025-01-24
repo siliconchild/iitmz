@@ -4,19 +4,18 @@ import styles from "./page.module.scss";
 import {CourseResources, Resource} from "@/components/course-resource";
 import JobProspects from "@/components/job-prospects";
 import CourseEligibility from "@/components/course-eligibility";
-import {Semester, Course, CourseContent} from "@/components/cirriculum"
+import {Curriculum, Semester, Course, CourseContent, Faculty} from "@/components/cirriculum"
 import Img from "@/components/image";
 import Link from "next/link";
 import { BiBuilding } from "react-icons/bi";
 import { GoGlobe } from "react-icons/go";
 import Button from "@/components/button";
+import { BsFillCheckCircleFill } from "react-icons/bs";
+import { AiOutlinePause } from "react-icons/ai";
 import {
     AiOutlineUnorderedList,
     AiOutlineCalendar,
-    AiOutlineCheck,
   } from "react-icons/ai";
-import {MdOutlineFileDownload} from "react-icons/md";
-import { Accordion, AccordionItem } from "@/components/accordion";
 import { courses } from "#site/content";
 
 function getCourses(coursesSlug: string) {
@@ -42,7 +41,7 @@ export function generateStaticParams() {
   return courses.map((item) => ({ slug: item.slug }));
 }
 
-const coursesPageComponents = { CourseResources, Resource, JobProspects, CourseEligibility, Semester, Course, CourseContent } as const;
+const coursesPageComponents = { CourseResources, Resource, JobProspects, CourseEligibility, Curriculum,Faculty, Semester, Course, CourseContent, BsFillCheckCircleFill, AiOutlinePause } as const;
 
 export default async function PagePage({
   params,
@@ -53,6 +52,7 @@ export default async function PagePage({
 }) {
   const { slug } = await params;
   const coursesMember = getCourses(slug);
+
 
   if (!coursesMember || !coursesMember.body) notFound();
 

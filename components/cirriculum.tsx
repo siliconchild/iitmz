@@ -4,6 +4,7 @@ import { useState } from "react";
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 import { FaChalkboardUser } from "react-icons/fa6";
 import { Accordion, AccordionItem } from "@/components/accordion";
+import styles from "./course-ciriculum-detail.module.scss";
 
 type PropsWithChildren<P = {}> = P & { children?: React.ReactNode };
 
