@@ -22,7 +22,13 @@ export default function MediaPage() {
         </div> */}
         <div className={styles.news_container}>
           {media.articles.map((article) => (
-            <NewsCard key={article.title} {...article} />
+            <NewsCard
+              key={article.title}
+              image={article.image.url}
+              title={article.title}
+              desc={article.desc}
+              link={article.link}
+            />
           ))}
         </div>
       </div>

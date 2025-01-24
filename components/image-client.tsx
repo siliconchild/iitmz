@@ -1,23 +1,32 @@
 "use client";
-import { useState } from "react";
-import Image, { ImageProps } from "next/image";
 
-export default function ImageClient(props: ImageProps & { fallbackSrc?: string; base64: string }) {
-  if (!props.fallbackSrc) {
-    props.fallbackSrc = `/placeholder.jpg`;
-  }
-  const { src, fallbackSrc, base64, ...rest } = props;
-  const [imgSrc, setImgSrc] = useState(src);
+import { useState } from "react";
+import Image, { type ImageProps } from "next/image";
+import type { StaticImport } from "next/dist/shared/lib/get-img-props";
+
+interface ImageClientProps extends Omit<ImageProps, "src"> {
+  src: string | StaticImport;
+  fallbackSrc?: string;
+  base64?: string;
+}
+
+export default function ImageClient({
+  src,
+  fallbackSrc = "/placeholder.jpg",
+  base64,
+  alt = "",
+  ...rest
+}: ImageClientProps) {
+  const [imgSrc, setImgSrc] = useState<typeof src>(src);
+
   return (
     <Image
       {...rest}
-      src={imgSrc}
+      src={imgSrc || "/placeholder.svg"}
+      alt={alt}
       placeholder={base64 ? "blur" : "empty"}
       blurDataURL={base64}
-      alt={props.alt}
-      onError={() => {
-        setImgSrc(fallbackSrc);
-      }}
+      onError={() => setImgSrc(fallbackSrc)}
     />
   );
 }

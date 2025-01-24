@@ -5,10 +5,7 @@ import Button from "./button";
 
 type NewsCardProps = {
   link: string;
-  image: {
-    url: string;
-    alt: string;
-  };
+  image: string;
   title: string;
   desc: string;
 };
@@ -16,11 +13,13 @@ type NewsCardProps = {
 export default function NewsCard({ link, image, title, desc }: NewsCardProps) {
   return (
     <div className={styles.card}>
-      <Link target="_blank" href={link}>
-        <Img src={image.url} width={200} height={100} alt={image.alt} />
+      <Link target="_blank" href={link || "#"}>
+        <Img src={`/api/resource?id=${image}`} width={200} height={100} alt={`IITM Zanzibar News Image`} />
         <h3>{title}</h3>
         <p>{desc}</p>
-        <Button kind="SECONDARY" disabled={link === "#"}>Know More</Button>
+        <Button kind="SECONDARY" disabled={link === "#"}>
+          Know More
+        </Button>
       </Link>
     </div>
   );
