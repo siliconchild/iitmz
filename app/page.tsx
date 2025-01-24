@@ -21,7 +21,7 @@ export const metadata = {
 };
 
 const getAllBannersCached = cache(getAllBanners, ["z-banners"], {
-  tags: ["banners"],
+  tags: ["banner"],
 });
 const getAllNewsCached = cache(getAllNews, ["z-news"], {
   tags: ["news"],
