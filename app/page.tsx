@@ -12,7 +12,6 @@ import SocialMedia from "@/components/social-media";
 import { getAllBanners, defaultBanner } from "@/data/banner";
 import { getAllNews } from "@/data/news";
 import { unstable_cache as cache } from "next/cache";
-import { FaTags } from "react-icons/fa6";
 
 export const metadata = {
   alternates: {
