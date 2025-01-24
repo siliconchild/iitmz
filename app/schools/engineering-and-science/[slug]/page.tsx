@@ -24,7 +24,7 @@ function getCourses(coursesSlug: string) {
 
 export async function generateMetadata({ params: { slug } }: { params: { slug: string } }) {
   const coursesMember = courses.find((coursesMember) => coursesMember.slug === slug);
- if(!coursesMember) return null;
+ if(!coursesMember) return {};
   return {
     title: `${coursesMember?.title} | Courses`,
     description: coursesMember?.seo?.desc || `IITM Zanzibar ${coursesMember.title} course information`,
