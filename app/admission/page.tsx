@@ -1,8 +1,8 @@
 import AdmissionHeader from "@/components/admission-header";
 import Steps from "@/components/steps";
-import AdmissionsDownloadable from "@/components/admissions-downloadable";
-import Fees from "@/components/fees";
-import Eligilibity from "@/components/eligibility";
+import AcademicPrograms from "@/components/admission-courses";
+import AdmissionTimeline from "@/components/admission-timeline";
+import InquirySection from "@/components/admissions-enquiry";
 
 export const metadata = {
   title: "Why Study With Us? | How To Apply?",
@@ -18,11 +18,9 @@ export default function AdmissionPage() {
     <>
       <AdmissionHeader />
       <Steps />
-      <AdmissionsDownloadable />
-      <Fees />
-      <div className="container">
-        <Eligilibity type="FULL" />
-      </div>
+      <AcademicPrograms />
+      <AdmissionTimeline />
+      <InquirySection />
     </>
   );
 }
