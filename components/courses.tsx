@@ -27,7 +27,7 @@ export default function Courses({ layout = "HORIZONTAL" }: CoursesProps) {
                 />
               </div>
               <div className={styles.content}>
-                <a href="/schools/engineering-and-science/bs-data-science-and-ai">
+                <a href={`/schools/engineering-and-science/${course.slug}`}>
                   <h3>{course.title}</h3>
                 </a>
                 <p>{course.cardDesc}</p>
