@@ -10,9 +10,9 @@ import { FiChevronDown } from "react-icons/fi";
 import { TbLayoutNavbarExpand, TbLayoutBottombarExpand } from "react-icons/tb";
 
 type AccordionProps = {
-  children: ReactNode,
-  title: string
-}
+  children: ReactNode;
+  title: string;
+};
 
 type AccordionItemProps = {
   children: ReactElement[];
@@ -29,9 +29,9 @@ const Accordion = ({ children, title }: AccordionProps) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <>
+    <section>
       <div className={styles.titleheader}>
-        <h4>{title}</h4>
+        <h3>{title}</h3>
         <button
           onClick={() => {
             toggleAll(!isExpanded);
@@ -51,13 +51,10 @@ const Accordion = ({ children, title }: AccordionProps) => {
           )}
         </button>
       </div>
-      <ControlledAccordion
-        providerValue={providerValue}
-        className={styles.accordion}
-      >
+      <ControlledAccordion providerValue={providerValue} className={styles.accordion}>
         {children}
       </ControlledAccordion>
-    </>
+    </section>
   );
 };
 

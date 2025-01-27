@@ -1,10 +1,10 @@
 import { notFound } from "next/navigation";
 import { MDXContent } from "@/components/mdx-content";
 import styles from "./page.module.scss";
-import {CourseResources, Resource} from "@/components/course-resource";
+import { CourseResources, Resource } from "@/components/course-resource";
 import JobProspects from "@/components/job-prospects";
 import CourseEligibility from "@/components/course-eligibility";
-import {Curriculum, Semester, Course, CourseContent, Faculty} from "@/components/cirriculum"
+import { Curriculum, Semester, Course, CourseContent, Faculty } from "@/components/cirriculum";
 import Img from "@/components/image";
 import Link from "next/link";
 import { BiBuilding } from "react-icons/bi";
@@ -12,10 +12,8 @@ import { GoGlobe } from "react-icons/go";
 import Button from "@/components/button";
 import { BsFillCheckCircleFill } from "react-icons/bs";
 import { AiOutlinePause } from "react-icons/ai";
-import {
-    AiOutlineUnorderedList,
-    AiOutlineCalendar,
-  } from "react-icons/ai";
+import { AiOutlineUnorderedList, AiOutlineCalendar } from "react-icons/ai";
+import { FaCheck } from "react-icons/fa6";
 import { courses } from "#site/content";
 
 function getCourses(coursesSlug: string) {
@@ -24,7 +22,7 @@ function getCourses(coursesSlug: string) {
 
 export async function generateMetadata({ params: { slug } }: { params: { slug: string } }) {
   const coursesMember = courses.find((coursesMember) => coursesMember.slug === slug);
- if(!coursesMember) return {};
+  if (!coursesMember) return {};
   return {
     title: `${coursesMember?.title} | Courses`,
     description: coursesMember?.seo?.desc || `IITM Zanzibar ${coursesMember.title} course information`,
@@ -41,7 +39,20 @@ export function generateStaticParams() {
   return courses.map((item) => ({ slug: item.slug }));
 }
 
-const coursesPageComponents = { CourseResources, Resource, JobProspects, CourseEligibility, Curriculum,Faculty, Semester, Course, CourseContent, BsFillCheckCircleFill, AiOutlinePause } as const;
+const coursesPageComponents = {
+  CourseResources,
+  Resource,
+  JobProspects,
+  CourseEligibility,
+  Curriculum,
+  Faculty,
+  Semester,
+  Course,
+  CourseContent,
+  BsFillCheckCircleFill,
+  AiOutlinePause,
+  FaCheck,
+} as const;
 
 export default async function PagePage({
   params,
@@ -53,18 +64,12 @@ export default async function PagePage({
   const { slug } = await params;
   const coursesMember = getCourses(slug);
 
-
   if (!coursesMember || !coursesMember.body) notFound();
 
   return (
     <section className={styles.section}>
       <div className={styles.header}>
-        <Img
-          src={coursesMember.coverImg || ""}
-          alt="data science course image"
-          width={900}
-          height={600}
-        />
+        <Img src={coursesMember.coverImg || ""} alt="data science course image" width={900} height={600} />
       </div>
       <div className="container">
         <section className={styles.body}>
@@ -73,8 +78,7 @@ export default async function PagePage({
               <h1>{coursesMember.title}</h1>
               {coursesMember.applicationClosingDate && (
                 <p className={styles.applicationClosingDate}>
-                  <strong>Applications Close on -</strong>{" "}
-                  <span>{coursesMember.applicationClosingDate}</span>
+                  <strong>Applications Close on -</strong> <span>{coursesMember.applicationClosingDate}</span>
                 </p>
               )}
             </div>
@@ -87,10 +91,7 @@ export default async function PagePage({
               )}
               {coursesMember?.applicationLink && (
                 <Link target="_blank" href={coursesMember.applicationLink}>
-                  <Button
-                    kind="PRIMARY"
-                    disabled={coursesMember.applicationLink === "#"}
-                  >
+                  <Button kind="PRIMARY" disabled={coursesMember.applicationLink === "#"}>
                     Apply Now
                   </Button>
                 </Link>
