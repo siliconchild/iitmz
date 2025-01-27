@@ -55,7 +55,7 @@ export default function AcademicPrograms() {
   return (
     <section className={styles.section}>
       <div className="container">
-        <h2 className="section-title">Programs Offered</h2>
+        <h2 className="section-title center line">Programs Offered</h2>
         <div className={styles.grid}>
           {programs.map((program, index) => (
             <CourseCard key={index} {...program} />
