@@ -1,0 +1,86 @@
+// fee-card.module.scss
+
+// Wrapper Styles
+.feeDetails{
+        justify-content: space-between;
+        align-items: stretch;
+        margin: 2rem 0;
+        padding: 0;
+    }
+
+.wrapper {
+  margin: 2rem 0;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+// Container for the FeeCard components
+.feeCardsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+// Individual FeeCard Styles
+.feeCard {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  border: #dcdcdd solid 1px;
+  border-left: 2.5px solid #ffb013;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.amount {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #d50032;
+  margin-top: 0.5rem;
+}
+.header {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
+}
+.headings {
+  color: #333;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.list {
+
+    list-style-type: decimal;
+    width: 100%;
+    li {
+      display: flex;
+      align-items: center;
+      padding: 0.75rem 2rem;
+      font-size: 1.5rem;
+    }
+    svg {
+      margin-right: 1.5rem;
+      fill: #7dcc87;
+  }
+  
+}
+.note {
+  font-size: 1.25rem;
+  color: #d50032;
+  font-weight: semi-bold;
+  padding: 0.75rem 2rem;
+}
