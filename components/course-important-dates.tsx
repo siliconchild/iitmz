@@ -1,4 +1,4 @@
-import styles from "./admission-timeline.module.scss";
+import styles from "./course-important-dates.module.scss";
 import timelineData from "@/data/timeline";
 import { FaCalendarAlt, FaCalendarTimes, FaPencilAlt, FaUserCheck } from "react-icons/fa";
 
