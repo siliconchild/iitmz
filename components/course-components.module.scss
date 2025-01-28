@@ -3,10 +3,10 @@
 
     h2,
     h3 {
-        font-size: 2.4rem;
+        font-size: 2.25rem;
         font-weight: 600;
         margin-bottom: 2rem;
-        color: #1a202c;
+        color: #30394a;
     }
     h4 {
         font-size: 1.7rem;
@@ -94,7 +94,7 @@
 
     > div {
         background-color: #ffffff;
-        padding: 2rem;
+        padding: 1.25rem 2rem;
         border-left: 3px solid #ffb013;
         transition: transform 0.2s ease;
 
@@ -132,7 +132,7 @@
 
     &:hover {
         transform: translateY(-2px);
-        border-color: #3182ce;
+        border-color: #ffb013;
     }
 
     .icon {
@@ -152,19 +152,17 @@
         }
     }
 
-    .info {
-        flex: 1;
+    flex: 1;
 
-        h4 {
-            font-size: 1.5rem;
-            color: #2d3748;
-            margin-bottom: 0.3rem;
-        }
+    h4 {
+        font-size: 1.5rem;
+        color: #373737de;
+        margin-bottom: 0.3rem;
+    }
 
-        span {
-            font-size: 1.3rem;
-            color: #718096;
-        }
+    span {
+        font-size: 1.3rem;
+        color: #718096;
     }
 
     .downloadIcon {

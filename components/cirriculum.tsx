@@ -1,5 +1,5 @@
 // components/curriculum.tsx
-"use client"
+"use client";
 import { useState } from "react";
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 import { FaChalkboardUser } from "react-icons/fa6";
@@ -30,7 +30,7 @@ export const Semester = ({
 }: PropsWithChildren<SemesterProps>) => {
   return (
     <AccordionItem initialEntered={initialEntered}>
-      <div>
+      <div className={styles.head}>
         <h5>{title}</h5>
         <p>{`${credits} credits`}</p>
       </div>
