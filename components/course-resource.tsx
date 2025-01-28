@@ -31,7 +31,6 @@ type ResourceProps = {
   export function CourseResources({ children }: CourseResourcesProps) {
     return (
       <div>
-        <h4>Downloadable Resources</h4>
         {children}
       </div>
     );
