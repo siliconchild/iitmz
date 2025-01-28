@@ -35,11 +35,12 @@
 @media (max-width: 480px) {
     .grid {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 3rem;
+        margin: 3rem auto 0;
     }
 
     .section {
-        padding: 4rem 0;
+        padding: 5rem 0;
     }
 
     .description {
