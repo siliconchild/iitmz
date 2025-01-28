@@ -130,14 +130,34 @@
 
     .grid {
         grid-template-columns: 1fr;
-        gap: 3rem;
+        gap: 8rem;
+        margin-top: 8rem;
     }
 
     .step {
         text-align: center;
+        padding: 3rem 2rem;
 
         &:hover {
             transform: none;
+        }
+    }
+
+    .number {
+        top: -4.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .stepWrapper {
+        padding-left: 0;
+        &:before {
+            left: 50%;
+            top: -1.2rem;
+            width: 2rem;
+            height: 2px;
+            background: #ffb013;
+            transform: translateX(-50%) rotate(90deg);
         }
     }
 
