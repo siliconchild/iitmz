@@ -14,6 +14,10 @@ import { BsFillCheckCircleFill } from "react-icons/bs";
 import { AiOutlinePause } from "react-icons/ai";
 import { AiOutlineUnorderedList, AiOutlineCalendar } from "react-icons/ai";
 import { FaCheck } from "react-icons/fa6";
+import { BsArrowRightCircleFill } from "react-icons/bs";
+import { FeeCard, CourseFeeCards } from "@/components/fee-card";
+import AdmissionTimeline from "@/components/course-important-dates";
+import InquirySection from "@/components/admissions-enquiry";
 import { courses } from "#site/content";
 
 function getCourses(coursesSlug: string) {
@@ -52,6 +56,11 @@ const coursesPageComponents = {
   BsFillCheckCircleFill,
   AiOutlinePause,
   FaCheck,
+  FeeCard,
+  CourseFeeCards,
+  BsArrowRightCircleFill,
+  AdmissionTimeline
+
 } as const;
 
 export default async function PagePage({
@@ -130,6 +139,7 @@ export default async function PagePage({
               }}
             />
           )}
+          <InquirySection />
         </section>
       </div>
     </section>
