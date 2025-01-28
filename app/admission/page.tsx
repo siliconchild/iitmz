@@ -20,7 +20,7 @@ export default function AdmissionPage() {
       <AdmissionTimeline />
       <AcademicPrograms />
       <Steps />
-      <InquirySection />
+      <InquirySection type="default" />
     </>
   );
 }
