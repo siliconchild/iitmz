@@ -13,11 +13,22 @@ import Button from "@/components/button";
 import { BsFillCheckCircleFill } from "react-icons/bs";
 import { AiOutlinePause } from "react-icons/ai";
 import { AiOutlineUnorderedList, AiOutlineCalendar } from "react-icons/ai";
-import { FaCheck } from "react-icons/fa6";
+import { FaCheck, FaDownload, FaFilePdf } from "react-icons/fa6";
+import { FaFileAlt } from "react-icons/fa";
 import { BsArrowRightCircleFill } from "react-icons/bs";
 import { FeeCard, CourseFeeCards } from "@/components/fee-card";
 import AdmissionTimeline from "@/components/course-important-dates";
 import InquirySection from "@/components/admissions-enquiry";
+import { RxCaretRight } from "react-icons/rx";
+import {
+  Section,
+  List,
+  ListItem,
+  Document,
+  Documents,
+  FeeStructure,
+  Note,
+} from "@/components/course-components";
 import { courses } from "#site/content";
 
 function getCourses(coursesSlug: string) {
@@ -57,10 +68,20 @@ const coursesPageComponents = {
   AiOutlinePause,
   FaCheck,
   FeeCard,
+  FaFileAlt,
+  FaDownload,
   CourseFeeCards,
   BsArrowRightCircleFill,
-  AdmissionTimeline
-
+  AdmissionTimeline,
+  List,
+  Document,
+  FaFilePdf,
+  Documents,
+  FeeStructure,
+  ListItem,
+  Note,
+  Section,
+  RxCaretRight,
 } as const;
 
 export default async function PagePage({

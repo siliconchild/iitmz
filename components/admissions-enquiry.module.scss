@@ -3,6 +3,14 @@
     background: #fff;
 }
 
+.flat {
+    padding: 0;
+    .card {
+        background: white;
+        padding: 0;
+    }
+}
+
 .card {
     max-width: 900px;
     margin: 0 auto;

@@ -1,8 +1,11 @@
 import styles from "./admission-timeline.module.scss";
 import { FaCalendarAlt, FaCalendarTimes, FaPencilAlt, FaUserCheck } from "react-icons/fa";
-import { BsCalendarCheck } from "react-icons/bs";
 
-const AdmissionTimeline = () => {
+interface TimelineProps {
+  variant?: "default" | "simple";
+}
+
+const AdmissionTimeline: React.FC<TimelineProps> = ({ variant = "default" }) => {
   const timelineData = [
     {
       date: "Jan 10, 2025",
@@ -37,18 +40,17 @@ const AdmissionTimeline = () => {
   ];
 
   return (
-    <section className={styles.section}>
+    <section className={`${styles.section} ${styles[variant]}`}>
       <div className={styles.container}>
         <div className={styles.content}>
-          <h2>2025-26 Admission Timeline</h2>
+          <h3>2025-26 Admission Timeline</h3>
           <div className={styles.timeline}>
             {timelineData.map((item, index) => (
               <div key={index} className={styles.timelineItem}>
                 <div className={styles.iconWrapper}>{item.icon}</div>
                 <div className={styles.details}>
                   <span className={styles.date}>{item.date}</span>
-                  <h3 className={styles.event}>{item.event}</h3>
-                  {/* <span className={`${styles.status} ${styles[item.status]}`}>{item.status}</span> */}
+                  <h4 className={styles.event}>{item.event}</h4>
                 </div>
               </div>
             ))}
