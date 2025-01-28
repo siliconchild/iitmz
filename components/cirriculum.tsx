@@ -13,7 +13,11 @@ type CurriculumProps = {
 };
 
 export const Curriculum = ({ children }: PropsWithChildren<CurriculumProps>) => {
-  return <Accordion title="Curriculum">{children}</Accordion>;
+  return (
+    <Accordion id="curriculum" title="Curriculum">
+      {children}
+    </Accordion>
+  );
 };
 
 type SemesterProps = {
