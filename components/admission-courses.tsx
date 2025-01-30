@@ -7,16 +7,19 @@ export default function AcademicPrograms() {
       title: "BS in Data Science & AI",
       imageSrc: "/course3.jpg",
       links: [
-        { label: "Eligibility", url: "/admissions/bs-eligibility" },
-        { label: "Cirriculum", url: "/admissions/bs-eligibility" },
-        { label: "Fee Structure", url: "/admissions/bs-fee" },
+        { label: "Eligibility", url: "/schools/engineering-and-science/bs-data-science-and-ai#eligibility" },
+        { label: "Cirriculum", url: "/schools/engineering-and-science/bs-data-science-and-ai#curriculum" },
+        {
+          label: "Fee Structure",
+          url: "/schools/engineering-and-science/bs-data-science-and-ai#fee-structure",
+        },
         {
           label: "Screening Test Documents",
-          url: "/admissions/bs-screening-test",
+          url: "/schools/engineering-and-science/bs-data-science-and-ai#preparation-resources",
         },
         {
           label: "Examination Centers",
-          url: "/admissions/bs-screening-test",
+          url: "/schools/engineering-and-science/bs-data-science-and-ai#examination-centres",
         },
       ],
       applicationLink: "/apply/bs",

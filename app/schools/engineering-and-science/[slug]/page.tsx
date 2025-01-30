@@ -1,9 +1,6 @@
 import { notFound } from "next/navigation";
 import { MDXContent } from "@/components/mdx-content";
 import styles from "./page.module.scss";
-import { CourseResources, Resource } from "@/components/course-resource";
-import JobProspects from "@/components/job-prospects";
-import CourseEligibility from "@/components/course-eligibility";
 import { Curriculum, Semester, Course, CourseContent, Faculty } from "@/components/cirriculum";
 import Img from "@/components/image";
 import Link from "next/link";
@@ -16,8 +13,6 @@ import { AiOutlineUnorderedList, AiOutlineCalendar } from "react-icons/ai";
 import { FaCheck, FaDownload, FaFilePdf } from "react-icons/fa6";
 import { FaFileAlt } from "react-icons/fa";
 import { BsArrowRightCircleFill } from "react-icons/bs";
-import { FeeCard, CourseFeeCards } from "@/components/fee-card";
-import AdmissionTimeline from "@/components/course-important-dates";
 import InquirySection from "@/components/admissions-enquiry";
 import { RxCaretRight } from "react-icons/rx";
 import {
@@ -55,10 +50,14 @@ export function generateStaticParams() {
 }
 
 const coursesPageComponents = {
-  CourseResources,
-  Resource,
-  JobProspects,
-  CourseEligibility,
+  Section,
+  List,
+  Document,
+  FaFilePdf,
+  Documents,
+  FeeStructure,
+  ListItem,
+  Note,
   Curriculum,
   Faculty,
   Semester,
@@ -67,20 +66,10 @@ const coursesPageComponents = {
   BsFillCheckCircleFill,
   AiOutlinePause,
   FaCheck,
-  FeeCard,
   FaFileAlt,
   FaDownload,
-  CourseFeeCards,
   BsArrowRightCircleFill,
-  AdmissionTimeline,
-  List,
-  Document,
-  FaFilePdf,
-  Documents,
-  FeeStructure,
-  ListItem,
-  Note,
-  Section,
+
   RxCaretRight,
 } as const;
 
@@ -160,7 +149,7 @@ export default async function PagePage({
               }}
             />
           )}
-          <InquirySection />
+          <InquirySection type="flat" />
         </section>
       </div>
     </section>

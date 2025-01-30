@@ -1,6 +1,8 @@
 import styles from "./course-components.module.scss";
-export const Section = ({ children }: { children: React.ReactNode }) => (
-  <div className={styles.section}>{children}</div>
+export const Section = ({ children, id }: { children: React.ReactNode; id: string }) => (
+  <div id={id} className={styles.section}>
+    {children}
+  </div>
 );
 
 export const List = ({ children }: { children: React.ReactNode }) => (

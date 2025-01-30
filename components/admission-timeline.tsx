@@ -43,7 +43,7 @@ const AdmissionTimeline: React.FC<TimelineProps> = ({ variant = "default" }) => 
     <section className={`${styles.section} ${styles[variant]}`}>
       <div className={styles.container}>
         <div className={styles.content}>
-          <h3>2025-26 Admission Timeline</h3>
+          {/* <h3>2025-26 Admission Timeline</h3> */}
           <div className={styles.timeline}>
             {timelineData.map((item, index) => (
               <div key={index} className={styles.timelineItem}>

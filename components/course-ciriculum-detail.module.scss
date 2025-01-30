@@ -3,6 +3,13 @@
     align-items: space-between;
 }
 
+.head {
+    p {
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+}
+
 .courseRowTitle {
     width: 100% !important;
     display: flex;

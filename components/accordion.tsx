@@ -12,6 +12,7 @@ import { TbLayoutNavbarExpand, TbLayoutBottombarExpand } from "react-icons/tb";
 type AccordionProps = {
   children: ReactNode;
   title: string;
+  id: string;
 };
 
 type AccordionItemProps = {
@@ -19,7 +20,7 @@ type AccordionItemProps = {
   initialEntered?: boolean;
 };
 
-const Accordion = ({ children, title }: AccordionProps) => {
+const Accordion = ({ children, title, id }: AccordionProps) => {
   const providerValue = useAccordionProvider({
     allowMultiple: true,
     transition: true,
@@ -29,7 +30,7 @@ const Accordion = ({ children, title }: AccordionProps) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <section>
+    <section id={id}>
       <div className={styles.titleheader}>
         <h3>{title}</h3>
         <button

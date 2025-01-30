@@ -27,7 +27,7 @@ export default function CourseCard({
 
         <div className={styles.links}>
           {links.map((link, index) => (
-            <Link key={index} href={link.url} className={styles.link} target="_blank">
+            <Link key={index} href={link.url} className={styles.link}>
               {link.label}
             </Link>
           ))}
