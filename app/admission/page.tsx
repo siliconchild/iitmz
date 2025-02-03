@@ -3,6 +3,7 @@ import Steps from "@/components/steps";
 import AcademicPrograms from "@/components/admission-courses";
 import AdmissionTimeline from "@/components/admission-timeline";
 import InquirySection from "@/components/admissions-enquiry";
+import ApplyCard from "@/components/apply-cta";
 import styles from "./page.module.scss";
 
 export const metadata = {
@@ -22,6 +23,9 @@ export default function AdmissionPage() {
       <AcademicPrograms />
       <Steps />
       <InquirySection />
+      <div className="container">
+        <ApplyCard />
+      </div>
     </div>
   );
 }

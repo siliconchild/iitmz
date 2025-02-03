@@ -1,7 +1,13 @@
 import { notFound } from "next/navigation";
 import { MDXContent } from "@/components/mdx-content";
 import styles from "./page.module.scss";
-import { Curriculum, Semester, Course, CourseContent, Faculty } from "@/components/cirriculum";
+import {
+  Curriculum,
+  Semester,
+  Course,
+  CourseContent,
+  Faculty,
+} from "@/components/cirriculum";
 import Img from "@/components/image";
 import Link from "next/link";
 import { BiBuilding } from "react-icons/bi";
@@ -14,20 +20,36 @@ import { FaCheck, FaDownload, FaFilePdf, FaCoins } from "react-icons/fa6";
 import { FaFileAlt } from "react-icons/fa";
 import { BsArrowRightCircleFill } from "react-icons/bs";
 import InquirySection from "@/components/admissions-enquiry";
+import ApplyCard from "@/components/apply-cta";
 import { RxCaretRight } from "react-icons/rx";
-import { Section, List, ListItem, Document, Documents, Note } from "@/components/course-components";
+import {
+  Section,
+  List,
+  ListItem,
+  Document,
+  Documents,
+  Note,
+} from "@/components/course-components";
 import { courses } from "#site/content";
 
 function getCourses(coursesSlug: string) {
   return courses.find((item) => item.slug === coursesSlug);
 }
 
-export async function generateMetadata({ params: { slug } }: { params: { slug: string } }) {
-  const coursesMember = courses.find((coursesMember) => coursesMember.slug === slug);
+export async function generateMetadata({
+  params: { slug },
+}: {
+  params: { slug: string };
+}) {
+  const coursesMember = courses.find(
+    (coursesMember) => coursesMember.slug === slug,
+  );
   if (!coursesMember) return {};
   return {
     title: `${coursesMember?.title} | Courses`,
-    description: coursesMember?.seo?.desc || `IITM Zanzibar ${coursesMember.title} course information`,
+    description:
+      coursesMember?.seo?.desc ||
+      `IITM Zanzibar ${coursesMember.title} course information`,
     alternates: {
       canonical: `schools/engineering-and-science/courses/${slug}`,
     },
@@ -79,7 +101,12 @@ export default async function PagePage({
   return (
     <section className={styles.section}>
       <div className={styles.header}>
-        <Img src={coursesMember.coverImg || ""} alt="course cover image" width={900} height={600} />
+        <Img
+          src={coursesMember.coverImg || ""}
+          alt="course cover image"
+          width={900}
+          height={600}
+        />
       </div>
       <div className="container">
         <section className={styles.body}>
@@ -88,7 +115,8 @@ export default async function PagePage({
               <h1>{coursesMember.title}</h1>
               {coursesMember.applicationClosingDate && (
                 <p className={styles.applicationClosingDate}>
-                  <strong>Applications Close on -</strong> <span>{coursesMember.applicationClosingDate}</span>
+                  <strong>Applications Close on -</strong>{" "}
+                  <span>{coursesMember.applicationClosingDate}</span>
                 </p>
               )}
             </div>
@@ -101,7 +129,10 @@ export default async function PagePage({
               )}
               {coursesMember?.applicationLink && (
                 <Link target="_blank" href={coursesMember.applicationLink}>
-                  <Button kind="PRIMARY" disabled={coursesMember.applicationLink === "#"}>
+                  <Button
+                    kind="PRIMARY"
+                    disabled={coursesMember.applicationLink === "#"}
+                  >
                     Apply Now
                   </Button>
                 </Link>
@@ -141,6 +172,7 @@ export default async function PagePage({
             />
           )}
           <InquirySection />
+          <ApplyCard buttonLink={coursesMember.applicationLink} />
         </section>
       </div>
     </section>
