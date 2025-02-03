@@ -7,51 +7,79 @@ export default function AcademicPrograms() {
       title: "BS in Data Science & AI",
       imageSrc: "/course3.jpg",
       links: [
+        {
+          label: "Job Prospects",
+          url: "/schools/engineering-and-science/bs-data-science-and-ai#job-prospects",
+        },
         { label: "Eligibility", url: "/schools/engineering-and-science/bs-data-science-and-ai#eligibility" },
-        { label: "Cirriculum", url: "/schools/engineering-and-science/bs-data-science-and-ai#curriculum" },
+        { label: "Curriculum", url: "/schools/engineering-and-science/bs-data-science-and-ai#curriculum" },
         {
           label: "Fee Structure",
           url: "/schools/engineering-and-science/bs-data-science-and-ai#fee-structure",
         },
         {
-          label: "Screening Test Documents",
-          url: "/schools/engineering-and-science/bs-data-science-and-ai#preparation-resources",
+          label: "Screening Test Information",
+          url: "/schools/engineering-and-science/bs-data-science-and-ai#screening-test",
         },
         {
           label: "Examination Centers",
           url: "/schools/engineering-and-science/bs-data-science-and-ai#examination-centres",
         },
       ],
-      applicationLink: "/apply/bs",
+      applicationLink: "https://admissions.iitmz.ac.in/bsdsai",
     },
     {
       title: "MTech in Data Science & AI",
       imageSrc: "/course4.jpg",
       links: [
-        { label: "Eligibility", url: "/admissions/mtech-eligibility" },
-        { label: "Cirriculum", url: "/admissions/bs-eligibility" },
-        { label: "Program Structure", url: "/admissions/bs-fee" },
-        { label: "Fee Structure", url: "/admissions/bs-fee" },
         {
-          label: "Screening Test Documents",
-          url: "/admissions/bs-screening-test",
+          label: "Job Prospects",
+          url: "/schools/engineering-and-science/mtech-data-science-and-ai#job-prospects",
+        },
+        {
+          label: "Eligibility",
+          url: "/schools/engineering-and-science/mtech-data-science-and-ai#eligibility",
+        },
+        { label: "Curriculum", url: "/schools/engineering-and-science/mtech-data-science-and-ai#curriculum" },
+        {
+          label: "Fee Structure",
+          url: "/schools/engineering-and-science/mtech-data-science-and-ai#fee-structure",
+        },
+        {
+          label: "Screening Test Information",
+          url: "/schools/engineering-and-science/mtech-data-science-and-ai#screening-test",
         },
       ],
-      applicationLink: "/apply/mtech",
+      applicationLink: "https://admissions.iitmz.ac.in/mtechdsai",
     },
     {
       title: "MTech in Ocean Structures",
       imageSrc: "/ocean-structures.jpg",
       links: [
-        { label: "Eligibility", url: "/admissions/mtech-eligibility" },
-        { label: "Cirriculum", url: "/admissions/bs-eligibility" },
-        { label: "Fee Structure", url: "/admissions/bs-fee" },
         {
-          label: "Screening Test Documents",
-          url: "/admissions/bs-screening-test",
+          label: "Job Prospects",
+          url: "/schools/engineering-and-science/mtech-ocean-structures#job-prospects",
+        },
+        {
+          label: "Eligibility",
+          url: "/schools/engineering-and-science/mtech-ocean-structures#eligibility",
+        },
+        { label: "Curriculum", url: "/schools/engineering-and-science/mtech-ocean-structures#curriculum" },
+
+        {
+          label: "Fee Structure",
+          url: "/schools/engineering-and-science/mtech-ocean-structures#fee-structure",
+        },
+        {
+          label: "Screening Test Information",
+          url: "/schools/engineering-and-science/mtech-ocean-structures#screening-test",
+        },
+        {
+          label: "Program Structure",
+          url: "/schools/engineering-and-science/mtech-ocean-structures#program-structure",
         },
       ],
-      applicationLink: "/apply/mtech-os",
+      applicationLink: "https://admissions.iitmz.ac.in/mtechos",
     },
   ];
 

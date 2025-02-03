@@ -1,5 +1,6 @@
 .section {
     margin: 5rem 0;
+    scroll-margin-top: 80px;
 
     h2,
     h3 {
@@ -9,7 +10,11 @@
         color: #30394a;
     }
     h4 {
-        font-size: 1.7rem;
+        font-size: 1.8rem;
+    }
+
+    h5 {
+        font-size: 1.5rem;
     }
 
     p {
@@ -26,7 +31,7 @@
     li {
         display: flex;
         align-items: flex-start;
-        padding: .75rem;
+        padding: 0.75rem;
         transition: transform 0.2s ease;
 
         &:not(:last-child) {
@@ -53,7 +58,7 @@
 
 .note {
     background: #f8f9fa;
-    padding: 2rem;
+    padding: 1.5rem 2rem;
     margin: 2rem 0;
 
     p {
@@ -71,7 +76,7 @@
     li,
     p {
         display: flex;
-        align-items: center;
+        margin-bottom: 0.3rem;
         svg {
             margin-right: 0.5rem;
             height: 24px;
@@ -82,33 +87,6 @@
 
     strong {
         color: #2d3748;
-    }
-}
-
-.feeStructure {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin: 2rem 0;
-    padding-left: 0.25rem;
-
-    > div {
-        background-color: #ffffff;
-        padding: 1.25rem 2rem;
-        border-left: 3px solid #ffb013;
-        transition: transform 0.2s ease;
-
-        h4 {
-            font-size: 1.6rem;
-            color: #4a5568;
-            margin-bottom: 1rem;
-        }
-
-        .amount {
-            font-size: 2.4rem;
-            font-weight: 600;
-            color: #2d3748;
-        }
     }
 }
 
@@ -175,6 +153,11 @@
 @media (max-width: 768px) {
     .section {
         margin: 3rem 0;
+        padding: 0 1.5rem;
+
+        p {
+            font-size: 1.5rem;
+        }
 
         h2,
         h3 {

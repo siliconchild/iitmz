@@ -3,6 +3,7 @@ import Steps from "@/components/steps";
 import AcademicPrograms from "@/components/admission-courses";
 import AdmissionTimeline from "@/components/admission-timeline";
 import InquirySection from "@/components/admissions-enquiry";
+import styles from "./page.module.scss";
 
 export const metadata = {
   title: "Why Study With Us? | How To Apply?",
@@ -15,12 +16,12 @@ export const metadata = {
 
 export default function AdmissionPage() {
   return (
-    <>
+    <div className={styles.page}>
       <AdmissionHeader />
       <AdmissionTimeline />
       <AcademicPrograms />
       <Steps />
-      <InquirySection type="default" />
-    </>
+      <InquirySection />
+    </div>
   );
 }

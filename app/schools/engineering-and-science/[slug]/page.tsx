@@ -10,20 +10,12 @@ import Button from "@/components/button";
 import { BsFillCheckCircleFill } from "react-icons/bs";
 import { AiOutlinePause } from "react-icons/ai";
 import { AiOutlineUnorderedList, AiOutlineCalendar } from "react-icons/ai";
-import { FaCheck, FaDownload, FaFilePdf } from "react-icons/fa6";
+import { FaCheck, FaDownload, FaFilePdf, FaCoins } from "react-icons/fa6";
 import { FaFileAlt } from "react-icons/fa";
 import { BsArrowRightCircleFill } from "react-icons/bs";
 import InquirySection from "@/components/admissions-enquiry";
 import { RxCaretRight } from "react-icons/rx";
-import {
-  Section,
-  List,
-  ListItem,
-  Document,
-  Documents,
-  FeeStructure,
-  Note,
-} from "@/components/course-components";
+import { Section, List, ListItem, Document, Documents, Note } from "@/components/course-components";
 import { courses } from "#site/content";
 
 function getCourses(coursesSlug: string) {
@@ -55,7 +47,6 @@ const coursesPageComponents = {
   Document,
   FaFilePdf,
   Documents,
-  FeeStructure,
   ListItem,
   Note,
   Curriculum,
@@ -69,7 +60,7 @@ const coursesPageComponents = {
   FaFileAlt,
   FaDownload,
   BsArrowRightCircleFill,
-
+  FaCoins,
   RxCaretRight,
 } as const;
 
@@ -88,7 +79,7 @@ export default async function PagePage({
   return (
     <section className={styles.section}>
       <div className={styles.header}>
-        <Img src={coursesMember.coverImg || ""} alt="data science course image" width={900} height={600} />
+        <Img src={coursesMember.coverImg || ""} alt="course cover image" width={900} height={600} />
       </div>
       <div className="container">
         <section className={styles.body}>
@@ -149,7 +140,7 @@ export default async function PagePage({
               }}
             />
           )}
-          <InquirySection type="flat" />
+          <InquirySection />
         </section>
       </div>
     </section>

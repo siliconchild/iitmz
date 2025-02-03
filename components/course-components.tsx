@@ -17,10 +17,6 @@ export const Note = ({ children }: { children: React.ReactNode }) => (
   <div className={styles.note}>{children}</div>
 );
 
-export const FeeStructure = ({ children }: { children: React.ReactNode }) => (
-  <div className={styles.feeStructure}>{children}</div>
-);
-
 export const Documents = ({ children }: { children: React.ReactNode }) => (
   <div className={styles.documents}>{children}</div>
 );

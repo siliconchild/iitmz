@@ -2,13 +2,9 @@ import styles from "./admissions-enquiry.module.scss";
 import { IoMailOutline, IoLogoWhatsapp } from "react-icons/io5";
 import Button from "@/components/button";
 
-type InquirySectionProps = {
-  type: "flat" | "default";
-};
-
-export default function InquirySection({ type = "flat" }: InquirySectionProps) {
+export default function InquirySection() {
   return (
-    <section className={`${styles.section} ${type === "flat" ? styles.flat : ""}`}>
+    <section className={styles.section}>
       <div className="container">
         <div className={styles.card}>
           <div className={styles.content}>

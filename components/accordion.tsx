@@ -8,6 +8,7 @@ import {
 import { ReactElement, ReactNode, useState } from "react";
 import { FiChevronDown } from "react-icons/fi";
 import { TbLayoutNavbarExpand, TbLayoutBottombarExpand } from "react-icons/tb";
+import { s } from "velite";
 
 type AccordionProps = {
   children: ReactNode;
@@ -34,6 +35,7 @@ const Accordion = ({ children, title, id }: AccordionProps) => {
       <div className={styles.titleheader}>
         <h3>{title}</h3>
         <button
+          className={styles.accordionButton}
           onClick={() => {
             toggleAll(!isExpanded);
             setIsExpanded((prevState) => !prevState);
@@ -72,7 +74,7 @@ const AccordionItem = ({ children, ...props }: AccordionItemProps) => {
       )}
       {...props}
       buttonProps={{
-        className: ({ isEnter }) => `${isEnter && styles.itemBtnExpanded}`,
+        className: ({ isEnter }) => `${isEnter && styles.itemBtnExpanded} ${styles.headerButton}`,
       }}
     >
       <div className={styles.body}>{body}</div>

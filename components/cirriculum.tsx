@@ -1,4 +1,3 @@
-// components/curriculum.tsx
 "use client";
 import { useState } from "react";
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
@@ -12,7 +11,9 @@ type CurriculumProps = {
   info?: string[];
 };
 
-export const Curriculum = ({ children }: PropsWithChildren<CurriculumProps>) => {
+export const Curriculum = ({
+  children,
+}: PropsWithChildren<CurriculumProps>) => {
   return (
     <Accordion id="curriculum" title="Curriculum">
       {children}
@@ -42,7 +43,9 @@ export const Semester = ({
         <thead>
           <tr>
             <th>Course Name</th>
-            <th title="To know what (L, T, E, P, A, O) is hover your mouse pointer over it">Category</th>
+            <th title="To know what (L, T, E, P, A, O) is hover your mouse pointer over it">
+              Category
+            </th>
             <th title="Lectures">L</th>
             <th title="Tutorials">T</th>
             <th title="Extended Tutorials">E</th>
@@ -71,7 +74,12 @@ type CourseProps = {
   };
 };
 
-export const Course = ({ courseName, category, credits, children }: PropsWithChildren<CourseProps>) => {
+export const Course = ({
+  courseName,
+  category,
+  credits,
+  children,
+}: PropsWithChildren<CourseProps>) => {
   const [showDetails, setShowDetails] = useState(false);
 
   return (
@@ -80,7 +88,10 @@ export const Course = ({ courseName, category, credits, children }: PropsWithChi
         <td data-cell="Name:" className={styles.courseRowTitle}>
           <div>{courseName}</div>
           {children && (
-            <button onClick={() => setShowDetails(!showDetails)} className={styles.detailsButton}>
+            <button
+              onClick={() => setShowDetails(!showDetails)}
+              className={styles.detailsButton}
+            >
               {showDetails ? (
                 <>
                   Hide Course Details
@@ -102,7 +113,28 @@ export const Course = ({ courseName, category, credits, children }: PropsWithChi
         <td data-cell="Practicals">{credits?.P}</td>
         <td data-cell="Outside Classroom">{credits?.O}</td>
         <td data-cell="Total">{credits.total}</td>
+        {children && (
+          <td colSpan={8} className={styles.mobileButtonRow}>
+            <button
+              onClick={() => setShowDetails(!showDetails)}
+              className={styles.detailsButtonMobile}
+            >
+              {showDetails ? (
+                <>
+                  Hide Course Details
+                  <AiOutlineMinus />
+                </>
+              ) : (
+                <>
+                  View Course Details
+                  <AiOutlinePlus />
+                </>
+              )}
+            </button>
+          </td>
+        )}
       </tr>
+
       {showDetails && children && (
         <tr>
           <td colSpan={8} className={styles.details}>
