@@ -1,6 +1,7 @@
 import styles from "./admissions-enquiry.module.scss";
 import { IoMailOutline, IoLogoWhatsapp } from "react-icons/io5";
 import Button from "@/components/button";
+import Link from "next/link";
 
 export default function InquirySection() {
   return (
@@ -10,8 +11,9 @@ export default function InquirySection() {
           <div className={styles.content}>
             <h2>Have Questions?</h2>
             <p>
-              Are you interested in applying to IIT Madras Zanzibar and still have questions about the
-              program, admission process and screening test? Our admission counsellors are here to help.
+              Are you interested in applying to IIT Madras Zanzibar and still
+              have questions about the program, admission process and screening
+              test? Our admission counsellors are here to help.
             </p>
 
             <div className={styles.contacts}>
@@ -19,7 +21,10 @@ export default function InquirySection() {
                 <IoLogoWhatsapp />
                 <span>+91 9600 685 899</span>
               </a>
-              <a href="mailto:admissions@iitmz.ac.in" className={styles.contact}>
+              <a
+                href="mailto:admissions@iitmz.ac.in"
+                className={styles.contact}
+              >
                 <IoMailOutline />
                 <span>admissions@iitmz.ac.in</span>
               </a>
@@ -27,10 +32,15 @@ export default function InquirySection() {
 
             <div className={styles.cta}>
               <p>
-                Fill out the IITM Zanzibar Inquiry Form and our admission counsellor will be in touch with
-                you.
+                Fill out the IITM Zanzibar Inquiry Form and our admission
+                counsellor will be in touch with you.
               </p>
-              <Button kind="PRIMARY">Enquire Now</Button>
+              <Link
+                target="_blank"
+                href="https://ge.iitm.ac.in/forms/iitmz-enquiry-form"
+              >
+                <Button kind="PRIMARY">Enquire Now</Button>
+              </Link>
             </div>
           </div>
         </div>
