@@ -10,7 +10,7 @@ export default function AdmissionsDownloadable() {
         <p>Downloadable resources to help you prepare for Admissions 2024</p>
         <div className={styles.buttons}>
           <div>
-            <Link target="_blank" href="/IITMZST Information Brochure 2025.pdf">
+            <Link target="_blank" href="/IITMZST-Information-Brochure-2025.pdf">
               <Button kind="SECONDARY_BLACK">
                 <MdOutlineFileDownload />
                 Information Brochure
