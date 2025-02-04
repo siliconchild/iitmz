@@ -13,7 +13,7 @@ import { s } from "velite";
 type AccordionProps = {
   children: ReactNode;
   title: string;
-  id: string;
+  id?: string;
 };
 
 type AccordionItemProps = {
@@ -54,7 +54,10 @@ const Accordion = ({ children, title, id }: AccordionProps) => {
           )}
         </button>
       </div>
-      <ControlledAccordion providerValue={providerValue} className={styles.accordion}>
+      <ControlledAccordion
+        providerValue={providerValue}
+        className={styles.accordion}
+      >
         {children}
       </ControlledAccordion>
     </section>
@@ -74,7 +77,8 @@ const AccordionItem = ({ children, ...props }: AccordionItemProps) => {
       )}
       {...props}
       buttonProps={{
-        className: ({ isEnter }) => `${isEnter && styles.itemBtnExpanded} ${styles.headerButton}`,
+        className: ({ isEnter }) =>
+          `${isEnter && styles.itemBtnExpanded} ${styles.headerButton}`,
       }}
     >
       <div className={styles.body}>{body}</div>
