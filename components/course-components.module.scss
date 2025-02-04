@@ -171,7 +171,6 @@
     border-radius: 10px;
     text-decoration: none;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 
     &:hover {
         transform: translateY(-3px);
@@ -202,8 +201,8 @@
     }
 
     h4 {
-        font-size: 1.6rem;
-        color: #2d3748;
+        font-size: 1.5rem;
+        color: #374151;
         margin-bottom: 0.5rem;
         font-weight: 600;
         white-space: nowrap;

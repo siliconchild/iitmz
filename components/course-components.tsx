@@ -1,5 +1,12 @@
 import styles from "./course-components.module.scss";
-export const Section = ({ children, id }: { children: React.ReactNode; id: string }) => (
+import Link from "next/link";
+export const Section = ({
+  children,
+  id,
+}: {
+  children: React.ReactNode;
+  id: string;
+}) => (
   <div id={id} className={styles.section}>
     {children}
   </div>
@@ -21,8 +28,14 @@ export const Documents = ({ children }: { children: React.ReactNode }) => (
   <div className={styles.documents}>{children}</div>
 );
 
-export const Document = ({ href, children }: { href: string; children: React.ReactNode }) => (
-  <a href={href} className={styles.document}>
+export const Document = ({
+  href,
+  children,
+}: {
+  href: string;
+  children: React.ReactNode;
+}) => (
+  <Link href={href} target="_blank" className={styles.document}>
     {children}
-  </a>
+  </Link>
 );
