@@ -8,11 +8,17 @@ export default function AcademicPrograms() {
       imageSrc: "/course3.jpg",
       links: [
         {
-          label: "Job Prospects",
-          url: "/schools/engineering-and-science/bs-data-science-and-ai#job-prospects",
+          label: "Program Overview",
+          url: "/schools/engineering-and-science/bs-data-science-and-ai",
         },
-        { label: "Eligibility", url: "/schools/engineering-and-science/bs-data-science-and-ai#eligibility" },
-        { label: "Curriculum", url: "/schools/engineering-and-science/bs-data-science-and-ai#curriculum" },
+        {
+          label: "Eligibility",
+          url: "/schools/engineering-and-science/bs-data-science-and-ai#eligibility",
+        },
+        {
+          label: "Curriculum",
+          url: "/schools/engineering-and-science/bs-data-science-and-ai#curriculum",
+        },
         {
           label: "Fee Structure",
           url: "/schools/engineering-and-science/bs-data-science-and-ai#fee-structure",
@@ -33,14 +39,17 @@ export default function AcademicPrograms() {
       imageSrc: "/course4.jpg",
       links: [
         {
-          label: "Job Prospects",
-          url: "/schools/engineering-and-science/mtech-data-science-and-ai#job-prospects",
+          label: "Program Overview",
+          url: "/schools/engineering-and-science/mtech-data-science-and-ai",
         },
         {
           label: "Eligibility",
           url: "/schools/engineering-and-science/mtech-data-science-and-ai#eligibility",
         },
-        { label: "Curriculum", url: "/schools/engineering-and-science/mtech-data-science-and-ai#curriculum" },
+        {
+          label: "Curriculum",
+          url: "/schools/engineering-and-science/mtech-data-science-and-ai#curriculum",
+        },
         {
           label: "Fee Structure",
           url: "/schools/engineering-and-science/mtech-data-science-and-ai#fee-structure",
@@ -57,14 +66,17 @@ export default function AcademicPrograms() {
       imageSrc: "/ocean-structures.jpg",
       links: [
         {
-          label: "Job Prospects",
-          url: "/schools/engineering-and-science/mtech-ocean-structures#job-prospects",
+          label: "Program Overview",
+          url: "/schools/engineering-and-science/mtech-ocean-structures",
         },
         {
           label: "Eligibility",
           url: "/schools/engineering-and-science/mtech-ocean-structures#eligibility",
         },
-        { label: "Curriculum", url: "/schools/engineering-and-science/mtech-ocean-structures#curriculum" },
+        {
+          label: "Curriculum",
+          url: "/schools/engineering-and-science/mtech-ocean-structures#curriculum",
+        },
 
         {
           label: "Fee Structure",
