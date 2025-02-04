@@ -1,69 +1,86 @@
+import { notFound } from "next/navigation";
+import { MDXContent } from "@/components/mdx-content";
 import styles from "./page.module.scss";
-import faculty from "@/data/faculty";
+import { Papers, Paper } from "@/components/papers";
+import { Books, Book } from "@/components/book";
 import Img from "@/components/image";
-import { AiOutlineMail, AiTwotoneCalendar } from "react-icons/ai";
-import { BsGlobeCentralSouthAsia, BsBookmarksFill } from "react-icons/bs";
-import { FaUserEdit } from "react-icons/fa";
+import { AiOutlineMail } from "react-icons/ai";
+import { BsGlobeCentralSouthAsia } from "react-icons/bs";
 import { RiAwardLine } from "react-icons/ri";
 import Link from "next/link";
-import stringReplacer from "@/components/string-replacer";
+import { faculty } from "#site/content";
 
-export async function generateMetadata(props: { params: Promise<{ slug: string }> }) {
-  const params = await props.params;
+function getFaculty(facultySlug: string) {
+  return faculty.find((item) => item.slug === facultySlug);
+}
 
-  const { slug } = params;
-
-  const facultyMember = faculty.find((facultyMember) => facultyMember.slug === slug);
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{
+    slug: string;
+  }>;
+}) {
+    const { slug } = await params;
+  const facultyMember = faculty.find(
+    (facultyMember) => facultyMember.slug === slug
+  );
 
   return {
     title: `${facultyMember?.name} | Faculty`,
-    description: facultyMember?.seo?.desc,
+    description: facultyMember?.metadesc,
     alternates: {
       canonical: `schools/engineering-and-science/faculty/${slug}`,
     },
   };
 }
 
-export async function generateStaticParams() {
-  return faculty.map((facultyMember) => ({
-    slug: facultyMember.slug,
-  }));
+export function generateStaticParams() {
+  return faculty.map((item) => ({ slug: item.slug }));
 }
 
-interface Contribution {
-  title: string;
-  link?: string;
-}
+const facultyPageComponents = { Papers, Paper, Books, Book } as const;
 
-export default async function FacultyPage(props: { params: Promise<{ slug: string }> }) {
-  const params = await props.params;
-  const facultyMember = faculty.find((facultyMember) => facultyMember.slug === params.slug);
-  if (!facultyMember) return <div>404</div>; // Implement 404 Page.
+export default async function PagePage({
+  params,
+}: {
+  params: Promise<{
+    slug: string;
+  }>;
+}) {
+  const { slug } = await params;
+  const facultyMember = getFaculty(slug);
+
+  if (!facultyMember || !facultyMember.body) notFound();
+
   return (
     <section className={styles.section}>
       <div className="container">
         <div className={styles.profile}>
-          <Img src={facultyMember.img} width={200} height={200} alt={`Photo of ${facultyMember.name}`} />
+          <Img
+            src={`/${facultyMember.img}`}
+            width={200}
+            height={200}
+            alt={`Photo of ${facultyMember.name}`}
+          />
 
           <h1>{facultyMember.name}</h1>
           <h3>{facultyMember.title}</h3>
-          {facultyMember.titlesec && <h3>{facultyMember.titlesec}</h3>}
+          {facultyMember.subtitle && <h3>{facultyMember.subtitle}</h3>}
           <p>
             <AiOutlineMail />
-            <Link href={`mailto:${facultyMember.contact.email}`}>{facultyMember.contact.email}</Link>
+            <Link href={`mailto:${facultyMember.email}`}>{facultyMember.email}</Link>
           </p>
-          {facultyMember.contact.alternateEmail && (
+          {facultyMember.alternateEmail && (
             <p>
               <AiOutlineMail />
-              <Link href={`mailto:${facultyMember.contact.alternateEmail}`}>
-                {facultyMember.contact.alternateEmail}
-              </Link>
+              <Link href={`mailto:${facultyMember.alternateEmail}`}>{facultyMember.alternateEmail}</Link>
             </p>
           )}
-          {facultyMember.contact.website && (
+          {facultyMember.website && (
             <p className={styles.website}>
               <BsGlobeCentralSouthAsia />
-              <a target="_blank" href={facultyMember.contact.website}>
+              <a target="_blank" href={facultyMember.website}>
                 website
               </a>
             </p>
@@ -77,7 +94,7 @@ export default async function FacultyPage(props: { params: Promise<{ slug: strin
                     {qualification.title} <span>{qualification.year}</span>
                   </h3>
                   <p>{qualification.course}</p>
-                  <p>{qualification.place}</p>
+                  <p>{qualification.institution}</p>
                 </div>
               ))}
             </div>
@@ -91,7 +108,7 @@ export default async function FacultyPage(props: { params: Promise<{ slug: strin
                     <RiAwardLine />
                     <div>
                       <p>{award.title}</p>
-                      <p>{award.from}</p>
+                      <p>{award.subtitle}</p>
                     </div>
                   </li>
                 ))}
@@ -100,88 +117,15 @@ export default async function FacultyPage(props: { params: Promise<{ slug: strin
           )}
         </div>
         <div className={styles.main}>
-          {facultyMember.interests && (
-            <div className={styles.interests}>
-              <h2>Research Interests</h2>
-              <p>{facultyMember.interests}</p>
-            </div>
-          )}
-          {facultyMember.bio && (
-            <div className={styles.interests}>
-              <h2>Profile</h2>
-              {facultyMember.bio.map((p, index) => (
-                <p key={`profile-${index}`}>{p}</p>
-              ))}
-            </div>
-          )}
-          {facultyMember.courses && (
-            <div className={styles.courses}>
-              <h2>Relevant Courses Taught</h2>
-              <ul>
-                {facultyMember.courses.map((course) => (
-                  <li key={course.title}>{course.title}</li>
-                ))}
-              </ul>
-            </div>
-          )}
-          {facultyMember.papers && (
-            <div className={styles.papers}>
-              <h2>Selected Papers</h2>
-              {facultyMember.papers.map((paper) => (
-                <div className={styles.paper} key={paper.title}>
-                  <h4>
-                    <AiTwotoneCalendar /> {paper.year}
-                  </h4>
-                  <h3>{stringReplacer(paper.title)}</h3>
-                  <div className={styles.authors}>
-                    {paper.authors.map((author) => (
-                      <p key={author}>
-                        <FaUserEdit /> {author}
-                      </p>
-                    ))}
-                  </div>
-                  <p>
-                    {" "}
-                    <BsBookmarksFill /> {paper.publisher}
-                  </p>
-                </div>
-              ))}
-            </div>
-          )}
-          {facultyMember.books && (
-            <div className={styles.books}>
-              <h2>Books Published</h2>
-              <ul>
-                {facultyMember.books.map((book) => (
-                  <li key={book.title}>
-                    <Img src={book.cover} height={150} width={100} alt={`Book Cover of ${book.title}`} />
-                    <div>
-                      <h4>{book.title}</h4>
-                      <p>{book.publisher}</p>
-                      <h5>{book.year}</h5>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
-          {facultyMember.contributions && (
-            <div className={styles.courses}>
-              <h2>Selected Professional Contributions</h2>
-              <ul>
-                {facultyMember.contributions.map((contribution: Contribution) => (
-                  <li key={contribution.title}>
-                    {contribution.link ? (
-                      <a target="_blank" href={contribution.link}>
-                        {contribution.title} <span>[Click Here to Know More]</span>
-                      </a>
-                    ) : (
-                      <>{contribution.title}</>
-                    )}
-                  </li>
-                ))}
-              </ul>
-            </div>
+          {facultyMember.body && (
+            <MDXContent
+              code={facultyMember.body}
+              components={facultyPageComponents}
+              frontmatter={{
+                title: facultyMember.title,
+                cover: facultyMember.img,
+              }}
+            />
           )}
         </div>
       </div>

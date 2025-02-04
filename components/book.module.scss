@@ -1,0 +1,43 @@
+.books {
+    ul {
+        display: flex;
+        gap: 1rem;
+        padding: 1rem;
+        overflow: scroll;
+        li {
+            flex: 0 0 30%;
+            list-style-type: none;
+            display: flex;
+            gap: 1rem;
+            &::before {
+                display: none;
+                height: 0;
+                width: 0;
+            }
+            h4 {
+                font-size: 1.3rem;
+            }
+            img {
+                border-radius: 5px;
+                height: 150px;
+                width: 100px;
+            }
+            p {
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .books {
+        ul {
+            flex-direction: column;
+            list-style-type: none !important;
+            gap: 2rem;
+            li {
+                width: 100%;
+            }
+        }
+    }
+}

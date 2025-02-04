@@ -1,0 +1,89 @@
+.applyCard {
+    background: linear-gradient(135deg, #ae152b, #8a1022);
+    color: white;
+    padding: 5rem 0;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    margin-bottom: 6rem;
+
+    .content {
+        h2 {
+            font-size: 3rem;
+            color: white;
+            text-align: center;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: 2rem;
+        }
+
+        p {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 4rem;
+            font-size: 1.7rem;
+            line-height: 1.7;
+            font-weight: 300;
+        }
+    }
+}
+
+.applyCta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    button {
+        font-size: 1.7rem;
+        padding: 1.4rem 4.5rem;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .applyCard {
+        padding: 4rem;
+
+        .content {
+            h2 {
+                font-size: 2.4rem;
+            }
+
+            p {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .applyCard {
+        border-radius: 14px;
+
+        .content {
+            h2 {
+                font-size: 2.2rem;
+            }
+
+            p {
+                font-size: 1.5rem;
+                margin-bottom: 3rem;
+            }
+        }
+
+        .applyCta {
+            button {
+                width: 100%;
+                font-size: 1.6rem;
+                padding: 1.2rem 2rem;
+            }
+        }
+    }
+}

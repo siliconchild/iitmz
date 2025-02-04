@@ -1,0 +1,148 @@
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 370px;
+    // box-shadow:
+    //     0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    //     0 2px 4px -2px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+
+    &:hover {
+        transform: translateY(-4px);
+        // box-shadow:
+        //     0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        //     0 8px 10px -6px rgba(0, 0, 0, 0.04);
+    }
+
+    .content {
+        padding: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2.2rem;
+        height: 100%;
+
+        h3 {
+            font-size: 2.2rem;
+            font-weight: 600;
+            line-height: 1.4;
+            color: #0f172a;
+            letter-spacing: -0.01em;
+        }
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+
+        .link {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #1e293b;
+            text-decoration: none;
+            padding: 1.4rem 2rem;
+            background: #f8fafc;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            border: 1px solid #e2e8f0;
+
+            &::before {
+                content: "→";
+                margin-right: 1.2rem;
+                color: #ffb013;
+                font-weight: bold;
+                transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+
+            &:hover {
+                background: #fff;
+                border-color: #ffb013;
+                color: #b3383e;
+                transform: translateX(2px);
+
+                &::before {
+                    transform: translateX(4px);
+                }
+            }
+        }
+    }
+
+    .applyButton {
+        margin-top: auto;
+
+        button {
+            width: 100%;
+            font-size: 1.5rem;
+            padding: 1.4rem;
+            background: #ffb013;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            position: relative;
+            overflow: hidden;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), transparent);
+            }
+
+            &:hover {
+                background: darken(#ffb013, 5%);
+                transform: translateY(-1px);
+                box-shadow: 0 4px 6px -1px rgba(255, 176, 19, 0.2);
+            }
+
+            &:active {
+                transform: translateY(0);
+            }
+
+            &:disabled {
+                background: #e2e8f0;
+                color: #94a3b8;
+                cursor: not-allowed;
+                transform: none;
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+        border-radius: 10px;
+
+        .content {
+            padding: 2.5rem 1.5rem;
+            gap: 1.8rem;
+
+            h3 {
+                font-size: 1.9rem;
+                text-align: center;
+            }
+        }
+
+        .links {
+            gap: 1rem;
+
+            .link {
+                font-size: 1.4rem;
+                padding: 1.2rem 1.6rem;
+            }
+        }
+
+        .applyButton button {
+            padding: 1.3rem;
+            font-size: 1.4rem;
+        }
+    }
+}

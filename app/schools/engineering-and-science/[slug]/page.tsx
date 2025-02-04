@@ -1,68 +1,138 @@
+import { notFound } from "next/navigation";
+import { MDXContent } from "@/components/mdx-content";
 import styles from "./page.module.scss";
-import courses from "@/data/courses";
+import {
+  Curriculum,
+  Semester,
+  Course,
+  CourseContent,
+  Faculty,
+} from "@/components/cirriculum";
 import Img from "@/components/image";
-import { Accordion, AccordionItem } from "@/components/accordion";
-import Eligilibity from "@/components/eligibility";
-import { AiOutlineUnorderedList, AiOutlineCalendar, AiOutlineCheck } from "react-icons/ai";
-import { MdOutlineFileDownload } from "react-icons/md";
+import Link from "next/link";
 import { BiBuilding } from "react-icons/bi";
 import { GoGlobe } from "react-icons/go";
 import Button from "@/components/button";
-import Link from "next/link";
-import CourseCiriculumDetail from "@/components/course-ciriculum-detail";
+import { BsFillCheckCircleFill } from "react-icons/bs";
+import { AiOutlinePause } from "react-icons/ai";
+import { AiOutlineUnorderedList, AiOutlineCalendar } from "react-icons/ai";
+import { FaCheck, FaDownload, FaFilePdf, FaCoins } from "react-icons/fa6";
+import { FaFileAlt } from "react-icons/fa";
+import { BsArrowRightCircleFill } from "react-icons/bs";
+import InquirySection from "@/components/admissions-enquiry";
+import ApplyCard from "@/components/apply-cta";
+import { RxCaretRight } from "react-icons/rx";
+import {
+  Section,
+  List,
+  ListItem,
+  Document,
+  Documents,
+  Note,
+} from "@/components/course-components";
+import { courses } from "#site/content";
 
-export async function generateMetadata(props: { params: Promise<{ slug: string }> }) {
-  const params = await props.params;
+function getCourses(coursesSlug: string) {
+  return courses.find((item) => item.slug === coursesSlug);
+}
 
-  const { slug } = params;
-
-  const course = Object.values(courses).find((course) => course.slug === slug);
-
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{
+    slug: string;
+  }>;
+}) {
+    const { slug } = await params;
+  const coursesMember = courses.find(
+    (coursesMember) => coursesMember.slug === slug
+  );
+  if (!coursesMember) return {};
   return {
-    title: `${course?.title} | Apply Now`,
-    description: course?.seo?.desc,
+    title: `${coursesMember?.title} | Courses`,
+    description:
+      coursesMember?.seo?.desc ||
+      `IITM Zanzibar ${coursesMember.title} course information`,
     alternates: {
-      canonical: `schools/engineering-and-science/${slug}`,
+      canonical: `schools/engineering-and-science/courses/${slug}`,
     },
   };
 }
 
-export async function generateStaticParams() {
-  return Object.values(courses).map((course) => ({
-    slug: course.slug,
-  }));
+export function generateStaticParams() {
+  return courses.map((item) => ({ slug: item.slug }));
 }
 
-export default async function CourseDetail(props: { params: Promise<{ slug: string }> }) {
-  const params = await props.params;
-  const course = Object.values(courses).find((course) => course.slug === params.slug);
+const coursesPageComponents = {
+  Section,
+  List,
+  Document,
+  FaFilePdf,
+  Documents,
+  ListItem,
+  Note,
+  Curriculum,
+  Faculty,
+  Semester,
+  Course,
+  CourseContent,
+  BsFillCheckCircleFill,
+  AiOutlinePause,
+  FaCheck,
+  FaFileAlt,
+  FaDownload,
+  BsArrowRightCircleFill,
+  FaCoins,
+  RxCaretRight,
+} as const;
+
+export default async function PagePage({
+  params,
+}: {
+  params: Promise<{
+    slug: string;
+  }>;
+}) {
+  const { slug } = await params;
+  const coursesMember = getCourses(slug);
+
+  if (!coursesMember || !coursesMember.body) notFound();
 
   return (
     <section className={styles.section}>
       <div className={styles.header}>
-        <Img src={course?.coverImg || ""} alt="data science course image" width={900} height={600} />
+        <Img
+          src={coursesMember.coverImg || ""}
+          alt="course cover image"
+          width={900}
+          height={600}
+        />
       </div>
       <div className="container">
         <section className={styles.body}>
           <div className={styles.titleBar}>
             <div className={styles.mainTitle}>
-              <h1>{course?.title}</h1>
-              {course?.applicationClosingDate && (
+              <h1>{coursesMember.title}</h1>
+              {coursesMember.applicationClosingDate && (
                 <p className={styles.applicationClosingDate}>
-                  <strong>Applications Close on -</strong> <span>{course?.applicationClosingDate}</span>
+                  <strong>Applications Close on -</strong>{" "}
+                  <span>{coursesMember.applicationClosingDate}</span>
                 </p>
               )}
             </div>
 
             <div className={styles.cta}>
-              {course && "flyerLink" in course && (
-                <Link target="_blank" href={course?.flyerLink}>
+              {coursesMember.flyerLink && (
+                <Link target="_blank" href={coursesMember.flyerLink}>
                   <Button kind="SECONDARY">Download Program Flyer</Button>
                 </Link>
               )}
-              {course?.applicationLink && (
-                <Link target="_blank" href={course?.applicationLink}>
-                  <Button kind="PRIMARY" disabled={course.applicationLink === "#"}>
+              {coursesMember?.applicationLink && (
+                <Link target="_blank" href={coursesMember.applicationLink}>
+                  <Button
+                    kind="PRIMARY"
+                    disabled={coursesMember.applicationLink === "#"}
+                  >
                     Apply Now
                   </Button>
                 </Link>
@@ -73,102 +143,36 @@ export default async function CourseDetail(props: { params: Promise<{ slug: stri
             <div className={styles.item}>
               <AiOutlineCalendar />
               <p>Duration</p>
-              <span>{course?.meta.duration}</span>
+              <span>{coursesMember.duration}</span>
             </div>
             <div className={styles.item}>
               <AiOutlineUnorderedList />
               <p>Total Credits</p>
-              <span>{course?.meta.credits}</span>
+              <span>{coursesMember.credits}</span>
             </div>
             <div className={styles.item}>
               <BiBuilding />
               <p>School of</p>
-              <span>{course?.meta.department}</span>
+              <span>{coursesMember.department}</span>
             </div>
             <div className={styles.item}>
               <GoGlobe />
               <p>Language</p>
-              <span>{course?.meta.language}</span>
+              <span>{coursesMember.language}</span>
             </div>
           </div>
-          <div className={styles.description}>
-            <h4>Description</h4>
-            <p>{course?.desc}</p>
-          </div>
-          <div className={styles.prospects}>
-            <h4>Job Prospects</h4>
-            <p>{course?.prospects.desc}</p>
-            <ul>
-              {course?.prospects.points.map((point) => (
-                <li key={point}>
-                  <AiOutlineCheck />
-                  {point}
-                </li>
-              ))}
-            </ul>
-          </div>
-          {course && "downloadableResources" in course && (
-            <div>
-              <h4>Downloadable Resources</h4>
-              <div className={styles.downloadableFiles}>
-                {course &&
-                  "downloadableResources" in course &&
-                  course?.downloadableResources.map((resource: any) => (
-                    <div key={resource.title}>
-                      <Link target="_blank" href={resource.link}>
-                        <Button kind="SECONDARY_BLACK">
-                          <MdOutlineFileDownload />
-                          {resource.title}
-                        </Button>
-                      </Link>
-                    </div>
-                  ))}
-              </div>
-            </div>
+          {coursesMember.body && (
+            <MDXContent
+              code={coursesMember.body}
+              components={coursesPageComponents}
+              frontmatter={{
+                title: coursesMember.title,
+                cover: coursesMember.coverImg,
+              }}
+            />
           )}
-
-          <div>
-            <h4>Eligibility Criteria</h4>
-            <Eligilibity type="SINGLE" courseSlug={params.slug} />
-          </div>
-          <div className={styles.curriculum}>
-            <Accordion title="Curriculum">
-              {course && "info" in course?.curriculum && (
-                <div className={styles.info}>
-                  {course?.curriculum.info.map((item) => <p key={item}>{item}</p>)}
-                </div>
-              )}
-              {course?.curriculum.semesters.map((semester, index) => (
-                <AccordionItem key={semester.title} initialEntered={index === 0}>
-                  <div>
-                    <h5>{semester.title}</h5>
-                    <p>{`${semester.credits} credits`}</p>
-                  </div>
-                  <table className={styles.table}>
-                    <thead>
-                      <tr>
-                        <th>Course Name</th>
-                        <th title="To know what (L, T, E, P, A, O) is hover your mouse pointer over it">
-                          Category
-                        </th>
-                        <th title="Lectures">L</th>
-                        <th title="Tutorials">T</th>
-                        <th title="Extended Tutorials">E</th>
-                        <th title="Practicals">P</th>
-                        <th title="Outside Classroom">O</th>
-                        <th title="Total Credits">Total Credits</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {semester.courses.map((course) => (
-                        <CourseCiriculumDetail key={course.courseName} course={course} />
-                      ))}
-                    </tbody>
-                  </table>
-                </AccordionItem>
-              ))}
-            </Accordion>
-          </div>
+          <InquirySection />
+          <ApplyCard buttonLink={coursesMember.applicationLink} />
         </section>
       </div>
     </section>

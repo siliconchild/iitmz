@@ -1,0 +1,49 @@
+.section {
+    padding: 7rem 0 7rem;
+    background: #fff;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin: 5rem auto 0;
+}
+
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 5rem 0;
+    }
+
+    .description {
+        padding: 0 2rem;
+        margin-bottom: 3rem;
+
+        p {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        margin: 3rem auto 0;
+    }
+
+    .section {
+        padding: 5rem 0;
+    }
+
+    .description {
+        margin-bottom: 2rem;
+    }
+}

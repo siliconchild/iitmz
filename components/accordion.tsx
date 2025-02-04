@@ -8,18 +8,20 @@ import {
 import { ReactElement, ReactNode, useState } from "react";
 import { FiChevronDown } from "react-icons/fi";
 import { TbLayoutNavbarExpand, TbLayoutBottombarExpand } from "react-icons/tb";
+import { s } from "velite";
 
 type AccordionProps = {
-  children: ReactNode,
-  title: string
-}
+  children: ReactNode;
+  title: string;
+  id?: string;
+};
 
 type AccordionItemProps = {
   children: ReactElement<any>[];
   initialEntered?: boolean;
 };
 
-const Accordion = ({ children, title }: AccordionProps) => {
+const Accordion = ({ children, title, id }: AccordionProps) => {
   const providerValue = useAccordionProvider({
     allowMultiple: true,
     transition: true,
@@ -29,10 +31,11 @@ const Accordion = ({ children, title }: AccordionProps) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <>
+    <section id={id}>
       <div className={styles.titleheader}>
-        <h4>{title}</h4>
+        <h3>{title}</h3>
         <button
+          className={styles.accordionButton}
           onClick={() => {
             toggleAll(!isExpanded);
             setIsExpanded((prevState) => !prevState);
@@ -57,7 +60,7 @@ const Accordion = ({ children, title }: AccordionProps) => {
       >
         {children}
       </ControlledAccordion>
-    </>
+    </section>
   );
 };
 
@@ -74,7 +77,8 @@ const AccordionItem = ({ children, ...props }: AccordionItemProps) => {
       )}
       {...props}
       buttonProps={{
-        className: ({ isEnter }) => `${isEnter && styles.itemBtnExpanded}`,
+        className: ({ isEnter }) =>
+          `${isEnter && styles.itemBtnExpanded} ${styles.headerButton}`,
       }}
     >
       <div className={styles.body}>{body}</div>
