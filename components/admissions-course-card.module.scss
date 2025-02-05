@@ -92,11 +92,14 @@
                 left: 0;
                 right: 0;
                 bottom: 0;
-                background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), transparent);
+                background: linear-gradient(
+                    to bottom,
+                    rgba(255, 255, 255, 0.1),
+                    transparent
+                );
             }
 
             &:hover {
-                background: darken(#ffb013, 5%);
                 transform: translateY(-1px);
                 box-shadow: 0 4px 6px -1px rgba(255, 176, 19, 0.2);
             }
