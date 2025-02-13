@@ -6,26 +6,21 @@ export interface TabsContextType {
   handleTabClick: (index: number) => void;
 }
 
-export const TabsContext = createContext<TabsContextType | undefined>(
-  undefined
-);
+export const TabsContext = createContext<TabsContextType | undefined>(undefined);
 
 interface TabsProps {
   children: ReactNode;
+  defaultIndex?: number;
 }
 
-const Tabs = ({ children }: TabsProps) => {
-  const [activeTab, setActiveTab] = useState(0);
+const Tabs = ({ children, defaultIndex }: TabsProps) => {
+  const [activeTab, setActiveTab] = useState(defaultIndex || 0);
 
   const handleTabClick = (index: number) => {
     setActiveTab(index);
   };
 
-  return (
-    <TabsContext.Provider value={{ activeTab, handleTabClick }}>
-      {children}
-    </TabsContext.Provider>
-  );
+  return <TabsContext.Provider value={{ activeTab, handleTabClick }}>{children}</TabsContext.Provider>;
 };
 
 interface TabButtonProps {
@@ -35,15 +30,10 @@ interface TabButtonProps {
 }
 
 const TabButton = ({ index, className, children }: TabButtonProps) => {
-  const { activeTab, handleTabClick } = useContext(
-    TabsContext
-  ) as TabsContextType;
+  const { activeTab, handleTabClick } = useContext(TabsContext) as TabsContextType;
 
   return (
-    <button
-      onClick={() => handleTabClick(index)}
-      className={activeTab === index ? className : ""}
-    >
+    <button onClick={() => handleTabClick(index)} className={activeTab === index ? className : ""}>
       {children}
     </button>
   );
@@ -57,9 +47,7 @@ interface TabPanelProps {
 const TabPanel = ({ index, children }: TabPanelProps) => {
   const { activeTab } = useContext(TabsContext) as TabsContextType;
 
-  return activeTab === index ? (
-    <div className="tab-content">{children}</div>
-  ) : null;
+  return activeTab === index ? <div className="tab-content">{children}</div> : null;
 };
 
 export { Tabs, TabButton, TabPanel };
