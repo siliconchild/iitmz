@@ -194,6 +194,32 @@ const eventsList = [
       },
     ],
   },
+  {
+    img: "/image (1).png",
+    startDate: "February 18, 2025",
+    endDate: "February 21, 2025",
+    regLink: "https://docs.google.com/forms/d/e/1FAIpQLSfYZwqs8pWSVGfYHJFDDbdUt92z6oVr6sjrgVbIFY6wHcOECA/viewform",
+    name: "Workshop on Advances in Concrete Technology",
+    time: "9.30 AM IST | 5.30 PM EAT",
+    location: "IITM Zanzibar, Bweleo, Zanzibar",
+    desc: "The Workshop will cover Cement, Types and Basics of Hydration, Testing of cement and quality control issues, Aggregates, testing and quality control, Unconventional components of concrete (supplementary cementitious materials, chemical admixtures), Mix design principles, Chemical admixtures and how to use them effectively; Fresh concrete – properties and precautions, Mechanical properties, Good construction practices, Durability and long-term performance, and Sustainable practices.",
+    links: [
+      {
+        title: "View More Information",
+        link: "https://www.rilem.net/agenda/workshop-on-advances-in-concrete-technology-1696",
+      },
+    ],
+  },
+  {
+    img: "/IITMZ-Web-2.png",
+    startDate: "February 20, 2025",
+    regLink:
+      "https://us06web.zoom.us/webinar/register/WN_QfDmyTKERCKTu3KcUOIR_w",
+    name: "Discover Global Learning Opportunities at IITM Zanzibar",
+    time: "05:00 PM EAT | 07:30 PM IST",
+    location: "Virtual",
+    desc: "Join our exclusive webinar to explore how IITM Zanzibar offers a world-class academic experience in a vibrant, international environment. Learn how our programs blend cutting-edge education, industry exposure, and hands-on learning to prepare students for global careers. Engage with faculty and students to gain insights into campus life, research opportunities, and the future of AI and technology. The webinar is open to students worldwide - don’t miss this chance to be part of a truly global learning experience!",
+  },
 ];
 
 
