@@ -1,22 +1,45 @@
 import styles from "./admission-widget.module.scss";
 import Link from "next/link";
+import { FaGraduationCap, FaWhatsapp } from "react-icons/fa";
+import { MdOutlineQuestionAnswer, MdOutlineLibraryBooks } from "react-icons/md";
 
-export default function AdmissionWidget() {
+export default function ContactWidget() {
   return (
     <div className={styles.widget}>
-      <button>Admissions 2025</button>
-      <div className={styles.content}>
-        <Link href="/admission">Apply Now</Link>
-        <Link target="_blank" href="/IITMZST-Information-Brochure-2025.pdf">
-          Information Brochure
-        </Link>
-        <Link target="_blank" href="/IITMZST_BS_Sample_Questions.pdf">
-          BS Sample Questions
-        </Link>
-        <Link target="_blank" href="/IITMZST_MTech_Sample_Questions.pdf">
-          MTech Sample Questions
-        </Link>
-      </div>
+      <Link
+        target="_blank"
+        href="https://admissions.iitmz.ac.in/"
+        className={styles.widgetItem}
+      >
+        <FaGraduationCap className={styles.icon} />
+        <label>Apply Now</label>
+      </Link>
+
+      <Link
+        target="_blank"
+        href="/IITMZST-Information-Brochure-2025.pdf"
+        className={styles.widgetItem}
+      >
+        <MdOutlineLibraryBooks className={styles.icon} />
+        <label>Info Brochure</label>
+      </Link>
+
+      <Link
+        target="_blank"
+        href="https://ge.iitm.ac.in/forms/iitmz-enquiry-form"
+        className={styles.widgetItem}
+      >
+        <MdOutlineQuestionAnswer className={styles.icon} />
+        <label>Enquire Now</label>
+      </Link>
+
+      {/* <Link
+        href="https://wa.me/919600685899"
+        target="_blank"
+        className={styles.widgetItem}
+      >
+        <FaWhatsapp className={styles.icon} />
+      </Link> */}
     </div>
   );
 }
