@@ -2,8 +2,13 @@ import styles from "./news.module.scss";
 import Button from "./button";
 import Link from "next/link";
 import NewsCard from "./news-card";
+import { News as NewsType } from "@/data/news";
 
-export default function News() {
+type NewsProps = {
+  news: NewsType[];
+};
+
+export default function News({ news }: NewsProps) {
   return (
     <section className={styles.section}>
       <div className="container">
@@ -17,33 +22,15 @@ export default function News() {
               <Button>View All</Button>
             </Link>
           </div>
-          <NewsCard
-            link="https://admissions.iitmz.ac.in/"
-            image={{
-              url: "/news-admission1.jpg",
-              alt: "Logo of IIT Madras",
-            }}
-            title="Admissions for the AY 2025-26 is live"
-            desc="Applications for the BS & MTech full-time degree programs starts from Jan 10, 2025"
-          />
-          <NewsCard
-            link="https://www.iitmz.ac.in/admission"
-            image={{
-              url: "/news-admission2.png",
-              alt: "Image of Preeti Aghalayam",
-            }}
-            title="For more information on the admissions"
-            desc="Degree Programs, Eligibility Criteria, Tuition Fee, Selection Process, Admission Brochure, Screening Test Question Papers & Application Link"
-          />
-          <NewsCard
-            link="#"
-            image={{
-              url: "/bs-news.JPG",
-              alt: "Image of IITM Zanzibar campus building",
-            }}
-            title="IITM Zanzibar Screening Test Information Brochure"
-            desc="Information Brochure for Admission to Full-Time BS and MTech programs at Indian Institute of Technology Madras, Zanzibar Campus"
-          />
+          {news.map((newsItem) => (
+            <NewsCard
+              key={newsItem.uuid}
+              link={newsItem.linkURL || "#"}
+              image={newsItem.img}
+              title={newsItem.title}
+              desc={newsItem.content}
+            />
+          ))}
         </div>
       </div>
     </section>

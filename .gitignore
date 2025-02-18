@@ -30,6 +30,13 @@ yarn-error.log*
 # vercel
 .vercel
 
+#velite
+.velite
+
+#npm yarn
+package-lock.json
+yarn.lock
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

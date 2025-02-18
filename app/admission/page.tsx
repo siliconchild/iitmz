@@ -1,8 +1,10 @@
 import AdmissionHeader from "@/components/admission-header";
 import Steps from "@/components/steps";
-import AdmissionsDownloadable from "@/components/admissions-downloadable";
-import Fees from "@/components/fees";
-import Eligilibity from "@/components/eligibility";
+import AcademicPrograms from "@/components/admission-courses";
+import AdmissionTimeline from "@/components/admission-timeline";
+import InquirySection from "@/components/admissions-enquiry";
+import ApplyCard from "@/components/apply-cta";
+import styles from "./page.module.scss";
 
 export const metadata = {
   title: "Why Study With Us? | How To Apply?",
@@ -15,14 +17,15 @@ export const metadata = {
 
 export default function AdmissionPage() {
   return (
-    <>
+    <div className={styles.page}>
       <AdmissionHeader />
+      <AdmissionTimeline />
+      <AcademicPrograms />
       <Steps />
-      <AdmissionsDownloadable />
-      <Fees />
+      <InquirySection />
       <div className="container">
-        <Eligilibity type="FULL" />
+        <ApplyCard />
       </div>
-    </>
+    </div>
   );
 }

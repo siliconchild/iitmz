@@ -6,6 +6,8 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import AdmissionWidget from "@/components/admission-widget";
 import Analytics from "@/components/analytics";
+import { getAllAnnouncements } from "@/data/announcements";
+import { unstable_cache as cache } from "next/cache";
 
 const lato = Lato({
   weight: ["100", "400", "700"],
@@ -31,19 +33,17 @@ export const metadata = {
   applicationName: "IITM Zanzibar",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+const getAllAnnouncementsCached = cache(getAllAnnouncements, ["z-announcements"], {
+  tags: ["ticker"],
+});
+
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const announcements = await getAllAnnouncementsCached();
   return (
     <html lang="en">
-      <meta
-        name="google-site-verification"
-        content="5JWgn4gCT2PCaGMgbVSrlk_1EWzg5HkMu7Li-NsQO_Q"
-      />
+      <meta name="google-site-verification" content="5JWgn4gCT2PCaGMgbVSrlk_1EWzg5HkMu7Li-NsQO_Q" />
       <body className={`${lato.className}${raleway.className}`}>
-        <Header />
+        <Header announcements={announcements} />
         {children}
         <Footer />
         <AdmissionWidget />

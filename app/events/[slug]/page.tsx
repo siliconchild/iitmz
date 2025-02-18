@@ -8,7 +8,8 @@ import EventSchedule from "@/components/event-schedule";
 import { CiClock1 } from "react-icons/ci";
 import { SlLocationPin } from "react-icons/sl";
 
-export async function generateMetadata({ params }: any) {
+export async function generateMetadata(props: any) {
+  const params = await props.params;
   const eventSlug = params.slug || null;
   const event = eventsList.find((event) => event.slug === eventSlug);
   if (event) {
@@ -24,17 +25,14 @@ export async function generateMetadata({ params }: any) {
   }
 }
 
-const dynamicParams = false;
-export { dynamicParams };
-
 export async function generateStaticParams() {
   return eventsList.map((event) => ({
     slug: event.slug,
   }));
 }
 
-
-export default function EventDetail({ params }: any) {
+export default async function EventDetail(props: any) {
+  const params = await props.params;
   const eventSlug = params.slug || null;
   const event = eventsList.find((event) => event.slug === eventSlug);
   if (!event) return null;
@@ -44,12 +42,7 @@ export default function EventDetail({ params }: any) {
         <div className={styles.body}>
           <div className={styles.grid}>
             <div className={styles.poster}>
-              <Img
-                src={event.img}
-                alt="Event Poster"
-                width={800}
-                height={800}
-              />
+              <Img src={event.img} alt="Event Poster" width={800} height={800} />
             </div>
             <div className={styles.eventBody}>
               <div className={styles.header}>
@@ -68,8 +61,7 @@ export default function EventDetail({ params }: any) {
                 </div>
                 {event && (event.endDate || event.startDate) ? (
                   <div className={styles.cta}>
-                    {new Date(event?.endDate || event?.startDate) >
-                      new Date() && (
+                    {new Date(event?.endDate || event?.startDate) > new Date() && (
                       <Link target="_blank" href={event.regLink}>
                         <Button kind="PRIMARY">Register Now</Button>
                       </Link>
@@ -101,25 +93,14 @@ export default function EventDetail({ params }: any) {
               </div>
             </div>
           </div>
-          <div>
-            {event && event.schedule && (
-              <EventSchedule schedule={event.schedule} />
-            )}
-          </div>
+          <div>{event && event.schedule && <EventSchedule schedule={event.schedule} />}</div>
           <div className={styles.speakers}>
             <h4>Speakers</h4>
             <div>
               {event.speakers &&
                 event.speakers.map((speaker: any, index: number) => (
                   <div key={index} className={styles.speaker}>
-                    {speaker.img && (
-                      <Img
-                        src={speaker.img}
-                        alt={speaker.name}
-                        width={200}
-                        height={200}
-                      />
-                    )}
+                    {speaker.img && <Img src={speaker.img} alt={speaker.name} width={200} height={200} />}
                     <h3>{speaker.name}</h3>
                     <p>{speaker.position}</p>
                   </div>

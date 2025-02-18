@@ -33,38 +33,28 @@
     align-items: center;
     z-index: 3;
     transform: translateY(-3rem);
-    h4 {
-        font-size: 2.25rem;
-        font-weight: 700;
-        //text-transform: uppercase;
-        text-shadow: 1px 1px 1px #000;
-        color: #fff;
-        margin-bottom: 4rem;
-    }
+
+    h2,
     h3,
-    h1,
-    span {
-        color: #ffffff;
-        font-weight: 900;
-        text-transform: titlecase;
+    h4 {
+        margin-bottom: 1rem;
+        color: #fff;
         text-shadow: 1px 1px 1px #000;
-        span {
-            margin-left: 0rem;
-            font-size: 2.8rem;
-        }
+        font-weight: 700;
+    }
+    h2 {
+        font-size: 3.5rem;
+        margin-bottom: 1.5rem;
     }
     h3 {
-        font-size: 2.6rem;
-        margin-bottom: 0.5rem;
+        font-size: 2.75rem;
     }
-    h5 {
+    h4 {
+        font-size: 1.875rem;
         color: #d9d9d9;
-        font-size: 1.7rem;
-        margin: -2rem 0 3rem;
     }
-    h1 {
-        font-size: 4.4rem;
-        margin-bottom: 5rem;
+    button {
+        margin-top: 3rem;
     }
 }
 

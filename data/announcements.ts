@@ -1,22 +1,36 @@
-interface Announcement {
-  title: string;
+import sql, { raw } from "sql-template-tag";
+import { fetchDataFromAthena } from "@/lib/athenaClient";
+import { generateUUID } from "@/utils/uuidGenerator";
+
+export interface Announcement {
+  activeTill: string;
+  content: string;
+  linkText: string;
+  linkUrl: string;
+  uuid: string;
 }
 
-type AnnouncementsArray = Announcement[];
+export type AnnouncementsArray = Announcement[];
 
-const announcements: AnnouncementsArray = [
-  // {
-  //   title: "BS Application closing {{DAYS_LEFT,2024-04-30}}",
-  // },
-  {
-    title: "Application Duration for the BS & MTech programs: Jan 10 - May 31, 2025 -  <a href='https://admissions.iitmz.ac.in/' target='_blank'><strong>&nbsp;Click here</strong></a> to know more"
-  },
-  {
-    title: "Admissions for the AY 2025-26: BS & MTech full-time degree programs starts from Jan 10, 2025 -  <a href='https://admissions.iitmz.ac.in/' target='_blank'><strong>&nbsp;Apply Now</strong></a>"
-  },
-  {
-    title: "More details on the programs offered and complete admission process -  <a href='https://www.iitmz.ac.in/admission' target='_blank'><strong>&nbsp;Click here</strong></a>"
+const generateQuery = () => {
+  return sql`
+    SELECT
+      "active till" as activeTill,
+      "content" as content,
+      "link text" as linkText,
+      "link url" as linkUrl,
+      ${raw(generateUUID)} as uuid
+    FROM "ticker"
+    WHERE "active till" IS NOT NULL
+  `;
+};
+
+export const getAllAnnouncements = async () => {
+  try {
+    const query = generateQuery();
+    return await fetchDataFromAthena<Announcement>(query.text);
+  } catch (err) {
+    console.error("FAILED TO FETCH ALL Announcements DATA", err);
+    throw err;
   }
-];
-
-export default announcements;
+};

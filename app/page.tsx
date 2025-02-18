@@ -9,6 +9,9 @@ import AdvisoryCouncil from "@/components/advisory-council";
 import GovernanceBoard from "@/components/governing-council";
 import Leadership from "@/components/leadership";
 import SocialMedia from "@/components/social-media";
+import { getAllBanners, defaultBanner } from "@/data/banner";
+import { getAllNews } from "@/data/news";
+import { unstable_cache as cache } from "next/cache";
 
 export const metadata = {
   alternates: {
@@ -16,11 +19,20 @@ export const metadata = {
   },
 };
 
-export default function Home() {
+const getAllBannersCached = cache(getAllBanners, ["z-banners"], {
+  tags: ["banner"],
+});
+const getAllNewsCached = cache(getAllNews, ["z-news"], {
+  tags: ["news"],
+});
+
+export default async function Home() {
+  const banners = await getAllBannersCached();
+  const news = await getAllNewsCached();
   return (
     <main>
-      <Hero />
-      <News />
+      <Hero banners={banners || defaultBanner} />
+      {news && <News news={news} />}
       <Courses />
       <Counter />
       <Leadership />

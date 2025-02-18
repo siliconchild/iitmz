@@ -5359,7 +5359,7 @@ export default function CareersPage() {
                   as per institute norms.
                 </p>
               </div>
-              <div className={styles.job}>
+              {/* <div className={styles.job}>
                 <h3>
                   Assistant Professor - Physics
                   <span>
@@ -5382,7 +5382,7 @@ export default function CareersPage() {
                   should click on the &ldquo;Apply Now&rdquo; button located above and submit your
                   application by July 20, 2024.
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
