@@ -20,6 +20,19 @@ export default function Leadership() {
             <p>Dean of School of Engineering & Science</p>
           </div>
         </Link>
+        <Link href="#">
+          <div className={styles.card}>
+            <Img
+              src="/Prof-Suresh-Akkihebbal.jpg"
+              height={200}
+              width={200}
+              alt="Image of Professor Suresh Akkihebbal"
+            />
+            <h3>Prof K. Suresh Akkihebbal</h3>
+            <h4>Vice President and Professor-in-Charge </h4>
+            <p>Academic Administration</p>
+          </div>
+        </Link>
         <Link href="/schools/engineering-and-science/faculty/prof-ligy-philip">
           <div className={styles.card}>
             <Img
