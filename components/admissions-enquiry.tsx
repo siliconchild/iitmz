@@ -17,10 +17,10 @@ export default function InquirySection() {
             </p>
 
             <div className={styles.contacts}>
-              <a href="https://wa.me/919600685899" className={styles.contact}>
+              {/* <a href="https://wa.me/919600685899" className={styles.contact}>
                 <IoLogoWhatsapp />
                 <span>+91 9600 685 899</span>
-              </a>
+              </a> */}
               <a
                 href="mailto:admissions@iitmz.ac.in"
                 className={styles.contact}
