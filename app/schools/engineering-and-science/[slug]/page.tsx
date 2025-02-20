@@ -16,8 +16,17 @@ import Button from "@/components/button";
 import { BsFillCheckCircleFill } from "react-icons/bs";
 import { AiOutlinePause } from "react-icons/ai";
 import { AiOutlineUnorderedList, AiOutlineCalendar } from "react-icons/ai";
-import { FaCheck, FaDownload, FaFilePdf, FaCoins } from "react-icons/fa6";
-import { FaFileAlt } from "react-icons/fa";
+import { LiaChalkboardTeacherSolid } from "react-icons/lia";
+import { MdOutlineDateRange } from "react-icons/md";
+import {
+  FaCheck,
+  FaDownload,
+  FaFilePdf,
+  FaCoins,
+  FaClock,
+  FaGlobe,
+} from "react-icons/fa6";
+import { FaDesktop, FaFileAlt, FaChalkboardTeacher } from "react-icons/fa";
 import { BsArrowRightCircleFill } from "react-icons/bs";
 import InquirySection from "@/components/admissions-enquiry";
 import ApplyCard from "@/components/apply-cta";
@@ -43,7 +52,7 @@ export async function generateMetadata({
     slug: string;
   }>;
 }) {
-    const { slug } = await params;
+  const { slug } = await params;
   const coursesMember = courses.find(
     (coursesMember) => coursesMember.slug === slug
   );
@@ -84,6 +93,12 @@ const coursesPageComponents = {
   BsArrowRightCircleFill,
   FaCoins,
   RxCaretRight,
+  FaClock,
+  FaDesktop,
+  FaGlobe,
+  LiaChalkboardTeacherSolid,
+  MdOutlineDateRange,
+  FaChalkboardTeacher,
 } as const;
 
 export default async function PagePage({

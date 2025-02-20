@@ -26,7 +26,7 @@ export default defineConfig({
                 course: s.string(),
                 institution: s.string().optional(),
                 year: s.number(),
-              }),
+              })
             )
             .optional(),
           awards: s
@@ -34,7 +34,7 @@ export default defineConfig({
               s.object({
                 title: s.string(),
                 subtitle: s.string(),
-              }),
+              })
             )
             .optional(),
           body: s.mdx(),
@@ -50,8 +50,9 @@ export default defineConfig({
       schema: s
         .object({
           slug: s.string(),
+          type: s.enum(["online", "oncampus"]),
           title: s.string(),
-          cardDesc: s.string(), 
+          cardDesc: s.string(),
           cardImg: s.string(),
           coverImg: s.string(),
           duration: s.string(),
@@ -60,18 +61,18 @@ export default defineConfig({
           language: s.string(),
           flyerLink: s.string().optional(),
           applicationLink: s.string().optional(), // Application link
-          applicationClosingDate: s.string().optional(), 
-      seo: s
-          .object({
-            desc: s.string(),
-          })
-          .optional(), // SEO details
-      body: s.mdx(), // Body content
-    })
-    .transform((data) => ({
-      ...data,
-      permalink: `${data.slug}`,
-    })),
-},
+          applicationClosingDate: s.string().optional(),
+          seo: s
+            .object({
+              desc: s.string(),
+            })
+            .optional(), // SEO details
+          body: s.mdx(), // Body content
+        })
+        .transform((data) => ({
+          ...data,
+          permalink: `${data.slug}`,
+        })),
+    },
   },
 });
