@@ -1,3 +1,4 @@
+import { type } from "os";
 import { defineConfig, s } from "velite";
 
 export default defineConfig({
@@ -18,7 +19,10 @@ export default defineConfig({
           subtitle: s.string().optional(),
           email: s.string().optional(),
           alternateEmail: s.string().optional(),
+          year: s.number().optional(),
+          type: s.enum(['Permanent Faculty', 'Visiting Faculty']),
           website: s.string().optional(),
+          link: s.string().optional(),
           qualification: s
             .array(
               s.object({

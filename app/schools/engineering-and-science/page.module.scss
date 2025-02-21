@@ -65,13 +65,23 @@
   h2 {
     font-size: 2.7rem;
   }
-  & > div {
+  .year {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #141517;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  .cardContainer {
     margin-top: 6rem;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
     row-gap: 5rem;
+    margin-bottom: 10rem;
   }
   .card {
     width: 30%;
