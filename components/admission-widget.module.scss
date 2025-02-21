@@ -1,66 +1,62 @@
 .widget {
   position: fixed;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
   z-index: 10;
-  top: 40%;
+  top: 50%;
   right: 0;
-  transition: 0.3s;
+  transform: translateY(-50%);
+}
+
+.widgetItem {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background: #c32938;
   text-decoration: none;
-  border-radius: 0 5px 5px 0;
-  transform: translateX(34.5rem);
-  &:hover {
-    transform: translateX(20.5rem);
-  }
-  & > button {
-    padding: 1rem 1.5rem;
-    width: 100%;
-    background: #c32938;
-    border: none;
-    font-weight: 700;
-    font-size: 1.5rem;
-    line-height: 1.7;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+  color: #fff;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  transform: translateX(70%);
+
+  label {
+    font-size: 1.4rem;
+    font-weight: 500;
+    white-space: nowrap;
     color: #fff;
-    text-decoration: none;
-    transform: rotate(-90deg) translateY(-10rem);
+    padding-left: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
   }
-  .content {
-    transform: translateX(-20.1rem);
-    background: #fff;
-    padding: 0rem;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    a {
-      display: block;
-      letter-spacing: 0.5px;
-      word-spacing: 3px;
-      padding: 1.25rem;
-      text-align: center;
-      text-transform: uppercase;
-      font-size: 1.4rem;
-      &:hover {
-        background: #f4b442;
-      }
-    }
+
+  &:hover {
+    background: #c32938;
+    transform: translateX(0);
   }
 }
 
-.disabled {
-  color: #e7e7e7;
-  cursor: not-allowed;
+.icon {
+  font-size: 2rem;
 }
-
 
 @media (max-width: 480px) {
   .widget {
-    transform: translateX(34.3rem);
-    &:hover {
-      // transform: translateX(1rem);
+    gap: 0.3rem;
+  }
+
+  .widgetItem {
+    padding: 0.8rem;
+
+    label {
+      font-size: 1.2rem;
+      left: 3.5rem;
     }
-    & > button {
-      padding: 1rem 2rem;
-      //transform: rotate(270deg) translateY(11rem);
-    }
+  }
+
+  .icon {
+    font-size: 2rem;
   }
 }

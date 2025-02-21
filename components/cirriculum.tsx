@@ -23,7 +23,7 @@ export const Curriculum = ({
 
 type SemesterProps = {
   title: string;
-  credits: string;
+  credits?: string; // Credits are optional now
   initialEntered?: boolean;
 };
 
@@ -37,21 +37,27 @@ export const Semester = ({
     <AccordionItem initialEntered={initialEntered}>
       <div className={styles.head}>
         <h5>{title}</h5>
-        <p>{`${credits} credits`}</p>
+        {credits && <p>{`${credits} credits`}</p>}{" "}
+        {/* Conditionally render credits */}
       </div>
       <table className={styles.table}>
         <thead>
           <tr>
             <th>Course Name</th>
-            <th title="To know what (L, T, E, P, A, O) is hover your mouse pointer over it">
-              Category
-            </th>
-            <th title="Lectures">L</th>
-            <th title="Tutorials">T</th>
-            <th title="Extended Tutorials">E</th>
-            <th title="Practicals">P</th>
-            <th title="Outside Classroom">O</th>
-            <th title="Total Credits">Total Credits</th>
+
+            {credits && (
+              <>
+                <th title="To know what (L, T, E, P, A, O) is hover your mouse pointer over it">
+                  Category
+                </th>
+                <th title="Lectures">L</th>
+                <th title="Tutorials">T</th>
+                <th title="Extended Tutorials">E</th>
+                <th title="Practicals">P</th>
+                <th title="Outside Classroom">O</th>
+                <th title="Total Credits">Total Credits</th>
+              </>
+            )}
           </tr>
         </thead>
         <tbody>{children}</tbody>
@@ -63,8 +69,9 @@ export const Semester = ({
 type CourseProps = {
   courseNo?: string;
   courseName: string;
-  category: string;
-  credits: {
+  category?: string; //Category is optional
+  credits?: {
+    //Credits are optional
     L?: string;
     T?: string;
     E?: string;
@@ -106,13 +113,18 @@ export const Course = ({
             </button>
           )}
         </td>
-        <td data-cell="Category">{category}</td>
-        <td data-cell="Lectures">{credits?.L}</td>
-        <td data-cell="Tutorials">{credits?.T}</td>
-        <td data-cell="Extended Tutorials">{credits?.E}</td>
-        <td data-cell="Practicals">{credits?.P}</td>
-        <td data-cell="Outside Classroom">{credits?.O}</td>
-        <td data-cell="Total">{credits.total}</td>
+        {credits && (
+          <>
+            <td data-cell="Category">{category}</td>
+            <td data-cell="Lectures">{credits?.L}</td>
+            <td data-cell="Tutorials">{credits?.T}</td>
+            <td data-cell="Extended Tutorials">{credits?.E}</td>
+            <td data-cell="Practicals">{credits?.P}</td>
+            <td data-cell="Outside Classroom">{credits?.O}</td>
+            <td data-cell="Total">{credits?.total}</td>
+          </>
+        )}
+
         {children && (
           <td colSpan={8} className={styles.mobileButtonRow}>
             <button
