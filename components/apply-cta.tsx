@@ -16,7 +16,7 @@ export default function ApplyCard({
   buttonText,
 }: ApplyCardProps) {
   return (
-    <div className={styles.applyCard}>
+    <section className={styles.applyCard}>
       <div className={styles.content}>
         <h2>{title}</h2>
         {description && <p>{description}</p>}
@@ -28,6 +28,6 @@ export default function ApplyCard({
           </div>
         )}
       </div>
-    </div>
+    </section>
   );
 }
