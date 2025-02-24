@@ -3,45 +3,56 @@ import { IoMailOutline, IoLogoWhatsapp } from "react-icons/io5";
 import Button from "@/components/button";
 import Link from "next/link";
 
-export default function InquirySection() {
+interface InquirySectionProps {
+  title: string;
+  description: string;
+  emails?: string[];
+  whatsapp?: string;
+  inquiryMessage?: string;
+  inquiryLink?: string;
+}
+
+export default function InquirySection({ 
+  title, 
+  description, 
+  emails = [], 
+  whatsapp, 
+  inquiryMessage, 
+  inquiryLink 
+}: InquirySectionProps) {
   return (
     <section className={styles.section}>
       <div className="container">
         <div className={styles.card}>
           <div className={styles.content}>
-            <h2>Have Questions?</h2>
-            <p>
-              Are you interested in applying to IIT Madras Zanzibar and still
-              have questions about the program, admission process and screening
-              test? Our admission counsellors are here to help.
-            </p>
+            <h2>{title}</h2>
+            <p>{description}</p>
 
             <div className={styles.contacts}>
-              {/* <a href="https://wa.me/919600685899" className={styles.contact}>
-                <IoLogoWhatsapp />
-                <span>+91 9600 685 899</span>
-              </a> */}
-              <a
-                href="mailto:admissions@iitmz.ac.in"
-                className={styles.contact}
-              >
-                <IoMailOutline />
-                <span>admissions@iitmz.ac.in</span>
-              </a>
+              {whatsapp && (
+                <a href={`https://wa.me/${whatsapp}`} className={styles.contact}>
+                  <IoLogoWhatsapp />
+                  <span>{whatsapp}</span>
+                </a>
+              )}
+              {emails.map((email, index) => (
+                <a key={index} href={`mailto:${email}`} className={styles.contact}>
+                  <IoMailOutline />
+                  <span>{email}</span>
+                </a>
+              ))}
             </div>
 
-            <div className={styles.cta}>
-              <p>
-                Fill out the IITM Zanzibar Inquiry Form and our admission
-                counsellor will be in touch with you.
-              </p>
-              <Link
-                target="_blank"
-                href="https://ge.iitm.ac.in/forms/iitmz-enquiry-form"
-              >
-                <Button kind="PRIMARY">Enquire Now</Button>
-              </Link>
-            </div>
+            {inquiryMessage && (
+              <div className={styles.cta}>
+                <p>{inquiryMessage}</p>
+                {inquiryLink && (
+                  <Link target="_blank" href={inquiryLink}>
+                    <Button kind="PRIMARY">Enquire Now</Button>
+                  </Link>
+                )}
+              </div>
+            )}
           </div>
         </div>
       </div>

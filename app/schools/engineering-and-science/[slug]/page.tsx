@@ -99,6 +99,8 @@ const coursesPageComponents = {
   LiaChalkboardTeacherSolid,
   MdOutlineDateRange,
   FaChalkboardTeacher,
+  InquirySection,
+  ApplyCard,
 } as const;
 
 export default async function PagePage({
@@ -191,8 +193,8 @@ export default async function PagePage({
               }}
             />
           )}
-          <InquirySection />
-          <ApplyCard buttonLink={coursesMember.applicationLink} />
+          {/* <InquirySection /> */}
+          {/* <ApplyCard buttonLink={coursesMember.applicationLink} /> */}
         </section>
       </div>
     </section>
