@@ -33,7 +33,7 @@ const navMenu = [
     ],
   },
   {
-    title: "Online Courses",
+    title: "Online Programs",
     link: "",
     submenus: [
       {
