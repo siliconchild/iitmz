@@ -127,6 +127,11 @@ export default async function PagePage({
         <section className={styles.body}>
           <div className={styles.titleBar}>
             <div className={styles.mainTitle}>
+              {coursesMember.type === "online" && (
+                <span className={styles.onlineBadge}>
+                  Web Enabled Online Course
+                </span>
+              )}
               <h1>{coursesMember.title}</h1>
               {coursesMember.applicationClosingDate && (
                 <p className={styles.applicationClosingDate}>
@@ -162,8 +167,8 @@ export default async function PagePage({
             </div>
             <div className={styles.item}>
               <AiOutlineUnorderedList />
-              <p>Total Credits</p>
-              <span>{coursesMember.credits}</span>
+              <p>{coursesMember.credits ? "Total Credits" : "Medium"}</p>
+              <span>{coursesMember.credits || coursesMember.type}</span>
             </div>
             <div className={styles.item}>
               <BiBuilding />
