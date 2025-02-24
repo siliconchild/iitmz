@@ -32,16 +32,16 @@ const navMenu = [
       },
     ],
   },
-  // {
-  //   title: "Online Courses",
-  //   link: "",
-  //   submenus: [
-  //     {
-  //       title: "Web Enabled Industrial AI",
-  //       link: "/schools/engineering-and-science/mtech-industrial-ai",
-  //     },
-  //   ],
-  // },
+  {
+    title: "Online Courses",
+    link: "",
+    submenus: [
+      {
+        title: "Web Enabled Industrial AI",
+        link: "/schools/engineering-and-science/mtech-industrial-ai",
+      },
+    ],
+  },
   { title: "Research", link: "/research/" },
   { title: "Careers", link: "/careers/" },
   { title: "In Media", link: "/media/" },
