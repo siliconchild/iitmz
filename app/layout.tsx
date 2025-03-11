@@ -5,9 +5,9 @@ import { Lato, Raleway } from "next/font/google";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import AdmissionWidget from "@/components/admission-widget";
-import Analytics from "@/components/analytics";
 import { getAllAnnouncements } from "@/data/announcements";
 import { unstable_cache as cache } from "next/cache";
+import { GoogleTagManager } from '@next/third-parties/google';
 
 const lato = Lato({
   weight: ["100", "400", "700"],
@@ -42,15 +42,13 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   return (
     <html lang="en">
       <meta name="google-site-verification" content="5JWgn4gCT2PCaGMgbVSrlk_1EWzg5HkMu7Li-NsQO_Q" />
+			<GoogleTagManager gtmId="GTM-N9TVCHGQ" />
       <body className={`${lato.className}${raleway.className}`}>
         <Header announcements={announcements} />
         {children}
         <Footer />
         <AdmissionWidget />
-        <Suspense>
-          <Analytics />
-        </Suspense>
-      </body>
+     </body>
     </html>
   );
 }
