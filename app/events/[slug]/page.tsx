@@ -26,9 +26,11 @@ export async function generateMetadata(props: any) {
 }
 
 export async function generateStaticParams() {
-  return eventsList.map((event) => ({
-    slug: event.slug,
-  }));
+  return eventsList
+    .filter(event => event.slug !== undefined)
+    .map((event) => ({
+      slug: String(event.slug), 
+    }));
 }
 
 export default async function EventDetail(props: any) {
