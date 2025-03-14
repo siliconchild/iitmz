@@ -7,7 +7,7 @@ import Footer from "@/components/footer";
 import AdmissionWidget from "@/components/admission-widget";
 import { getAllAnnouncements } from "@/data/announcements";
 import { unstable_cache as cache } from "next/cache";
-import { GoogleTagManager } from '@next/third-parties/google';
+import { GoogleTagManager } from "@next/third-parties/google";
 import Script from "next/script";
 
 const lato = Lato({
@@ -29,8 +29,7 @@ export const metadata = {
     default: "IIT Madras Zanzibar Campus | Empower Your Future with IIT",
     template: `%s | IIT Madras Zanzibar`,
   },
-  description:
-    "Discover the Latest from IIT Madras Zanzibar Campus. Exciting Programs and Global Opportunities Await. Learn More!",
+  description: "Discover the Latest from IIT Madras Zanzibar Campus. Exciting Programs and Global Opportunities Await. Learn More!",
   applicationName: "IITM Zanzibar",
 };
 
@@ -42,22 +41,16 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   const announcements = await getAllAnnouncementsCached();
   return (
     <html lang="en">
-      <meta
-        name="google-site-verification"
-        content="5JWgn4gCT2PCaGMgbVSrlk_1EWzg5HkMu7Li-NsQO_Q"
-      />
+      <meta name="google-site-verification" content="5JWgn4gCT2PCaGMgbVSrlk_1EWzg5HkMu7Li-NsQO_Q" />
       <GoogleTagManager gtmId="GTM-N9TVCHGQ" />
       <body className={`${lato.className}${raleway.className}`}>
         <Header announcements={announcements} />
         {children}
         <Footer />
         <AdmissionWidget />
+        <div className="npf_chatbots" data-w="6ccf7b4ad1fa4cc6b210b201e6fa77b8" style={{ display: "none" }}></div>
+        <Script src="/api/chatbot-script" strategy="afterInteractive" />
       </body>
-      <Script
-        src="https://chatbot.in6.nopaperforms.com/en-gb/backend/bots/niaachtbtscpt.js/2f9d3ceec9194c4295941d1e10f9b044/6ccf7b4ad1fa4cc6b210b201e6fa77b8"
-        strategy="afterInteractive"
-        crossOrigin="anonymous"
-      />
     </html>
   );
 }
