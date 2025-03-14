@@ -8,6 +8,7 @@ import AdmissionWidget from "@/components/admission-widget";
 import { getAllAnnouncements } from "@/data/announcements";
 import { unstable_cache as cache } from "next/cache";
 import { GoogleTagManager } from '@next/third-parties/google';
+import Script from "next/script";
 
 const lato = Lato({
   weight: ["100", "400", "700"],
@@ -41,14 +42,22 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   const announcements = await getAllAnnouncementsCached();
   return (
     <html lang="en">
-      <meta name="google-site-verification" content="5JWgn4gCT2PCaGMgbVSrlk_1EWzg5HkMu7Li-NsQO_Q" />
-			<GoogleTagManager gtmId="GTM-N9TVCHGQ" />
+      <meta
+        name="google-site-verification"
+        content="5JWgn4gCT2PCaGMgbVSrlk_1EWzg5HkMu7Li-NsQO_Q"
+      />
+      <GoogleTagManager gtmId="GTM-N9TVCHGQ" />
       <body className={`${lato.className}${raleway.className}`}>
         <Header announcements={announcements} />
         {children}
         <Footer />
         <AdmissionWidget />
-     </body>
+      </body>
+      <Script
+        src="https://chatbot.in6.nopaperforms.com/en-gb/backend/bots/niaachtbtscpt.js/2f9d3ceec9194c4295941d1e10f9b044/6ccf7b4ad1fa4cc6b210b201e6fa77b8"
+        strategy="afterInteractive"
+        crossOrigin="anonymous"
+      />
     </html>
   );
 }
