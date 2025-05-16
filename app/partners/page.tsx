@@ -15,39 +15,6 @@ export default function PartnersPage() {
   return (
     <div className={styles.page}>
       <div className="container">
-        <div className={styles.gallery}>
-          <Slider
-            slidesToShow={1}
-            slidesToShowOnMobile={1}
-            slideGap="40px"
-            enableAutoplay={true}
-          >
-            <Img
-              src="/birmingham-2x.jpeg"
-              alt="Image of signing of MOU with University of Birmingham"
-              width={1200}
-              height={500}
-            />
-            <Img
-              src="/ase-2x.jpeg"
-              alt="Image of signing of MOU with African School of Economics"
-              width={1200}
-              height={500}
-            />
-            <Img
-              src="/deakin-2x.jpeg"
-              alt="Image of signing of MOU with Deakin University"
-              width={1200}
-              height={500}
-            />
-            <Img
-              src="/nutm-2x.jpeg"
-              alt="Image of signing of MOU with Nigerian University of Technology and Management"
-              width={1200}
-              height={500}
-            />
-          </Slider>
-        </div>
         <div className={styles.header}>
           <h1>Our Partners</h1>
           {/* <p>
@@ -500,12 +467,13 @@ export default function PartnersPage() {
                 </g>
               </svg> */}
             <p>
-              In a historic development, IIT Madras Zanzibar Campus signs MoUs
+              {/* In a historic development, IIT Madras Zanzibar Campus signs MoUs
               with four international institutions that would facilitate
               enhanced collaboration among the institutions on student exchange,
               study abroad programs, staff exchange, teaching & research among
               others, at the NEP2020 Anniversary event held today at Pragati
-              Maidan, New Delhi.
+              Maidan, New Delhi. */}
+              IITM Zanzibar is proud to be associated with several academic, corporate and government institutions in its mission to develop the next generation of global leaders.
             </p>
           </div>
         </div>
@@ -551,52 +519,411 @@ export default function PartnersPage() {
             </Slider>
           </div> */}
 
-        <div className={styles.partners}>
-          <Link target="_blank" href="https://www.birmingham.ac.uk/index.aspx">
-            <div className={styles.card}>
+<div className={styles.header}>
+        <h1>Academic Partners</h1>
+          </div>
+          <div className={styles.partners}>
+
+          <div className={styles.card}>
               <Img
-                src="/uob.png"
-                alt="Website of Birmingham University"
+                src="/logos/18.png"
+                alt="The University of Brimhimgam"
                 width={300}
                 height={180}
               />
-              <p>University of Birmingham, UK</p>
+              <p>The University of Brimhimgam</p>
             </div>
-          </Link>
-          <Link target="_blank" href="https://www.africanschoolofeconomics.com">
+ 
             <div className={styles.card}>
               <Img
-                src="/ase.png"
-                alt="Website of African School of Economics"
+                src="/logos/21.png"
+                alt="African School Of Economics"
                 width={300}
                 height={180}
               />
-              <p>African School of Economics</p>
+              <p>African School Of Economics</p>
             </div>
-          </Link>
-          <Link target="_blank" href="https://www.deakin.edu.au">
+          
             <div className={styles.card}>
               <Img
-                src="/deakin_alt.png"
-                alt="Website of Deakin University, Australia"
+                src="/logos/20.png"
+                alt="Deakin University, Australia"
                 width={300}
                 height={180}
               />
               <p>Deakin University, Australia</p>
             </div>
-          </Link>
-          <Link target="_blank" href="https://nutm.edu.ng">
+
             <div className={styles.card}>
               <Img
-                src="/nutm.png"
+                src="/logos/19.png"
+                alt="Nigerian University Of Technology And Management"
+                width={300}
+                height={180}
+              />
+              <p>Nigerian University Of Technology And Management</p>
+            </div>
+         
+ 
+            <div className={styles.card}>
+              <Img
+                src="/logos/7.png"
+                alt="Indian School of Lusaka (ISOL)"
+                width={300}
+                height={180}
+              />
+              <p>Indian School of Lusaka (ISOL)</p>
+            </div>
+
+         
+            <div className={styles.card}>
+              <Img
+                src="/logos/8.png"
+                alt="Mbeya University of Science and Technology (MUST)"
+                width={300}
+                height={180}
+              />
+              <p>Mbeya University of Science and Technology (MUST)</p>
+            </div>
+
+            <div className={styles.card}>
+              <Img
+                src="/logos/10.png"
+                alt="Modern College Of Business & Science, Oman"
+                width={300}
+                height={180}
+              />
+              <p>Modern College Of Business & Science, Oman</p>
+            </div>
+
+          
+            <div className={styles.card}>
+              <Img
+                src="/logos/University-Of-Dar-Es-Salaam.png"
+                alt="University Of Dar Es Salaam"
+                width={300}
+                height={180}
+              />
+              <p>University Of Dar Es Salaam</p>
+            </div>
+
+            <div className={styles.card}>
+              <Img
+                src="/logos/4.png"
+                alt="CPHK (Centre for Public Health Kinetics Zanzibar"
+                width={300}
+                height={180}
+              />
+              <p>CPHK (Centre for Public Health Kinetics Zanzibar)</p>
+            </div>
+        
+            <div className={styles.card}>
+              <Img
+                src="/logos/25.png"
+                alt="CERT - TDS"
+                width={300}
+                height={180}
+              />
+              <p>CERT - TDS</p>
+            </div>
+
+        </div>
+
+
+        <div className={styles.header}>
+        <h1>Corporate and Government Partners</h1>
+          </div>
+          <div className={styles.partners}>
+ 
+            <div className={styles.card}>
+              <Img
+                src="/logos/1.png"
+                alt="Airtel Africa Foundation"
+                width={300}
+                height={180}
+              />
+              <p>Airtel Africa Foundation</p>
+            </div>
+
+         
+            <div className={styles.card}>
+              <Img
+                src="/logos/2.png"
+                alt="Alliance Insurance Ltd"
+                width={300}
+                height={180}
+              />
+              <p>Alliance Insurance Ltd</p>
+            </div>
+
+            <div className={styles.card}>
+              <Img
+                src="/logos/3.png"
+                alt="Said Salim Bakhresa & Company Ltd"
+                width={300}
+                height={180}
+              />
+              <p>Said Salim Bakhresa & Company Ltd </p>
+            </div>
+          
+            <div className={styles.card}>
+              <Img
+                src="/logos/5.png"
+                alt="GenWise Talent Pvt Ltd"
+                width={300}
+                height={180}
+              />
+              <p>GenWise Talent Pvt Ltd</p>
+            </div>
+        
+          
+            <div className={styles.card}>
+              <Img
+                src="/logos/6.png"
+                alt="GITAA Pvt Ltd"
+                width={300}
+                height={180}
+              />
+              <p>GITAA Pvt Ltd</p>
+            </div>
+ 
+          
+            <div className={styles.card}>
+              <Img
+                src="/logos/Karimjee-Group.png"
+                alt="Karimjee Group (Karimjee Jivanjee Foundation)"
+                width={300}
+                height={180}
+              />
+              <p>Karimjee Group (Karimjee Jivanjee Foundation)</p>
+            </div>
+         
+            <div className={styles.card}>
+              <Img
+                src="/logos/22.png"
+                alt="Ministry of Information , Communication and Information Technology (ICT)"
+                width={300}
+                height={180}
+              />
+              <p>Ministry of Information , Communication and Information Technology (ICT)</p>
+            </div>
+
+            <div className={styles.card}>
+              <Img
+                src="/logos/9.png"
+                alt="Mo Dewji Foundation"
+                width={300}
+                height={180}
+              />
+              <p>Mo Dewji Foundation</p>
+            </div>
+
+            <div className={styles.card}>
+              <Img
+                src="/logos/11.png"
+                alt="Mwananchi Communication Limited (MCL)"
+                width={300}
+                height={180}
+              />
+              <p>Mwananchi Communication Limited (MCL)</p>
+            </div>
+
+            <div className={styles.card}>
+              <Img
+                src="/logos/12.png"
+                alt="Office of the Chief Government Statistician (OCGS)"
+                width={300}
+                height={180}
+              />
+              <p>Office of the Chief Government Statistician (OCGS)</p>
+            </div>
+
+            <div className={styles.card}>
+              <Img
+                src="/logos/13.png"
+                alt="Oryx Energies"
+                width={300}
+                height={180}
+              />
+              <p>Oryx Energies</p>
+            </div>
+
+            <div className={styles.card}>
+              <Img
+                src="/logos/14.png"
+                alt="Soft Tech Consulting Ltd"
+                width={300}
+                height={180}
+              />
+              <p>Soft Tech Consulting Ltd</p>
+            </div>
+
+            <div className={styles.card}>
+              <Img
+                src="/logos/15.png"
+                alt="Tanzania East Africa Gateway Terminal Limited (TEAGT)"
+                width={300}
+                height={180}
+              />
+              <p>Tanzania East Africa Gateway Terminal Limited (TEAGT)</p>
+            </div>
+            <div className={styles.card}>
+              <Img
+                src="/logos/17.png"
+                alt="Zanzibar Research Centre for Socio-economic & Policy Analysis (ZRCP)"
+                width={300}
+                height={180}
+              />
+              <p>Zanzibar Research Centre for Socio-economic & Policy Analysis (ZRCP)</p>
+            </div>
+
+            {/* <div className={styles.card}>
+              <Img
+                src="/dit.jpeg"
                 alt="Website of Nigerian University of Technology & Management"
                 width={300}
                 height={180}
               />
-              <p>Nigerian University of Technology & Management</p>
+              <p></p>
             </div>
-          </Link>
+
+            <div className={styles.card}>
+              <Img
+                src="/dit.jpeg"
+                alt="Website of Nigerian University of Technology & Management"
+                width={300}
+                height={180}
+              />
+              <p></p>
+            </div>
+
+            <div className={styles.card}>
+              <Img
+                src="/dit.jpeg"
+                alt="Website of Nigerian University of Technology & Management"
+                width={300}
+                height={180}
+              />
+              <p></p>
+            </div>
+
+            <div className={styles.card}>
+              <Img
+                src="/dit.jpeg"
+                alt="Website of Nigerian University of Technology & Management"
+                width={300}
+                height={180}
+              />
+              <p></p>
+            </div>
+
+            <div className={styles.card}>
+              <Img
+                src="/dit.jpeg"
+                alt="Website of Nigerian University of Technology & Management"
+                width={300}
+                height={180}
+              />
+              <p></p>
+            </div>
+
+            <div className={styles.card}>
+              <Img
+                src="/dit.jpeg"
+                alt="Website of Nigerian University of Technology & Management"
+                width={300}
+                height={180}
+              />
+              <p></p>
+            </div>
+
+            <div className={styles.card}>
+              <Img
+                src="/dit.jpeg"
+                alt="Website of Nigerian University of Technology & Management"
+                width={300}
+                height={180}
+              />
+              <p></p>
+            </div>
+
+            <div className={styles.card}>
+              <Img
+                src="/dit.jpeg"
+                alt="Website of Nigerian University of Technology & Management"
+                width={300}
+                height={180}
+              />
+              <p></p>
+            </div>
+
+            <div className={styles.card}>
+              <Img
+                src="/dit.jpeg"
+                alt="Website of Nigerian University of Technology & Management"
+                width={300}
+                height={180}
+              />
+              <p></p>
+            </div>
+
+            <div className={styles.card}>
+              <Img
+                src="/dit.jpeg"
+                alt="Website of Nigerian University of Technology & Management"
+                width={300}
+                height={180}
+              />
+              <p></p>
+            </div>
+
+            <div className={styles.card}>
+              <Img
+                src="/dit.jpeg"
+                alt="Website of Nigerian University of Technology & Management"
+                width={300}
+                height={180}
+              />
+              <p></p>
+            </div>
+ */}
+
         </div>
+
+        <div className={styles.gallery}>
+          <Slider
+            slidesToShow={1}
+            slidesToShowOnMobile={1}
+            slideGap="40px"
+            enableAutoplay={true}
+          >
+            <Img
+              src="/birmingham-2x.jpeg"
+              alt="Image of signing of MOU with University of Birmingham"
+              width={1200}
+              height={500}
+            />
+            <Img
+              src="/ase-2x.jpeg"
+              alt="Image of signing of MOU with African School of Economics"
+              width={1200}
+              height={500}
+            />
+            <Img
+              src="/deakin-2x.jpeg"
+              alt="Image of signing of MOU with Deakin University"
+              width={1200}
+              height={500}
+            />
+            <Img
+              src="/nutm-2x.jpeg"
+              alt="Image of signing of MOU with Nigerian University of Technology and Management"
+              width={1200}
+              height={500}
+            />
+          </Slider>
+        </div>
+
       </div>
     </div>
   );
