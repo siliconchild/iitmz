@@ -20,7 +20,7 @@ export default defineConfig({
           email: s.string().optional(),
           alternateEmail: s.string().optional(),
           year: s.number().optional(),
-          type: s.enum(['Permanent Faculty', 'Visiting Faculty']),
+          type: s.enum(['Permanent Faculty', 'Visiting Faculty']).optional(),
           website: s.string().optional(),
           link: s.string().optional(),
           qualification: s

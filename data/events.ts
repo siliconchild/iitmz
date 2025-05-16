@@ -220,6 +220,17 @@ const eventsList = [
     location: "Virtual",
     desc: "Join our exclusive webinar to explore how IITM Zanzibar offers a world-class academic experience in a vibrant, international environment. Learn how our programs blend cutting-edge education, industry exposure, and hands-on learning to prepare students for global careers. Engage with faculty and students to gain insights into campus life, research opportunities, and the future of AI and technology. The webinar is open to students worldwide - don’t miss this chance to be part of a truly global learning experience!",
   },
+  {
+    img: "/Poster-Digital-Education-Workshops.pdf",
+    startDate: "May 19, 2025",
+    endDate: "May 22, 2025",
+    regLink:
+      "https://forms.gle/gDHp4xQKNaKZbKAt8",
+    name: "Empowering Zanzibar Through Digital Education",
+    time: "10:00 AM IST",
+    location: "IIT Madras, Zanzibar Campus",
+    desc: "Spoken Tutorial, an award-winning edtech platform from IIT Bombay, has trained over 9 million students in IT over the past 13 years. In collaboration with IITM Zanzibar, it now offers a series of self-paced, hands-on workshops to equip students and the local community with essential digital skills to thrive in today’s fast-changing world.",
+  },
 ];
 
 
