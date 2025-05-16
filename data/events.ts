@@ -221,7 +221,7 @@ const eventsList = [
     desc: "Join our exclusive webinar to explore how IITM Zanzibar offers a world-class academic experience in a vibrant, international environment. Learn how our programs blend cutting-edge education, industry exposure, and hands-on learning to prepare students for global careers. Engage with faculty and students to gain insights into campus life, research opportunities, and the future of AI and technology. The webinar is open to students worldwide - don’t miss this chance to be part of a truly global learning experience!",
   },
   {
-    img: "/spoken-tutorial.pdf",
+    img: "/Poster-Digital-Education-Workshops.jpg",
     startDate: "May 19, 2025",
     endDate: "May 22, 2025",
     regLink:
