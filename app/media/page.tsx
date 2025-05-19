@@ -28,6 +28,7 @@ export default function MediaPage() {
               title={article.title}
               desc={article.desc}
               link={article.link}
+              apiImage={false}
             />
           ))}
         </div>

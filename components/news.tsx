@@ -22,13 +22,14 @@ export default function News({ news }: NewsProps) {
               <Button>View All</Button>
             </Link>
           </div>
-          {news.map((newsItem) => (
+          {news.map((newsItem:NewsType) => (
             <NewsCard
               key={newsItem.uuid}
               link={newsItem.linkURL || "#"}
               image={newsItem.img}
               title={newsItem.title}
               desc={newsItem.content}
+              apiImage={true}
             />
           ))}
         </div>
