@@ -2,6 +2,7 @@ import styles from "./page.module.scss";
 import Slider from "@/components/slider";
 import Img from "@/components/image";
 import Link from "next/link";
+import SigningCeremony from "@/components/signing-ceremony-gallery";
 
 export const metadata = {
   title: "Our Partners",
@@ -889,8 +890,7 @@ export default function PartnersPage() {
  */}
 
         </div>
-
-        <div className={styles.gallery}>
+        {/* <div className={styles.gallery}>
           <Slider
             slidesToShow={1}
             slidesToShowOnMobile={1}
@@ -922,9 +922,10 @@ export default function PartnersPage() {
               height={500}
             />
           </Slider>
-        </div>
+        </div> */}
 
       </div>
+      <SigningCeremony />
     </div>
   );
 }
