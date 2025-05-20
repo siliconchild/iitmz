@@ -1,133 +1,177 @@
 .page {
-  padding: 4rem 0 0;
+    padding: 4rem 0 0;
 }
 
 .partners {
-  //background-image: url(/img/bg/partner.png);
-  padding: 1rem 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem; 
-
-  & > .card, & > a {
-    flex: 0 0 calc(25% - 2rem);
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    
-  }
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    justify-content: flex-start;
+    padding: 1rem 0 4rem;
+
+    & > .card,
+    & > a {
+        flex: 0 0 calc(20% - 2rem);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        transition: transform 0.2s ease;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
 }
 
 .card {
-  img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    padding: 1px; 
-    background-color: #ffb013;
-    border-radius: 50%; 
-  }
-  p {
-    margin: 0.5rem 1rem;
-  }
+    img {
+        width: 180px;
+        height: 120px;
+        object-fit: contain;
+        background-color: white;
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    p {
+        margin: 1.2rem 0 0;
+        font-size: 1.4rem;
+        line-height: 1.4;
+        max-width: 240px;
+        font-weight: 500;
+    }
 }
 
 .gallery {
-  margin-top: 3rem;
-  img {
-    object-fit: cover;
-    object-position: top;
-  }
+    margin-top: 3rem;
+
+    img {
+        object-fit: cover;
+        object-position: top;
+    }
 }
 
 .header {
-  // display: flex;
-  padding: 3rem 0;
-  gap: 5%;
-  align-items: center;
+    padding: 3rem 0;
+    margin-bottom: 1rem;
 
-  h1 {
-    font-size: 3.6rem;
-    border-left: 4px solid #ffb013;
-    padding-left: 2rem;
-    margin-top: 1rem;
-  }
-  p {
-    line-height: 1.6;
-    margin: 2rem 0 0;
-    font-size: 1.6rem;
-    flex: 0 0 50%;
-  }
-  svg {
-    scale: (0.7);
-  }
+    h1 {
+        font-size: 3.6rem;
+        border-left: 4px solid #ffb013;
+        padding-left: 2rem;
+        margin: 0;
+        margin-bottom: 2.5rem;
+    }
+
+    p {
+        line-height: 1.7;
+        margin: 0;
+        font-size: 1.6rem;
+        max-width: 780px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .partners {
+        & > .card,
+        & > a {
+            flex: 0 0 calc(33.33% - 2.5rem);
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .partners {
+        & > .card,
+        & > a {
+            flex: 0 0 calc(50% - 2.5rem);
+        }
+    }
 }
 
 @media (max-width: 768px) {
-  .page {
-    padding: 3rem 0;
-  }
-  .gallery {
-    img {
-      height: 250px;
+    .page {
+        padding: 3rem 0 0;
     }
-  }
-  .header {
-    padding: 2rem 1rem;
-    h1 {
-      font-size: 2.6rem;
+
+    .gallery {
+        img {
+            height: 250px;
+        }
     }
-    p {
-      font-size: 1.5rem;
-      line-height: 1.8;
+
+    .header {
+        padding: 2rem 0;
+
+        h1 {
+            font-size: 2.8rem;
+            padding-left: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+            line-height: 1.6;
+        }
     }
-  }
-  .partners {
-    flex-direction: column;
-  }
-  .card {
-    flex-direction: column;
-    align-items: flex-start;
-    img {
-      width: 60px;
-      height: 60px;
+
+    .partners {
+        gap: 2rem;
+
+        & > .card,
+        & > a {
+            flex: 0 0 calc(50% - 2rem);
+        }
     }
-  }
+
+    .card {
+        img {
+            width: 150px;
+            height: 100px;
+            padding: 1.2rem;
+        }
+
+        p {
+            margin-top: 1rem;
+            font-size: 1.3rem;
+        }
+    }
 }
 
-// @media (max-width: 480px) {
-//   .icon {
-//     grid-row: 1;
-//     svg {
-//       height: 300px;
-//       & > g {
-//         transform: scale(0.8);
-//       }
-//     }
-//   }
-// }
+@media (max-width: 480px) {
+    .header {
+        h1 {
+            font-size: 2.4rem;
+            padding-left: 1.2rem;
+        }
 
-// .slider {
-//   margin: 3rem 6rem;
-//   img {
-//     object-fit: contain;
-//   }
-//   @media (max-width: 480px) {
-//     margin: 4rem 1.5rem;
-//   }
-// }
+        p {
+            font-size: 1.4rem;
+        }
+    }
 
-// .logo {
-//   svg {
-//     height: 70px;
-//     width: 140px;
-//     object-fit: contain;
-//     @media (max-width: 480px) {
-//       height: 50px;
-//       width: 130px;
-//     }
-//   }
-// }
+    .partners {
+        gap: 1.8rem;
+
+        & > .card,
+        & > a {
+            flex: 0 0 calc(50% - 1rem);
+        }
+    }
+
+    .card {
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 140px;
+            height: 90px;
+        }
+
+        p {
+            font-size: 1.3rem;
+        }
+    }
+}
