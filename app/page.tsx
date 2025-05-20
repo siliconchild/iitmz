@@ -459,10 +459,10 @@ export default async function Home() {
               }}
             />
           </svg>
-          <div className={styles.testimonials}>
+          {/* <div className={styles.testimonials}>
             <h2 className="section-title">Student Feedback</h2>
             <Testimonials type="PRIMARY" />
-          </div>
+          </div> */}
         </div>
       </section>
       <SocialMedia kind="FULL" />
