@@ -3,7 +3,7 @@ import Hero from "@/components/hero";
 import News from "@/components/news";
 import Courses from "@/components/courses";
 import Counter from "@/components/counter";
-import Testimonials from "@/components/testimonials";
+// import Testimonials from "@/components/testimonials";
 import Gallery from "@/components/gallery";
 import AdvisoryCouncil from "@/components/advisory-council";
 import GovernanceBoard from "@/components/governing-council";
@@ -38,9 +38,8 @@ export default async function Home() {
       <Leadership />
       <GovernanceBoard />
       <AdvisoryCouncil />
-      <section className={styles.events_testimonials_section}>
+      {/* <section className={styles.events_testimonials_section}>
         <div className="container">
-          {/* <Events /> */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             xmlSpace="preserve"
@@ -459,12 +458,12 @@ export default async function Home() {
               }}
             />
           </svg>
-          {/* <div className={styles.testimonials}>
+          <div className={styles.testimonials}>
             <h2 className="section-title">Student Feedback</h2>
             <Testimonials type="PRIMARY" />
-          </div> */}
+          </div>
         </div>
-      </section>
+      </section> */}
       <SocialMedia kind="FULL" />
       <Gallery />
     </main>
