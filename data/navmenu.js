@@ -37,8 +37,8 @@ const navMenu = [
     link: "",
     submenus: [
       {
-        title: "Skilling Program",
-        link: "skilling-program",
+        title: "Skilling Programs",
+        link: "skilling-programs",
       },
       {
         title: "Web Enabled Industrial AI",
