@@ -33,9 +33,13 @@ const navMenu = [
     ],
   },
   {
-    title: "Online Programs",
+    title: "E-Learning",
     link: "",
     submenus: [
+      {
+        title: "Skilling Program",
+        link: "skilling-program",
+      },
       {
         title: "Web Enabled Industrial AI",
         link: "/schools/engineering-and-science/mtech-industrial-ai",

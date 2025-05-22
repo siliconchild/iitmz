@@ -1,0 +1,35 @@
+.page {
+    padding: 4rem 0 3rem;
+  }
+  
+  .header {
+    padding: 3rem 0 0;
+    gap: 5%;
+    align-items: center;
+  
+    h1 {
+      font-size: 3.6rem;
+      border-left: 4px solid #ffb013;
+      padding-left: 2rem;
+      margin-top: 1rem;
+    }
+  }
+  
+  .body {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+      margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+      .header {
+          padding: 0;
+          h1 {
+              font-size: 3rem;
+          }
+      }
+      .page {
+        padding: 2.5rem 0 3rem;
+      }
+  }

@@ -1,0 +1,65 @@
+.card {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .imageWrapper {
+    position: relative;
+    width: 100%;
+    height: 200px;
+  }
+  
+  .image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 0;
+    padding: 16px;
+  }
+  .durationWrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 0.5rem;
+  }
+  
+  .durationIcon {
+    font-size: 1.25rem;
+    color: #777; // A neutral tone
+    flex-shrink: 0;
+  }
+  
+  .title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .duration {
+    font-size: 1.5rem;
+    color: #555;
+  }
+
+  .titleIcon {
+    font-size: 3.75rem; // Adjust size as needed
+    color: #ffb013; // Primary or accent color
+    margin-bottom: 0.5rem; // Space below the icon
+    border: 1px solid #ffd770; // Light shade of #ffb013
+    border-radius: 30%;
+    padding: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  
