@@ -60,6 +60,15 @@ export default function SigningCeremony() {
             alt="Image of signing of MOU with UDSM"
           />
         </div>
+        <div className={styles.item}>
+          <Img
+            src="/cert-tds.jpeg"
+            width={260}
+            height={290}
+            style={{ objectFit: "cover" }}
+            alt="Image of signing of MOU with CERT & TDS"
+          />
+        </div>
       </Slider>
     </section>
   );
