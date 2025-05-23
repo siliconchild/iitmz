@@ -1,6 +1,7 @@
-import SkillsContainer from "@/components/skills-container";
+// import SkillsContainer from "@/components/skills-container";
+import SkillPrograms from "@/components/skillprogram";
 import styles from "./page.module.scss";
-import { skills } from "@/data/skills";
+// import { skills } from "@/data/skills";
 
 export const metadata = {
   title: "Skilling Program",
@@ -19,7 +20,8 @@ export default function SkillsPage() {
             <h1>Skilling Programs</h1>
           </div>
           <div className={styles.body}>
-              <SkillsContainer list={skills} />
+              {/* <SkillsContainer list={skills} /> */}
+              <SkillPrograms />
           </div>
         </div>
       </div>
