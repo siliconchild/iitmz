@@ -532,7 +532,7 @@ export default function PartnersPage() {
                 width={300}
                 height={180}
               />
-              <p>The University of Brimhimgam</p>
+              <p>University of Birmingham</p>
             </div>
  
             <div className={styles.card}>
