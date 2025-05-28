@@ -36,7 +36,7 @@ export default function CampusLife() {
             <Img
               width={1200}
               height={600}
-              src="/campus-life-main.jpg"
+              src="/iitmz-campus.png"
               alt=""
               loading="eager"
             />
@@ -62,7 +62,7 @@ export default function CampusLife() {
               </div>
               <div className={styles.itemImages}>
                 <Slider slidesToShow={1} showTracks={true}>
-                  {Array.from({ length: 6 }, (_, index) => (
+                  {Array.from({ length: 14 }, (_, index) => (
                     <Img
                       key={`image__${index}`}
                       // src={`/student-life/${index + 1}.jpg`}
@@ -97,11 +97,11 @@ export default function CampusLife() {
               </div>
               <div className={styles.itemImages}>
                 <Slider slidesToShow={1} showTracks={true}>
-                  {Array.from({ length: 5 }, (_, index) => (
+                  {Array.from({ length: 7 }, (_, index) => (
                     <Img
                       key={`image__${index}`}
                       // src={`/student-life/${index + 1}.jpg`}
-                      src={`/clubs-and-activities/${index + 1}.jpg`}
+                      src={`/clubs-and-activities/${index + 1}.jpeg`}
                       width={450}
                       height={350}
                       alt="Image of IITM Zanzibar Campus"
@@ -110,7 +110,7 @@ export default function CampusLife() {
                 </Slider>
               </div>
             </div>
-            <div className={styles.itemSection}>
+            {/* <div className={styles.itemSection}>
               <div className={styles.itemInfo}>
                 <h3>Residence Life</h3>
                 <p>
@@ -138,7 +138,7 @@ export default function CampusLife() {
                   ))}
                 </Slider>
               </div>
-            </div>
+            </div> */}
             <div className={styles.itemSection}>
               <div className={styles.itemInfo}>
                 <h3>Sports and Exercise</h3>
@@ -159,10 +159,10 @@ export default function CampusLife() {
               </div>
               <div className={styles.itemImages}>
                 <Slider slidesToShow={1} showTracks={true}>
-                  {Array.from({ length: 5 }, (_, index) => (
+                  {Array.from({ length: 4 }, (_, index) => (
                     <Img
                       key={`image__${index}`}
-                      src={`/sports-and-exercise/${index + 1}.jpg`}
+                      src={`/sports-and-exercise/${index + 1}.jpeg`}
                       width={450}
                       height={350}
                       alt="Image of IITM Zanzibar Campus"
@@ -171,6 +171,30 @@ export default function CampusLife() {
                 </Slider>
               </div>
             </div>
+
+            <div className={styles.itemSection}>
+              <div className={styles.itemInfo}>
+                <h3>Workshops & Seminar Series</h3>
+                <p>
+                At IIT Madras Zanzibar Campus, the Workshop & Seminar Series is a cornerstone of intellectual exploration and innovation! From cutting-edge research presentations to hands-on technical workshops, every session pulses with curiosity and collaboration. The campus regularly hosts seminars led by global experts, industry leaders, and faculty members, sparking engaging discussions and fresh perspectives. These events span diverse fields—from artificial intelligence and sustainability to entrepreneurship and design—empowering students to expand their horizons and apply knowledge beyond the classroom. This dynamic environment not only sharpens academic and professional skills but also cultivates critical thinking and a spirit of lifelong learning, making the IITM Zanzibar experience deeply enriching and globally relevant.
+                </p>
+              </div>
+              <div className={styles.itemImages}>
+                <Slider slidesToShow={1} showTracks={true}>
+                  {Array.from({ length: 11 }, (_, index) => (
+                    <Img
+                      key={`image__${index}`}
+                      src={`/workshop-seminars/${index + 1}.jpg`}
+                      width={450}
+                      height={350}
+                      alt="Image of IITM Zanzibar Campus"
+                    />
+                  ))}
+                </Slider>
+              </div>
+            </div>
+
+
           </div>
 
           {/* <div className={styles.gallery}>
