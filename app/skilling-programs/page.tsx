@@ -19,7 +19,7 @@ export default function SkillsPage() {
 <div className={styles.page}>
         <div className="container">
           <div className={styles.header}>
-            <h1>Skilling Programs</h1>
+            <h1>Skilling and Certification Programs</h1>
             <p>
             IITM Zanzibar is working with a number of partners to offer online and offline skilling courses in various domains. Several of these have been on-demand programs for corporates or ministry departments. IITM Zanzibar is expanding the portfolio of offerings, and will include asynchronous and synchronous course material spanning several domains.
             </p>
@@ -34,6 +34,7 @@ export default function SkillsPage() {
                   height={450}
                   alt={`IITM Zanzibar campus life ${index + 1}`}
                   loading="eager"
+                  objectFit="cover"
                 />
               ))}
             </Slider>
