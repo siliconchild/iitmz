@@ -34,7 +34,7 @@ export default function SkillsPage() {
                   height={450}
                   alt={`IITM Zanzibar campus life ${index + 1}`}
                   loading="eager"
-                  objectFit="cover"
+                 style={{objectFit:"cover"}}
                 />
               ))}
             </Slider>

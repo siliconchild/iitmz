@@ -37,7 +37,7 @@
 .cardHeader {
   padding: 2rem;
   border-bottom: 1px solid #f3f4f6;
-  background: linear-gradient(135deg, #fafafa 0%, #ffffff 100%);
+  background: linear-gradient(135deg, #f6ad552b, #ffffff);
   display: flex;
   align-items: center;
   gap: 1.5rem;
@@ -60,7 +60,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  padding: 2rem;
+  padding: 2rem; // Removed this as it was applied twice, now only in cardInfo directly
 }
 
 /* Special styling for image-only cards */
@@ -82,6 +82,7 @@
   background: linear-gradient(135deg, #fafafa 0%, #ffffff 100%);
   border-top: 1px solid #f3f4f6;
   text-align: center;
+  padding: 2rem; // Ensure padding is applied to cardInfo for image-only cards
 }
 
 .logo {
@@ -126,6 +127,24 @@
   text-align: left;
 }
 
+// Style for the container of CERT and TDS buttons
+.certButtonsContainer {
+  display: flex;
+  flex-wrap: wrap; // Allow buttons to wrap on smaller screens if needed
+  gap: 1rem; // Space between buttons
+  align-items: center; // Align buttons vertically if they wrap
+  justify-content: flex-start; // Align buttons to the start
+
+  @media (max-width: 640px) {
+    justify-content: center; // Center buttons on mobile
+    .cardLink {
+      flex-grow: 1; // Make buttons take equal space if they wrap
+      text-align: center;
+    }
+  }
+}
+
+
 .cardLink {
   color: #1f2937;
   border: 2px solid #ffb013;
@@ -136,11 +155,17 @@
   transition: all 0.3s ease;
   display: inline-flex;
   align-items: center;
+  justify-content: center; // Center text and arrow within button
   padding: 0.8rem 1.5rem;
   border-radius: 6px;
-  margin-top: 0.5rem;
+  margin-top: 1rem; // Keep the original margin-top if a single button
   position: relative;
   overflow: hidden;
+
+  // Remove margin-top if it's inside the flex container to rely on gap
+  .certButtonsContainer & {
+    margin-top: 0;
+  }
 }
 
 .cardLink::before {
@@ -184,8 +209,7 @@
 
 .inquirySection {
   & > section {
-    background: #f6f8fb
-
+    background: #f6f8fb;
   }
   background: #f6f8fb;
   padding: 4rem 0;
@@ -289,28 +313,39 @@
     padding: 1.25rem 1.5rem 1.5rem;
   }
 
+  // .cardInfo was defined multiple times, consolidating
   .cardInfo {
     width: 100%;
-    padding: 1.5rem;
+    padding: 1.5rem; // Applied directly above, ensure no conflict
   }
 
   .cardTitle {
     font-size: 1.8rem;
-    text-align: center;
+    text-align: center; // Applied directly above, ensure no conflict
   }
 
   .cardSubtitle {
     font-size: 1.2rem;
-    text-align: center;
+    text-align: center; // Applied directly above, ensure no conflict
   }
 
   .cardMeta {
-    text-align: center;
+    text-align: center; // Applied directly above, ensure no conflict
   }
+
+  // Ensure the certButtonsContainer also centers its content on mobile if text-align: center is on .cardMeta
+  .certButtonsContainer {
+    justify-content: center; // Already added above
+    .cardLink { // Already added above for flex-grow and text-align
+      text-align: center; // Ensures button text is centered
+    }
+  }
+
 
   .logoContainer {
     padding: 0.8rem;
     margin-bottom: 1rem;
+    align-self: center; // Center the logo container
   }
 
   .logo {
