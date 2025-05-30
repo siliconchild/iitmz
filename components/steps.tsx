@@ -7,11 +7,10 @@ import { RiSecurePaymentLine } from "react-icons/ri";
 
 export default function Steps() {
   return (
-    <section className={styles.section}>
+    <section id="admission-process" className={styles.section}>
       <div className="container">
         <div className={styles.header}>
           <h2 className="section-title">Admission Process</h2>
-
         </div>
 
         <div className={styles.grid}>
@@ -23,8 +22,11 @@ export default function Steps() {
               </div>
               <h3>Submit Online Application</h3>
               <p>
-                Visit <a href="https://admissions.iitmz.ac.in/">admissions.iitmz.ac.in</a> to submit your
-                application.
+                Visit{" "}
+                <a href="https://admissions.iitmz.ac.in/">
+                  admissions.iitmz.ac.in
+                </a>{" "}
+                to submit your application.
               </p>
             </div>
           </div>
@@ -52,8 +54,8 @@ export default function Steps() {
               </div>
               <h3>Online Interview</h3>
               <p>
-                Interview with professors to evaluate motivation, technical aptitude, achievements and program
-                readiness.
+                Interview with professors to evaluate motivation, technical
+                aptitude, achievements and program readiness.
               </p>
             </div>
           </div>
@@ -65,7 +67,10 @@ export default function Steps() {
                 <HiOutlineDocumentText />
               </div>
               <h3>Selection Process</h3>
-              <p>Final selections are made by the IITMZ Admission Committee based on overall performance.</p>
+              <p>
+                Final selections are made by the IITMZ Admission Committee based
+                on overall performance.
+              </p>
             </div>
           </div>
 
@@ -76,7 +81,10 @@ export default function Steps() {
                 <BsCheckCircle />
               </div>
               <h3>Admission Offer</h3>
-              <p>Selected candidates receive a provisional admission letter from IITM Zanzibar.</p>
+              <p>
+                Selected candidates receive a provisional admission letter from
+                IITM Zanzibar.
+              </p>
             </div>
           </div>
 
@@ -87,7 +95,10 @@ export default function Steps() {
                 <RiSecurePaymentLine />
               </div>
               <h3>Registration</h3>
-              <p>Confirm your admission by paying the registration fee within the specified timeline.</p>
+              <p>
+                Confirm your admission by paying the registration fee within the
+                specified timeline.
+              </p>
             </div>
           </div>
         </div>

@@ -1,0 +1,78 @@
+.card {
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease;
+    
+    &:hover {
+      transform: translateY(-4px);
+    }
+  }
+  
+  .imageWrapper {
+    position: relative;
+    width: 100%;
+    height: 200px;
+  }
+  
+  .image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 20px;
+    flex: 1;
+  }
+  
+  .durationWrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: auto;
+    padding-top: 16px;
+  }
+  
+  .durationIcon {
+    font-size: 1.15rem;
+    color: #666;
+    flex-shrink: 0;
+  }
+  
+  .title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+    color: #001d23;
+  }
+  
+  .duration {
+    font-size: 1.35rem;
+    color: #555;
+    font-weight: 500;
+  }
+
+  .titleIcon {
+    font-size: 3.75rem; // Adjust size as needed
+    color: #ffb013; // Primary or accent color
+    margin-bottom: 0.5rem; // Space below the icon
+    border: 1px solid #ffd770; // Light shade of #ffb013
+    border-radius: 30%;
+    padding: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  
