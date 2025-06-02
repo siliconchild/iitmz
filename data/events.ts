@@ -231,6 +231,28 @@ const eventsList = [
     location: "IIT Madras, Zanzibar Campus",
     desc: "Spoken Tutorial, an award-winning edtech platform from IIT Bombay, has trained over 9 million students in IT over the past 13 years. In collaboration with IITM Zanzibar, it now offers a series of self-paced, hands-on workshops to equip students and the local community with essential digital skills to thrive in today’s fast-changing world.",
   },
+  {
+    img: "/IITMZ-Webinar-Uganda.png",
+    startDate: "May 23, 2025",
+    endDate: "May 23, 2025",
+    regLink:
+      "https://us06web.zoom.us/webinar/register/WN_t7YR3LmPTYKkh_1oXAQ_sw",
+    name: "Discover Global Education at IITM Zanzibar",
+    time: "08:00 PM IST",
+    location: "Virtual",
+    desc: "Join us for an insightful webinar featuring professors from the Indian Institute of Technology Madras – Zanzibar Campus. They will share valuable perspectives on our distinctive curriculum, the vibrant student life and learning environment at IITM Zanzibar, as well as important details about the admission process, available scholarships, and future career opportunities. The session will also include a live Q&A, giving you the chance to ask your questions directly and gain deeper clarity.",
+  },
+  {
+    img: "/IITMZ-Webinar-Zambia.png",
+    startDate: "May 29, 2025",
+    endDate: "May 29, 2025",
+    regLink:
+      "https://us06web.zoom.us/webinar/register/WN_VSrbA-cXQKW3gevrTl2JOA",
+    name: "Discover Global Education at IITM Zanzibar",
+    time: "09:00 PM IST",
+    location: "Virtual",
+    desc: "Join us for an insightful webinar featuring professors from the Indian Institute of Technology Madras – Zanzibar Campus. They will share valuable perspectives on our distinctive curriculum, the vibrant student life and learning environment at IITM Zanzibar, as well as important details about the admission process, available scholarships, and future career opportunities. The session will also include a live Q&A, giving you the chance to ask your questions directly and gain deeper clarity.",
+  },
 ];
 
 
