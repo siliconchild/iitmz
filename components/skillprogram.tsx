@@ -24,14 +24,9 @@ export default function SkillPrograms() {
             </div>
           </div>
           <div className={styles.cardContent}>
-            <h4 className={styles.contentTitle}>AI/ML Training Courses:</h4>
-            <ul className={styles.courseList}>
-              <li>Machine Learning Fundamentals</li>
-              <li>Natural Language Processing</li>
-              <li>Computer Vision Applications</li>
-              <li>AI for Business Analytics</li>
-              <li>Data Science & Predictive Modeling</li>
-            </ul>
+            <p className={styles.description}>
+            IITM Zanzibar has been partnering with GITAA Pvt. Ltd. to offer several in-person sessions in the area of Digital Transformation, Machine Learning, AI and so on. The courses have been very well received with great testimonials from the learners. We look forward to more such programs, leveraging the decades long experience of GITAA Pvt. Ltd. in providing such training in India, through its expert faculty. 
+            </p>
           </div>
         </article>
 
@@ -51,7 +46,7 @@ export default function SkillPrograms() {
               </div>
             </div>
           </div>
-          <div className={styles.cardContent}>
+          {/* <div className={styles.cardContent}>
             <h4 className={styles.contentTitle}>IT modules in various languages, including Kiswahili:</h4>
             <ul className={styles.courseList}>
               <li>Introduction to Computers</li>
@@ -59,6 +54,11 @@ export default function SkillPrograms() {
               <li>Introduction to LibreOffice Calc (spreadsheets)</li>
               <li>Audacity (Audio recording and editing)</li>
             </ul>
+          </div> */}
+          <div className={styles.cardContent}>
+            <p className={styles.description}>
+            Spoken Tutorial is a prominent platform for self-paced learning, suitable for all ages. Having training hundreds of thousands of learners in India, Spoken Tutorial worked with IITM Zanzibar to offer a week-long pilot program to various communities in Zanzibar including high schoolers, teachers, and youth between jobs. Expect similar engagements, on both commercial and non-commercial bases, soon! 
+            </p>
           </div>
         </article>
 
