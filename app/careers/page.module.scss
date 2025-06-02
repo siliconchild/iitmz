@@ -37,15 +37,13 @@
 .grid {
   display: flex;
   margin: 2rem 0;
-  align-items: center;
-  justify-content: center;
   svg {
-    width: 60%;
+    width: 40%;
   }
 }
 
 .apply {
-  width: 40%;
+  width: 60%;
   padding: 5rem;
   & > div {
     width: 55%;
@@ -55,7 +53,7 @@
     font-size: 3rem;
   }
   button {
-    width: 100%;
+    width: 50%;
   }
   p {
       font-size: 1.5rem;
