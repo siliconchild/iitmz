@@ -69,6 +69,33 @@ export default function SigningCeremony() {
             alt="Image of signing of MOU with CERT & TDS"
           />
         </div>
+        <div className={styles.item}>
+          <Img
+            src="/5.jpg"
+            width={260}
+            height={290}
+            style={{ objectFit: "cover" }}
+            alt="Image of signing of MOU with Airtel Africa Foundation"
+          />
+        </div>
+        <div className={styles.item}>
+          <Img
+            src="/micit.jpg"
+            width={260}
+            height={290}
+            style={{ objectFit: "cover" }}
+            alt="Image of signing of MOU with MICIT"
+          />
+        </div>
+        <div className={styles.item}>
+          <Img
+            src="/ocgs.jpg"
+            width={260}
+            height={290}
+            style={{ objectFit: "cover" }}
+            alt="Image of signing of MOU with OCGS"
+          />
+        </div>
       </Slider>
     </section>
   );
