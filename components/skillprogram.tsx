@@ -69,8 +69,8 @@ export default function SkillPrograms() {
               <Img src="/logos/25.png" alt="CERT TDS Logo" className={styles.logo} width={100} height={140} />
             </div>
             <div className={styles.cardInfo}>
-              <h2 className={styles.cardTitle}>CERT-TDS</h2>
-              <h3 className={styles.cardSubtitle}>SkillED Academies</h3>
+              <h2 className={styles.cardTitle}>Digital School</h2>
+              <h3 className={styles.cardSubtitle}>CERT-TDS</h3>
               <div className={`${styles.cardMeta} ${styles.certButtonsContainer}`}> {/* Added certButtonsContainer class */}
                 <Link href="https://www.cert.ae/" className={styles.cardLink} target="_blank">
                   Visit CERT
