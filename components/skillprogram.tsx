@@ -83,7 +83,7 @@ export default function SkillPrograms() {
           </div>
           <div className={styles.cardContent}>
             <p className={styles.description}>
-              IITMZ is proud to partner with CERT and The Digital School in launching the first regional office of the
+            IITM Zanzibar is proud to partner with CERT and The Digital School in launching the first regional office of the
               SkillED Academies project in Zanzibar, Tanzania.
               <br />
               <br />
