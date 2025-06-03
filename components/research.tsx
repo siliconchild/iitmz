@@ -33,9 +33,9 @@ export default function ResearchHighlights() {
                 <FaUsers className={styles.titleIcon} />
                 <h2 className={styles.cardTitle}>{faculty.name}</h2>
               </div>
-              <p className={styles.cardDescription}>
+              {/* <p className={styles.cardDescription}>
                 {faculty.publications.length} publication{faculty.publications.length !== 1 ? "s" : ""}
-              </p>
+              </p> */}
             </header>
             <div className={styles.cardContent}>
               <div className={styles.facultyContentLayout}>
@@ -87,15 +87,18 @@ export default function ResearchHighlights() {
             </div>
           </article>
         ))}
+              <div className={styles.header}>
+              <h1>Awards & Recognitions</h1>
+              </div>
 
         <article className={styles.card}> {/* Awards Card */}
-          <header className={`${styles.cardHeader} ${styles.awardHeaderBg}`}>
+          {/* <header className={`${styles.cardHeader} ${styles.awardHeaderBg}`}>
             <div className={styles.cardTitleContainer}>
               <FaAward className={styles.titleIcon} />
               <h2 className={styles.cardTitle}>Awards & Recognitions</h2>
             </div>
             <p className={styles.cardDescription}>Student achievements and recognitions</p>
-          </header>
+          </header> */}
           <div className={styles.cardContent}>
             <div className={styles.awards}>
               {researchData.awards.map((award: AwardEntry, awardIndex: number) => (
