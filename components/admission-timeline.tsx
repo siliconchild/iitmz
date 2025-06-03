@@ -13,8 +13,14 @@ const AdmissionTimeline: React.FC<TimelineProps> = ({ variant = "default" }) => 
       icon: <FaCalendarAlt />,
       status: "upcoming",
     },
-    {
-      date: "May 31, 2025",
+      {
+        date: (
+          <>
+            BS: June 10, 2025
+            <br /> 
+            M.Tech: June 15, 2025
+          </>
+        ),
       event: "Applications Close",
       icon: <FaCalendarTimes />,
       status: "upcoming",
@@ -49,7 +55,7 @@ const AdmissionTimeline: React.FC<TimelineProps> = ({ variant = "default" }) => 
               <div key={index} className={styles.timelineItem}>
                 <div className={styles.iconWrapper}>{item.icon}</div>
                 <div className={styles.details}>
-                  <span className={styles.date}>{item.date}</span>
+                <span className={styles.date}>{item.date}</span>
                   <h4 className={styles.event}>{item.event}</h4>
                 </div>
               </div>
