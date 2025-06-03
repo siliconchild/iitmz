@@ -55,7 +55,7 @@ const AdmissionTimeline: React.FC<TimelineProps> = ({ variant = "default" }) => 
               <div key={index} className={styles.timelineItem}>
                 <div className={styles.iconWrapper}>{item.icon}</div>
                 <div className={styles.details}>
-                <div className={styles.date}>{item.date}</div>
+                <span className={styles.date}>{item.date}</span>
                   <h4 className={styles.event}>{item.event}</h4>
                 </div>
               </div>

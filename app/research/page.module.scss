@@ -1,42 +1,42 @@
 .page {
-  padding: 5rem 0;
+  padding: 4rem 0 3rem;
 }
 
-.research {
-  display: flex;
+.header {
+  padding: 3rem 0 0;
+  gap: 5%;
   align-items: center;
-  gap: 3rem;
-  padding: 0 7rem;
-  svg {
-    flex: 50%;
-    width: 550px;
-    height: 550px;
-  }
-}
 
-.content {
-  flex: 50%;
   h1 {
     font-size: 3.6rem;
+    border-left: 4px solid #ffb013;
+    padding-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
   }
   p {
-    margin: 3rem 0;
-    line-height: 2.8rem;
-  }
+    line-height: 1.7;
+    margin: 0;
+    font-size: 1.6rem;
+    margin-bottom: 4rem;
+
+}
 }
 
-@media (max-width: 480px) {
-  .page {
-    padding: 5rem 0rem;
-  }
-  .research {
-    flex-direction: column-reverse;
-    padding: 0;
-  }
-
-  .content {
-    h1 {
-      font-size: 3rem;
+.body {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin: 0;
+}
+@media (max-width: 768px) {
+    .header {
+        padding: 0;
+        h1 {
+            font-size: 3rem;
+        }
     }
-  }
+    .page {
+      padding: 2.5rem 0 3rem;
+    }
 }

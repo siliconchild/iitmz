@@ -21,10 +21,10 @@ export default function AdmissionHeader() {
           </div>
           <div className={styles.imageWrapper}>
             <Slider showTracks={true}>
-              {Array.from({ length: 7 }).map((_, index) => (
+              {Array.from({ length: 3 }).map((_, index) => (
                 <Img
                   key={`admission-image-${index + 1}`}
-                  src={`/admission-header-${index + 1}.jpg`}
+                  src={`/campus/${index + 1}.jpg`}
                   width={800}
                   height={350}
                   alt={`IITM Zanzibar campus life ${index + 1}`}

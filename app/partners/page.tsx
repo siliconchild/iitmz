@@ -785,7 +785,7 @@ export default function PartnersPage() {
                 width={300}
                 height={180}
               />
-              <p>Bongo Live Enterprise Ltd T/A Beem Africa 'Beem'</p>
+              <p>Bongo Live Enterprise Ltd T/A Beem Africa &lsquo;Beem&rsquo;</p>
             </div>
 
             {/* <div className={styles.card}>
