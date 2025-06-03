@@ -778,6 +778,16 @@ export default function PartnersPage() {
               <p>Zanzibar Research Centre for Socio-economic & Policy Analysis (ZRCP)</p>
             </div>
 
+            <div className={styles.card}>
+              <Img
+                src="/logos/26.png"
+                alt="Bongo Live Enterprise Ltd T/A Beem Africa 'Beem'"
+                width={300}
+                height={180}
+              />
+              <p>Bongo Live Enterprise Ltd T/A Beem Africa 'Beem'</p>
+            </div>
+
             {/* <div className={styles.card}>
               <Img
                 src="/dit.jpeg"

@@ -12,7 +12,15 @@
       border-left: 4px solid #ffb013;
       padding-left: 2rem;
       margin-top: 1rem;
+      margin-bottom: 3rem;
     }
+    p {
+      line-height: 1.7;
+      margin: 0;
+      font-size: 1.6rem;
+      margin-bottom: 4rem;
+
+  }
   }
   
   .body {
@@ -21,7 +29,16 @@
       gap: 4rem;
       margin: 0;
   }
-  
+  .imageWrapper {
+    width: 100%;
+
+    img {
+        width: 100%;
+        // aspect-ratio: 19/2;
+        border-radius: 12px;
+        object-fit: cover;
+    }
+}
   @media (max-width: 768px) {
       .header {
           padding: 0;
@@ -32,4 +49,14 @@
       .page {
         padding: 2.5rem 0 3rem;
       }
+    .imageWrapper {
+        width: 100%;
+    
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            object-fit: cover;
+        }
+    }
   }
