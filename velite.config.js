@@ -59,11 +59,12 @@ export default defineConfig({
           cardDesc: s.string(),
           cardImg: s.string(),
           coverImg: s.string(),
-          duration: s.string(),
-          credits: s.number(),
-          department: s.string(),
-          language: s.string(),
+          duration: s.string().optional (),
+          credits: s.number().optional (),
+          department: s.string().optional (),
+          language: s.string().optional (),
           flyerLink: s.string().optional(),
+          comingSoon: s.boolean().optional(),
           applicationLink: s.string().optional(), // Application link
           applicationClosingDate: s.string().optional(),
           seo: s
