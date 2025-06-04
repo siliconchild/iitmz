@@ -33,7 +33,7 @@ export default async function Home() {
     <main>
       <Hero banners={banners || defaultBanner} />
       {news && <News news={news} />}
-      <Courses />
+      <Courses layout="HORIZONTAL" />
       <Counter />
       <Leadership />
       <GovernanceBoard />
