@@ -12,9 +12,8 @@ type CoursesProps = {
 export default function Courses({ layout = "HORIZONTAL" }: CoursesProps) {
   return (
     <section
-      className={`${styles.section}  ${
-        layout === "VERTICAL" && styles.vertical
-      }`}
+      className={`${styles.section}  ${layout === "VERTICAL" && styles.vertical
+        }`}
     >
       <div className="container">
         <h2 className="section-title center line">Academic Programs</h2>
@@ -33,9 +32,18 @@ export default function Courses({ layout = "HORIZONTAL" }: CoursesProps) {
                   />
                 </div>
                 <div className={styles.content}>
-                  <Link href={`/schools/engineering-and-science/${course.slug}`}>
+                  {/* <Link href={`/schools/engineering-and-science/${course.slug}`}>
                     <h3>{course.title}</h3>
-                  </Link>
+                  </Link> */}
+
+                  {/* Conditionally render title as a Link or plain h3 */}
+                  {!course.comingSoon ? (
+                    <Link href={`/schools/engineering-and-science/${course.slug}`}>
+                      <h3>{course.title}</h3>
+                    </Link>
+                  ) : (
+                    <h3>{course.title}</h3> 
+                  )}
                   <p>{course.cardDesc}</p>
 
                   <div className={styles.footer}>
@@ -63,13 +71,13 @@ export default function Courses({ layout = "HORIZONTAL" }: CoursesProps) {
 
 
                     {!course.comingSoon && course.applicationLink && (
-                       <Link target="_blank" href={course.applicationLink}>
-                         <Button>Apply now</Button>
-                       </Link>
+                      <Link target="_blank" href={course.applicationLink}>
+                        <Button>Apply now</Button>
+                      </Link>
                     )}
-                    
+
                     {!course.comingSoon && !course.applicationLink && (
-                        <Button disabled={true}>Apply now</Button>
+                      <Button disabled={true}>Apply now</Button>
                     )}
 
 
