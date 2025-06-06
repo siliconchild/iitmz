@@ -32,8 +32,16 @@ export interface Publication {
     faculty: [
       {
         name: "Dr. Innocent Nyalala",
-        // posterImage: "/placeholder-1.png",
+        posterImage: "/research-1.png",
         publications: [
+          {
+            year: 2025,
+            title: "Prime Directives for Responsible AI for Africa: A Manifesto for Inclusive Technology",
+            venue: "Data Science Africa (DSA) 2025 conference, hosted by Iaban University",
+            type: "Conference",
+            description:
+              "We present a holistic framework for developing inclusive, ethical, and sustainable AI that addresses Africa's unique cultural, social, and economic contexts. We emphasize participatory design, data equity, and local empowerment to ensure AI benefits all African communities.",
+          },
           {
             year: 2025,
             title: "Rectifying the extremely weakened signals for cassava leaf disease detection",
