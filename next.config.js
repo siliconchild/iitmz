@@ -41,6 +41,11 @@ let config = {
         destination: "/schools/engineering-and-science/bs-data-science-and-ai",
         permanent: false,
       },
+      {
+        source: "/bs-cpe",
+        destination: "/schools/engineering-and-science/bs-chemical-process-engineering",
+        permanent: false,
+      },
     ];
   },
   images: {
