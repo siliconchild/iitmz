@@ -1,49 +1,86 @@
 .section {
     padding: 7rem 0 7rem;
     background: #fff;
-}
-
-.grid {
+  }
+  
+  /* --- New Tab Styles --- */
+  .tabs {
+    display: flex;
+    justify-content: center;
+    // gap: 1.5rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+  }
+  
+  .tabButton {
+    padding: 1rem 2.5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #475569;
+    background-color: #f1f5f9;
+    border: 1px solid #e2e8f0;
+    // border-radius: 9999px; /* Pill shape */
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  
+    &:hover {
+      background-color: #e2e8f0;
+      color: #1e293b;
+    }
+  
+    &.active {
+      background-color: #b3383e;
+      color: #ffffff;
+      border-color: #b3383e;
+      box-shadow: 0 4px 14px 0 rgba(179, 56, 62, 0.25);
+    }
+  }
+  /* --- End New Tab Styles --- */
+  
+  .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
-    margin: 5rem auto 0;
-}
-
-@media (max-width: 1024px) {
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 1024px) {
     .grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2.5rem;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2.5rem;
     }
-}
-
-@media (max-width: 768px) {
+  }
+  
+  @media (max-width: 768px) {
     .section {
-        padding: 5rem 0;
+      padding: 5rem 0;
     }
-
     .description {
-        padding: 0 2rem;
-        margin-bottom: 3rem;
-
-        p {
-            font-size: 1.6rem;
-        }
+      padding: 0 2rem;
+      margin-bottom: 3rem;
+      p {
+        font-size: 1.6rem;
+      }
     }
-}
-
-@media (max-width: 480px) {
+  }
+  
+  @media (max-width: 480px) {
+    .tabs {
+      gap: 1rem;
+    }
+    .tabButton {
+      padding: 0.8rem 1.8rem;
+      font-size: 1.4rem;
+    }
     .grid {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-        margin: 3rem auto 0;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      margin: 3rem auto 0;
     }
-
     .section {
-        padding: 5rem 0;
+      padding: 5rem 0;
     }
-
     .description {
-        margin-bottom: 2rem;
+      margin-bottom: 2rem;
     }
-}
+  }

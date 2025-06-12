@@ -13,14 +13,14 @@
 
   th {
     padding: 1rem;
-    text-align: left;
+    text-align: left !important;
     cursor: default;
 
     &:first-child {
       width: 55%;
     }
     &:last-child {
-      text-align: center;
+      text-align: left;
     }
     &:first-child {
       text-align: left;
@@ -29,7 +29,7 @@
 
   td {
     padding: 1rem;
-    text-align: left;
+    text-align: left !important;
 
     &:last-child {
       text-align: center;
