@@ -1,8 +1,8 @@
-// Import Font Awesome icons
+
 import { FaCalendarAlt, FaAward, FaUsers, FaMapMarkerAlt } from "react-icons/fa";
 import styles from "./research.module.scss";
-// Assuming research.ts exports typed data as shown in previous examples
-import { researchData, FacultyMember, Publication, AwardEntry } from "@/data/research"; // Adjust path if needed
+import { researchData, FacultyMember, Publication, AwardEntry } from "@/data/research"; 
+import Img from "./image";
 
 function getPublicationTypeBadgeClassName(type: string): string {
   switch (type) {
@@ -42,10 +42,12 @@ export default function ResearchHighlights() {
                 {/* Conditionally render faculty poster */}
                 {faculty.posterImage && (
                   <div className={styles.facultyPoster}>
-                    <img
+                    <Img
                       src={faculty.posterImage} // No need for || "/placeholder.svg" if it's truly optional and means "don't show"
                       alt={`Research poster for ${faculty.name}`}
                       className={styles.posterImage}
+                      width={320}
+                      height={320}
                     />
                     {/* <div className={styles.posterBadgeContainer}>
                       <span className={styles.badgePoster}>
@@ -107,10 +109,12 @@ export default function ResearchHighlights() {
                     {/* Conditionally render award poster */}
                     {award.posterImage && (
                       <div className={styles.awardPoster}>
-                        <img
+                        <Img
                           src={award.posterImage} // No need for || "/placeholder.svg"
                           alt={`Award poster for ${award.student}`}
                           className={styles.posterImage}
+                          width={320}
+                          height={320}
                         />
                         {/* <div className={styles.posterBadgeContainer}>
                           <span className={styles.badgePoster}>
