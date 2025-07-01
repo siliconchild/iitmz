@@ -1,189 +1,189 @@
 .section {
-  background-color: #f6f8fb;
-  padding-bottom: 6rem;
+    background-color: #f6f8fb;
+    padding-bottom: 6rem;
 }
 
 .header {
-  position: relative;
-  height: 55vh;
-  &:before {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #000;
-    content: "";
-    opacity: 0.4;
-    z-index: 2;
-  }
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+    position: relative;
+    height: 55vh;
+    &:before {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        content: "";
+        opacity: 0.4;
+        z-index: 2;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 
 .body {
-  margin-top: -70px;
-  position: relative;
-  z-index: 5;
-  background: #ffffff;
-  border-radius: 3px;
-  padding: 4rem 5rem;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    margin-top: -70px;
+    position: relative;
+    z-index: 5;
+    background: #ffffff;
+    border-radius: 3px;
+    padding: 4rem 5rem;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
 
-  & > section {
-    margin-bottom: 6rem;
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 1.25rem;
-    }
+    & > section {
+        margin-bottom: 6rem;
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1.25rem;
+        }
 
-    h3 {
-      font-size: 2, 25rem;
-      margin-bottom: 1.5rem;
-    }
+        h3 {
+            font-size: 2, 25rem;
+            margin-bottom: 1.5rem;
+        }
 
-    h4 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-      font-weight: 600;
-    }
+        h4 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
 
-    & > p {
-      font-size: 1.6rem;
-      font-weight: 400;
-      margin-bottom: 1.5rem;
+        & > p {
+            font-size: 1.6rem;
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+        }
     }
-  }
 }
 
 .applicationClosingDate {
-  span {
-    color: #af132a;
-    font-size: 1.6rem;
-  }
+    span {
+        color: #af132a;
+        font-size: 1.55rem;
+    }
 }
 
 .titleBar {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2.5rem;
 }
 
 .mainTitle {
-  .onlineBadge {
-    background-color: #f6ad55;
-    margin-bottom: 1.75rem;
-    display: block;
-    color: white;
-    padding: 0.6rem 1.75rem;
-    border-radius: 2.5rem;
-    font-size: 1.2rem;
-    font-weight: bold;
-    width: fit-content;
-    margin-left: -0.25rem;
-  }
-  h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
+    .onlineBadge {
+        background-color: #f6ad55;
+        margin-bottom: 1.75rem;
+        display: block;
+        color: white;
+        padding: 0.6rem 1.75rem;
+        border-radius: 2.5rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+        width: fit-content;
+        margin-left: -0.25rem;
+    }
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
 }
 
 .cta {
-  display: flex;
-  gap: 2rem;
+    display: flex;
+    gap: 2rem;
 }
 
 .meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-around;
-  padding: 2.25rem 0;
-  border-top: 1px solid #edeef2;
-  border-bottom: 1px solid #edeef2;
-  align-items: center;
-  margin-bottom: 3rem;
-  .item {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: repeat(2, 1fr);
-    svg {
-      height: 28px;
-      width: 28px;
-      grid-row: span 2;
-      margin-right: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    padding: 2.25rem 0;
+    border-top: 1px solid #edeef2;
+    border-bottom: 1px solid #edeef2;
+    align-items: center;
+    margin-bottom: 3rem;
+    .item {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: repeat(2, 1fr);
+        svg {
+            height: 28px;
+            width: 28px;
+            grid-row: span 2;
+            margin-right: 1.5rem;
+        }
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        span {
+            display: block;
+            font-weight: 700;
+        }
     }
-    p {
-      font-size: 1.5rem;
-      margin-bottom: 0.5rem;
-    }
-    span {
-      display: block;
-      font-weight: 700;
-    }
-  }
 }
 
 .downloadableFiles {
-  margin-top: 2rem;
-  button {
-    svg {
-      width: 22px;
-      height: 22px;
-      margin-right: 1rem;
+    margin-top: 2rem;
+    button {
+        svg {
+            width: 22px;
+            height: 22px;
+            margin-right: 1rem;
+        }
     }
-  }
 }
 
 @media (max-width: 480px) {
-  .section {
-    padding-bottom: 3.5rem;
-  }
-  .body {
-    margin-top: -100px;
-    padding: 3rem 1rem;
-    & > div {
-      margin-bottom: 2.5rem;
-      &:last-child {
-        margin-bottom: 1rem;
-      }
+    .section {
+        padding-bottom: 3.5rem;
     }
-    h1 {
-      margin-bottom: 0.5rem;
-      font-size: 2rem;
+    .body {
+        margin-top: -100px;
+        padding: 3rem 1rem;
+        & > div {
+            margin-bottom: 2.5rem;
+            &:last-child {
+                margin-bottom: 1rem;
+            }
+        }
+        h1 {
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+        }
+        p {
+            font-size: 1.5rem;
+        }
     }
-    p {
-      font-size: 1.5rem;
+    .titleBar {
+        display: flex;
+        flex-direction: column;
     }
-  }
-  .titleBar {
-    display: flex;
-    flex-direction: column;
-  }
-  .mainTitle {
-    margin-bottom: 3rem;
-    padding: 0 1rem;
-  }
-  .cta {
-    padding: 0 1rem;
-    flex-direction: column;
-  }
+    .mainTitle {
+        margin-bottom: 3rem;
+        padding: 0 1rem;
+    }
+    .cta {
+        padding: 0 1rem;
+        flex-direction: column;
+    }
 
-  .meta {
-    justify-content: space-evenly;
-    .item {
-      width: 40%;
-      span {
-        font-size: 1.3rem;
-      }
-      p {
-        font-size: 1.4rem;
-      }
-      svg {
-        height: 24px;
-        width: 24px;
-      }
+    .meta {
+        justify-content: space-evenly;
+        .item {
+            width: 40%;
+            span {
+                font-size: 1.3rem;
+            }
+            p {
+                font-size: 1.4rem;
+            }
+            svg {
+                height: 24px;
+                width: 24px;
+            }
+        }
     }
-  }
 }
