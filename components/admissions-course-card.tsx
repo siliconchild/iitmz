@@ -34,9 +34,13 @@ export default function CourseCard({
         </div>
 
         <div className={styles.applyButton}>
-          <Link target="_blank" href={applicationLink}>
-            <Button disabled={applicationDisabled}>Apply Now</Button>
-          </Link>
+          {applicationDisabled ? (
+            <Button disabled>Apply Now</Button>
+          ) : (
+            <Link target="_blank" href={applicationLink}>
+              <Button>Apply Now</Button>
+            </Link>
+          )}
         </div>
       </div>
     </div>

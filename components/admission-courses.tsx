@@ -67,7 +67,8 @@ export default function AcademicPrograms() {
           url: "/schools/engineering-and-science/bs-data-science-and-ai#examination-centres",
         },
       ],
-      applicationLink: "https://admissions.iitmz.ac.in/bsdsai",
+      applicationDisabled: true,
+      applicationLink: "#",
     },
     {
       title: "MTech in Data Science & AI",
@@ -94,7 +95,8 @@ export default function AcademicPrograms() {
           url: "/schools/engineering-and-science/mtech-data-science-and-ai#screening-test",
         },
       ],
-      applicationLink: "https://admissions.iitmz.ac.in/mtechdsai",
+      applicationDisabled: true,
+      applicationLink: "#",
     },
     {
       title: "MTech in Ocean Structures",
@@ -125,12 +127,17 @@ export default function AcademicPrograms() {
           url: "/schools/engineering-and-science/mtech-ocean-structures#program-structure",
         },
       ],
-      applicationLink: "https://admissions.iitmz.ac.in/mtechos",
+      applicationDisabled: true,
+      applicationLink: "#",
     },
   ];
 
-  const ugPrograms = programs.filter((program) => program.title.startsWith("BS"));
-  const pgPrograms = programs.filter((program) => program.title.startsWith("MTech"));
+  const ugPrograms = programs.filter((program) =>
+    program.title.startsWith("BS"),
+  );
+  const pgPrograms = programs.filter((program) =>
+    program.title.startsWith("MTech"),
+  );
 
   const displayedPrograms = activeTab === "ug" ? ugPrograms : pgPrograms;
 
