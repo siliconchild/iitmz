@@ -8,7 +8,8 @@ export default function ContactWidget() {
     <div className={styles.widget}>
       <Link
         target="_blank"
-        href="https://admissions.iitmz.ac.in/"
+        // href="https://admissions.iitmz.ac.in/"
+        href="https://admissions.iitmz.ac.in/bscpe"
         className={styles.widgetItem}
       >
         <FaGraduationCap className={styles.icon} />
@@ -17,7 +18,7 @@ export default function ContactWidget() {
 
       <Link
         target="_blank"
-        href="/IITMZST-Information-Brochure-2025.pdf"
+        href="/BS-CPE-Program-Flyer.pdf"
         className={styles.widgetItem}
       >
         <MdOutlineLibraryBooks className={styles.icon} />
