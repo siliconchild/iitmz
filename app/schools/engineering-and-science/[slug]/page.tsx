@@ -164,6 +164,22 @@ export default async function PagePage({
                   <strong>Applications Close on -</strong> <span>{coursesMember.applicationClosingDate}</span>
                 </p>
               )}
+              <h1>{coursesMember.title}</h1>
+              <p className={styles.applicationClosingDate}>
+                {applicationClosingDate <= currentDate ? (
+                  <>
+                    <strong>Applications Close on -</strong>
+                    <span>{coursesMember.applicationClosingDate}</span>
+                  </>
+                ) : (
+                  <>
+                    <strong>Applications Closed – </strong>
+                    <span>
+                      Reopening Jan {applicationClosingDate.getFullYear() + 1}
+                    </span>
+                  </>
+                )}
+              </p>
             </div>
 
             <div className={styles.cta}>
