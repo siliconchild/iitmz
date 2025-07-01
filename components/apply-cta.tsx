@@ -7,6 +7,7 @@ type ApplyCardProps = {
   description?: string;
   buttonLink?: string;
   buttonText: string;
+  buttonDisabled?: boolean;
 };
 
 export default function ApplyCard({
@@ -14,6 +15,7 @@ export default function ApplyCard({
   description,
   buttonLink = "#",
   buttonText,
+  buttonDisabled = false,
 }: ApplyCardProps) {
   return (
     <section className={styles.applyCard}>
@@ -22,9 +24,11 @@ export default function ApplyCard({
         {description && <p>{description}</p>}
         {buttonLink && (
           <div className={styles.applyCta}>
-            <Link target="_blank" href={buttonLink}>
-              <Button kind="PRIMARY">{buttonText}</Button>
-            </Link>
+            {!buttonDisabled && (
+              <Link target="_blank" href={buttonLink}>
+                <Button kind="PRIMARY">{buttonText}</Button>
+              </Link>
+            )}
           </div>
         )}
       </div>
