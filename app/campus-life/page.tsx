@@ -3,7 +3,7 @@ import Img from "@/components/image";
 import Maps from "@/components/map";
 import Slider from "@/components/slider";
 import { FaMapMarkerAlt } from "react-icons/fa";
-import {IoMdMailOpen } from "react-icons/io"
+import { IoMdMailOpen } from "react-icons/io";
 
 export const metadata = {
   title: "Discover Our Campus",
@@ -62,7 +62,7 @@ export default function CampusLife() {
               </div>
               <div className={styles.itemImages}>
                 <Slider slidesToShow={1} showTracks={true}>
-                  {Array.from({ length: 13 }, (_, index) => (
+                  {Array.from({ length: 16 }, (_, index) => (
                     <Img
                       key={`image__${index}`}
                       // src={`/student-life/${index + 1}.jpg`}
@@ -88,11 +88,11 @@ export default function CampusLife() {
                   growth and community enrichment. Led by passionate student
                   leaders and supported by dedicated faculty champions, the
                   clubs at IITMZ offer an ocean of opportunities to explore
-                  diverse interests. Whether it&rsquo;s designing autonomous robots or
-                  organizing cultural festivals, students at IITM Zanzibar are
-                  constantly pushing boundaries and creating an intellectually
-                  stimulating environment that enhances their overall campus
-                  experience.
+                  diverse interests. Whether it&rsquo;s designing autonomous
+                  robots or organizing cultural festivals, students at IITM
+                  Zanzibar are constantly pushing boundaries and creating an
+                  intellectually stimulating environment that enhances their
+                  overall campus experience.
                 </p>
               </div>
               <div className={styles.itemImages}>
@@ -176,12 +176,25 @@ export default function CampusLife() {
               <div className={styles.itemInfo}>
                 <h3>Workshops & Seminar Series</h3>
                 <p>
-                At IIT Madras Zanzibar Campus, the Workshop & Seminar Series is a cornerstone of intellectual exploration and innovation! From cutting-edge research presentations to hands-on technical workshops, every session pulses with curiosity and collaboration. The campus regularly hosts seminars led by global experts, industry leaders, and faculty members, sparking engaging discussions and fresh perspectives. These events span diverse fields—from artificial intelligence and sustainability to entrepreneurship and design—empowering students to expand their horizons and apply knowledge beyond the classroom. This dynamic environment not only sharpens academic and professional skills but also cultivates critical thinking and a spirit of lifelong learning, making the IITM Zanzibar experience deeply enriching and globally relevant.
+                  At IIT Madras Zanzibar Campus, the Workshop & Seminar Series
+                  is a cornerstone of intellectual exploration and innovation!
+                  From cutting-edge research presentations to hands-on technical
+                  workshops, every session pulses with curiosity and
+                  collaboration. The campus regularly hosts seminars led by
+                  global experts, industry leaders, and faculty members,
+                  sparking engaging discussions and fresh perspectives. These
+                  events span diverse fields—from artificial intelligence and
+                  sustainability to entrepreneurship and design—empowering
+                  students to expand their horizons and apply knowledge beyond
+                  the classroom. This dynamic environment not only sharpens
+                  academic and professional skills but also cultivates critical
+                  thinking and a spirit of lifelong learning, making the IITM
+                  Zanzibar experience deeply enriching and globally relevant.
                 </p>
               </div>
               <div className={styles.itemImages}>
                 <Slider slidesToShow={1} showTracks={true}>
-                  {Array.from({ length: 11 }, (_, index) => (
+                  {Array.from({ length: 13 }, (_, index) => (
                     <Img
                       key={`image__${index}`}
                       src={`/workshop-seminars/${index + 1}.jpg`}
@@ -193,8 +206,6 @@ export default function CampusLife() {
                 </Slider>
               </div>
             </div>
-
-
           </div>
 
           {/* <div className={styles.gallery}>
