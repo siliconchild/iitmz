@@ -96,6 +96,15 @@ export default function SigningCeremony() {
             alt="Image of signing of MOU with OCGS"
           />
         </div>
+        <div className={styles.item}>
+          <Img
+            src="/iitmz-elgon.png"
+            width={260}
+            height={290}
+            style={{ objectFit: "cover" }}
+            alt="Image of signing of MOU with Elgon"
+          />
+        </div>
       </Slider>
     </section>
   );
