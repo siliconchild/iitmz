@@ -44,6 +44,37 @@ export default function CampusLife() {
           <div className={styles.itemGrid}>
             <div className={styles.itemSection}>
               <div className={styles.itemInfo}>
+                <h3>Degree Distribution Ceremony</h3>
+                <p>
+                  On July 11, 2025, as IIT Madras celebrated its 62nd
+                  Convocation in Chennai, IITM Zanzibar hosted its first-ever
+                  Degree Distribution Ceremony. This milestone marks the
+                  graduation of the inaugural MTech Data Science & AI cohort at
+                  our Zanzibar campus—a proud reflection of IIT Madras&rsquo;s
+                  vision for global education and a shared legacy of excellence
+                  across continents. It also highlights the growing
+                  international collaboration in higher education and IIT
+                  Madras&rsquo;s pioneering achievement in establishing
+                  India&rsquo;s first offshore IIT campus.
+                </p>
+              </div>
+              <div className={styles.itemImages}>
+                <Slider slidesToShow={1} showTracks={true}>
+                  {Array.from({ length: 4 }, (_, index) => (
+                    <Img
+                      key={`image__${index}`}
+                      // src={`/student-life/${index + 1}.jpg`}
+                      src={`/degree-distribution/${index + 1}.jpeg`}
+                      width={450}
+                      height={350}
+                      alt="Image of IITM Zanzibar Campus"
+                    />
+                  ))}
+                </Slider>
+              </div>
+            </div>
+            <div className={styles.itemSection}>
+              <div className={styles.itemInfo}>
                 <h3>Student Life</h3>
                 <p>
                   At IITM Zanzibar Campus, the spirit of social responsibility
@@ -97,7 +128,7 @@ export default function CampusLife() {
               </div>
               <div className={styles.itemImages}>
                 <Slider slidesToShow={1} showTracks={true}>
-                  {Array.from({ length: 7 }, (_, index) => (
+                  {Array.from({ length: 10 }, (_, index) => (
                     <Img
                       key={`image__${index}`}
                       // src={`/student-life/${index + 1}.jpg`}
