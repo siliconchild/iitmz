@@ -123,6 +123,16 @@ const media = {
         alt: "Image of IITM Director",
       },
     },
+    {
+      title:
+        "IIT Madras Zanzibar holds first degree distribution ceremony, 16 students graduate",
+      desc: "The Indian Institute of Technology (IIT) Madras Zanzibar on July 11 held its first degree distribution ceremony with 16 students graduating. This marks the graduation of its inaugural cohort from the MTech programme in Data Science and Artificial Intelligence (DSAI) for the academic session 2023–2025. The event, held at the Bweleo campus in Zanzibar was established as IIT Madras’ first international campus in 2023 in partnership with the Government of Zanzibar.",
+      link: "https://indianexpress.com/article/education/iit-madras-zanzibar-campus-first-degree-distribution-ceremony-data-science-artificial-intelligence-batch-2025-jee-main-advanced-10134226/",
+      image: {
+        url: "/degree-distribution/2.jpeg",
+        alt: "Image of IITMZ Degree Distribution Ceremony",
+      },
+    },
   ],
 };
 
