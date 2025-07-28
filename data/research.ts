@@ -57,8 +57,17 @@ export const researchData: ResearchDataType = {
     },
     {
       name: "Dr. Manoj Kumar",
-      posterImage: "/research-2.jpg",
+      posterImage: "/research-6.jpeg",
       publications: [
+        {
+          year: 2025,
+          title:
+            "Analysis of a Mathematical Model for Malaria Using a Data-Driven Approach",
+          venue: "Scientific Reports, a journal published by Nature Portfolio",
+          type: "Journal",
+          description:
+            "Our study, accepted in Scientific Reports, introduces a novel temperature and altitude-dependent SIR-SI model for malaria transmission. We integrate physics-informed neural networks (PINNs) for parameter inference and use Dynamic Mode Decomposition (DMD) to develop a real-time transmission risk index, offering a data-driven yet interpretable framework for predictive modeling and intervention planning. ",
+        },
         {
           year: 2025,
           title:
@@ -261,6 +270,15 @@ export const researchData: ResearchDataType = {
     },
   ],
   awards: [
+    {
+      mentor: "Dr. Tushar Shinde",
+      student: "Rohan Saha",
+      award: "2nd Price - $500",
+      work: "Building Temperature Prediction for Smart HVAC Control: A Multi-Stage Learning Framework",
+      conference:
+        "International Conference on Machine Learning (ICML 2025), Vancouver, Canada",
+      posterImage: "/award-4.jpg",
+    },
     {
       mentor: "Dr. Tushar Shinde",
       student: "Shivaanee Eswaran",
