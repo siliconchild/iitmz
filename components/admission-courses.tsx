@@ -36,6 +36,7 @@ export default function AcademicPrograms() {
           url: "/schools/engineering-and-science/bs-chemical-process-engineering#examination-centres",
         },
       ],
+      applicationDisabled: true,
       applicationLink: "https://admissions.iitmz.ac.in/bscpe",
     },
     {
