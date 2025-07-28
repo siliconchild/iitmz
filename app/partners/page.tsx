@@ -795,6 +795,10 @@ export default function PartnersPage() {
             />
             <p>Zanlink Limited</p>
           </div>
+          <div className={styles.card}>
+            <Img src="/logos/elgon.jpeg" alt="Elgon" width={300} height={180} />
+            <p>Elgon Kenya Ltd</p>
+          </div>
 
           {/* <div className={styles.card}>
               <Img
