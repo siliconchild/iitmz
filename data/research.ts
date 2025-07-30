@@ -116,90 +116,142 @@ export const researchData: ResearchDataType = {
         {
           year: 2025,
           title:
-            "TWINSHIELD: A Dual-Phase System for Detecting and Extracting Backdoors in VLMs",
+            "TWINSHIELD: A Dual Phase System for Detecting and Extracting Backdoors in VLMs",
           venue:
-            "IEEE International Conference on Image Processing (ICIP) 2025, Anchorage, Alaska, USA",
+            "32th IEEE International Conference on Image Processing (ICIP) 2025, USA",
           type: "Conference",
           description:
-            "Poison Sample Detection and Trigger Retrieval in Multimodal VLMs",
+            "Presents a dual-phase system to identify and remove backdoors in vision-language models (VLMs).",
         },
         {
           year: 2025,
           title:
-            "An efficient and scalable framework for lightweight crop disease recognition in low-resource settings",
+            "High-Performance Lightweight Vision Models for Land Cover Classification with Coresets and Compression",
           venue:
-            "Workshop on Agriculture-Vision, IEEE/CVF Conference on Computer Vision and Pattern Recognition, Nashville",
+            "42nd International Conference on Machine Learning (ICML) 2025 workshop on TerraBytes, Canada",
           type: "Conference",
           description:
-            "Introduced a computer vision model for accurate crop disease identification suitable for rural and low-infrastructure regions.",
+            "Proposes a high-efficiency model using coresets and compression for scalable land cover classification. Selected for the travel grant (registration support) from ICML Terrabytes 2025.",
         },
         {
           year: 2025,
           title:
-            "Multiple papers on visual quality assessment and generative image models",
+            "Towards Optimal Layer Ordering for Efficient Model Compression via Pruning and Quantization",
           venue:
-            "Workshops on Women in Computer Vision and Generative Models, IEEE/CVF Conference",
+            "25th IEEE International Conference on Digital Signal Processing (DSP) 2025, Greece",
           type: "Conference",
           description:
-            "Focused on evaluating and improving visual quality in AI-generated images using efficient vision transformers.",
+            "Explores the impact of layer ordering on model compression using pruning and quantization strategies.",
         },
         {
           year: 2025,
           title:
-            "Remote sensing and maritime applications using compressed neural networks",
+            "EdgeHeart: Real-Time Detection of Cardiac Conduction Disorders on Edge Devices",
           venue:
-            "IEEE/CVF Winter Conference on Applications of Computer Vision, Arizona",
+            "50th IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP) 2025 (Show and Tell Session), India",
           type: "Conference",
           description:
-            "Designed compressed and quantized models for land cover and maritime image classification in Earth observation.",
+            "Proposes a real-time edge-deployable system for detecting cardiac conduction anomalies.",
         },
         {
           year: 2025,
           title:
-            "Model compression for edge deployment and surveillance systems",
+            "Uncertainty-guided Style-aware Probabilistic Perceptual Quality Assessment for AI-Generated Images",
           venue:
-            "International Conference on Digital Signal Processing, Greece",
+            "IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR) 2025 Workshop, USA",
           type: "Conference",
           description:
-            "Proposed optimal model pruning and resolution scaling techniques for energy-efficient deployments in remote sensing.",
+            "Introduces a probabilistic quality assessment model for generative images, guided by style and uncertainty. Shivaanee, selected for the WiCV@CVPR 2025 travel grant.",
         },
         {
           year: 2025,
           title:
-            "EdgeHeart: Real-time detection of cardiac conduction disorders on edge devices",
+            "An Efficient and Scalable Framework for Lightweight Crop Disease Recognition in Low-Resource Settings",
           venue:
-            "50th IEEE International Conference on Acoustics, Speech, and Signal Processing, Hyderabad",
+            "IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR) 2025 Workshop on Agriculture-Vision, USA",
           type: "Conference",
           description:
-            "Demonstrated a real-time medical diagnosis tool for cardiac disorders deployable on mobile or wearable devices.",
+            "Develops a lightweight and scalable framework for crop disease classification in resource-constrained environments.",
+        },
+        {
+          year: 2025,
+          title:
+            "Efficient Land-Cover Image Classification via Mixed Bit-Precision Quantization",
+          venue:
+            "International Conference on Learning Representations (ICLR) 2025 Workshop on Machine Learning for Remote Sensing, Singapore",
+          type: "Conference",
+          description:
+            "Uses mixed-bit quantization for efficient land-cover image classification in remote sensing. Ahmed, selected for the €1500 travel grant from ICLR ML4RS 2025.",
+        },
+        {
+          year: 2025,
+          title:
+            "Model Compression Meets Resolution Scaling for Efficient Remote Sensing Classification",
+          venue:
+            "IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) 2025 Workshop on Computer Vision for Earth Observation (CV4EO), USA",
+          type: "Conference",
+          description:
+            "Integrates model compression and image resolution scaling for improved remote sensing classification.",
+        },
+        {
+          year: 2025,
+          title:
+            "Mixed-Precision is All You Need for Efficient Document Image Classification",
+          venue:
+            "IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) 2025 Workshop on Computer Vision Systems for Document Analysis and Recognition, USA",
+          type: "Conference",
+          description:
+            "Demonstrates the effectiveness of mixed-precision quantization for document image classification.",
+        },
+        {
+          year: 2025,
+          title:
+            "Navigating Coreset Selection and Model Compression for Efficient Maritime Image Classification",
+          venue:
+            "IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) 2025 Workshop on Maritime Computer Vision, USA",
+          type: "Conference",
+          description:
+            "Combines coreset selection and compression techniques for maritime visual recognition tasks.",
         },
         {
           year: 2024,
           title:
-            "Adaptive quantization of deep neural networks via layer importance estimation",
+            "Adaptive Quantization and Pruning of Deep Neural Networks via Layer Importance Estimation",
           venue:
-            "International Conference on Computer Vision and Image Processing, Chennai",
+            "38th Annual Conference on Neural Information Processing Systems (NeurIPS) 2024 workshop on Machine Learning and Compression, Canada",
           type: "Conference",
           description:
-            "Proposed intelligent quantization techniques for optimizing deep learning model size without losing accuracy.",
+            "Proposes adaptive pruning and quantization based on estimated importance of each DNN layer.",
         },
         {
           year: 2024,
-          title: "Efficient motion search for surveillance video coding",
+          title:
+            "Lightweight Neural Networks for Speech Emotion Recognition using Layer-wise Adaptive Quantization",
           venue:
-            "International Conference on Image Processing Theory, Tools and Applications, Morocco",
+            "38th Annual Conference on Neural Information Processing Systems (NeurIPS) 2024 ENLSP workshop (PMLR 262:584–595), Canada",
           type: "Conference",
           description:
-            "Introduced a novel motion estimation technique to compress surveillance video data efficiently.",
+            "Introduces a lightweight SER model leveraging adaptive layer-wise quantization.",
         },
         {
           year: 2024,
-          title: "Speech emotion recognition using quantized neural networks",
+          title:
+            "Adaptive Quantization of Deep Neural Networks via Layer Importance Estimation",
           venue:
-            "38th Annual Conference on Neural Information Processing Systems, Canada",
+            "International Conference on Computer Vision & Image Processing (CVIP) 2024, India",
           type: "Conference",
           description:
-            "Built compact emotion recognition systems for speech analysis using adaptive layer quantization.",
+            "Presents a method for quantization based on importance estimation of DNN layers for efficient deployment.",
+        },
+        {
+          year: 2024,
+          title:
+            "Adaptive Pixel-based Efficient Motion Search for Surveillance Video Coding",
+          venue:
+            "IEEE International Conference on Image Processing Theory, Tools and Applications (IPTA) 2024, Morocco",
+          type: "Conference",
+          description:
+            "Proposes an adaptive motion estimation technique for efficient surveillance video compression.",
         },
       ],
     },
