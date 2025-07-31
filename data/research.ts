@@ -111,8 +111,18 @@ export const researchData: ResearchDataType = {
     },
     {
       name: "Dr. Tushar Shinde",
-      posterImage: "/research-5.jpg",
+      posterImage: "/research-7.png",
       publications: [
+        {
+          year: 2025,
+          title:
+            "Adaptive Compression of Large Vision Models for Efficient Image Quality Assessment of AI-Generated Content",
+          venue:
+            "IEEE/CVF International Conference on Computer Vision (ICCV) 2025 workshop on Efficient Computing under Limited Resources (ECLR), Honolulu, Hawaii, USA 🇺🇸.",
+          type: "Conference",
+          description:
+            "Introduces a novel adaptive compression framework that enables large vision models to be used efficiently for assessing the visual quality of AI-generated content, paving the way for scalable, real-time deployment on resource-constrained platforms.",
+        },
         {
           year: 2025,
           title:
