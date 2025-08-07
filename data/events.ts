@@ -271,6 +271,15 @@ const eventsList = [
     location: "IIT Madras, Zanzibar Campus",
     desc: "This milestone marks the graduation of the inaugural MTech Data Science & AI cohort at our Zanzibar campus—a proud reflection of IIT Madras’s vision for global education and a shared legacy of excellence across continents. It also highlights the growing international collaboration in higher education and IIT Madras’s pioneering achievement in establishing India’s first offshore IIT campus.",
   },
+  {
+    img: "/orientation.png",
+    startDate: "August 04, 2025",
+    regLink: "/",
+    name: "International Students’ Orientation 2025 hosted at IIT Madras",
+    time: "05:30 PM IST",
+    location: "TTJ Auditorium, IC&SR, IIT Madras",
+    desc: "Students from IITM Zanzibar took part in the International Students’ Orientation 2025 held at IIT Madras. The event brought together incoming international students from various countries, marking the beginning of an enriching academic and cultural experience on campus. This initiative highlights the growing academic collaboration between the two campuses and supports our vision for globally connected and inclusive education. IITM Zanzibar acknowledges the efforts of the Office of Global Engagement, IIT Madras, for organizing a warm and well-curated welcome for all international students.",
+  },
 ];
 
 export default eventsList;
