@@ -1,37 +1,53 @@
 const navMenu = [
-  { title: "Home", link: "/" },
+  // { title: "Home", link: "/" },
+
+  // {
+  //   title: "Schools",
+  //   link: "",
+  //   submenus: [
+  //     {
+  //       title: "School of Engineering & Science",
+  //       link: "/schools/engineering-and-science/",
+  //       submenus: [
+  //         {
+  //           title: "Program Advisory Committee",
+  //           link: "/schools/engineering-and-science#pac",
+  //         },
+  //         {
+  //           title: "Programs Offered",
+  //           link: "/schools/engineering-and-science#courses",
+  //         },
+  //         {
+  //           title: "Academic Calendar",
+  //           link: "/academic-calendar",
+  //         },
+  //         {
+  //           title: "Ordinances",
+  //           link: "/schools/engineering-and-science/ordinances",
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // },
   {
-    title: "Schools",
+    title: "Academics",
     link: "",
     submenus: [
       {
-        title: "School of Engineering & Science",
-        link: "/schools/engineering-and-science/",
-        submenus: [
-          {
-            title: "Program Advisory Committee",
-            link: "/schools/engineering-and-science#pac",
-          },
-          {
-            title: "Programs Offered",
-            link: "/schools/engineering-and-science#courses",
-          },
-          {
-            title: "Faculty",
-            link: "/schools/engineering-and-science#faculty",
-          },
-          {
-            title: "Academic Calendar",
-            link: "/academic-calendar",
-          },
-          {
-            title: "Ordinances",
-            link: "/schools/engineering-and-science/ordinances",
-          },
-        ],
+        title: "Programs Offered",
+        link: "/schools/engineering-and-science",
+      },
+      {
+        title: "Academic Calendar",
+        link: "/academic-calendar",
+      },
+      {
+        title: "Ordinances",
+        link: "/schools/engineering-and-science/ordinances",
       },
     ],
   },
+  { title: "Faculty", link: "/schools/engineering-and-science/faculty" },
   {
     title: "E-Learning",
     link: "",
@@ -47,9 +63,22 @@ const navMenu = [
     ],
   },
   { title: "Research", link: "/research/" },
-  { title: "Careers", link: "/careers/" },
+  {
+    title: "Careers",
+    link: "",
+    submenus: [
+      {
+        title: "Faculty Hiring",
+        link: "/careers/",
+      },
+      {
+        title: "Student Placement",
+        link: "/placement/",
+      },
+    ],
+  },
   { title: "In Media", link: "/media/" },
-  { title: "Our Partners", link: "/partners/" },
+  { title: "Partners", link: "/partners/" },
   { title: "Campus Life", link: "/campus-life/" },
   { title: "Financial Aid", link: "/financial-aid/" },
   { title: "Events", link: "/events/" },

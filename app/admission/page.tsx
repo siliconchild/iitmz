@@ -26,7 +26,8 @@ export default function AdmissionPage() {
         <ApplyCard
           title="Ready to Begin Your Journey?"
           description="Take the first step towards your future at IIT Madras Zanzibar. Applications are now open for the upcoming academic year."
-          buttonLink="https://admissions.iitmz.ac.in/"
+          // buttonLink="https://admissions.iitmz.ac.in/"
+          buttonLink="https://admissions.iitmz.ac.in/bscpe"
           buttonText="Apply Now"
         />
       </div>

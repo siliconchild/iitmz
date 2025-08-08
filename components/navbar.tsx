@@ -26,7 +26,7 @@ export default function Navbar({ navToggle, kind }: NavbarProps) {
               kind={kind}
               item={navItem}
               depthLevel={depthLevel}
-              key={navItem.link}
+              key={`menu-item-${navItem.title}`}
             />
           );
         })}

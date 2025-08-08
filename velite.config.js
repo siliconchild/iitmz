@@ -1,4 +1,5 @@
 import { type } from "os";
+import { appendErrors } from "react-hook-form";
 import { defineConfig, s } from "velite";
 
 export default defineConfig({
@@ -20,7 +21,7 @@ export default defineConfig({
           email: s.string().optional(),
           alternateEmail: s.string().optional(),
           year: s.number().optional(),
-          type: s.enum(['Permanent Faculty', 'Visiting Faculty']).optional(),
+          type: s.enum(["Permanent Faculty", "Visiting Faculty"]).optional(),
           website: s.string().optional(),
           link: s.string().optional(),
           qualification: s
@@ -30,7 +31,7 @@ export default defineConfig({
                 course: s.string(),
                 institution: s.string().optional(),
                 year: s.number(),
-              })
+              }),
             )
             .optional(),
           awards: s
@@ -38,7 +39,7 @@ export default defineConfig({
               s.object({
                 title: s.string(),
                 subtitle: s.string(),
-              })
+              }),
             )
             .optional(),
           body: s.mdx(),
@@ -59,14 +60,15 @@ export default defineConfig({
           cardDesc: s.string(),
           cardImg: s.string(),
           coverImg: s.string(),
-          duration: s.string().optional (),
-          credits: s.number().optional (),
-          department: s.string().optional (),
-          language: s.string().optional (),
+          duration: s.string().optional(),
+          credits: s.number().optional(),
+          department: s.string().optional(),
+          language: s.string().optional(),
           flyerLink: s.string().optional(),
           comingSoon: s.boolean().optional(),
-          applicationLink: s.string().optional(), // Application link
-          applicationClosingDate: s.string().optional(),
+          applicationLink: s.string().optional(),
+          applicationClosingDate: s.string(),
+          applicationDisabled: s.boolean().optional(),
           seo: s
             .object({
               desc: s.string(),
