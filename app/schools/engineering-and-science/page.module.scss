@@ -1,163 +1,98 @@
 .page {
-  // padding: 0 7rem;
+    // padding: 0 7rem;
 }
 
 .header {
-  position: relative;
-  height: 47vh;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
-  padding: 4rem 6rem;
-  h1 {
-    color: #fff;
-    z-index: 2;
-    font-size: 3.1rem;
-    svg {
-      margin-right: 1rem;
+    position: relative;
+    height: 47vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 4rem 6rem;
+    h1 {
+        color: #fff;
+        z-index: 2;
+        font-size: 3.1rem;
+        svg {
+            margin-right: 1rem;
+        }
     }
-  }
-  & > img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-    object-position: 0 46%;
-  }
+    & > img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        object-position: 0 46%;
+    }
 }
 
 .pac {
-  padding: 7rem 0 4rem;
-  h2 {
-    font-size: 2.7rem;
-  }
-  & > div {
-    margin-top: 5rem;
-    display: flex;
-    justify-content: center;
-  }
-  .card {
-    width: 33.33%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    img {
-      object-fit: cover;
-      border-radius: 50%;
-      box-shadow: 0px 10px 40px rgba(28, 51, 84, 0.07);
+    padding: 7rem 0 4rem;
+    h2 {
+        font-size: 2.7rem;
     }
-    h3 {
-      margin-top: 2rem;
+    & > div {
+        margin-top: 5rem;
+        display: flex;
+        justify-content: center;
     }
-    a {
-      margin-top: 1.5rem;
+    .card {
+        width: 33.33%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        img {
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0px 10px 40px rgba(28, 51, 84, 0.07);
+        }
+        h3 {
+            margin-top: 2rem;
+        }
+        a {
+            margin-top: 1.5rem;
+        }
     }
-  }
-}
-
-.faculty {
-  margin: -2rem 0 7rem;
-  h2 {
-    font-size: 2.7rem;
-  }
-  .year {
-    font-size: 1.8rem;
-    text-align: center;
-    margin-bottom: 1rem;
-    color: #141517;
-    font-weight: 400;
-    line-height: 1.5;
-  }
-
-  .cardContainer {
-    margin-top: 6rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-    row-gap: 5rem;
-    margin-bottom: 10rem;
-  }
-  .card {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    img {
-      object-fit: cover;
-      border-radius: 50%;
-      box-shadow: 0px 10px 40px rgba(28, 51, 84, 0.07);
-    }
-    h3 {
-      margin-top: 2rem;
-      text-align: center;
-    }
-    h4 {
-      margin-top: 0.15rem;
-      font-weight: 400;
-      text-align: center;
-      &:last-of-type {
-        margin-bottom: 1rem;
-      }
-    }
-    a {
-      margin-top: auto;
-    }
-  }
 }
 
 @media (max-width: 480px) {
-  .header {
-    padding: 2rem;
-    height: 25vh;
-    h1 {
-      font-size: 2.4rem;
-      display: flex;
-      flex-direction: column;
-      svg {
-        margin-right: 0;
-        margin-bottom: 1rem;
-      }
+    .header {
+        padding: 2rem;
+        height: 25vh;
+        h1 {
+            font-size: 2.4rem;
+            display: flex;
+            flex-direction: column;
+            svg {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+        }
+        img {
+            object-fit: cover;
+        }
     }
-    img {
-      object-fit: cover;
+    .pac {
+        padding: 5rem 0 4rem;
+        h2 {
+            font-size: 2.6rem;
+        }
+        & > div {
+            margin-top: 5rem;
+            flex-direction: column;
+            gap: 5rem;
+        }
+        .card {
+            width: 100%;
+            img {
+                height: 200px;
+                width: 200px;
+            }
+        }
     }
-  }
-  .pac {
-    padding: 5rem 0 4rem;
-    h2 {
-      font-size: 2.6rem;
-    }
-    & > div {
-      margin-top: 5rem;
-      flex-direction: column;
-      gap: 5rem;
-    }
-    .card {
-      width: 100%;
-      img {
-        height: 200px;
-        width: 200px;
-      }
-    }
-  }
-  .faculty {
-    padding: 5rem 0 4rem;
-    margin: -2rem 0 2rem;
-
-    & > div {
-      margin-top: 5rem;
-      flex-direction: column;
-      gap: 5rem;
-    }
-    .card {
-      width: 100%;
-    }
-  }
 }

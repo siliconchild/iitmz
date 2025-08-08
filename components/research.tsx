@@ -1,8 +1,8 @@
-// Import Font Awesome icons
+
 import { FaCalendarAlt, FaAward, FaUsers, FaMapMarkerAlt } from "react-icons/fa";
 import styles from "./research.module.scss";
-// Assuming research.ts exports typed data as shown in previous examples
-import { researchData, FacultyMember, Publication, AwardEntry } from "@/data/research"; // Adjust path if needed
+import { researchData, FacultyMember, Publication, AwardEntry } from "@/data/research"; 
+import Img from "./image";
 
 function getPublicationTypeBadgeClassName(type: string): string {
   switch (type) {
@@ -33,19 +33,21 @@ export default function ResearchHighlights() {
                 <FaUsers className={styles.titleIcon} />
                 <h2 className={styles.cardTitle}>{faculty.name}</h2>
               </div>
-              <p className={styles.cardDescription}>
+              {/* <p className={styles.cardDescription}>
                 {faculty.publications.length} publication{faculty.publications.length !== 1 ? "s" : ""}
-              </p>
+              </p> */}
             </header>
             <div className={styles.cardContent}>
               <div className={styles.facultyContentLayout}>
                 {/* Conditionally render faculty poster */}
                 {faculty.posterImage && (
                   <div className={styles.facultyPoster}>
-                    <img
+                    <Img
                       src={faculty.posterImage} // No need for || "/placeholder.svg" if it's truly optional and means "don't show"
                       alt={`Research poster for ${faculty.name}`}
                       className={styles.posterImage}
+                      width={320}
+                      height={320}
                     />
                     {/* <div className={styles.posterBadgeContainer}>
                       <span className={styles.badgePoster}>
@@ -87,15 +89,18 @@ export default function ResearchHighlights() {
             </div>
           </article>
         ))}
+              <div className={styles.header}>
+              <h1>Awards & Recognitions</h1>
+              </div>
 
         <article className={styles.card}> {/* Awards Card */}
-          <header className={`${styles.cardHeader} ${styles.awardHeaderBg}`}>
+          {/* <header className={`${styles.cardHeader} ${styles.awardHeaderBg}`}>
             <div className={styles.cardTitleContainer}>
               <FaAward className={styles.titleIcon} />
               <h2 className={styles.cardTitle}>Awards & Recognitions</h2>
             </div>
             <p className={styles.cardDescription}>Student achievements and recognitions</p>
-          </header>
+          </header> */}
           <div className={styles.cardContent}>
             <div className={styles.awards}>
               {researchData.awards.map((award: AwardEntry, awardIndex: number) => (
@@ -104,10 +109,12 @@ export default function ResearchHighlights() {
                     {/* Conditionally render award poster */}
                     {award.posterImage && (
                       <div className={styles.awardPoster}>
-                        <img
+                        <Img
                           src={award.posterImage} // No need for || "/placeholder.svg"
                           alt={`Award poster for ${award.student}`}
                           className={styles.posterImage}
+                          width={320}
+                          height={320}
                         />
                         {/* <div className={styles.posterBadgeContainer}>
                           <span className={styles.badgePoster}>

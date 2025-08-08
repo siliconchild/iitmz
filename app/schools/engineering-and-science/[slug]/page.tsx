@@ -39,6 +39,7 @@ import {
   Documents,
   Note,
 } from "@/components/course-components";
+import { ISTDate } from "@/utils/date";
 import { courses } from "#site/content";
 
 function getCourses(coursesSlug: string) {
@@ -54,7 +55,7 @@ export async function generateMetadata({
 }) {
   const { slug } = await params;
   const coursesMember = courses.find(
-    (coursesMember) => coursesMember.slug === slug
+    (coursesMember) => coursesMember.slug === slug,
   );
   if (!coursesMember) return {};
   return {
@@ -113,8 +114,45 @@ export default async function PagePage({
   const { slug } = await params;
   const coursesMember = getCourses(slug);
 
-  if (!coursesMember || !coursesMember.body) notFound();
+  if (!coursesMember) {
+    notFound();
+  }
 
+  const applicationClosingDate = ISTDate(coursesMember.applicationClosingDate);
+  const currentDate = ISTDate();
+
+  // If course is marked as coming soon, display minimal content
+  if (coursesMember.comingSoon) {
+    return (
+      <section className={styles.section}>
+        <div className="container">
+          <section className={styles.body}>
+            <div className={styles.titleBar}>
+              <div className={styles.mainTitle}>
+                <h1>{coursesMember.title}</h1>
+              </div>
+            </div>
+            <div className={styles.comingSoon}>
+              <div className={styles.comingSoonContent}>
+                <div className={styles.comingSoonIcon}>🚀</div>
+                <h2>Coming Soon</h2>
+                <p>
+                  {coursesMember.cardDesc ||
+                    "This course is currently under development. Stay tuned for more details."}
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    );
+  }
+
+  if (!coursesMember.body) {
+    notFound();
+  }
+
+  // Regular course display when not coming soon
   return (
     <section className={styles.section}>
       <div className={styles.header}>
@@ -135,12 +173,22 @@ export default async function PagePage({
                 </span>
               )}
               <h1>{coursesMember.title}</h1>
-              {coursesMember.applicationClosingDate && (
-                <p className={styles.applicationClosingDate}>
-                  <strong>Applications Close on -</strong>{" "}
-                  <span>{coursesMember.applicationClosingDate}</span>
-                </p>
-              )}
+              <p className={styles.applicationClosingDate}>
+                {applicationClosingDate >= currentDate ? (
+                  <>
+                    <strong>Applications Close on - </strong>
+                    <span>{coursesMember.applicationClosingDate}</span>
+                  </>
+                ) : (
+                  <>
+                    <strong>Applications Closed – </strong>
+                    <span>
+                      Reopening in Jan{" "}
+                      {applicationClosingDate.getFullYear() + 1}
+                    </span>
+                  </>
+                )}
+              </p>
             </div>
 
             <div className={styles.cta}>
@@ -150,10 +198,17 @@ export default async function PagePage({
                 </Link>
               )}
               {coursesMember?.applicationLink && (
-                <Link target="_blank" href={coursesMember.applicationLink}>
+                <Link
+                  target="_blank"
+                  href={
+                    coursesMember.applicationDisabled
+                      ? "#"
+                      : coursesMember.applicationLink
+                  }
+                >
                   <Button
                     kind="PRIMARY"
-                    disabled={coursesMember.applicationLink === "#"}
+                    disabled={coursesMember.applicationDisabled}
                   >
                     Apply Now
                   </Button>
@@ -162,39 +217,44 @@ export default async function PagePage({
             </div>
           </div>
           <div className={styles.meta}>
-            <div className={styles.item}>
-              <AiOutlineCalendar />
-              <p>Duration</p>
-              <span>{coursesMember.duration}</span>
-            </div>
-            <div className={styles.item}>
-              <AiOutlineUnorderedList />
-              <p>{coursesMember.credits ? "Total Credits" : "Medium"}</p>
-              <span>{coursesMember.credits || coursesMember.type}</span>
-            </div>
-            <div className={styles.item}>
-              <BiBuilding />
-              <p>School of</p>
-              <span>{coursesMember.department}</span>
-            </div>
-            <div className={styles.item}>
-              <GoGlobe />
-              <p>Language</p>
-              <span>{coursesMember.language}</span>
-            </div>
+            {coursesMember.duration && (
+              <div className={styles.item}>
+                <AiOutlineCalendar />
+                <p>Duration</p>
+                <span>{coursesMember.duration}</span>
+              </div>
+            )}
+            {(coursesMember.credits || coursesMember.type) && (
+              <div className={styles.item}>
+                <AiOutlineUnorderedList />
+                <p>{coursesMember.credits ? "Total Credits" : "Medium"}</p>
+                <span>{coursesMember.credits || coursesMember.type}</span>
+              </div>
+            )}
+            {coursesMember.department && (
+              <div className={styles.item}>
+                <BiBuilding />
+                <p>School of</p>
+                <span>{coursesMember.department}</span>
+              </div>
+            )}
+            {coursesMember.language && (
+              <div className={styles.item}>
+                <GoGlobe />
+                <p>Language</p>
+                <span>{coursesMember.language}</span>
+              </div>
+            )}
           </div>
-          {coursesMember.body && (
-            <MDXContent
-              code={coursesMember.body}
-              components={coursesPageComponents}
-              frontmatter={{
-                title: coursesMember.title,
-                cover: coursesMember.coverImg,
-              }}
-            />
-          )}
-          {/* <InquirySection /> */}
-          {/* <ApplyCard buttonLink={coursesMember.applicationLink} /> */}
+          {/* The check !coursesMember.body above ensures body exists here */}
+          <MDXContent
+            code={coursesMember.body!} // Use non-null assertion as we've checked it
+            components={coursesPageComponents}
+            frontmatter={{
+              title: coursesMember.title,
+              cover: coursesMember.coverImg,
+            }}
+          />
         </section>
       </div>
     </section>

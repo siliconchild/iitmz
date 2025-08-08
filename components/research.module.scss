@@ -17,12 +17,32 @@ $spacing-unit: 0.25rem; // 4px
 .section {
     padding: 4rem 0;
   }
-
+  .header {
+    padding: 3rem 0 0;
+    gap: 5%;
+  
+    h1 {
+      font-size: 3.6rem;
+      border-left: 4px solid #ffb013;
+      padding-left: 2rem;
+      margin-top: 1rem;
+      margin-bottom: 3rem;
+    }
+  }
+  @media (max-width: 768px) {
+    .header {
+        padding: 0;
+        h1 {
+            font-size: 3rem;
+        }
+    }
+}
 .card {
   background-color: white;
   border-radius: 0.5rem;
   border: 1px solid #e5e7eb;
   overflow: hidden;
+  margin-bottom: 2.5rem;
 }
 
 .cardHeader {
@@ -60,7 +80,6 @@ $spacing-unit: 0.25rem; // 4px
 // }
 
 .header {
-  text-align: center;
   & > *:not([hidden]) ~ *:not([hidden]) {
     margin-top: spacing(2);
   }
@@ -84,11 +103,11 @@ $spacing-unit: 0.25rem; // 4px
 }
 
 .facultyHeaderBg {
-  background: linear-gradient(to right, #eff6ff, #eef2ff);
+  background: linear-gradient(135deg,rgba(246,173,85,.168627451),#ffffff)
 }
 
 .awardHeaderBg {
-  background: linear-gradient(to right, #fffbeb, #fff7ed);
+  background: linear-gradient(135deg,rgba(246,173,85,.168627451),#ffffff)
 }
 
 .cardTitleContainer {
@@ -108,6 +127,9 @@ $spacing-unit: 0.25rem; // 4px
   display: flex;
   flex-direction: column;
   gap: 4rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   @media (min-width: 1024px) {
     flex-direction: row;
   }
@@ -176,8 +198,8 @@ $spacing-unit: 0.25rem; // 4px
 // Type-specific badges inherit from customBadge and add their colors
 .typeJournal {
   @extend .customBadge;
-  background-color: #dbeafe;
-  color: #1e40af;
+  background-color: #fff3d6;
+  color: #fb5400;
 }
 .typeConference {
   @extend .customBadge;
@@ -186,8 +208,8 @@ $spacing-unit: 0.25rem; // 4px
 }
 .typeInvitedTalk {
   @extend .customBadge;
-  background-color: #f3e8ff;
-  color: #6b21a8;
+  background-color: #ffdce0;
+  color: #c32938;
 }
 .typeDefault {
   @extend .customBadge;
@@ -268,6 +290,9 @@ $spacing-unit: 0.25rem; // 4px
   display: flex;
   flex-direction: column;
   gap: 4rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   @media (min-width: 768px) {
     flex-direction: row;
   }
@@ -292,7 +317,7 @@ $spacing-unit: 0.25rem; // 4px
 .awardTitleText {
   font-weight: 600;
   font-size: 1.75rem;
-  color: #b45309;
+  color: #1f2937;
 }
 
 .awardInfoGroup {

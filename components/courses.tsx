@@ -29,34 +29,61 @@ export default function Courses({ layout = "HORIZONTAL" }: CoursesProps) {
                     width={270}
                     height={320}
                     style={{ objectFit: "cover" }}
-                    alt="Image of human and machine"
+                    alt={course.title || "Course image"}
                   />
                 </div>
                 <div className={styles.content}>
-                  <a href={`/schools/engineering-and-science/${course.slug}`}>
+                  {/* <Link href={`/schools/engineering-and-science/${course.slug}`}>
                     <h3>{course.title}</h3>
-                  </a>
-                  <p>{course.cardDesc}</p>
+                  </Link> */}
 
-                  <div className={styles.footer}>
-                    <div>
-                      <AiOutlineCalendar />
-                      <span>{course.duration}</span>
-                    </div>
-                    <div>
-                      <AiOutlineUnorderedList />
-                      <span>{`${course.credits} Credits`}</span>
-                    </div>
+                  {/* Conditionally render title as a Link or plain h3 */}
+                  {!course.comingSoon ? (
                     <Link
                       href={`/schools/engineering-and-science/${course.slug}`}
                     >
-                      <Button kind="SECONDARY">More Details</Button>
+                      <h3>{course.title}</h3>
                     </Link>
-                    <Link target="_blank" href={course.applicationLink || ""}>
-                      <Button disabled={!course.applicationLink}>
-                        Apply now
-                      </Button>
-                    </Link>
+                  ) : (
+                    <h3>{course.title}</h3>
+                  )}
+                  <p>{course.cardDesc}</p>
+
+                  <div className={styles.footer}>
+                    {!course.comingSoon && (
+                      <>
+                        {course.duration && (
+                          <div>
+                            <AiOutlineCalendar />
+                            <span>{course.duration}</span>
+                          </div>
+                        )}
+                        {course.credits && (
+                          <div>
+                            <AiOutlineUnorderedList />
+                            <span>{`${course.credits} Credits`}</span>
+                          </div>
+                        )}
+                        <Link
+                          href={`/schools/engineering-and-science/${course.slug}`}
+                        >
+                          <Button kind="SECONDARY">More Details</Button>
+                        </Link>
+                        <Link
+                          target="_blank"
+                          href={
+                            !course.applicationDisabled &&
+                            course.applicationLink
+                              ? course.applicationLink
+                              : "#"
+                          }
+                        >
+                          <Button disabled={course.applicationDisabled}>
+                            Apply now
+                          </Button>
+                        </Link>
+                      </>
+                    )}
                   </div>
                 </div>
               </div>

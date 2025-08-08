@@ -9,6 +9,7 @@ import AdvisoryCouncil from "@/components/advisory-council";
 import GovernanceBoard from "@/components/governing-council";
 import Leadership from "@/components/leadership";
 import SocialMedia from "@/components/social-media";
+import { ProgramAdvisory } from "@/components/program-advisory";
 import { getAllBanners, defaultBanner } from "@/data/banner";
 import { getAllNews } from "@/data/news";
 import { unstable_cache as cache } from "next/cache";
@@ -33,11 +34,12 @@ export default async function Home() {
     <main>
       <Hero banners={banners || defaultBanner} />
       {news && <News news={news} />}
-      <Courses />
+      <Courses layout="HORIZONTAL" />
       <Counter />
       <Leadership />
       <GovernanceBoard />
       <AdvisoryCouncil />
+      <ProgramAdvisory />
       {/* <section className={styles.events_testimonials_section}>
         <div className="container">
           <svg

@@ -43,8 +43,8 @@ const eventsList = [
       },
       {
         title: "View Webinar Details",
-        link: "https://www.giftedworld.org/discover-stem#webinar"
-      }
+        link: "https://www.giftedworld.org/discover-stem#webinar",
+      },
     ],
   },
   {
@@ -198,7 +198,8 @@ const eventsList = [
     img: "/image (1).png",
     startDate: "February 18, 2025",
     endDate: "February 21, 2025",
-    regLink: "https://docs.google.com/forms/d/e/1FAIpQLSfYZwqs8pWSVGfYHJFDDbdUt92z6oVr6sjrgVbIFY6wHcOECA/viewform",
+    regLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSfYZwqs8pWSVGfYHJFDDbdUt92z6oVr6sjrgVbIFY6wHcOECA/viewform",
     name: "Workshop on Advances in Concrete Technology",
     time: "9.30 AM IST | 5.30 PM EAT",
     location: "IITM Zanzibar, Bweleo, Zanzibar",
@@ -224,8 +225,7 @@ const eventsList = [
     img: "/Poster-Digital-Education-Workshops.jpg",
     startDate: "May 19, 2025",
     endDate: "May 22, 2025",
-    regLink:
-      "https://forms.gle/gDHp4xQKNaKZbKAt8",
+    regLink: "https://forms.gle/gDHp4xQKNaKZbKAt8",
     name: "Empowering Zanzibar Through Digital Education",
     time: "10:00 AM IST",
     location: "IIT Madras, Zanzibar Campus",
@@ -253,8 +253,34 @@ const eventsList = [
     location: "Virtual",
     desc: "Join us for an insightful webinar featuring professors from the Indian Institute of Technology Madras – Zanzibar Campus. They will share valuable perspectives on our distinctive curriculum, the vibrant student life and learning environment at IITM Zanzibar, as well as important details about the admission process, available scholarships, and future career opportunities. The session will also include a live Q&A, giving you the chance to ask your questions directly and gain deeper clarity.",
   },
+  {
+    img: "/clubs-and-activities/10.jpeg",
+    startDate: "June 13, 2025",
+    regLink: "/",
+    name: "ASTRA Club - Award Day Event",
+    time: "04:00 PM EAT",
+    location: "Auditorium, IIT Madras, Zanzibar Campus",
+    desc: "On June 13, 2025, the ASTRA Club brought the campus alive with an unforgettable celebration of creativity, talent, and student spirit! From high-energy performances by the Dance and Drama clubs to a campus-wide scavenger hunt and well-deserved awards, every moment was packed with excitement",
+  },
+  {
+    img: "/convocation.jpeg",
+    startDate: "July 11, 2025",
+    regLink: "/",
+    name: "MTech Degree Distribution Ceremony 2025 Commenced",
+    time: "04:00 PM EAT",
+    location: "IIT Madras, Zanzibar Campus",
+    desc: "This milestone marks the graduation of the inaugural MTech Data Science & AI cohort at our Zanzibar campus—a proud reflection of IIT Madras’s vision for global education and a shared legacy of excellence across continents. It also highlights the growing international collaboration in higher education and IIT Madras’s pioneering achievement in establishing India’s first offshore IIT campus.",
+  },
+  {
+    img: "/orientation.png",
+    startDate: "August 04, 2025",
+    regLink: "/",
+    name: "International Students’ Orientation 2025 hosted at IIT Madras",
+    time: "05:30 PM IST",
+    location: "TTJ Auditorium, IC&SR, IIT Madras",
+    desc: "Students from IITM Zanzibar took part in the International Students’ Orientation 2025 held at IIT Madras. The event brought together incoming international students from various countries, marking the beginning of an enriching academic and cultural experience on campus. This initiative highlights the growing academic collaboration between the two campuses and supports our vision for globally connected and inclusive education. IITM Zanzibar acknowledges the efforts of the Office of Global Engagement, IIT Madras, for organizing a warm and well-curated welcome for all international students.",
+  },
 ];
-
 
 export default eventsList;
 

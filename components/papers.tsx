@@ -10,9 +10,10 @@ type PaperProps = {
   authors: string[];
   year: string;
   publisher: string;
+  student?: string;
 };
 
-export function Paper({ title, authors, year, publisher }: PaperProps) {
+export function Paper({ title, authors, year, publisher,student }: PaperProps) {
   return (
     <div className={styles.paper} key={title}>
       <h4>
@@ -28,6 +29,9 @@ export function Paper({ title, authors, year, publisher }: PaperProps) {
       </div>
       <p className={styles.publisher}>
         <BsBookmarksFill /> {publisher}
+      </p>
+      <p className={styles.student}>
+         {student}
       </p>
     </div>
   );
