@@ -135,9 +135,10 @@
 
         & > p {
             color: #4a4a4a;
-            line-height: 1.6;
+            line-height: 1.6 !important;
             margin-bottom: 1.25rem;
-            font-size: 1.65rem;
+            font-size: 1.6rem;
+
             &:last-child {
                 margin-bottom: 0;
             }
