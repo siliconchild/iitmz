@@ -1,0 +1,409 @@
+/* .container {
+    min-height: 100vh;
+    background-color: #ffffff;
+} */
+
+.content {
+    /* max-width: 1152px;
+    margin: 0 auto;
+    padding: 48px 24px; */
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.sectionHeader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 32px;
+}
+
+.sectionIndicator {
+    width: 4px;
+    height: 32px;
+    background-color: #ffb013;
+    border-radius: 9999px;
+}
+
+.sectionTitle {
+    font-size: 2.6rem;
+    font-weight: 600;
+    /* replaced hsl(var(--foreground)) with exact dark color */
+    color: #0f172a;
+}
+
+.directorHeader {
+    padding-top: 10px;
+}
+.directorSection {
+    display: grid;
+    gap: 32px;
+    align-items: start;
+}
+
+@media (min-width: 768px) {
+    .directorSection {
+        grid-template-columns: 300px 1fr;
+    }
+}
+
+/* Adding styles for director profile with circular image */
+.directorProfile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+}
+
+.directorImage {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #e2e8f0;
+}
+
+.directorName {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #0f172a;
+    margin: 0;
+}
+
+.directorTitle {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin: 0;
+}
+.card {
+    /* replaced hsl(var(--card)) with exact white color */
+    background-color: #ffffff;
+    /* replaced hsl(var(--border)) with exact light gray border */
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    box-shadow:
+        0 1px 3px 0 rgb(0 0 0 / 0.1),
+        0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+.cardContent {
+    padding: 32px;
+}
+
+.cardContentSmall {
+    padding: 24px;
+}
+
+.cardContentTeam {
+    padding: 24px;
+    text-align: center;
+}
+
+.textLarge {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    /* replaced hsl(var(--foreground)) with exact dark color */
+    color: #0f172a;
+}
+
+.textRegular {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    /* replaced hsl(var(--foreground)) with exact dark color */
+    color: #0f172a;
+}
+
+.textMuted {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #6b7280;
+    margin-top: 16px;
+}
+
+.philosophyGrid {
+    display: grid;
+    gap: 32px;
+}
+
+@media (min-width: 768px) {
+    .philosophyGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .philosophyGrid > div:nth-child(2) > .sectionHeader {
+        margin-top: 70px;
+    }
+}
+
+.cardFull {
+    height: 100%;
+}
+
+.highlightBox {
+    margin-top: 16px;
+    padding: 16px;
+    background-color: rgba(255, 176, 19, 0.05);
+    border-radius: 8px;
+    border-left: 2px solid #ffb013;
+}
+
+.highlightText {
+    font-size: 1.6rem;
+    color: #6b7280;
+}
+
+.visionList {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.visionItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.visionDot {
+    width: 8px;
+    height: 8px;
+    background-color: #ffb013;
+    border-radius: 50%;
+}
+
+.visionText {
+    font-size: 1.6rem;
+    color: #6b7280;
+}
+
+.messageContent {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.academicBox {
+    /* replaced hsl(var(--muted) / 0.5) with exact light gray background */
+    background-color: rgba(148, 163, 184, 0.1);
+    padding: 24px;
+    border-radius: 8px;
+}
+
+.academicTitle {
+    font-size: 1.6rem;
+    font-weight: 600;
+    /* replaced hsl(var(--foreground)) with exact dark color */
+    color: #0f172a;
+    margin-bottom: 12px;
+}
+
+.academicGrid {
+    display: grid;
+    gap: 16px;
+    font-size: 1.6rem;
+}
+
+@media (min-width: 640px) {
+    .academicGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.academicItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.academicDot {
+    width: 8px;
+    height: 8px;
+    background-color: #ffb013;
+    border-radius: 50%;
+}
+
+.academicNote {
+    color: #6b7280;
+    font-size: 1.6rem;
+    margin-top: 12px;
+}
+
+.quote {
+    border-left: 4px solid #ffb013;
+    padding-left: 24px;
+}
+
+.quoteText {
+    font-size: 1.6rem;
+    color: #6b7280;
+    font-style: italic;
+}
+
+.directorSignature {
+    margin-top: 32px;
+    padding-top: 24px;
+    /* replaced hsl(var(--border)) with exact light gray border */
+    border-top: 1px solid #e2e8f0;
+}
+
+.directorInfo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.directorAvatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.directorName {
+    font-size: 2rem;
+    font-weight: 600;
+    /* replaced hsl(var(--foreground)) with exact dark color */
+    color: #0f172a;
+}
+
+.directorTitle {
+    font-size: 1.5rem;
+    color: #6b7280;
+}
+
+.teamGrid {
+    display: grid;
+    gap: 24px;
+}
+
+@media (min-width: 640px) {
+    .teamGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .teamGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.teamAvatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffb013;
+}
+
+.teamImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.teamName {
+    font-size: 1.6rem;
+    font-weight: 600;
+    /* replaced hsl(var(--foreground)) with exact dark color */
+    color: #0f172a;
+}
+
+.teamRole {
+    font-size: 1.6rem;
+    color: #6b7280;
+    margin-top: 4px;
+    margin-bottom: 15px;
+}
+
+.recruitersDescription {
+    font-size: 1.6rem;
+    color: #6b7280;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.recruitersGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .recruitersGrid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .recruitersGrid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+.recruiterItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.recruiterLogo {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recruiterImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.recruiterName {
+    font-size: 1.6rem;
+    color: #6b7280;
+    text-align: center;
+}
+
+.expandedContent {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.readMoreButton {
+    color: #c32939;
+    background-color: #fff;
+    border: 1px solid #c32939;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 16px;
+    align-self: flex-start;
+}
+
+.readMoreButton:hover {
+    background-color: #b8002a;
+}
+
+.readMoreButton:focus {
+    outline: 2px solid #d50032;
+    outline-offset: 2px;
+}

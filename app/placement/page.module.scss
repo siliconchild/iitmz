@@ -35,12 +35,20 @@
 }
 .imageWrapper {
     width: 100%;
+}
 
+.images {
+    margin-bottom: 8rem;
     img {
         width: 100%;
-        // aspect-ratio: 19/2;
-        border-radius: 12px;
+        height: 400px;
         object-fit: cover;
+        border-radius: 3px;
+    }
+    a {
+        &:nth-child(2) {
+            grid-row: span 2;
+        }
     }
 }
 @media (max-width: 768px) {
@@ -53,14 +61,19 @@
     .page {
         padding: 2.5rem 0 3rem;
     }
-    .imageWrapper {
-        width: 100%;
-
+    .images {
+        margin-bottom: 6rem;
         img {
-            width: 100%;
-            height: auto;
-            border-radius: 12px;
-            object-fit: cover;
+            height: 250px;
+        }
+    }
+    .gallery {
+        margin: 2.5rem 1rem;
+        img {
+            height: 300px;
+            &:not(:last-child) {
+                margin-bottom: 0.75rem;
+            }
         }
     }
 }
