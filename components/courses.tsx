@@ -12,8 +12,9 @@ type CoursesProps = {
 export default function Courses({ layout = "HORIZONTAL" }: CoursesProps) {
   return (
     <section
-      className={`${styles.section}  ${layout === "VERTICAL" && styles.vertical
-        }`}
+      className={`${styles.section}  ${
+        layout === "VERTICAL" && styles.vertical
+      }`}
     >
       <div className="container">
         <h2 className="section-title center line">Academic Programs</h2>
@@ -38,49 +39,51 @@ export default function Courses({ layout = "HORIZONTAL" }: CoursesProps) {
 
                   {/* Conditionally render title as a Link or plain h3 */}
                   {!course.comingSoon ? (
-                    <Link href={`/schools/engineering-and-science/${course.slug}`}>
+                    <Link
+                      href={`/schools/engineering-and-science/${course.slug}`}
+                    >
                       <h3>{course.title}</h3>
                     </Link>
                   ) : (
-                    <h3>{course.title}</h3> 
+                    <h3>{course.title}</h3>
                   )}
                   <p>{course.cardDesc}</p>
 
                   <div className={styles.footer}>
-                    {!course.comingSoon && course.duration && (
-                      <div>
-                        <AiOutlineCalendar />
-                        <span>{course.duration}</span>
-                      </div>
-                    )}
-                    {!course.comingSoon && course.credits && (
-                      <div>
-                        <AiOutlineUnorderedList />
-                        <span>{`${course.credits} Credits`}</span>
-                      </div>
-                    )}
-
-
                     {!course.comingSoon && (
-                      <Link
-                        href={`/schools/engineering-and-science/${course.slug}`}
-                      >
-                        <Button kind="SECONDARY">More Details</Button>
-                      </Link>
+                      <>
+                        {course.duration && (
+                          <div>
+                            <AiOutlineCalendar />
+                            <span>{course.duration}</span>
+                          </div>
+                        )}
+                        {course.credits && (
+                          <div>
+                            <AiOutlineUnorderedList />
+                            <span>{`${course.credits} Credits`}</span>
+                          </div>
+                        )}
+                        <Link
+                          href={`/schools/engineering-and-science/${course.slug}`}
+                        >
+                          <Button kind="SECONDARY">More Details</Button>
+                        </Link>
+                        <Link
+                          target="_blank"
+                          href={
+                            !course.applicationDisabled &&
+                            course.applicationLink
+                              ? course.applicationLink
+                              : "#"
+                          }
+                        >
+                          <Button disabled={course.applicationDisabled}>
+                            Apply now
+                          </Button>
+                        </Link>
+                      </>
                     )}
-
-
-                    {!course.comingSoon && course.applicationLink && (
-                      <Link target="_blank" href={course.applicationLink}>
-                        <Button>Apply now</Button>
-                      </Link>
-                    )}
-
-                    {!course.comingSoon && !course.applicationLink && (
-                      <Button disabled={true}>Apply now</Button>
-                    )}
-
-
                   </div>
                 </div>
               </div>

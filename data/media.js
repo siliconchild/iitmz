@@ -30,6 +30,16 @@ const media = {
   articles: [
     {
       title:
+        "IIT Madras Zanzibar holds first degree distribution ceremony, 16 students graduate",
+      desc: "The Indian Institute of Technology (IIT) Madras Zanzibar on July 11 held its first degree distribution ceremony with 16 students graduating. This marks the graduation of its inaugural cohort from the MTech programme in Data Science and Artificial Intelligence (DSAI) for the academic session 2023–2025. The event, held at the Bweleo campus in Zanzibar was established as IIT Madras’ first international campus in 2023 in partnership with the Government of Zanzibar.",
+      link: "https://indianexpress.com/article/education/iit-madras-zanzibar-campus-first-degree-distribution-ceremony-data-science-artificial-intelligence-batch-2025-jee-main-advanced-10134226/",
+      image: {
+        url: "/degree-distribution/2.jpeg",
+        alt: "Image of IITMZ Degree Distribution Ceremony",
+      },
+    },
+    {
+      title:
         "IIT Madras Zanzibar: what does it mean to be an IIT outside India?",
       desc: "The IITs were conceived and established as contributors to the human resource development of the nation. This is iterated in the “Indian” foundation of their name, the IIT, and a sign in the main building of IIT Kharagpur that reads “Dedicated to the Service of the Nation” underscores this national imperative.",
       link: "https://indianexpress.com/article/explained/iit-madras-zanzibar-what-does-it-mean-to-be-an-iit-outside-india-9160055",

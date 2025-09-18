@@ -39,6 +39,7 @@ import {
   Documents,
   Note,
 } from "@/components/course-components";
+import { ISTDate } from "@/utils/date";
 import { courses } from "#site/content";
 
 function getCourses(coursesSlug: string) {
@@ -54,7 +55,7 @@ export async function generateMetadata({
 }) {
   const { slug } = await params;
   const coursesMember = courses.find(
-    (coursesMember) => coursesMember.slug === slug
+    (coursesMember) => coursesMember.slug === slug,
   );
   if (!coursesMember) return {};
   return {
@@ -117,6 +118,9 @@ export default async function PagePage({
     notFound();
   }
 
+  const applicationClosingDate = ISTDate(coursesMember.applicationClosingDate);
+  const currentDate = ISTDate();
+
   // If course is marked as coming soon, display minimal content
   if (coursesMember.comingSoon) {
     return (
@@ -133,7 +137,8 @@ export default async function PagePage({
                 <div className={styles.comingSoonIcon}>🚀</div>
                 <h2>Coming Soon</h2>
                 <p>
-                  {coursesMember.cardDesc || "This course is currently under development. Stay tuned for more details."}
+                  {coursesMember.cardDesc ||
+                    "This course is currently under development. Stay tuned for more details."}
                 </p>
               </div>
             </div>
@@ -151,19 +156,39 @@ export default async function PagePage({
   return (
     <section className={styles.section}>
       <div className={styles.header}>
-        <Img src={coursesMember.coverImg || ""} alt="course cover image" width={900} height={600} />
+        <Img
+          src={coursesMember.coverImg || ""}
+          alt="course cover image"
+          width={900}
+          height={600}
+        />
       </div>
       <div className="container">
         <section className={styles.body}>
           <div className={styles.titleBar}>
             <div className={styles.mainTitle}>
-              {coursesMember.type === "online" && <span className={styles.onlineBadge}>Web Enabled Online Course</span>}
-              <h1>{coursesMember.title}</h1>
-              {coursesMember.applicationClosingDate && (
-                <p className={styles.applicationClosingDate}>
-                  <strong>Applications Close on -</strong> <span>{coursesMember.applicationClosingDate}</span>
-                </p>
+              {coursesMember.type === "online" && (
+                <span className={styles.onlineBadge}>
+                  Web Enabled Online Course
+                </span>
               )}
+              <h1>{coursesMember.title}</h1>
+              <p className={styles.applicationClosingDate}>
+                {applicationClosingDate >= currentDate ? (
+                  <>
+                    <strong>Applications Close on - </strong>
+                    <span>{coursesMember.applicationClosingDate}</span>
+                  </>
+                ) : (
+                  <>
+                    <strong>Applications Closed – </strong>
+                    <span>
+                      Reopening in Jan{" "}
+                      {applicationClosingDate.getFullYear() + 1}
+                    </span>
+                  </>
+                )}
+              </p>
             </div>
 
             <div className={styles.cta}>
@@ -173,8 +198,18 @@ export default async function PagePage({
                 </Link>
               )}
               {coursesMember?.applicationLink && (
-                <Link target="_blank" href={coursesMember.applicationLink}>
-                  <Button kind="PRIMARY" disabled={coursesMember.applicationLink === "#"}>
+                <Link
+                  target="_blank"
+                  href={
+                    coursesMember.applicationDisabled
+                      ? "#"
+                      : coursesMember.applicationLink
+                  }
+                >
+                  <Button
+                    kind="PRIMARY"
+                    disabled={coursesMember.applicationDisabled}
+                  >
                     Apply Now
                   </Button>
                 </Link>
@@ -189,7 +224,7 @@ export default async function PagePage({
                 <span>{coursesMember.duration}</span>
               </div>
             )}
-            {(coursesMember.credits || coursesMember.type) && ( 
+            {(coursesMember.credits || coursesMember.type) && (
               <div className={styles.item}>
                 <AiOutlineUnorderedList />
                 <p>{coursesMember.credits ? "Total Credits" : "Medium"}</p>
