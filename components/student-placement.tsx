@@ -242,12 +242,17 @@ export function PlacementComp() {
                 height={100}
                 className={styles.directorImage}
               />
-              <h3 className={styles.directorName}>Prof. Preeti Aghalayam</h3>
-              <p className={styles.directorTitle}>
-                Dean - School of Engg. & Science
-                <br />
-                Director-in-Charge
-              </p>
+              <Link
+                href="https://www.iitmz.ac.in/schools/engineering-and-science/faculty/prof-preeti-aghalayam"
+                target="_blank"
+              >
+                <h3 className={styles.directorName}>Prof. Preeti Aghalayam</h3>
+                <p className={styles.directorTitle}>
+                  Dean - School of Engg. & Science
+                  <br />
+                  Director-in-Charge
+                </p>
+              </Link>
             </div>
 
             {/* Director Message */}
