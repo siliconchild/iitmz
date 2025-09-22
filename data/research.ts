@@ -334,6 +334,27 @@ export const researchData: ResearchDataType = {
   awards: [
     {
       mentor: "Dr. Tushar Shinde",
+      student: "Malavika Nithyanand, Vikalp Srivastava, Shivam Vyas,",
+      award:
+        "First Place at ICIP 2025 Grand Challenge: Poison Sample Detection and Trigger Retrieval in Multimodal VLMs",
+      work: "TwinShield: A Dual-Phase System for Detecting and Extracting Backdoors in Vision-Language Models (VLMs). The system combines a detection phase, which identifies poisoned samples and malicious triggers through statistical feature analysis and representation consistency checks, with an extraction phase that isolates and removes backdoor triggers to restore model integrity.",
+      conference:
+        "IEEE International Conference on Image Processing (ICIP) 2025, Anchorage, Alaska, USA",
+      posterImage: "/icip-2025.png",
+    },
+    {
+      mentor: "Dr. Tushar Shinde",
+      student:
+        "Rohan Saha (B.S. student) and Aisha Hamad Hassan (M.Tech student)",
+      award:
+        "Silver in Retweet Network Link Prediction and Bronze in Bursty Event Cascade Classification",
+      work: "Silver in Retweet Network Link Prediction: This task focused on predicting the likelihood of future retweet links in large-scale social network graphs. Bronze in Bursty Event Cascade Classification: This task aimed to classify and detect bursty information cascades, i.e., sudden spikes of activity around emerging events in social networks.",
+      conference:
+        "34th International Joint Conference on Artificial Intelligence (IJCAI) 2025, Montreal, Canada",
+      posterImage: "/ijcai-2025.png",
+    },
+    {
+      mentor: "Dr. Tushar Shinde",
       student: "Rohan Saha",
       award: "2nd Price - $500",
       work: "Building Temperature Prediction for Smart HVAC Control: A Multi-Stage Learning Framework",
