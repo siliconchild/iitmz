@@ -340,7 +340,7 @@ export const researchData: ResearchDataType = {
       work: "TwinShield: A Dual-Phase System for Detecting and Extracting Backdoors in Vision-Language Models (VLMs). The system combines a detection phase, which identifies poisoned samples and malicious triggers through statistical feature analysis and representation consistency checks, with an extraction phase that isolates and removes backdoor triggers to restore model integrity.",
       conference:
         "IEEE International Conference on Image Processing (ICIP) 2025, Anchorage, Alaska, USA",
-      posterImage: "/icip-2025.png",
+      posterImage: "/icip_2025.png",
     },
     {
       mentor: "Dr. Tushar Shinde",
