@@ -8,7 +8,7 @@ export const academicCalendarData = [
     link: "/Odd-Semester_ All-others-(Oct'25-Feb'26)_updated.pdf",
   },
   {
-    title: "Even Semester (Mar 2026 – Jul 2026)",
+    title: "Even Semester: (Mar 2026 – Jul 2026)",
     link: "/Even-Semester-(Mar'25-Jul'26)_updated.pdf",
   },
   {
