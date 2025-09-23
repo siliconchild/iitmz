@@ -1,11 +1,11 @@
 export const academicCalendarData = [
   {
     title: "Odd Semester: BS 5th Semester (Oct 2025 – Jan 2026)",
-    link: "/Odd-Semester_BS-5th-Sem-(Oct'25-Jan'26).pdf",
+    link: "/Odd-Semester_BS-5th-Sem-(Oct'25-Jan'26)_updated.pdf",
   },
   {
     title: "Odd Semester: All others (Oct 2025 – Feb 2026)",
-    link: "/Odd-Semester_ All-others-(Oct'25-Feb'26).pdf",
+    link: "/Odd-Semester_ All-others-(Oct'25-Feb'26)_updated.pdf",
   },
   {
     title: "Even Semester: (Mar 2026 – Jul 2026)",
