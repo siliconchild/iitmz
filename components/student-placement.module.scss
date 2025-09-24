@@ -112,6 +112,7 @@
     line-height: 1.8;
     /* replaced hsl(var(--foreground)) with exact dark color */
     color: #0f172a;
+    margin-bottom: 10px;
 }
 
 .textMuted {
@@ -191,6 +192,8 @@
     background-color: rgba(148, 163, 184, 0.1);
     padding: 24px;
     border-radius: 8px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .academicTitle {
@@ -241,6 +244,9 @@
     font-size: 1.6rem;
     color: #6b7280;
     font-style: italic;
+    margin-top: 28px;
+    margin-bottom: 28px;
+    line-height: 1.8;
 }
 
 .directorSignature {
@@ -376,36 +382,4 @@
     font-size: 1.6rem;
     color: #6b7280;
     text-align: center;
-}
-
-.expandedContent {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    margin-top: 24px;
-}
-
-.readMoreButton {
-    color: #c32939;
-    background-color: #fff;
-    border: 1px solid #c32939;
-    padding: 12px 24px;
-    border-radius: 6px;
-    font-size: 1.5rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-    margin-top: 16px;
-    align-self: flex-start;
-}
-
-.readMoreButton:hover {
-    color: #c32939;
-    background-color: #fff;
-    border: 1px solid #c32939;
-}
-
-.readMoreButton:focus {
-    outline: 2px solid #d50032;
-    outline-offset: 2px;
 }
