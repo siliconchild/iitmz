@@ -280,6 +280,15 @@ const eventsList = [
     location: "TTJ Auditorium, IC&SR, IIT Madras",
     desc: "Students from IITM Zanzibar took part in the International Students’ Orientation 2025 held at IIT Madras. The event brought together incoming international students from various countries, marking the beginning of an enriching academic and cultural experience on campus. This initiative highlights the growing academic collaboration between the two campuses and supports our vision for globally connected and inclusive education. IITM Zanzibar acknowledges the efforts of the Office of Global Engagement, IIT Madras, for organizing a warm and well-curated welcome for all international students.",
   },
+  {
+    img: "/ZID-IITMZ-Website.png",
+    startDate: "October 04, 2025",
+    regLink: "/",
+    name: "Zanzibar Innovation Day - October 4, 2025",
+    time: "10:00 AM IST",
+    location: "IIT Madras, Zanzibar Campus",
+    desc: "Celebrate ideas and innovation at IITM Zanzibar’s Zanzibar Innovation Day, powered by IITM Global. Keynote speakers, panels, and startup presentations will showcase the creativity of local and regional innovators. Attendees can network with mentors, entrepreneurs, and investors. The event highlights Zanzibar’s dynamic startup ecosystem and encourages collaboration. Come, get inspired, and join the journey of innovation!",
+  },
 ];
 
 export default eventsList;
