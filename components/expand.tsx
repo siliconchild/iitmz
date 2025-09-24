@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, ReactNode, Children } from "react";
+import { useState, ReactNode } from "react";
 import styles from "./expand.module.scss";
 import Button from "@/components/button";
 
@@ -29,7 +29,6 @@ export default function Expand({
 
             <Button
               kind="SECONDARY"
-              className={styles.readMoreButton}
               onClick={() => setIsExpanded(!isExpanded)}
             >
               {isExpanded ? "Read Less" : "Read More"}
@@ -41,6 +40,7 @@ export default function Expand({
       </div>
     );
   }
+  
 
   const shouldTrim = children.length > previewItems;
 
@@ -51,7 +51,6 @@ export default function Expand({
           {isExpanded ? children : children.slice(0, previewItems)}
           <Button
             kind="SECONDARY"
-            className={styles.readMoreButton}
             onClick={() => setIsExpanded(!isExpanded)}
           >
             {isExpanded ? "Read Less" : "Read More"}

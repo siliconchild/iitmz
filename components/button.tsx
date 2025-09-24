@@ -6,9 +6,10 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   disbaled?: boolean;
 }
 
-export default function Button({ children, kind = "PRIMARY", disabled }: ButtonProps) {
+export default function Button({ children, kind = "PRIMARY", disabled, ...props }: ButtonProps) {
   return (
     <button
+      {...props}
       className={`${styles.button} ${
         kind === "SECONDARY" && styles.secondary
       } ${kind === "SECONDARY_BLACK" && styles.secondaryBlack} ${
