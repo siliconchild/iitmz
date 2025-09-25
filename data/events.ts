@@ -283,11 +283,16 @@ const eventsList = [
   {
     img: "/ZID-IITMZ-Website.png",
     startDate: "October 04, 2025",
-    regLink: "/",
     name: "Zanzibar Innovation Day - October 4, 2025",
     time: "10:00 AM IST",
     location: "IIT Madras, Zanzibar Campus",
     desc: "Celebrate ideas and innovation at IITM Zanzibar’s Zanzibar Innovation Day, powered by IITM Global. Keynote speakers, panels, and startup presentations will showcase the creativity of local and regional innovators. Attendees can network with mentors, entrepreneurs, and investors. The event highlights Zanzibar’s dynamic startup ecosystem and encourages collaboration. Come, get inspired, and join the journey of innovation!",
+    links: [
+      {
+        title: "View More Information",
+        link: "/innovation-day-agenda.png",
+      },
+    ],
   },
 ];
 
