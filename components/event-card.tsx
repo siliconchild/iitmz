@@ -11,7 +11,7 @@ type EventCardProps = {
   img: string;
   startDate: string;
   endDate?: string;
-  regLink: string;
+  regLink?: string;
   name: string;
   slug?: string;
   time: string;
@@ -19,9 +19,21 @@ type EventCardProps = {
   desc: string;
   links?: { title: string; link: string }[];
   type: "PAST" | "UPCOMING";
-}
+};
 
-export default function EventCard({img, startDate, endDate, regLink,name, slug, time, location, desc, links, type}: EventCardProps) {
+export default function EventCard({
+  img,
+  startDate,
+  endDate,
+  regLink,
+  name,
+  slug,
+  time,
+  location,
+  desc,
+  links,
+  type,
+}: EventCardProps) {
   return (
     <div className={styles.card}>
       <div className={styles.poster}>
@@ -43,7 +55,7 @@ export default function EventCard({img, startDate, endDate, regLink,name, slug, 
             )}
           </div>
           <div className={styles.cta}>
-            {type === "UPCOMING" && (
+            {type === "UPCOMING" && regLink && (
               <Link target="_blank" href={regLink}>
                 <Button kind="PRIMARY">Register Now</Button>
               </Link>
