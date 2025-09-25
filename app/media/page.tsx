@@ -5,7 +5,8 @@ import YoutubePlayer from "@/components/youtube-player";
 
 export const metadata = {
   title: "News",
-  description: "Check Out The Latest News About IIT Madras Zanzibar Campus Here.",
+  description:
+    "Check Out The Latest News About IIT Madras Zanzibar Campus Here.",
   alternates: {
     canonical: `media`,
   },
@@ -28,7 +29,6 @@ export default function MediaPage() {
               title={article.title}
               desc={article.desc}
               link={article.link}
-              apiImage={false}
             />
           ))}
         </div>
