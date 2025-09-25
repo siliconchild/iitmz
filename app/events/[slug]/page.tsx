@@ -27,9 +27,9 @@ export async function generateMetadata(props: any) {
 
 export async function generateStaticParams() {
   return eventsList
-    .filter(event => event.slug !== undefined)
+    .filter((event) => event.slug !== undefined)
     .map((event) => ({
-      slug: String(event.slug), 
+      slug: String(event.slug),
     }));
 }
 
@@ -44,7 +44,12 @@ export default async function EventDetail(props: any) {
         <div className={styles.body}>
           <div className={styles.grid}>
             <div className={styles.poster}>
-              <Img src={event.img} alt="Event Poster" width={800} height={800} />
+              <Img
+                src={event.img}
+                alt="Event Poster"
+                width={800}
+                height={800}
+              />
             </div>
             <div className={styles.eventBody}>
               <div className={styles.header}>
@@ -63,11 +68,13 @@ export default async function EventDetail(props: any) {
                 </div>
                 {event && (event.endDate || event.startDate) ? (
                   <div className={styles.cta}>
-                    {new Date(event?.endDate || event?.startDate) > new Date() && (
-                      <Link target="_blank" href={event.regLink}>
-                        <Button kind="PRIMARY">Register Now</Button>
-                      </Link>
-                    )}
+                    {new Date(event?.endDate || event?.startDate) >
+                      new Date() &&
+                      event.regLink && (
+                        <Link target="_blank" href={event.regLink}>
+                          <Button kind="PRIMARY">Register Now</Button>
+                        </Link>
+                      )}
                   </div>
                 ) : null}
               </div>
@@ -95,14 +102,25 @@ export default async function EventDetail(props: any) {
               </div>
             </div>
           </div>
-          <div>{event && event.schedule && <EventSchedule schedule={event.schedule} />}</div>
+          <div>
+            {event && event.schedule && (
+              <EventSchedule schedule={event.schedule} />
+            )}
+          </div>
           <div className={styles.speakers}>
             <h4>Speakers</h4>
             <div>
               {event.speakers &&
                 event.speakers.map((speaker: any, index: number) => (
                   <div key={index} className={styles.speaker}>
-                    {speaker.img && <Img src={speaker.img} alt={speaker.name} width={200} height={200} />}
+                    {speaker.img && (
+                      <Img
+                        src={speaker.img}
+                        alt={speaker.name}
+                        width={200}
+                        height={200}
+                      />
+                    )}
                     <h3>{speaker.name}</h3>
                     <p>{speaker.position}</p>
                   </div>
