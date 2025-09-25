@@ -29,7 +29,6 @@ export default function News({ news }: NewsProps) {
               image={newsItem.img}
               title={newsItem.title}
               desc={newsItem.content}
-              apiImage={true}
             />
           ))}
         </div>
