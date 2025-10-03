@@ -625,6 +625,15 @@ export default function PartnersPage() {
             />
             <p>CERT - TDS</p>
           </div>
+          <div className={styles.card}>
+            <Img
+              src="/logos/iitm-logo.png"
+              alt="CERT - TDS"
+              width={300}
+              height={180}
+            />
+            <p>IITM Global - IITM Zanzibar</p>
+          </div>
         </div>
 
         <div className={styles.header}>
@@ -798,6 +807,24 @@ export default function PartnersPage() {
           <div className={styles.card}>
             <Img src="/logos/elgon.jpeg" alt="Elgon" width={300} height={180} />
             <p>Elgon Kenya Ltd</p>
+          </div>
+          <div className={styles.card}>
+            <Img
+              src="/logos/galaxeye.png"
+              alt="Elgon"
+              width={300}
+              height={180}
+            />
+            <p>GalaxEye Space Solutions Pvt Ltd</p>
+          </div>
+          <div className={styles.card}>
+            <Img
+              src="/logos/ceo-summit-uganda.png"
+              alt="Elgon"
+              width={300}
+              height={180}
+            />
+            <p>CEO Summit, Uganda</p>
           </div>
 
           {/* <div className={styles.card}>
