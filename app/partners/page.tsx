@@ -627,8 +627,8 @@ export default function PartnersPage() {
           </div>
           <div className={styles.card}>
             <Img
-              src="/logos/iitm-logo.png"
-              alt="CERT - TDS"
+              src="/logos/iitm-global.png"
+              alt="IITM Global - IITM Zanzibar"
               width={300}
               height={180}
             />
@@ -811,7 +811,7 @@ export default function PartnersPage() {
           <div className={styles.card}>
             <Img
               src="/logos/galaxeye.png"
-              alt="Elgon"
+              alt="GalaxEye"
               width={300}
               height={180}
             />
@@ -820,7 +820,7 @@ export default function PartnersPage() {
           <div className={styles.card}>
             <Img
               src="/logos/ceo-summit-uganda.png"
-              alt="Elgon"
+              alt="CEO Summit"
               width={300}
               height={180}
             />
