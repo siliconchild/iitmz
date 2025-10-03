@@ -281,7 +281,7 @@ const eventsList = [
     desc: "Students from IITM Zanzibar took part in the International Students’ Orientation 2025 held at IIT Madras. The event brought together incoming international students from various countries, marking the beginning of an enriching academic and cultural experience on campus. This initiative highlights the growing academic collaboration between the two campuses and supports our vision for globally connected and inclusive education. IITM Zanzibar acknowledges the efforts of the Office of Global Engagement, IIT Madras, for organizing a warm and well-curated welcome for all international students.",
   },
   {
-    img: "/ZID-IITMZ-Website.png",
+    img: "/innovation-day.jpeg",
     startDate: "October 04, 2025",
     name: "Zanzibar Innovation Day - October 4, 2025",
     time: "10:00 AM IST",
@@ -290,7 +290,7 @@ const eventsList = [
     links: [
       {
         title: "View More Information",
-        link: "/innovation-day-agenda.png",
+        link: "/innovation-day-agenda.jpeg",
       },
     ],
   },
