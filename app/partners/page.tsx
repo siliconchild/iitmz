@@ -634,6 +634,24 @@ export default function PartnersPage() {
             />
             <p>IITM Global - IITM Zanzibar</p>
           </div>
+          <div className={styles.card}>
+            <Img
+              src="/logos/tusome.png"
+              alt="Tusome"
+              width={300}
+              height={180}
+            />
+            <p>Tusome</p>
+          </div>
+          <div className={styles.card}>
+            <Img
+              src="/logos/asili-zanzibar.png"
+              alt="Asili Zanzibar"
+              width={300}
+              height={180}
+            />
+            <p>Asili Zanzibar</p>
+          </div>
         </div>
 
         <div className={styles.header}>
