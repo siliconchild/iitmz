@@ -114,6 +114,24 @@ export default function SigningCeremony() {
             alt="Image of signing of MOU with Zanlink"
           />
         </div>
+        <div className={styles.item}>
+          <Img
+            src="/tusome.jpeg"
+            width={260}
+            height={290}
+            style={{ objectFit: "cover" }}
+            alt="Image of signing of MOU with Tusome"
+          />
+        </div>
+        <div className={styles.item}>
+          <Img
+            src="/asili-zanzibar.jpeg"
+            width={260}
+            height={290}
+            style={{ objectFit: "cover" }}
+            alt="Image of signing of MOU with Asili Zanzibar"
+          />
+        </div>
       </Slider>
     </section>
   );
