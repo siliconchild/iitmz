@@ -334,13 +334,40 @@ export const researchData: ResearchDataType = {
   awards: [
     {
       mentor: "Dr. Tushar Shinde",
-      student: "Malavika Nithyanand, Vikalp Srivastava, Shivam Vyas,",
-      award:
-        "First Place at ICIP 2025 Grand Challenge: Poison Sample Detection and Trigger Retrieval in Multimodal VLMs",
-      work: "TwinShield: A Dual-Phase System for Detecting and Extracting Backdoors in Vision-Language Models (VLMs). The system combines a detection phase, which identifies poisoned samples and malicious triggers through statistical feature analysis and representation consistency checks, with an extraction phase that isolates and removes backdoor triggers to restore model integrity.",
+      student: "Aisha Hamad Hassan (M.Tech Student)",
+      award: "WiML@NeurIPS 2025 Travel Grant of USD $2,586.71",
+      work: "Efficient Spam Detection with Sentence-BERT using Adaptive Uncertainty-Diversity Ranking Coresets",
       conference:
-        "IEEE International Conference on Image Processing (ICIP) 2025, Anchorage, Alaska, USA",
-      posterImage: "/icip_2025.png",
+        "Thirty-Ninth Annual Conference on Neural Information Processing Systems (NeurIPS 2025), San Diego, California, USA",
+      posterImage: "/neurips-2025.png",
+    },
+    {
+      mentor: "Dr. Tushar Shinde",
+      student: "Anushka Chaubey (M.Tech Student)",
+      award: "WiML@NeurIPS 2025 Travel Grant of USD $1423.93",
+      work: "From National Goals to Industry Action: AI-Driven Forecasting of India’s Carbon Emissions",
+      conference:
+        "Thirty-Ninth Annual Conference on Neural Information Processing Systems (NeurIPS 2025), San Diego, California, USA",
+      posterImage: "/neurips-2025.png",
+    },
+    {
+      mentor: "Dr. Tushar Shinde",
+      student: "Shivam Bhardwaj (M.Tech Student)",
+      award:
+        "ICCV 2025 Broadening Participation Travel Grant of $900 and $675 IEEE/CVF Student Registration Grant!",
+      work: "Adaptive Compression of Large Vision Models for Efficient Image Quality Assessment of AI-Generated Content",
+      conference:
+        "IEEE/CVF International Conference on Computer Vision (ICCV 2025), Honolulu, Hawaii, USA",
+      posterImage: "/iccv-2025.png",
+    },
+    {
+      mentor: "Dr. Tushar Shinde",
+      student: "Nimalesh Elangovan (M.Tech Student)",
+      award:
+        "1st place - Winner's Prize of $500, Clinical Deployment, JournalPublication, Invited at MICCAI 2026, Scholarship Opportunity",
+      work: "(PRECISE)-Abreast Ultrasound Segmentation and Classification Challenge (PACE-2025)",
+      conference: "Precision Cancer Care in Africa",
+      posterImage: "/pace-2025.png",
     },
     {
       mentor: "Dr. Tushar Shinde",
