@@ -294,6 +294,14 @@ const eventsList = [
       },
     ],
   },
+  {
+    img: "/kmec-visit.jpeg",
+    startDate: "October 23, 2025",
+    name: "Visit by Kwarara Media Education Centre (KMEC)",
+    time: "10:00 AM EAT",
+    location: "IIT Madras, Zanzibar Campus",
+    desc: "IITM Zanzibar Campus (IITMZ) had the pleasure of hosting a delegation from the Kwarara Media Education Centre (KMEC)! The visit focused on exploring innovative technologies in higher education and sharing experiences on strengthening information systems and teaching methodologies. We look forward to continued collaboration in advancing technology-driven education and research for sustainable community development.",
+  },
 ];
 
 export default eventsList;
