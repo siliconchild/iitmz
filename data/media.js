@@ -30,6 +30,26 @@ const media = {
   articles: [
     {
       title:
+        "Inauguration of IITM Zanzibar Library and “India Corner” by the High Commissioner of India to Tanzania",
+      desc: "The High Commissioner of India to Tanzania, His Excellency Bishwadip Dey, officially inaugurated the IITM Zanzibar Library and the “India Corner” at the IITM Zanzibar campus. This marks yet another milestone in strengthening educational and cultural ties between India and Tanzania.",
+      link: "https://www.instagram.com/p/DQJn54eDcKB/?img_index=5",
+      image: {
+        url: "/india-corner.jpg",
+        alt: "Image of IITMZ India Corner",
+      },
+    },
+    {
+      title:
+        " Innovation Day at IIT Madras Zanzibar bridges African entrepreneurship with Indian research",
+      desc: "Bridging the innovation corridors of Asia and Africa, the Indian Institute of Technology (IIT) Madras Zanzibar, in partnership with IITM Global, hosted Zanzibar Innovation Day on October 4 at its Zanzibar campus. The event aimed to strengthen cross-continental collaboration between Indian and African entrepreneurs and featured eleven start-ups from India and Tanzania across diverse sectors, including artificial intelligence, space technology, clean energy, water access, digital finance, and inclusive mobility.",
+      link: "https://www.edexlive.com/news/innovation-day-at-iit-madras-zanzibar-bridges-african-entrepreneurship-with-indian-research",
+      image: {
+        url: "/innovation-day-pressmeet.jpg",
+        alt: "Image of IITMZ Innovation Day",
+      },
+    },
+    {
+      title:
         "IIT Madras Zanzibar holds first degree distribution ceremony, 16 students graduate",
       desc: "The Indian Institute of Technology (IIT) Madras Zanzibar on July 11 held its first degree distribution ceremony with 16 students graduating. This marks the graduation of its inaugural cohort from the MTech programme in Data Science and Artificial Intelligence (DSAI) for the academic session 2023–2025. The event, held at the Bweleo campus in Zanzibar was established as IIT Madras’ first international campus in 2023 in partnership with the Government of Zanzibar.",
       link: "https://indianexpress.com/article/education/iit-madras-zanzibar-campus-first-degree-distribution-ceremony-data-science-artificial-intelligence-batch-2025-jee-main-advanced-10134226/",
