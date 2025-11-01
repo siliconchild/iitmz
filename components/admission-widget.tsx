@@ -9,7 +9,7 @@ export default function ContactWidget() {
       <Link
         target="_blank"
         // href="https://admissions.iitmz.ac.in/"
-        href="https://admissions.iitmz.ac.in/bscpe"
+        href="https://admissions.iitmz.ac.in/mtechdsai"
         className={styles.widgetItem}
       >
         <FaGraduationCap className={styles.icon} />
@@ -18,7 +18,7 @@ export default function ContactWidget() {
 
       <Link
         target="_blank"
-        href="/BS-CPE-Program-Flyer.pdf"
+        href="https://iitmz.ac.in/mtech-dsai"
         className={styles.widgetItem}
       >
         <MdOutlineLibraryBooks className={styles.icon} />
