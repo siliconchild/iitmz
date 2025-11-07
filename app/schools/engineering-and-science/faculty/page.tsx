@@ -9,20 +9,29 @@ const vistingFaculty = faculty.filter(
   (facultyMember) => facultyMember.type === "Visiting Faculty",
 );
 const permanentFaculty = faculty.filter(
-  (facultyMember) => facultyMember.type === "Permanent Faculty", 
+  (facultyMember) => facultyMember.type === "Permanent Faculty",
 );
 const vistingFacultyGroupedByYear = vistingFaculty.reduce(
-  (acc: Record<string, typeof faculty>, facultyMember) => {
-    if (facultyMember.year) {
-      const key = facultyMember.year;
-      if (!acc[key]) {
-        acc[key] = [];
+  (acc: Record<string, (typeof vistingFaculty)[number][]>, facultyMember) => {
+    let years: string[] = [];
+
+    if (facultyMember.year !== undefined && facultyMember.year !== null) {
+      if (Array.isArray(facultyMember.year)) {
+        years = facultyMember.year.map(String);
+      } else {
+        years = [String(facultyMember.year)];
       }
-      acc[key].push(facultyMember);
+      for (const key of years) {
+        if (!acc[key]) {
+          acc[key] = [];
+        }
+        acc[key].push(facultyMember);
+      }
     }
+
     return acc;
   },
-  {},
+  {} as Record<string, (typeof vistingFaculty)[number][]>, // Explicitly type the initial value
 );
 
 export const metadata = {
