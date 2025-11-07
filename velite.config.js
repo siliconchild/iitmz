@@ -38,7 +38,7 @@ export default defineConfig({
             .array(
               s.object({
                 title: s.string(),
-                subtitle: s.string(),
+                subtitle: s.string().optional(),
               }),
             )
             .optional(),
