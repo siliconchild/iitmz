@@ -319,7 +319,7 @@ const eventsList = [
   {
     img: "/outreach-program.png",
     startDate: "July 28 2025",
-    endDate: "Auguest 06, 2025",
+    endDate: "August 06, 2025",
     name: "Zanzibar Outreach Program - Digital Master Class 2025",
     time: "11:00 AM - 12:30 PM EAT ",
     location: "IITM Zanzibar",
