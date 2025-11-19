@@ -320,7 +320,7 @@ const eventsList = [
     img: "/outreach-program.png",
     startDate: "July 28 2025",
     endDate: "August 06, 2025",
-    name: "Zanzibar Outreach Program - Digital Master Class 2025",
+    name: "IITM Zanzibar - Zanzibar Outreach Program - Digital Master Class 2025",
     time: "11:00 AM - 12:30 PM EAT ",
     location: "IITM Zanzibar",
     desc: "Empowering Zanzibar’s next generation! Our Digital Master Class 2025 brought together 20 young learners for two weeks of hands-on digital literacy, AI awareness, presentation design, and Python basics. Huge appreciation to our amazing facilitators and supporters from IITM Zanzibar and Zanzibar Outreach Program (ZOP) for making this possible.",
