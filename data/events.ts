@@ -302,6 +302,35 @@ const eventsList = [
     location: "IIT Madras, Zanzibar Campus",
     desc: "IITM Zanzibar Campus (IITMZ) had the pleasure of hosting a delegation from the Kwarara Media Education Centre (KMEC)! The visit focused on exploring innovative technologies in higher education and sharing experiences on strengthening information systems and teaching methodologies. We look forward to continued collaboration in advancing technology-driven education and research for sustainable community development.",
   },
+  {
+    img: "/Seminar-Series-Poster.png",
+    startDate: "November 21, 2025",
+    name: "IITMZ Seminar Series",
+    time: "04:00 PM EAT",
+    location: "IITMZ Auditorium",
+    desc: "Join us at the IITMZ Seminar Series as Prof. Sridharakumar Narasimhan explores how discrete, continuous, and selfish control operations shape potential flow networks.",
+    links: [
+      {
+        title: "View More Information",
+        link: "/IITMZ_Seminar_Details_Sridhar.pdf",
+      },
+    ],
+  },
+  {
+    img: "/outreach-program.png",
+    startDate: "July 28 2025",
+    endDate: "Auguest 06, 2025",
+    name: "Zanzibar Outreach Program - Digital Master Class 2025",
+    time: "11:00 AM - 12:30 PM EAT ",
+    location: "IITM Zanzibar",
+    desc: "Empowering Zanzibar’s next generation! Our Digital Master Class 2025 brought together 20 young learners for two weeks of hands-on digital literacy, AI awareness, presentation design, and Python basics. Huge appreciation to our amazing facilitators and supporters from IITM Zanzibar and Zanzibar Outreach Program (ZOP) for making this possible.",
+    links: [
+      {
+        title: "View More Information",
+        link: "https://www.linkedin.com/feed/update/urn:li:activity:7396779619061760000",
+      },
+    ],
+  },
 ];
 
 export default eventsList;
