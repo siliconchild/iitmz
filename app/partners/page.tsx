@@ -844,6 +844,10 @@ export default function PartnersPage() {
             />
             <p>CEO Summit, Uganda</p>
           </div>
+          <div className={styles.card}>
+            <Img src="/logos/kamal.jpeg" alt="Kamal" width={300} height={180} />
+            <p>Kamal Steel Ltd</p>
+          </div>
 
           {/* <div className={styles.card}>
               <Img
