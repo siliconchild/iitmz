@@ -334,6 +334,17 @@ export const researchData: ResearchDataType = {
   awards: [
     {
       mentor: "Dr. Tushar Shinde",
+      student:
+        "Rohan Saha (B.S. student) and Aisha Hamad Hassan (M.Tech student)",
+      award:
+        "Aisha - USD 1250 and Rohan - USD 1000 (AAAI-2026 Travel Scholarship Award), Full Conference Registration Grant (~USD 600)",
+      work: "Multimedia Intelligence, Data Analysis and compreSsion",
+      conference:
+        "40th AAAI Conference on Artificial Intelligence (AAAI 2026), Singapore",
+      posterImage: "/AAAI Conference.png",
+    },
+    {
+      mentor: "Dr. Tushar Shinde",
       student: "Aisha Hamad Hassan (M.Tech Student)",
       award: "WiML@NeurIPS 2025 Travel Grant of USD $2,586.71",
       work: "Efficient Spam Detection with Sentence-BERT using Adaptive Uncertainty-Diversity Ranking Coresets",
