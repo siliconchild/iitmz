@@ -13,6 +13,7 @@ import { ProgramAdvisory } from "@/components/program-advisory";
 import { getAllBanners, defaultBanner } from "@/data/banner";
 import { getAllNews } from "@/data/news";
 import { unstable_cache as cache } from "next/cache";
+import StaffList from "@/components/staff";
 
 export const metadata = {
   alternates: {
@@ -38,6 +39,7 @@ export default async function Home() {
       <Counter />
       <Leadership />
       <GovernanceBoard />
+      <StaffList />
       <AdvisoryCouncil />
       <ProgramAdvisory />
       {/* <section className={styles.events_testimonials_section}>
