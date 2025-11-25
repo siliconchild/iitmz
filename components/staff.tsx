@@ -55,7 +55,7 @@ export const StaffMember = [
     img: "/staff/IBADI MUHUDHAR IBADI (DRIVER).jpg",
   },
   {
-    name: "Mr. Mahafufhi Makame Ali",
+    name: "Mr. Mahafudhi Makame Ali",
     title: "Institute Driver",
     img: "/staff/MAHAFUDHI MAKAME ALI (BUS DRIVER).jpg",
   },
