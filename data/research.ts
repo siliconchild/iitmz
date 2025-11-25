@@ -334,14 +334,41 @@ export const researchData: ResearchDataType = {
   awards: [
     {
       mentor: "Dr. Tushar Shinde",
-      student:
-        "Rohan Saha (B.S. student) and Aisha Hamad Hassan (M.Tech student)",
+      student: "Aisha Hamad Hassan (M.Tech student)",
       award:
-        "Aisha - USD 1250 and Rohan - USD 1000 (AAAI-2026 Travel Scholarship Award), Full Conference Registration Grant (~USD 600)",
-      work: "Multimedia Intelligence, Data Analysis and compreSsion",
+        "Aisha - USD 1250 (AAAI-2026 Travel Scholarship Award), Full Conference Registration Grant (~USD 600)",
+      work: "Adaptive Coreset Selection via Uncertainty-Density for Efficient Spam Detection",
       conference:
         "40th AAAI Conference on Artificial Intelligence (AAAI 2026), Singapore",
       posterImage: "/AAAI Conference.png",
+    },
+    {
+      mentor: "Dr. Tushar Shinde",
+      student: "Rohan Saha (B.S. student)",
+      award:
+        "Rohan - USD 1000 (AAAI-2026 Travel Scholarship Award), Full Conference Registration Grant (~USD 600)",
+      work: "Bridging Machine Learning and Physics for Scalable Long-Term Building Temperature Prediction",
+      conference:
+        "40th AAAI Conference on Artificial Intelligence (AAAI 2026), Singapore",
+      posterImage: "/AAAI Conference.png",
+    },
+    {
+      mentor: "Dr. Tushar Shinde",
+      student: "Avinash Kumar Sharma (M.Tech student)",
+      award: "NeurIPS 2025 Scholar Award",
+      work: "Are Binary Neural Networks Input Bit-Invariant? Optimizing Sensor-Model Systems with Mean Hassanat Distance, How Weight Pruning Destroys Chain-of-Thought Reasoning in Language Reasoning Models: A Model Similarity and Faithfulness Correlation Analysis,  Modeling Chain-of-Thought Collapse in Pruned Language Models: Fidelity and Similarity Analysis for Mathematical Reasoning",
+      conference:
+        "Thirty-Ninth Annual Conference on Neural Information Processing Systems (NeurIPS 2025), San Diego, USA",
+      posterImage: "/neurpis-2025.jpeg",
+    },
+    {
+      mentor: "Dr. Tushar Shinde",
+      student: "Anushka Chaubey (M.Tech student)",
+      award: "NeurIPS 2025 Scholar Award",
+      work: "From National Goals to Industry Action: AI-Driven Forecasting of India’s Carbon Emissions",
+      conference:
+        "Thirty-Ninth Annual Conference on Neural Information Processing Systems (NeurIPS 2025), San Diego, USA",
+      posterImage: "/neurpis-2025.jpeg",
     },
     {
       mentor: "Dr. Tushar Shinde",
