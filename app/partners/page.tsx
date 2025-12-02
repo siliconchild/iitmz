@@ -652,6 +652,15 @@ export default function PartnersPage() {
             />
             <p>Asili Zanzibar</p>
           </div>
+          <div className={styles.card}>
+            <Img
+              src="/logos/zambia.png"
+              alt="Asili Zanzibar"
+              width={300}
+              height={180}
+            />
+            <p>Zambia University College of Technology</p>
+          </div>
         </div>
 
         <div className={styles.header}>
