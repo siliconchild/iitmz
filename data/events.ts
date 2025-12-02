@@ -331,6 +331,20 @@ const eventsList = [
       },
     ],
   },
+  {
+    img: "/Seminar-Series-mahendran.png",
+    startDate: "December 05 2025",
+    name: "IITMZ Seminar Series",
+    time: "4:00 PM EAT",
+    location: "IITMZ Auditorium",
+    desc: "Join us at the IITMZ Seminar Series as Prof. Veeramani Mahendran will talk on how to make smart, step-by-step decisions for retrieving data in networked systems using Multi-Armed Bandit models. It will compare different approaches for solving these bandit problems and show how certain structural insights can make it easier and faster to find optimal solutions.",
+    links: [
+      {
+        title: "View More Information",
+        link: "/IITMZ_Seminar_Details_Mahendran.docx",
+      },
+    ],
+  },
 ];
 
 export default eventsList;
