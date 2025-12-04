@@ -36,8 +36,8 @@ export default function AcademicPrograms() {
           url: "/schools/engineering-and-science/bs-chemical-process-engineering#examination-centres",
         },
       ],
-      applicationDisabled: true,
-      applicationLink: "https://admissions.iitmz.ac.in/bscpe",
+      // applicationDisabled: true,
+      applicationLink: "https://admissions.iitmz.ac.in/bs",
     },
     {
       title: "BS in Data Science & AI",
@@ -68,8 +68,8 @@ export default function AcademicPrograms() {
           url: "/schools/engineering-and-science/bs-data-science-and-ai#examination-centres",
         },
       ],
-      applicationDisabled: true,
-      applicationLink: "#",
+      // applicationDisabled: true,
+      applicationLink: "https://admissions.iitmz.ac.in/bs",
     },
     {
       title: "MTech in Data Science & AI",
@@ -97,7 +97,7 @@ export default function AcademicPrograms() {
         },
       ],
       applicationDisabled: true,
-      applicationLink: "#",
+      // applicationLink: "https://admissions.iitmz.ac.in/mtechdsai",
     },
     {
       title: "MTech in Ocean Structures",
