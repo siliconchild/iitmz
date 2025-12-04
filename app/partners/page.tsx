@@ -661,6 +661,15 @@ export default function PartnersPage() {
             />
             <p>Zambia University College of Technology</p>
           </div>
+          <div className={styles.card}>
+            <Img
+              src="/logos/wadhwani.png"
+              alt="Wadhwani"
+              width={300}
+              height={180}
+            />
+            <p>Wadhwani Institute for Artificial Intelligence Foundation</p>
+          </div>
         </div>
 
         <div className={styles.header}>
