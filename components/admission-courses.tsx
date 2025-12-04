@@ -97,7 +97,7 @@ export default function AcademicPrograms() {
         },
       ],
       applicationDisabled: true,
-      // applicationLink: "https://admissions.iitmz.ac.in/mtechdsai",
+      applicationLink: "#",
     },
     {
       title: "MTech in Ocean Structures",
