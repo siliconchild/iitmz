@@ -47,7 +47,7 @@ export const StaffMember = [
   {
     name: "(Late) Mr. Hassan Soud",
     title: "Institute Driver",
-    img: "/placeholder.jpg",
+    img: "/staff/hassan.png",
   },
   {
     name: "Mr. Ibadi Muhudhar Ibadi",
