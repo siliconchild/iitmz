@@ -42,7 +42,7 @@ export const StaffMember = [
   {
     name: "Mr. Joachim Stephen Amlima",
     title: "IT Specialist",
-    img: "/placeholder.png",
+    img: "/staff/joachim.jpeg",
   },
   {
     name: "(Late) Mr. Hassan Soud",
