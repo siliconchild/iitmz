@@ -39,11 +39,11 @@ export default function CareersPage() {
         </div> */}
         <div className={styles.grid}>
           <Img
-            src="/IITMZ-Faculty.png"
+            src="/Faculty-Recruitment.png"
             alt="Image of signing of MOU with University of Birmingham"
             width={300}
             height={400}
-            />
+          />
           <div className={styles.apply}>
             <h1>We Are Hiring</h1>
             <p>
