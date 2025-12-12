@@ -1,44 +1,51 @@
 import styles from "./admission-timeline.module.scss";
-import { FaCalendarAlt, FaCalendarTimes, FaPencilAlt, FaUserCheck } from "react-icons/fa";
+import {
+  FaCalendarAlt,
+  FaCalendarTimes,
+  FaPencilAlt,
+  FaUserCheck,
+} from "react-icons/fa";
 
 interface TimelineProps {
   variant?: "default" | "simple";
 }
 
-const AdmissionTimeline: React.FC<TimelineProps> = ({ variant = "default" }) => {
+const AdmissionTimeline: React.FC<TimelineProps> = ({
+  variant = "default",
+}) => {
   const timelineData = [
     {
-      date: "Jan 10, 2025",
+      date: "Dec 03, 2025",
       event: "Applications Open",
       icon: <FaCalendarAlt />,
       status: "upcoming",
     },
-      {
-        date: (
-          <>
-            BS: June 10, 2025
-            <br /> 
-            M.Tech: June 15, 2025
-          </>
-        ),
+    {
+      date: (
+        <>
+          BS: April 30, 2026
+          {/*<br />
+            M.Tech: June 15, 2025*/}
+        </>
+      ),
       event: "Applications Close",
       icon: <FaCalendarTimes />,
       status: "upcoming",
     },
     {
-      date: "May 04, 2025",
-      event: "Screening Test Option 1",
+      date: "June 06, 2026",
+      event: "Screening Test",
       icon: <FaPencilAlt />,
       status: "upcoming",
     },
+    // {
+    //   date: "July 13, 2025",
+    //   event: "Screening Test Option 2",
+    //   icon: <FaPencilAlt />,
+    //   status: "upcoming",
+    // },
     {
-      date: "July 13, 2025",
-      event: "Screening Test Option 2",
-      icon: <FaPencilAlt />,
-      status: "upcoming",
-    },
-    {
-      date: "May & July 2025",
+      date: "Mid-June 2026",
       event: "Dates of Interview",
       icon: <FaUserCheck />,
       status: "upcoming",
@@ -55,7 +62,7 @@ const AdmissionTimeline: React.FC<TimelineProps> = ({ variant = "default" }) => 
               <div key={index} className={styles.timelineItem}>
                 <div className={styles.iconWrapper}>{item.icon}</div>
                 <div className={styles.details}>
-                <span className={styles.date}>{item.date}</span>
+                  <span className={styles.date}>{item.date}</span>
                   <h4 className={styles.event}>{item.event}</h4>
                 </div>
               </div>

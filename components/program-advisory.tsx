@@ -30,7 +30,7 @@ export const ProgramAdvisory = () => {
             height={200}
           />
           <h3>Prof C Pandurangan</h3>
-          <h4>IISc, Bangalore</h4>
+          <h4>IISc, Bengaluru</h4>
           <Link
             target="_blank"
             href="https://odaa.iisc.ac.in/prof-pandurangan-medal/"

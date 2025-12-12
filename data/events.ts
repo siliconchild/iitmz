@@ -345,6 +345,20 @@ const eventsList = [
       },
     ],
   },
+  {
+    img: "/Seminar-Series-IITMZ_shankar.png",
+    startDate: "December 12 2025",
+    name: "IITMZ Seminar Series",
+    time: "4:00 PM EAT",
+    location: "IITMZ Auditorium",
+    desc: "Join us for an enlightening session with Prof. Shankar Narasimhan, Emeritus Professor at IIT Madras, as he unveils 'The Unprejudiced Solution to the Multivariate Linear Regression Problem'. A deep dive into unbiased modelling, data-driven insights, and the future of regression techniques. ",
+    links: [
+      {
+        title: "View More Information",
+        link: "/IITMZ_Seminar_Details_Shankar.docx",
+      },
+    ],
+  },
 ];
 
 export default eventsList;

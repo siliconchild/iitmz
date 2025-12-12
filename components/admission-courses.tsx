@@ -36,8 +36,8 @@ export default function AcademicPrograms() {
           url: "/schools/engineering-and-science/bs-chemical-process-engineering#examination-centres",
         },
       ],
-      applicationDisabled: true,
-      applicationLink: "https://admissions.iitmz.ac.in/bscpe",
+      // applicationDisabled: true,
+      applicationLink: "https://admissions.iitmz.ac.in/bs",
     },
     {
       title: "BS in Data Science & AI",
@@ -68,11 +68,11 @@ export default function AcademicPrograms() {
           url: "/schools/engineering-and-science/bs-data-science-and-ai#examination-centres",
         },
       ],
-      applicationDisabled: true,
-      applicationLink: "#",
+      // applicationDisabled: true,
+      applicationLink: "https://admissions.iitmz.ac.in/bs",
     },
     {
-      title: "MTech in Data Science & AI",
+      title: "M.Tech. in Data Science & AI",
       imageSrc: "/course4.jpg",
       links: [
         {
@@ -96,11 +96,10 @@ export default function AcademicPrograms() {
           url: "/schools/engineering-and-science/mtech-data-science-and-ai#screening-test",
         },
       ],
-      applicationDisabled: true,
-      applicationLink: "#",
+      applicationLink: "https://admissions.iitmz.ac.in/mtechdsai",
     },
     {
-      title: "MTech in Ocean Structures",
+      title: "M.Tech. in Ocean Structures",
       imageSrc: "/ocean-structures.jpg",
       links: [
         {
@@ -137,7 +136,7 @@ export default function AcademicPrograms() {
     program.title.startsWith("BS"),
   );
   const pgPrograms = programs.filter((program) =>
-    program.title.startsWith("MTech"),
+    program.title.startsWith("M.Tech."),
   );
 
   const displayedPrograms = activeTab === "ug" ? ugPrograms : pgPrograms;
