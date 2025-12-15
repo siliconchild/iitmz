@@ -48,8 +48,6 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         {children}
         <Footer />
         <AdmissionWidget />
-        <div className="npf_chatbots" data-w="6ccf7b4ad1fa4cc6b210b201e6fa77b8" style={{ display: "none" }}></div>
-        <Script src="/api/chatbot-script" strategy="afterInteractive" />
         <Script id="nopaperforms-config" strategy="beforeInteractive">
           {`
             var npf_d='https://admissions.iitmz.ac.in';
