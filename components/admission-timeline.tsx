@@ -15,7 +15,16 @@ const AdmissionTimeline: React.FC<TimelineProps> = ({
 }) => {
   const timelineData = [
     {
-      date: "Dec 03, 2025",
+      // date: "Dec 03, 2025",
+      date: (
+        <>
+          BS: Dec 03, 2025
+          <br />
+          M. Tech: Dec 08, 2025
+          {/*<br />
+              M.Tech: June 15, 2025*/}
+        </>
+      ),
       event: "Applications Open",
       icon: <FaCalendarAlt />,
       status: "upcoming",
@@ -24,8 +33,8 @@ const AdmissionTimeline: React.FC<TimelineProps> = ({
       date: (
         <>
           BS: April 30, 2026
-          {/*<br />
-            M.Tech: June 15, 2025*/}
+          <br />
+          M.Tech: April 15, 2026
         </>
       ),
       event: "Applications Close",
@@ -33,7 +42,13 @@ const AdmissionTimeline: React.FC<TimelineProps> = ({
       status: "upcoming",
     },
     {
-      date: "June 06, 2026",
+      date: (
+        <>
+          BS: June 06, 2026
+          <br />
+          M.Tech: April 26, 2026
+        </>
+      ),
       event: "Screening Test",
       icon: <FaPencilAlt />,
       status: "upcoming",
@@ -45,7 +60,13 @@ const AdmissionTimeline: React.FC<TimelineProps> = ({
     //   status: "upcoming",
     // },
     {
-      date: "Mid-June 2026",
+      date: (
+        <>
+          BS: Mid-June 2026
+          <br />
+          M.Tech: Early May 2026
+        </>
+      ),
       event: "Dates of Interview",
       icon: <FaUserCheck />,
       status: "upcoming",
