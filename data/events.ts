@@ -359,6 +359,20 @@ const eventsList = [
       },
     ],
   },
+  {
+    img: "/Seminar-Series-IITMZ_Arun.png",
+    startDate: "December 19, 2025",
+    name: "IITMZ Seminar Series",
+    time: "4:00 PM EAT",
+    location: "IITMZ Auditorium",
+    desc: "Find out in the IITMZ Seminar Series talk by Prof. Arun Kannu Pachai on 'Communications Using Sparse Signals.' An insightful session connecting error control coding, sparse signals, and modern communications.",
+    links: [
+      {
+        title: "View More Information",
+        link: "/IITMZ_Seminar_Details_Arun.docx",
+      },
+    ],
+  },
 ];
 
 export default eventsList;
