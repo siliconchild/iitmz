@@ -14,6 +14,7 @@ export interface FacultyMember {
 }
 
 export interface AwardEntry {
+  faculty?: string;
   mentor: string;
   student: string;
   award: string;
@@ -32,8 +33,71 @@ export const researchData: ResearchDataType = {
   faculty: [
     {
       name: "Dr. Innocent Nyalala",
-      posterImage: "/research-1.png",
+      posterImage: "/AFRICHI-Egypt 2025.png",
       publications: [
+        {
+          year: 2025,
+          title:
+            "From Art to Algorithms: Co-Designing AI for Clove Grading with Zanzibar&#39;s Indigenous Experts",
+          venue: "AFRICHI ACM Conference 2025",
+          type: "Journal",
+          description:
+            "Proposes a socio-technical approach to modernizing Zanzibar&#39;s clove grading system. Validates a segmentation-first deep learning architecture, achieving 99.0% accuracy, while advocating for co-design with Indigenous experts to develop a low-cost mobile tool that fosters transparency and trust.",
+        },
+        {
+          year: 2025,
+          title:
+            "BAFNet: Deep contour-aware features for colorectal polyps segmentation",
+          venue: "Expert Systems with Applications Journal",
+          type: "Journal",
+          description:
+            "Introduces a boundary-aware feature fusion neural network for improved colorectal polyp segmentation through gating mechanisms that select high-quality contour features and enhance semantic accuracy. ",
+        },
+        {
+          year: 2025,
+          title:
+            "Digital Sovereignty or Digital Serfdom? AI Strategies, Geopolitics, and the Quest for an Equitable Global South",
+          venue: "EurIPS 2025 Conference - Workshop on Private AI Governance",
+          type: "Journal",
+          description:
+            "This study examines whether Global South countries are advancing toward digital sovereignty or drifting into digital serfdom. It uses a seven-dimensional framework and four case studies (Singapore, Vietnam, Kenya, and Syria) to reveal asymmetries in computing, talent, and regulation.",
+        },
+        {
+          year: 2025,
+          title:
+            "AI Sovereignty in the Global South: Power, Dependency, and Strategic Futures",
+          venue: "AAAI 2026 Conference - Workshop Empowering Global South AI",
+          type: "Journal",
+          description:
+            "Analyzes structural power asymmetries in AI development across the Global South, proposing multipolar policy frameworks involving the African Union, ASEAN, and South-South cooperation to counter digital dependency on foreign platforms.",
+        },
+        {
+          year: 2025,
+          title:
+            "Towards Culturally Attuned and Resource-Aware Foundation Models for East African Agriculture: A theoretical framework and research agenda",
+          venue: "Deep Learning Indaba (DLI) 2025 Conference",
+          type: "Conference",
+          description:
+            "Presented theoretical framework for culturally attuned foundation models for East African agriculture.",
+        },
+        {
+          year: 2025,
+          title:
+            "How can Innovation Modernize the Public Service Delivery and Create Inclusive Digital Economy",
+          venue: "4th ZRCP Joint Annual Conference, Zanzibar – Invited talk",
+          type: "Invited Talk",
+          description:
+            "A talk on innovation&#39;s role in modernizing public service delivery and fostering an inclusive digital economy.",
+        },
+        {
+          year: 2025,
+          title:
+            "Computing at the Edge of Possibility: Building Agricultural AI for Resource Constrained East Africa",
+          venue: "NPTEL CRC 302 Studio, IIT Madras Chennai",
+          type: "Conference",
+          description:
+            "Faculty talk on developing agricultural AI solutions for resource-constrained environments in East Africa.",
+        },
         {
           year: 2025,
           title:
@@ -332,6 +396,25 @@ export const researchData: ResearchDataType = {
     },
   ],
   awards: [
+    {
+      faculty: "Prof. Tushar Shinde",
+      mentor: "",
+      student: "",
+      award: "NeurIPS 2025 BrainBodyFM Travel Grant of USD $1500!",
+      work: "Resource-Efficient ECG Foundation Networks via Layer-wise Adaptive Compression",
+      conference:
+        "Thirty-Ninth Annual Conference on Neural Information Processing Systems (NeurIPS 2025), San Diego, California, USA",
+      posterImage: "/neurips25-brainbodyfm.png",
+    },
+    {
+      mentor: "Dr. Tushar Shinde",
+      student: "Aisha Hamad Hassan (M.Tech student)",
+      award: "NeurIPS 2025 GenAI in Finance Travel Grant of USD $800!",
+      work: "eFinBERT: Efficient Financial Sentiment Classification",
+      conference:
+        "Thirty-Ninth Annual Conference on Neural Information Processing Systems (NeurIPS 2025), San Diego, California, USA",
+      posterImage: "/neurips25-genai.png",
+    },
     {
       mentor: "Dr. Tushar Shinde",
       student: "Aisha Hamad Hassan (M.Tech student)",
