@@ -4,22 +4,23 @@ import Img from "./image";
 import Button from "./button";
 import Link from "next/link";
 import { Banner } from "@/data/banner";
+import { banners} from "@/data/banner";
 
 type HeroProps = {
   banners: Banner[];
 };
 
-export default function Hero({ banners }: HeroProps) {
+export default function Hero() {
   return (
     <section>
       <Slider autoplayInterval={8000}>
-        {banners.map((banner) => (
-          <div key={banner.uuid} className={styles.item}>
+        {banners.map((banner: Banner) => (
+          <div key={banner.img} className={styles.item}>
             <Img
               width={1200}
               height={800}
               alt="IITM Zanzibar Campus Image"
-              src={`/api/resource?id=${banner.img}`}
+              src={banner.img}
               loading="eager"
               sizes="(max-width: 768px) 900px, (min-width: 768px) 1200px"
             />

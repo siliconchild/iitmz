@@ -1,12 +1,9 @@
 import "@/styles/globals.css";
 import { Viewport } from "next";
-import { Suspense } from "react";
 import { Lato, Raleway } from "next/font/google";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import AdmissionWidget from "@/components/admission-widget";
-import { getAllAnnouncements } from "@/data/announcements";
-import { unstable_cache as cache } from "next/cache";
 import { GoogleTagManager } from "@next/third-parties/google";
 import Script from "next/script";
 
@@ -33,18 +30,14 @@ export const metadata = {
   applicationName: "IITM Zanzibar",
 };
 
-const getAllAnnouncementsCached = cache(getAllAnnouncements, ["z-announcements"], {
-  tags: ["ticker"],
-});
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
-  const announcements = await getAllAnnouncementsCached();
   return (
     <html lang="en">
       <meta name="google-site-verification" content="5JWgn4gCT2PCaGMgbVSrlk_1EWzg5HkMu7Li-NsQO_Q" />
       <GoogleTagManager gtmId="GTM-N9TVCHGQ" />
       <body className={`${lato.className}${raleway.className}`}>
-        <Header announcements={announcements} />
+        <Header />
         {children}
         <Footer />
         <AdmissionWidget />

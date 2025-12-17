@@ -1,36 +1,17 @@
-import sql, { raw } from "sql-template-tag";
-import { fetchDataFromAthena } from "@/lib/athenaClient";
-import { generateUUID } from "@/utils/uuidGenerator";
-
 export interface Announcement {
   activeTill: string;
   content: string;
   linkText: string;
   linkUrl: string;
-  uuid: string;
 }
 
-export type AnnouncementsArray = Announcement[];
+export type Announcements = Announcement[];
 
-const generateQuery = () => {
-  return sql`
-    SELECT
-      "active till" as activeTill,
-      "content" as content,
-      "link text" as linkText,
-      "link url" as linkUrl,
-      ${raw(generateUUID)} as uuid
-    FROM "ticker"
-    WHERE "active till" IS NOT NULL
-  `;
-};
-
-export const getAllAnnouncements = async () => {
-  try {
-    const query = generateQuery();
-    return await fetchDataFromAthena<Announcement>(query.text);
-  } catch (err) {
-    console.error("FAILED TO FETCH ALL Announcements DATA", err);
-    throw err;
-  }
-};
+export const announcements: Announcements = [
+  {
+    activeTill: "2026-04-30",
+    content: "BS & M.Tech. Admissions for the academic year 2026–27 are open now",
+    linkText: "Apply Now",
+    linkUrl: "https://admissions.iitmz.ac.in/",
+  },
+];

@@ -10,9 +10,6 @@ import GovernanceBoard from "@/components/governing-council";
 import Leadership from "@/components/leadership";
 import SocialMedia from "@/components/social-media";
 import { ProgramAdvisory } from "@/components/program-advisory";
-import { getAllBanners, defaultBanner } from "@/data/banner";
-import { getAllNews } from "@/data/news";
-import { unstable_cache as cache } from "next/cache";
 import StaffList from "@/components/staff";
 
 export const metadata = {
@@ -21,20 +18,13 @@ export const metadata = {
   },
 };
 
-const getAllBannersCached = cache(getAllBanners, ["z-banners"], {
-  tags: ["banner"],
-});
-const getAllNewsCached = cache(getAllNews, ["z-news"], {
-  tags: ["news"],
-});
+
 
 export default async function Home() {
-  const banners = await getAllBannersCached();
-  const news = await getAllNewsCached();
   return (
     <main>
-      <Hero banners={banners || defaultBanner} />
-      {news && <News news={news} />}
+      <Hero />
+      <News />
       <Courses layout="HORIZONTAL" />
       <Counter />
       <Leadership />

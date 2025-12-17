@@ -1,7 +1,3 @@
-import sql, { raw } from "sql-template-tag";
-import { fetchDataFromAthena } from "@/lib/athenaClient";
-import { generateUUID } from "@/utils/uuidGenerator";
-
 export interface Banner {
   mdTitle: string;
   lgTitle: string;
@@ -9,42 +5,23 @@ export interface Banner {
   img: string;
   linkText: string;
   linkURL: string;
-  uuid: string;
 }
 
-const generateQuery = () => {
-  return sql`
-    SELECT
-      "medium title" as mdTitle,
-      "large title" as lgTitle,
-      "small title" as smTitle,
-      image as img,
-      "link text" as linkText,
-      "link url" as linkURL,
-      ${raw(generateUUID)} as uuid
-    FROM "banner"
-    WHERE image IS NOT NULL
-  `;
-};
-
-export const getAllBanners = async () => {
-  try {
-    const query = generateQuery();
-    return await fetchDataFromAthena<Banner>(query.text);
-  } catch (err) {
-    console.error("FAILED TO FETCH ALL Banner DATA", err);
-    throw err;
-  }
-};
-
-export const defaultBanner: Banner[] = [
+export const banners: Banner[] = [
   {
     mdTitle: "Welcome To",
     lgTitle: "IITM Zanzibar",
-    smTitle: "",
-    img: "/drive-resources/1H_DKbYDFXBXpXutuLAuX8N9Cq22P6coaPZcbXtmcTZI/Banner/1TgseycIXop4cAqRKAOnRcHFxdg42EjYQ.jpeg",
+    smTitle: "Empowering Africa: Shaping Next-Gen Tech Leaders and Innovators",
+    img: "/banner_default.jpg",
     linkText: "",
     linkURL: "",
-    uuid: "d6480c9c-f7df-48d0-94d1-f5a133a74dac",
   },
+  {
+    mdTitle: "BS & M.Tech. Admissions for the academic year 2026–27 are open now",
+    lgTitle: "",
+    smTitle: "",
+    img: "/banner_front.jpg",
+    linkText: "Apply Now",
+    linkURL: "https://admissions.iitmz.ac.in/",
+  }
 ];

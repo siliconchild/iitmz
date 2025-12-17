@@ -2,11 +2,11 @@
 import styles from "./ticker.module.scss";
 import Marquee from "react-fast-marquee";
 import stringReplacer from "./string-replacer";
-import { Announcement, AnnouncementsArray } from "@/data/announcements";
+import { Announcement, Announcements } from "@/data/announcements";
 import Link from "next/link";
 
 type TickerProps = {
-  announcements: AnnouncementsArray;
+  announcements: Announcements;
 };
 
 export default function Ticker({ announcements }: TickerProps) {
@@ -20,7 +20,7 @@ export default function Ticker({ announcements }: TickerProps) {
     const content = typeof announcement.content === "string" ? stringReplacer(announcement.content) : "";
 
     return (
-      <p key={announcement.uuid}>
+      <p key={announcement.content}>
         <span>{content}</span>
         {announcement.linkUrl && announcement.linkText && (
           <Link href={announcement.linkUrl}>{announcement.linkText}</Link>

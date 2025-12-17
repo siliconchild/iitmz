@@ -3,12 +3,9 @@ import Button from "./button";
 import Link from "next/link";
 import NewsCard from "./news-card";
 import { News as NewsType } from "@/data/news";
+import {news} from "@/data/news"; 
 
-type NewsProps = {
-  news: NewsType[];
-};
-
-export default function News({ news }: NewsProps) {
+export default function News() {
   return (
     <section className={styles.section}>
       <div className="container">
@@ -24,7 +21,7 @@ export default function News({ news }: NewsProps) {
           </div>
           {news.map((newsItem:NewsType) => (
             <NewsCard
-              key={newsItem.uuid}
+              key={newsItem.img}
               link={newsItem.linkURL || "#"}
               image={newsItem.img}
               title={newsItem.title}

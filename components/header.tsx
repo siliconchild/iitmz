@@ -9,13 +9,9 @@ import Topbar from "./topbar";
 import Navbar from "./navbar";
 import Ticker from "./ticker";
 import Button from "./button";
-import { AnnouncementsArray } from "@/data/announcements";
+import { announcements  } from "@/data/announcements";
 
-type HeaderProps = {
-  announcements: AnnouncementsArray | null;
-};
-
-export default function Header({ announcements }: HeaderProps) {
+export default function Header() {
   const [navToggle, setNavToggle] = useState(false);
   const pathname = usePathname();
   useEffect(() => {
