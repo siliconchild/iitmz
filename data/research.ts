@@ -94,7 +94,7 @@ export const researchData: ResearchDataType = {
           title:
             "Computing at the Edge of Possibility: Building Agricultural AI for Resource Constrained East Africa",
           venue: "NPTEL CRC 302 Studio, IIT Madras Chennai",
-          type: "Conference",
+          type: "Invited Talk",
           description:
             "Faculty talk on developing agricultural AI solutions for resource-constrained environments in East Africa.",
         },
