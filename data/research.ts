@@ -40,7 +40,7 @@ export const researchData: ResearchDataType = {
           title:
             "From Art to Algorithms: Co-Designing AI for Clove Grading with Zanzibar&#39;s Indigenous Experts",
           venue: "AFRICHI ACM Conference 2025",
-          type: "Journal",
+          type: "Conference",
           description:
             "Proposes a socio-technical approach to modernizing Zanzibar&#39;s clove grading system. Validates a segmentation-first deep learning architecture, achieving 99.0% accuracy, while advocating for co-design with Indigenous experts to develop a low-cost mobile tool that fosters transparency and trust.",
         },
@@ -49,7 +49,7 @@ export const researchData: ResearchDataType = {
           title:
             "BAFNet: Deep contour-aware features for colorectal polyps segmentation",
           venue: "Expert Systems with Applications Journal",
-          type: "Journal",
+          type: "Conference",
           description:
             "Introduces a boundary-aware feature fusion neural network for improved colorectal polyp segmentation through gating mechanisms that select high-quality contour features and enhance semantic accuracy. ",
         },
@@ -58,7 +58,7 @@ export const researchData: ResearchDataType = {
           title:
             "Digital Sovereignty or Digital Serfdom? AI Strategies, Geopolitics, and the Quest for an Equitable Global South",
           venue: "EurIPS 2025 Conference - Workshop on Private AI Governance",
-          type: "Journal",
+          type: "Conference",
           description:
             "This study examines whether Global South countries are advancing toward digital sovereignty or drifting into digital serfdom. It uses a seven-dimensional framework and four case studies (Singapore, Vietnam, Kenya, and Syria) to reveal asymmetries in computing, talent, and regulation.",
         },
